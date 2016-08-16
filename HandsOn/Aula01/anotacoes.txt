@@ -1,0 +1,21 @@
+Aula 01
+
+Usar plugin: RestClient - para FireFox
+             AdvancedRestClient - Chrome
+
+Adicionar Header
+Name: Content-type
+value: application/json  (de acordo com a Configuracao da API)
+
+
+Para instalar dependencias - flask e o SqlAlchemyy
+#sudo pip install flask flask-sqlalchemy
+
+#sudo pip install requests
+
+Acessar
+http://localhost:5000/
+
+Executar o run.py para deixar aplicacao rodando
+
+  
