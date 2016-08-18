@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 126</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#000080" vlink="#0000CC" alink="#000080">
+<center>
+<a href="text0.html">Primeira página</a> <a href="text110.html">Voltar</a> <a href="text112.html">Continuar</a> <a href="text192.html">Última página</a> <a href="Apostila.html">Visão geral</a> <a href="img111.html">Figuras</a></center><br>
+<h1><b><font color="#009999">SQLAlchemy na Prática</b></h1>
+<p><b><font color="#009999">&lt;número&gt;</b></p>
+<p><font color="#666666">from sqlalchemy import Column, Integer,String,ForeignKey</p>
+<p><font color="#666666">From sqlalchemy.orm import relationship</p>
+<p><font color="#666666"></p>
+<p><font color="#666666">class Funcionario(Base):</p>
+<p><font color="#666666">	__tablename__ = funcionarios'</p>
+<p><font color="#666666">	id = Column(Integer, primary_key=True)</p>
+<p><font color="#666666">	nome = Column(String)</p>
+<p><font color="#666666">	dependentes = relationship(“Dependentes”)</p>
+<p><font color="#666666"></p>
+<p><font color="#666666">class Dependentes(Base):</p>
+<p><font color="#666666">	__tablename__ = 'serviidores'</p>
+<p><font color="#666666">	Id = Column(Integer,primary_key=True)</p>
+<p><font color="#666666">	nome = Column(String)</p>
+<p><font color="#666666">	funcionario_id = Column(Integer,ForeignKey(“funcionarios.id”))</p>
+<p><font color="#666666">	</p>
+</body>
+</html>

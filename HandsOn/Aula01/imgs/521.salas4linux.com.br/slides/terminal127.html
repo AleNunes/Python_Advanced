@@ -1,0 +1,13 @@
+<h1><b>MongoDB com Python</b></h1>
+<p><b>&lt;número&gt;</b></p>
+<p>Temos também como atualizar um valor de um subdocumento.</p>
+<p>Para isso utilizamos o mesmo comando <b>update</b>.</p>
+<p></p>
+<p>	</p>
+<p><b></b></p>
+<p>db.fila.update(</p>
+<p>	{“_id”:1,”servidores.nome”:”dns”},</p>
+<p>	{“$set”:{“servidores.$.endereco”:”192.168.0.100”}}</p>
+<p>	)</p>
+<p>Note que agora o <b>$ </b>é usado. Ele se refere ao índice na lista em que o servidor com o nome <b>dns</b> foi encontrado.</p>
+

@@ -12,6 +12,7 @@ Para instalar dependencias - flask e o SqlAlchemyy
 #sudo pip install flask flask-sqlalchemy
 
 #sudo pip install requests
+#sudo pip install flask
 
 Acessar
 http://localhost:5000/

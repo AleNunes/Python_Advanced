@@ -1,0 +1,9 @@
+<h1><b>SSHOps</b></h1>
+<p><b>&lt;número&gt;</b></p>
+<p>No Construtor da <b>Classe SSHOps</b>, precisamos efetuar a conexão com o servidor.</p>
+<p>def __init__(self):</p>
+<p>	self.client = SSHClient()</p>
+<p>	self.client.load_system_host_keys()</p>
+<p>self.client.set_missing_host_keys_policy(paramiko.AutoAddPolicy())</p>
+<p>	self.client.connect(“192.168.0.2”)</p>
+

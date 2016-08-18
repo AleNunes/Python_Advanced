@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 128</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0088CC" vlink="#2C2C2C" alink="#0088CC">
+<center>
+<a href="text0.html">First page</a> <a href="text126.html">Back</a> <a href="text128.html">Continue</a> <a href="text415.html">Last page</a> <a href="Apostila.html">Overview</a> <a href="img127.html">Graphics</a></center><br>
+<h1><b><font color="#FFFFFF">Python e Gitlab</b></font></h1>
+<p><font color="#666666">Uma função interessante do Gitlab também é poder adicionar desenvolvedores para um repositório criado.</font></p>
+<p><font color="#666666">Vamos criar uma função também que facilita essa operação.</font></p>
+<p><font color="#666666">	</font></p>
+<p><font color="#666666"></font></p>
+<p><font color="#666666"></font></p>
+<p><font color="#666666"></font></p>
+<p><font color="#666666"></font></p>
+<p><font color="#666666"></font></p>
+<p><font color="#666666">def addprojectmember(project,member):</font></p>
+<p><font color="#666666">  url = “<a href="http://gitlab.dexter.com.br/api/v3/projects/%25s/members">http://gitlab.dexter.com.br/api/v3/projects/%s/members</a>? \</font></p>
+<p><font color="#666666">         private_token=yBAhu9Tdmi84XjSY2yR” </font></p>
+<p><font color="#666666">  data = {“id”:project,”user_id”:member,”access_level”:30}</font></p>
+<p><font color="#666666">  return json.loads(requests.post(url,data=data)._content)</font></p>
+<p><font color="#666666">O parâmetros são na sequência, ID do projeto, ID do usuário e no final      a permissão do usuário que, no nosso caso, é DEVELOPER.</font></p>
+</body>
+</html>

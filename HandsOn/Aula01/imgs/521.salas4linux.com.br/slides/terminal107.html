@@ -1,0 +1,9 @@
+<h1><b>SQLAlchemy na Prática</b></h1>
+<p><b>&lt;número&gt;</b></p>
+<p>Para buscar um dado no banco, podemos utilizar o atributo <b>query </b>do objeto session,</p>
+<p>Na primeira linha buscamos no banco de dados apenas um registro. Foi usado o método <b>first()</b> que retorna apenas o objeto <b>Usuário</b>. Caso ele não seja especificado, será retornada uma lista, mesmo que só exista um usuário com esse id.</p>
+<p>Na segunda linha buscamos todos os registros na tabela <b>Usuário</b>. </p>
+<p><b></b></p>
+<p>usuario = session.query(Usuario).filter(Usuario.id==1).first()</p>
+<p>usuarios = session.query(Usuario).all()</p>
+

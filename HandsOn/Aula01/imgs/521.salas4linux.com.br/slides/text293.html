@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 297</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0088CC" vlink="#2C2C2C" alink="#0088CC">
+<center>
+<a href="text0.html">First page</a> <a href="text292.html">Back</a> <a href="text294.html">Continue</a> <a href="text415.html">Last page</a> <a href="Apostila.html">Overview</a> <a href="img293.html">Graphics</a></center><br>
+<h1><b><font color="#FFFFFF">Automatizando Deploy</b></font></h1>
+<p><font color="#666666">Agora  crie um método chamado <b></font><font color="#FF950E">exec_command</b></font><font color="#666666"> na classe DockerModule que deve receber dois parâmetros. Um deles é o nome do container e o outro é o comando que deverá ser executado dentro dele.</font></p>
+<p><font color="#666666">Para executar os comandos via ssh faça com que a classe <b></font><font color="#FF950E">DockerModule</b></font><font color="#666666"> herde as propriedades da classe <b></font><font color="#FF950E">SSHModule</b></font><font color="#666666">.</font></p>
+<p><font color="#666666">No método <b></font><font color="#FF950E">exec_command</b></font><font color="#666666"> do Docker o código deve ser este:</font></p>
+<p><font color="#666666">def <u>exec_</u>command(self,container,cmd):</font></p>
+<p><font color="#666666">	print “[+] Runing command: %s”%cmd</font></p>
+<p><font color="#666666">	command = “docker exec %s %s”%(container,cmd)</font></p>
+<p><font color="#666666">	print self.execCommand(command)</font></p>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 370</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0088CC" vlink="#2C2C2C" alink="#0088CC">
+<center>
+<a href="text0.html">First page</a> <a href="text365.html">Back</a> <a href="text367.html">Continue</a> <a href="text415.html">Last page</a> <a href="Apostila.html">Overview</a> <a href="img366.html">Graphics</a></center><br>
+<h1><b><font color="#FFFFFF">Criando Dashboard com Flask</b></font></h1>
+<p><font color="#666666">Já no restante do código não precisamos mudar muita coisa.</font></p>
+<p><font color="#666666">Uma linha acima do <b></font><font color="#FF950E">with open(“”)</b></font><font color="#666666"> adicione a seguinte instrução:</font></p>
+<p><font color="#666666">fila = os.listdir(“fila/”) </font></p>
+<p><font color="#666666">for arquivo in fila:</font></p>
+<p><font color="#666666">    with open('fila/%s'%arquivo,'r') as f:</font></p>
+<p><font color="#666666">        j = json.loads(f.read())</font></p>
+<p><font color="#666666">No restante do código basta dar um <b></font><font color="#FF950E">TAB</b></font><font color="#666666"> e incluir dentro do bloco do <b></font><font color="#FF950E">for</b></font><font color="#666666"> que irá funcionar da mesma maneira que anteriormente.</font></p>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 132</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0088CC" vlink="#2C2C2C" alink="#0088CC">
+<center>
+<a href="text0.html">First page</a> <a href="text130.html">Back</a> <a href="text132.html">Continue</a> <a href="text415.html">Last page</a> <a href="Apostila.html">Overview</a> <a href="img131.html">Graphics</a></center><br>
+<h1><b><font color="#FFFFFF">Python e Gitlab</b></font></h1>
+<p><font color="#666666">Vamos criar uma função também para adiconar webhooks a um projeto.</font></p>
+<p><font color="#666666"> def addprojecthook(project_id,hook_url):</font></p>
+<p><font color="#666666">   url = “http://gitlab.dexter.com.br/api/v3/projects/%s/hooks? \                                     private_token=yBAhu9Tdmi84XjSY2yR”%(project_id)</font></p>
+<p><font color="#666666">   data = {“url”:hook_url,”push_events”:True}</font></p>
+<p><font color="#666666">   return json.loads(requests.post(url,data=data)._content)</font></p>
+<p><font color="#666666"> </font></p>
+<p><font color="#666666">Nessa configuração que fizemos, como o push_events foi definido como True, só serão adiconadas webhooks em eventos de push no repositório.</font></p>
+</body>
+</html>

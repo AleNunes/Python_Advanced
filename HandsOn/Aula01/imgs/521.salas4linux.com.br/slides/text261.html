@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 265</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0088CC" vlink="#2C2C2C" alink="#0088CC">
+<center>
+<a href="text0.html">First page</a> <a href="text260.html">Back</a> <a href="text262.html">Continue</a> <a href="text415.html">Last page</a> <a href="Apostila.html">Overview</a> <a href="img261.html">Graphics</a></center><br>
+<h1><b><font color="#FFFFFF">Configurando Autenticação</b></font></h1>
+<p><font color="#666666">Para <b></font><font color="#FF950E">remover uma regra</b></font><font color="#666666"> é necessário mudar somente o método.</font></p>
+<p><font color="#666666">Exemplo:</font></p>
+<p><font color="#666666">sg.revoke_ingress(FromTo=80,ToPort=80,CidrIp=”0.0.0.0/0”,IpProtocol=”tcp”)</font></p>
+<p><font color="#666666">Agora se você verificar no seu console da AWS, verá que não existe mais essa adicionada ao security group.</font></p>
+<p><font color="#666666">Caso você não precise mais desse Security Group basta <b></font><font color="#FF950E">deletá-lo</b></font><font color="#666666">, desde que não exista nenhuma instância ativa utilizando-o.</font></p>
+<p><font color="#666666">sg.delete()</font></p>
+<p><font color="#666666">O grupo será removido.</font></p>
+</body>
+</html>

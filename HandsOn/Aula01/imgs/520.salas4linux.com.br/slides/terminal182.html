@@ -1,0 +1,21 @@
+<h1><b>MongoOps</b></h1>
+<p><b>&lt;número&gt;</b></p>
+<p>Agora veremos um método que será responsável por buscar os serviços que estão pendentes na instalação.</p>
+<p>def getServiceToInstall():</p>
+<p>	return self.db.queue.find({“status”:0})</p>
+<p></p>
+<p>Lembrando que os números representam:</p>
+<p></p>
+<p><b>0</b></p>
+<ul>
+<li>Pendente a instalação</li>
+</ul>
+<p><b>1</b></p>
+<ul>
+<li>Instalando</li>
+</ul>
+<p><b>2</b></p>
+<ul>
+<li>Pendente a remoção</li>
+</ul>
+

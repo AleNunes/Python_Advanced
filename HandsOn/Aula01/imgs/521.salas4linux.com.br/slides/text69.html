@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 70</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0088CC" vlink="#2C2C2C" alink="#0088CC">
+<center>
+<a href="text0.html">First page</a> <a href="text68.html">Back</a> <a href="text70.html">Continue</a> <a href="text415.html">Last page</a> <a href="Apostila.html">Overview</a> <a href="img69.html">Graphics</a></center><br>
+<h1><b><font color="#FFFFFF">Dividindo a Aplicação em Blueprints</b></font></h1>
+<h2><b><font color="#FF950E">Mas como criar uma Blueprint?</b></font></h2>
+<h2><font color="#666666">Crie um arquivo python com o seguinte conteúdo:</font></h2>
+<h2><font color="#666666"></font></h2>
+<p><font color="#666666">from flask import Blueprint</font></p>
+<p><font color="#666666">grupos = Blueprint('grupos',__name__)</font></p>
+<p><font color="#666666">@grupos.route(“/grupos/”)</font></p>
+<p><font color="#666666">def index_grupos():</font></p>
+<p><font color="#666666">     return “Index do gerenciamento de grupos”</font></p>
+</body>
+</html>

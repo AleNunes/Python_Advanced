@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 316</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0088CC" vlink="#2C2C2C" alink="#0088CC">
+<center>
+<a href="text0.html">First page</a> <a href="text311.html">Back</a> <a href="text313.html">Continue</a> <a href="text415.html">Last page</a> <a href="Apostila.html">Overview</a> <a href="img312.html">Graphics</a></center><br>
+<h1><b><font color="#FFFFFF">Construindo DexterOps</b></font></h1>
+<h2><font color="#666666">Agora vamos para o método <b></font><font color="#FF950E">addWebHook</b></font><font color="#666666">:</font></h2>
+<p><font color="#666666">def addWebHook(self,project,url):</font></p>
+<p><font color="#666666">    response = self.make_get(“projects”,”/all”)</font></p>
+<p><font color="#666666">    project_id = min([ r .get(“id”) for r in response.json() if r.get(“name”) == project])</font></p>
+<p><font color="#666666">     data = {“url”:url,”push_events”:True}</font></p>
+<p><font color="#666666">     response = self.make_post(“projects/%s/hooks”%project_id,data)</font></p>
+<p><font color="#666666">     if response.status_code == 201:</font></p>
+<p><font color="#666666">            print “Hook adicionada com sucesso”</font></p>
+</body>
+</html>

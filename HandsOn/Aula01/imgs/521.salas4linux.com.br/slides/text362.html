@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 366</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0088CC" vlink="#2C2C2C" alink="#0088CC">
+<center>
+<a href="text0.html">First page</a> <a href="text361.html">Back</a> <a href="text363.html">Continue</a> <a href="text415.html">Last page</a> <a href="Apostila.html">Overview</a> <a href="img362.html">Graphics</a></center><br>
+<h1><b><font color="#FFFFFF">Criando Dashboard com Flask</b></font></h1>
+<p><font color="#666666">Agora volte no <b></font><font color="#FF950E">Dashboard.py</b></font><font color="#666666"> e vamos criar a rota <b></font><font color="#FF950E">/provisionar/</b></font><font color="#666666"> .</font></p>
+<p><font color="#666666">Abaixo da função <b></font><font color="#FF950E">index</b></font><font color="#666666">, acrescente:</font></p>
+<p><font color="#666666">@app.route(“/provisionar/”,methods=[“POST”])</font></p>
+<p><font color="#666666">def provisionar():</font></p>
+<p><font color="#666666">     return jsonify({“message”:”Servico enviado ao provisionamento”})</font></p>
+<p><font color="#666666">Vamos precisar de duas funções novas também. Então, na linha em que você importa o <b></font><font color="#FF950E">flask</b></font><font color="#666666">, é necessário termos o seguinte:</font></p>
+<p><font color="#666666">from flask import Flask,render_template,jsonify,request</font></p>
+</body>
+</html>

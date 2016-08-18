@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 133</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#000080" vlink="#0000CC" alink="#000080">
+<center>
+<a href="text0.html">Primeira página</a> <a href="text113.html">Voltar</a> <a href="text115.html">Continuar</a> <a href="text192.html">Última página</a> <a href="Apostila.html">Visão geral</a> <a href="img114.html">Figuras</a></center><br>
+<h1><b><font color="#009999">SQLAlchemy na Prática</b></h1>
+<p><b><font color="#009999">&lt;número&gt;</b></p>
+<p><font color="#666666">class Tokens(Base):</p>
+<p><font color="#666666">	__tablename__ = 'tokens'</p>
+<p><font color="#666666">	Id = Column(Integer,primary_key=True)</p>
+<p><font color="#666666">	analista_id = Column(Integer,ForeignKey('analistas.id'))</p>
+<p><font color="#666666">	servidor_id = Column(Integer,ForeignKey('servidor.id'))</p>
+<p><font color="#666666">	token = Column(String)</p>
+<p><font color="#666666">	servidor = relationship(“Servidor”)</p>
+<p><font color="#666666">	analista = relationship(“Analista”)</p>
+<p><b><font color="#004586">	</b></p>
+<p><font color="#666666">Essa classe chamamos de <b><font color="#FF950E">Association Object</b></font><font color="#666666">, que faz a associação entre duas tabelas e tem seus próprios atributos.</font></p>
+</body>
+</html>

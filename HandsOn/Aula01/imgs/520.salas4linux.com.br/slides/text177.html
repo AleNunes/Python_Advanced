@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 208</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#000080" vlink="#0000CC" alink="#000080">
+<center>
+<a href="text0.html">Primeira página</a> <a href="text176.html">Voltar</a> <a href="text178.html">Continuar</a> <a href="text192.html">Última página</a> <a href="Apostila.html">Visão geral</a> <a href="img177.html">Figuras</a></center><br>
+<h1><b><font color="#009999">DockerOps</b></h1>
+<p><b><font color="#009999">&lt;número&gt;</b></p>
+<p><font color="#666666">O método que vamos criar é o <b><font color="#FF950E">createContainer</b></font><font color="#666666">, que deve receber como parâmetro o ID de um container e a imagem do mesmo.</font></p>
+<p><font color="#666666"></p>
+<p><font color="#666666"></p>
+<p><font color="#666666">def createContainer(self,id,image):</p>
+<p><font color="#666666">	command = “docker run -d -ti –name %s %s”%(“%s_%s”%(image,id),”webservercloud”)</p>
+<p><font color="#666666">	ssh = SSHOps()</p>
+<p><font color="#666666">	res = ssh.runCommand(command)</p>
+<p><font color="#666666">	if res['status'] == 1:</p>
+<p><font color="#666666">		print res['message']</p>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 259</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0088CC" vlink="#2C2C2C" alink="#0088CC">
+<center>
+<a href="text0.html">First page</a> <a href="text254.html">Back</a> <a href="text256.html">Continue</a> <a href="text415.html">Last page</a> <a href="Apostila.html">Overview</a> <a href="img255.html">Graphics</a></center><br>
+<h1><b><font color="#FFFFFF">Configurando Autenticação</b></font></h1>
+<p><font color="#666666">Para criar uma <b></font><font color="#FF950E">nova instância</b></font><font color="#666666">, pode-se utilizar a seguinte instrução:</font></p>
+<p><font color="#666666">new_instance = ec2.create_instances(</font></p>
+<p><font color="#666666">								ImageId='ami-b2e3c6d8',</font></p>
+<p><font color="#666666">								MinCount=1,</font></p>
+<p><font color="#666666">								MaxCount=1)</font></p>
+<p><font color="#666666">O <b></font><font color="#FF950E">ImageId</b></font><font color="#666666"> deve ser uma imagem disponível na AWS. Nesse caso, escolhemos um<b></font><font color="#FF950E"> ubuntu 14.04</b></font><font color="#666666">. Este AMI deve ser verificado no próprio site da Amazon.</font></p>
+<p><b><font color="#FF950E">MinCount</b></font><font color="#666666"> e <b></font><font color="#FF950E">MaxCount</b></font><font color="#666666"> são a quantidade de instâncias que você quer criar. Nesse caso, criamos somente uma em InstanceType, a máquina<b></font><font color="#FF950E"> t2.nano</b></font><font color="#666666">, que é o plano mais barato da amazon.</font></p>
+</body>
+</html>

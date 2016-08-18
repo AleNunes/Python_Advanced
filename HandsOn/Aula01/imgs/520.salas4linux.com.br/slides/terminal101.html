@@ -1,0 +1,10 @@
+<h1><b>SQLAlchemy na Prática</b></h1>
+<p><b>&lt;número&gt;</b></p>
+<p>from sqlalchemy import Column, Integer,String</p>
+<p></p>
+<p>class Usuario(Base):</p>
+<p>	__tablename__ = 'usuarios'</p>
+<p>	id = Column(Integer, primary_key=True)</p>
+<p>	nome = Column(String) </p>
+<p>O importante aqui é o <b>class,</b> em que é criada uma classe chamada <b>Usuário,</b> que herda as propriedades da classe <b>Base</b> e os atributos abaixo que serão as colunas da nossa tabela.</p>
+

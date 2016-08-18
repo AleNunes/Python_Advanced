@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 114</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#000080" vlink="#0000CC" alink="#000080">
+<center>
+<a href="text0.html">Primeira página</a> <a href="text102.html">Voltar</a> <a href="text104.html">Continuar</a> <a href="text192.html">Última página</a> <a href="Apostila.html">Visão geral</a> <a href="img103.html">Figuras</a></center><br>
+<h1><b><font color="#009999">SQLAlchemy na Prática</b></h1>
+<p><b><font color="#009999">&lt;número&gt;</b></p>
+<p><font color="#666666">Antes de inserir, consultar, atualizar ou remover dados do banco, precisamos configurar uma sessão, que seria o equivalente ao cursor utilizado na aula de banco de dados.</p>
+<p><font color="#666666">Lembrando que esse <b><font color="#FF950E">sessionmaker</b></font><font color="#666666"> deve estar após o <b></font><font color="#FF950E">create_engine</b></font><font color="#666666">, já que ele recebe como parâmetro uma conexão com banco de dados.</font></p>
+<p><font color="#666666">from sqlalchemy.orm import sessionmaker</p>
+<p><font color="#666666"></p>
+<p><font color="#666666">Session = sessionmaker()</p>
+<p><font color="#666666">Session.configure(bind=engine)</p>
+</body>
+</html>

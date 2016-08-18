@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 192</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0088CC" vlink="#2C2C2C" alink="#0088CC">
+<center>
+<a href="text0.html">First page</a> <a href="text188.html">Back</a> <a href="text190.html">Continue</a> <a href="text415.html">Last page</a> <a href="Apostila.html">Overview</a> <a href="img189.html">Graphics</a></center><br>
+<h1><b><font color="#FFFFFF">Jenkins e Python</b></font></h1>
+<p><b><font color="#FFFFFF">3</b></font></p>
+<p><font color="#666666">Agora que a conexão foi estabelecida podemos criar uma <b></font><font color="#FF950E">Job</b></font><font color="#666666">.</font></p>
+<p><font color="#666666">Abaixo do <b></font><font color="#FF950E">server.get_version()</b></font><font color="#666666">, adicione  o seguinte código:</font></p>
+<p><font color="#666666">print server.create_job(“Python-Job”,jenkins.EMPTY_CONFIG_XML)</font></p>
+<p><b><font color="#FFFFFF">4</b></font></p>
+<p><font color="#666666">Execute o script e veja que foi criada uma <b></font><font color="#FF950E">Job</b></font><font color="#666666"> no Jenkins exatamente com o nome <b></font><font color="#FF950E">Python-Job</b></font><font color="#666666">.</font></p>
+<p><font color="#666666">O segundo parâmetro do método create_job(), deve receber um arquivo xml com as configurações da Job. No nosso caso, passamos o <b></font><font color="#FF950E">jenkins.EMPTY_CONFIG_XML</b></font><font color="#666666"> para que seja criada uma Job               totalmente em branco.</font></p>
+</body>
+</html>

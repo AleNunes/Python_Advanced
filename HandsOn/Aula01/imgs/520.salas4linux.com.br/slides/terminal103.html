@@ -1,0 +1,9 @@
+<h1><b>SQLAlchemy na Prática</b></h1>
+<p><b>&lt;número&gt;</b></p>
+<p>Antes de inserir, consultar, atualizar ou remover dados do banco, precisamos configurar uma sessão, que seria o equivalente ao cursor utilizado na aula de banco de dados.</p>
+<p>Lembrando que esse <b>sessionmaker</b> deve estar após o <b>create_engine</b>, já que ele recebe como parâmetro uma conexão com banco de dados.</p>
+<p>from sqlalchemy.orm import sessionmaker</p>
+<p></p>
+<p>Session = sessionmaker()</p>
+<p>Session.configure(bind=engine)</p>
+

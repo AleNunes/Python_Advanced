@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 288</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0088CC" vlink="#2C2C2C" alink="#0088CC">
+<center>
+<a href="text0.html">First page</a> <a href="text283.html">Back</a> <a href="text285.html">Continue</a> <a href="text415.html">Last page</a> <a href="Apostila.html">Overview</a> <a href="img284.html">Graphics</a></center><br>
+<h1><b><font color="#FFFFFF">Automatizando Deploy</b></font></h1>
+<p><font color="#666666">Vamos criar também um módulo chamado <b></font><font color="#FF950E">DexterbookParser</b></font><font color="#666666">, que será o responsável por ler o arquivo informado e retornar o arquivo YAML já convertido para dicionário.</font></p>
+<p><font color="#666666">Exemplo:</font></p>
+<p><font color="#666666"></font></p>
+<p><font color="#666666">Import yaml</font></p>
+<p><font color="#666666">class DexterbookParser:</font></p>
+<p><font color="#666666">	def __init__(self,book):</font></p>
+<p><font color="#666666">		with open(book,'r') as f:</font></p>
+<p><font color="#666666">			self.book = yaml.load(f.read())</font></p>
+</body>
+</html>

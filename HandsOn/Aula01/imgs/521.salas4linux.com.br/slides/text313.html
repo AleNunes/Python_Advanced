@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 317</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0088CC" vlink="#2C2C2C" alink="#0088CC">
+<center>
+<a href="text0.html">First page</a> <a href="text312.html">Back</a> <a href="text314.html">Continue</a> <a href="text415.html">Last page</a> <a href="Apostila.html">Overview</a> <a href="img313.html">Graphics</a></center><br>
+<h1><b><font color="#FFFFFF">Construindo DexterOps</b></font></h1>
+<h2><font color="#666666">def getProjectRepo(self,project):</font></h2>
+<h2><font color="#666666">    response = self.make_get(“projects”,”/all”)</font></h2>
+<h2><font color="#666666">    project = min([ r.get(“ssh_url_to_repo”) for r in response.json() if r.get(“name”) == project ])</font></h2>
+<h2><font color="#666666">      if project:</font></h2>
+<h2><font color="#666666">           return str(project)</font></h2>
+<h2><font color="#666666">      else:</font></h2>
+<h2><font color="#666666">           print “Projeto não existe”</font></h2>
+<p><font color="#666666">O último método será o <b></font><font color="#FF950E">getProjectRepo</b></font><font color="#666666">:</font></p>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<h1><b>SQLAlchemy na Prática</b></h1>
+<p><b>&lt;número&gt;</b></p>
+<p>class Tokens(Base):</p>
+<p>	__tablename__ = 'tokens'</p>
+<p>	Id = Column(Integer,primary_key=True)</p>
+<p>	analista_id = Column(Integer,ForeignKey('analistas.id'))</p>
+<p>	servidor_id = Column(Integer,ForeignKey('servidor.id'))</p>
+<p>	token = Column(String)</p>
+<p>	servidor = relationship(“Servidor”)</p>
+<p>	analista = relationship(“Analista”)</p>
+<p><b>	</b></p>
+<p>Essa classe chamamos de <b>Association Object</b>, que faz a associação entre duas tabelas e tem seus próprios atributos.</p>
+

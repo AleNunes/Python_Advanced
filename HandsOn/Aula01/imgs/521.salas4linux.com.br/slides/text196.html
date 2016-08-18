@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 199</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0088CC" vlink="#2C2C2C" alink="#0088CC">
+<center>
+<a href="text0.html">First page</a> <a href="text195.html">Back</a> <a href="text197.html">Continue</a> <a href="text415.html">Last page</a> <a href="Apostila.html">Overview</a> <a href="img196.html">Graphics</a></center><br>
+<h1><b><font color="#FFFFFF">Jenkins e Python</b></font></h1>
+<p><font color="#666666">A parte repositório é relativamente simples de se resolver. É possível fazer um <b></font><font color="#FF950E">replace</b></font><font color="#666666"> do valor que está atualmente no xml para o valor que você quer.</font></p>
+<p><b><font color="#FFFFFF">1</b></font></p>
+<p><font color="#666666">Vamos substituir o repositório pelo que foi criado na aula de <b></font><font color="#FF950E">Gitlab</b></font><font color="#666666">.</font></p>
+<p><font color="#666666">with open('xml_exemplo.py','r') as f:</font></p>
+<p><font color="#666666">    config_xml = f.read().replace(<a href="mailto:'git@gitlab.dexter.com.br">'git@gitlab.dexter.com.br</a>',”git@gitlab.dexter.com.br:devops/aplicacao-exemplo.git”)</font></p>
+<p><b><font color="#FFFFFF">2</b></font></p>
+<p><font color="#666666">Feito isso você pode gravar o arquivo modificado em um arquivo            temporário.</font></p>
+<p><font color="#666666">with open(“/tmp/temp_job.xml”,'w') as f: f.write(config_xml)</font></p>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<h1><b>DockerOps</b></h1>
+<p><b>&lt;número&gt;</b></p>
+<p>O método que vamos criar é o <b>createContainer</b>, que deve receber como parâmetro o ID de um container e a imagem do mesmo.</p>
+<p></p>
+<p></p>
+<p>def createContainer(self,id,image):</p>
+<p>	command = “docker run -d -ti –name %s %s”%(“%s_%s”%(image,id),”webservercloud”)</p>
+<p>	ssh = SSHOps()</p>
+<p>	res = ssh.runCommand(command)</p>
+<p>	if res['status'] == 1:</p>
+<p>		print res['message']</p>
+

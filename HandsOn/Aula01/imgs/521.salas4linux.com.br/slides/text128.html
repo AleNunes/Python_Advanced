@@ -1,0 +1,18 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 129</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0088CC" vlink="#2C2C2C" alink="#0088CC">
+<center>
+<a href="text0.html">First page</a> <a href="text127.html">Back</a> <a href="text129.html">Continue</a> <a href="text415.html">Last page</a> <a href="Apostila.html">Overview</a> <a href="img128.html">Graphics</a></center><br>
+<h1><b><font color="#FFFFFF">Python e Gitlab</b></font></h1>
+<p><font color="#666666">Agora podemos utilizar dos recursos do <b></font><font color="#FF950E">list comprehension </b></font><font color="#666666">para buscar o id do projeto e dos usuários que queremos adicionar aos repositórios.</font></p>
+<p><font color="#666666">  projeto = [ p for p in getprojects() if p['name'] == 'projeto-integracao']</font></p>
+<p><font color="#666666">  membro = [m for m in getusers() if m['username'] == 'desenvolvedor1']</font></p>
+<p><font color="#666666">  addprojectmember(projeto[0]['id'],membro[0]['id'])</font></p>
+<p><font color="#666666">Na função addprojectmember, o access_level foi ajustado como 30 que é o valor equivalente a  permissão de desenvolvedor do gitlab.</font></p>
+</body>
+</html>

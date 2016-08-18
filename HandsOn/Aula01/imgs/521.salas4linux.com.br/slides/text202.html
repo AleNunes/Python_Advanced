@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 205</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0088CC" vlink="#2C2C2C" alink="#0088CC">
+<center>
+<a href="text0.html">First page</a> <a href="text201.html">Back</a> <a href="text203.html">Continue</a> <a href="text415.html">Last page</a> <a href="Apostila.html">Overview</a> <a href="img202.html">Graphics</a></center><br>
+<h1><b><font color="#FFFFFF">Jenkins e Python</b></font></h1>
+<h2><font color="#666666">Todas as alterações no XML foram feitas somente em tempo de execução do script. Assim que ele for finalizado essas alterações serão perdidas, então, é necessário fazer a <b></font><font color="#FF950E">persistência</b></font><font color="#666666"> em um arquivo.</font></h2>
+<h2><font color="#666666"></font></h2>
+<h2><font color="#666666">Podemos usar  a mesma função <b></font><font color="#FF950E">open</b></font><font color="#666666"> para escrever em um arquivo, mas ela recebe como parâmetro uma <b></font><font color="#FF950E">string</b></font><font color="#666666">. Então, é necessário converter o xml em string para depois gravar no arquivo.</font></h2>
+<h2><font color="#666666"></font></h2>
+<h2><font color="#666666">Exemplo:</font></h2>
+<h2><font color="#666666"></font></h2>
+<p><font color="#666666">with open('job_modificada.xml','w') as f:</font></p>
+<p><font color="#666666">            f.write(etree.tostring(root))</font></p>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 119</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#000080" vlink="#0000CC" alink="#000080">
+<center>
+<a href="text0.html">Primeira página</a> <a href="text106.html">Voltar</a> <a href="text108.html">Continuar</a> <a href="text192.html">Última página</a> <a href="Apostila.html">Visão geral</a> <a href="img107.html">Figuras</a></center><br>
+<h1><b><font color="#009999">SQLAlchemy na Prática</b></h1>
+<p><b><font color="#009999">&lt;número&gt;</b></p>
+<p><font color="#666666">Para buscar um dado no banco, podemos utilizar o atributo <b><font color="#FF950E">query </b></font><font color="#666666">do objeto session,</font></p>
+<p><font color="#666666">Na primeira linha buscamos no banco de dados apenas um registro. Foi usado o método <b><font color="#FF950E">first()</b></font><font color="#666666"> que retorna apenas o objeto <b></font><font color="#FF950E">Usuário</b></font><font color="#666666">. Caso ele não seja especificado, será retornada uma lista, mesmo que só exista um usuário com esse id.</font></p>
+<p><font color="#666666">Na segunda linha buscamos todos os registros na tabela <b><font color="#FF950E">Usuário</b></font><font color="#666666">. </font></p>
+<p><b><font color="#004586"></b></p>
+<p><font color="#666666">usuario = session.query(Usuario).filter(Usuario.id==1).first()</p>
+<p><font color="#666666">usuarios = session.query(Usuario).all()</p>
+</body>
+</html>

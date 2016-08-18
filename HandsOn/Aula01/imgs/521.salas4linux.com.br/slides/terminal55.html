@@ -1,0 +1,8 @@
+<h1><b>Módulo Paramiko</b></h1>
+<p><b>&lt;número&gt;</b></p>
+<p>O SSH precisa que seja aceito o fingerprint quando acessamos um servidor pela primeira vez. Este fingerprint serve para garantir a autenticidade de um servidor.</p>
+<p>Para carregar os fingerprints dos servidores já acessados, utilizamos o seguinte comando:</p>
+<p>client.load_system_host_keys()</p>
+<p>client.set_missing_host_key_policy(paramiko.AutoAddPolicy())</p>
+<p>Com a segunda linha, o paramiko aceita o fingerprint automaticamente, caso seja a primeira vez que acessa um servidor.</p>
+

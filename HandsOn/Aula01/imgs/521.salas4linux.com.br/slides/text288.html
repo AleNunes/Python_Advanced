@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 292</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0088CC" vlink="#2C2C2C" alink="#0088CC">
+<center>
+<a href="text0.html">First page</a> <a href="text287.html">Back</a> <a href="text289.html">Continue</a> <a href="text415.html">Last page</a> <a href="Apostila.html">Overview</a> <a href="img288.html">Graphics</a></center><br>
+<h1><b><font color="#FFFFFF">Automatizando Deploy</b></font></h1>
+<p><font color="#666666">Nossa aplicação já está ficando melhor estruturada. Caso você queria testar é só informar o caminho do <b></font><font color="#FF950E">dexterbook</b></font><font color="#666666"> após o parâmetro <b></font><font color="#FF950E">-i </b></font><font color="#666666">e você terá na tela o dicionário de retorno.</font></p>
+<p><font color="#666666">Vamos importar o módulo do Docker.</font></p>
+<p><font color="#666666">from Modules.DockerModule import DockerModule</font></p>
+<p><font color="#666666">No método <b></font><font color="#FF950E">make</b></font><font color="#666666"> precisamos receber os dados do arquivo yml pra fazer o Deploy.</font></p>
+<p><font color="#666666">def make(self,deploy_params):</font></p>
+<p><font color="#666666">	d = DockerModule()</font></p>
+<p><font color="#666666">	d.createContainer(deploy_params.get(“application”))</font></p>
+<p><font color="#666666">            d.startContainer(deploy_params.get(“application”))</font></p>
+</body>
+</html>

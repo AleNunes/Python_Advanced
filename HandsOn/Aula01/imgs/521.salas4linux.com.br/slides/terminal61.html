@@ -1,0 +1,13 @@
+<h1><b>Módulo Datetime</b></h1>
+<p><b>&lt;número&gt;</b></p>
+<p>Podemos usar também para calcular o tempo de expiração de um token com validade de 1 hora.</p>
+<p>from datetime Import datetime</p>
+<p>acesso = datetime(2016,01,22,00,00,00)</p>
+<p>atual = datetime(2016,01,22,01,01,00)</p>
+<p></p>
+<p>if (atual - acesso).total_seconds() &gt; 3600:</p>
+<p>    print &quot;seu token expirou&quot;</p>
+<p>else:</p>
+<p>    print &quot;Acesso liberado&quot;</p>
+<p><b></b></p>
+

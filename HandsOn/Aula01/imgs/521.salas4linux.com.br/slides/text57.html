@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 58</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0088CC" vlink="#2C2C2C" alink="#0088CC">
+<center>
+<a href="text0.html">First page</a> <a href="text56.html">Back</a> <a href="text58.html">Continue</a> <a href="text415.html">Last page</a> <a href="Apostila.html">Overview</a> <a href="img57.html">Graphics</a></center><br>
+<h1><b><font color="#FFFFFF">Criando Rotas e Views</b></font></h1>
+<h2><font color="#666666">Já temos a funções <b></font><font color="#FF950E">index_usuarios</b></font><font color="#666666"> que responde pela rota <b></font><font color="#FF950E">/usuarios/</b></font><font color="#666666">. Quando não especificamos o método que uma rota deve receber, por padrão é entendido o GET.</font></h2>
+<h2><font color="#666666">Para definir um método fazemos da seguinte maneira:</font></h2>
+<h2><font color="#666666"></font></h2>
+<h2><font color="#666666"></font></h2>
+<h2><font color="#666666">O <b></font><font color="#FF950E">parâmetro methods</b></font><font color="#666666"> recebe como valor uma lista. Podemos, então, colocar mais de um. Por exemplo:</font></h2>
+<h2><font color="#666666"></font></h2>
+<h2><font color="#666666">      </font></h2>
+<p><font color="#666666">@app.route(“/usuarios/”,methods=[“POST”]) </font></p>
+<p><font color="#666666">@app.route(“/usuarios/”,methods=[“PUT”,”POST”,”DELETE”])</font></p>
+<p><font color="#666666">  Mas esse não será o nosso caso.</font></p>
+</body>
+</html>

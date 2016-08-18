@@ -1,0 +1,10 @@
+<h1><b>SQLAlchemy na Prática</b></h1>
+<p><b>&lt;número&gt;</b></p>
+<p>A primeira ação para inserir um registro é criar uma instância da classe que já realizada para gerar a tabela no banco de dados.</p>
+<p>Com essas duas linhas fizemos um insert em nosso banco de dados na tabela usuários, mas mesmo usando o <b>SQLAlchemy</b>, ainda é necessário executar um <b>commit</b> para efetivar a inserção.</p>
+<p><b></b></p>
+<p>usuario = Usuarios(id=1,nome='Alan Kay')</p>
+<p>session.add(usuario)</p>
+<p><b></b></p>
+<p>session.commit()</p>
+

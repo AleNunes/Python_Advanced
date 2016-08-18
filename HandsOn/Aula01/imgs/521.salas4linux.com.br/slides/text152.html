@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 155</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0088CC" vlink="#2C2C2C" alink="#0088CC">
+<center>
+<a href="text0.html">First page</a> <a href="text151.html">Back</a> <a href="text153.html">Continue</a> <a href="text415.html">Last page</a> <a href="Apostila.html">Overview</a> <a href="img152.html">Graphics</a></center><br>
+<h1><b><font color="#FFFFFF">Liberando API do Docker</b></font></h1>
+<p><b><font color="#FFFFFF">3</b></font></p>
+<p><font color="#666666">Caso o seu sistema seja baseado em Systemd, o arquivo a ser modificado é diferente. Você precisa editar o arquivo:</font></p>
+<p><font color="#666666">/lib/systemd/system/docker.service</font></p>
+<p><b><font color="#FFFFFF">4</b></font></p>
+<p><font color="#666666">Na linha ExecStart e no final, adicione o seguinte parâmetro: </font></p>
+<p><font color="#666666">-H 0.0.0.0:2376</font></p>
+<p><b><font color="#FFFFFF">5</b></font></p>
+<p><font color="#666666">Feito isso, reinicie o Docker:</font></p>
+<p><font color="#666666">systemctl restart docker.service</font></p>
+</body>
+</html>

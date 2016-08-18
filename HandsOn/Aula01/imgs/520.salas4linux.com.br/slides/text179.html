@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 210</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#000080" vlink="#0000CC" alink="#000080">
+<center>
+<a href="text0.html">Primeira página</a> <a href="text178.html">Voltar</a> <a href="text180.html">Continuar</a> <a href="text192.html">Última página</a> <a href="Apostila.html">Visão geral</a> <a href="img179.html">Figuras</a></center><br>
+<h1><b><font color="#009999">SSHOps</b></h1>
+<p><b><font color="#009999">&lt;número&gt;</b></p>
+<p><font color="#666666">No Construtor da <b><font color="#FF950E">Classe SSHOps</b></font><font color="#666666">, precisamos efetuar a conexão com o servidor.</font></p>
+<p><font color="#666666">def __init__(self):</p>
+<p><font color="#666666">	self.client = SSHClient()</p>
+<p><font color="#666666">	self.client.load_system_host_keys()</p>
+<p><font color="#666666">self.client.set_missing_host_keys_policy(paramiko.AutoAddPolicy())</p>
+<p><font color="#666666">	self.client.connect(“192.168.0.2”)</p>
+</body>
+</html>

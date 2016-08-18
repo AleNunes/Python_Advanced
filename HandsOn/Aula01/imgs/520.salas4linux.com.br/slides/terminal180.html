@@ -1,0 +1,10 @@
+<h1><b>SSHOps</b></h1>
+<p><b>&lt;número&gt;</b></p>
+<p>Agora que a conexão já foi estabelecida através do método construtor, precisamos de um método chamado <b>runCommand</b>, que irá executar os comandos remotamente.</p>
+<p>def runCommand(self,command):</p>
+<p>	stdin,stdout,stderr = self.client.exec_command(command)</p>
+<p>	if stderr.channel.recv_exit_status() != 0:</p>
+<p>		return {“status”:1,”message”:stderr.read()}</p>
+<p>	else:</p>
+<p>		Return {“status”:0,”message”:stdout.read()}</p>
+

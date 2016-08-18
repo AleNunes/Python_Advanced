@@ -1,0 +1,11 @@
+<h1><b>ProvisionOps</b></h1>
+<p><b>&lt;número&gt;</b></p>
+<p>Precisamos agora de um método chamado <b>InstallService</b>, que foi chamado no <b>DexterOps</b> para fazer a instalação do serviço.</p>
+<p>def InstallService(self):</p>
+<p>	service = ServiceClass()</p>
+<p>	service.id = self.id</p>
+<p>	servicedao = ServiceDao(service)</p>
+<p>	service = servicedao.get()</p>
+<p>	docker = DockerOps()</p>
+<p>	res = docker.createContainer(service.id, service.prduct.image)</p>
+

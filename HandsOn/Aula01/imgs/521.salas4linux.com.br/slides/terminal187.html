@@ -1,0 +1,7 @@
+<h1><b>Classe ServiceDAO</b></h1>
+<p><b>&lt;número&gt;</b></p>
+<p>Precisamos também criar um método chamado <b>get()</b> que irá fazer a busca desse serviço no banco de dados, nos possibilitando passar os seus dados como parâmetro para a construção desse serviço.</p>
+<p>def get(self):</p>
+<p>	try:</p>
+<p>		Service = session.query(ServiceModel,Client,Product).join(Client,Product).filter(ServiceModel.id==self.service.id).first()</p>
+

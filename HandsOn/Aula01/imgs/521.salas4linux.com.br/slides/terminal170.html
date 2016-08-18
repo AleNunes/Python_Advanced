@@ -1,0 +1,10 @@
+<h1><b>DexterOps</b></h1>
+<p><b>&lt;número&gt;</b></p>
+<p>Nele teremos uma função chamada <b>Start()</b>, que irá verificar a fila e enviar o serviço para a instalação.</p>
+<p>def Start():</p>
+<p>	mongo = MongoOps() #instancia objeto mongoops</p>
+<p>	queue = mongo.getQueue() #pega toda a fila</p>
+<p>	For service in mongo.getServiceToInstall():</p>
+<p>		prov = ProvisionOps(service[“_id”])</p>
+<p>		res = prov.InstallService()</p>
+

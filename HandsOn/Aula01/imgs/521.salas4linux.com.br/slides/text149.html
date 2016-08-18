@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 152</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0088CC" vlink="#2C2C2C" alink="#0088CC">
+<center>
+<a href="text0.html">First page</a> <a href="text148.html">Back</a> <a href="text150.html">Continue</a> <a href="text415.html">Last page</a> <a href="Apostila.html">Overview</a> <a href="img149.html">Graphics</a></center><br>
+<h1><b><font color="#FFFFFF">Network com Docker</b></font></h1>
+<p><b><font color="#004586"></b></font></p>
+<p><font color="#666666"></font></p>
+<p><font color="#666666"></font></p>
+<p><b><font color="#004586"></b></font></p>
+<p><b><font color="#004586"></b></font></p>
+<p><b><font color="#004586"></b></font></p>
+<p><font color="#666666"></font></p>
+<p><b><font color="#FFFFFF">1</b></font></p>
+<p><font color="#666666">Crie uma rede interna do Docker com o nome de <b></font><font color="#FF950E">Dexterlan</b></font><font color="#666666">.</font></p>
+<p><b><font color="#009999">1</font><font color="#666666">#</b> docker network create dexterlan</font></p>
+<p><b><font color="#FFFFFF">2</b></font></p>
+<p><font color="#666666">Crie o container de teste utilizando a nova rede criada. </font></p>
+<p><font color="#004586">(Execute na mesma linha!)</font></p>
+<p><b><font color="#009999">2</font><font color="#666666">#</b> docker run -it --name node01 --hostname node01 --net dexterlan net-teste /bin/bash </font></p>
+<p><b><font color="#FFFFFF">3</b></font></p>
+<p><font color="#666666">É possível também definir um IP fixo para o container que será executado.</font></p>
+<p><b><font color="#009999">3</font><font color="#666666">#</b> docker run -it --name node01 --hostname node01 --net      dexterlan --ip 172.18.0.2 net-teste /bin/bash </font></p>
+</body>
+</html>

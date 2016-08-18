@@ -1,0 +1,11 @@
+<h1><b>SQLAlchemy na Prática</b></h1>
+<p><b>&lt;número&gt;</b></p>
+<p>Agora falta atualizar um registro no banco de dados.</p>
+<p>Para fazer isso, também é necessário executar um <b>select</b> e depois alterar os atributos do objeto retornado.</p>
+<p>E depois de alterar o dado, podemos fazer novamente um <b>commit</b> e persistir a informação no banco.</p>
+<p><b></b></p>
+<p>usuario = session.query(Usuario).filter_by(id==1).first()</p>
+<p>usuario.nome = “Ada Lovelace”</p>
+<p><b></b></p>
+<p>session.commit()</p>
+

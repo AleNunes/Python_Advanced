@@ -1,0 +1,13 @@
+<h1><b>SQLAlchemy na Prática</b></h1>
+<p><b>&lt;número&gt;</b></p>
+<p>class Analistas(Base): </p>
+<p>	__tablename__ = 'analistas'</p>
+<p>	Id = Column(Integer,primary_key=True)</p>
+<p>	Nome = Column(String)</p>
+<p>	servidor = relationship(“Tokens”)</p>
+<p></p>
+<p>class Servidores(Base):</p>
+<p>	Id = Column(Integer,primary_key=True)</p>
+<p>	endereco = Column(String)</p>
+<p>No caso, quem manda na associativa é o analista, pois é ele quem solicita o acesso ao servidor. Por este motivo, colocamos o relacionamento somente nessa tabela.</p>
+

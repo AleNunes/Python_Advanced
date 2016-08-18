@@ -1,0 +1,9 @@
+<h1><b>SQLAlchemy na Prática</b></h1>
+<p><b>&lt;número&gt;</b></p>
+<p>Para remover um registro, primeiro precisamos buscá-lo no banco de dados e depois fazer o delete.</p>
+<p>Com essas duas linhas fizemos um delete em nosso banco de dados na tabela <b>usuários</b>, mas mesmo usando o <b>SQLAlchemy</b>, ainda é necessário executar um <b>commit</b> para efetivar a inserção.</p>
+<p>usuario = session.query(Usuario).filter_by(id==1).first()</p>
+<p>session.delete(usuario)</p>
+<p><b></b></p>
+<p>session.commit()</p>
+

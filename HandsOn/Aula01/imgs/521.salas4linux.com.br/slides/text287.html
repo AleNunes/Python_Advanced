@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 291</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0088CC" vlink="#2C2C2C" alink="#0088CC">
+<center>
+<a href="text0.html">First page</a> <a href="text286.html">Back</a> <a href="text288.html">Continue</a> <a href="text415.html">Last page</a> <a href="Apostila.html">Overview</a> <a href="img287.html">Graphics</a></center><br>
+<h1><b><font color="#FFFFFF">Automatizando Deploy</b></font></h1>
+<p><font color="#666666">Crie um método também chamado <b></font><font color="#FF950E">getArgs</b></font><font color="#666666">. Ele será responsável por retornar os argumentos passados via linha de comando. Seu conteúdo deverá ser o seguinte:</font></p>
+<p><font color="#666666">def getArgs(self):</font></p>
+<p><font color="#666666">	retun self.parser.parse_args()</font></p>
+<p><font color="#666666">Agora o bloco <b></font><font color="#FF950E">if __name__ == '__main__'</b></font><font color="#666666"> ficará da seguinte maneira:</font></p>
+<p><font color="#666666">dt = DeployTool()</font></p>
+<p><font color="#666666">args = dt.getArgs()</font></p>
+<p><font color="#666666">       dbp = DexterbookParser(args.i)</font></p>
+<p><font color="#666666">              print dbp.get()</font></p>
+</body>
+</html>

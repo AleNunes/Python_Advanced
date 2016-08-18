@@ -1,0 +1,8 @@
+<h1><b>Módulo Paramiko</b></h1>
+<p><b>&lt;número&gt;</b></p>
+<p>Agora só resta estabelecer uma conexão. Para isso, utilizamos o método connect.</p>
+<p>client.connect(“192.168.0.2”)</p>
+<p> E podemos executar comandos remotamente.</p>
+<p>stdin,stdout,stderr = client.exec_command('ls -la')</p>
+<p>Esse método retorna 3 valores: entrada padrão, saída padrão e saída de erro e, com eles, podemos saber se um comando foi executado com sucesso ou não.</p>
+

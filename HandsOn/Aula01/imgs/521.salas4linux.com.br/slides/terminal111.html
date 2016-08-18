@@ -1,0 +1,18 @@
+<h1><b>SQLAlchemy na Prática</b></h1>
+<p><b>&lt;número&gt;</b></p>
+<p>from sqlalchemy import Column, Integer,String,ForeignKey</p>
+<p>From sqlalchemy.orm import relationship</p>
+<p></p>
+<p>class Funcionario(Base):</p>
+<p>	__tablename__ = funcionarios'</p>
+<p>	id = Column(Integer, primary_key=True)</p>
+<p>	nome = Column(String)</p>
+<p>	dependentes = relationship(“Dependentes”)</p>
+<p></p>
+<p>class Dependentes(Base):</p>
+<p>	__tablename__ = 'serviidores'</p>
+<p>	Id = Column(Integer,primary_key=True)</p>
+<p>	nome = Column(String)</p>
+<p>	funcionario_id = Column(Integer,ForeignKey(“funcionarios.id”))</p>
+<p>	</p>
+

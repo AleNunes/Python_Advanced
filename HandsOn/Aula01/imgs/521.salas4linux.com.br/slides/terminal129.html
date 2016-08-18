@@ -1,0 +1,14 @@
+<h1><b>MongoDB com Python</b></h1>
+<p><b>&lt;número&gt;</b></p>
+<p>Temos também como adicionar ou remover itens no subdocumento.</p>
+<p>	</p>
+<p><b></b></p>
+<p>db.fila.update(</p>
+<p>{“_id”:1,”servidores.nome”:”dns”},</p>
+<p>{“$pull”:{“servidores”:{“nome”:”dns”}}}</p>
+<p>)</p>
+<p><b></b></p>
+<p>db.fila.update({“_id”:1},</p>
+<p>{“$addToSet”:{“servidores”:{“nome”:”powedns”,						                               {“endereco”:”192.168.0.98”}}}</p>
+<p>})</p>
+

@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 211</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#000080" vlink="#0000CC" alink="#000080">
+<center>
+<a href="text0.html">Primeira página</a> <a href="text179.html">Voltar</a> <a href="text181.html">Continuar</a> <a href="text192.html">Última página</a> <a href="Apostila.html">Visão geral</a> <a href="img180.html">Figuras</a></center><br>
+<h1><b><font color="#009999">SSHOps</b></h1>
+<p><b><font color="#009999">&lt;número&gt;</b></p>
+<p><font color="#666666">Agora que a conexão já foi estabelecida através do método construtor, precisamos de um método chamado <b><font color="#FF950E">runCommand</b></font><font color="#666666">, que irá executar os comandos remotamente.</font></p>
+<p><font color="#666666">def runCommand(self,command):</p>
+<p><font color="#666666">	stdin,stdout,stderr = self.client.exec_command(command)</p>
+<p><font color="#666666">	if stderr.channel.recv_exit_status() != 0:</p>
+<p><font color="#666666">		return {“status”:1,”message”:stderr.read()}</p>
+<p><font color="#666666">	else:</p>
+<p><font color="#666666">		Return {“status”:0,”message”:stdout.read()}</p>
+</body>
+</html>

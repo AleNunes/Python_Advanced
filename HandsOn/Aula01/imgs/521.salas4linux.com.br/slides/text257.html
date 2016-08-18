@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 261</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0088CC" vlink="#2C2C2C" alink="#0088CC">
+<center>
+<a href="text0.html">First page</a> <a href="text256.html">Back</a> <a href="text258.html">Continue</a> <a href="text415.html">Last page</a> <a href="Apostila.html">Overview</a> <a href="img257.html">Graphics</a></center><br>
+<h1><b><font color="#FFFFFF">Configurando Autenticação</b></font></h1>
+<p><font color="#666666">É importante também gerenciar os <b></font><font color="#FF950E">security groups</b></font><font color="#666666">, uma vez que dependendo da aplicação que você for publicar em uma instância em <b></font><font color="#FF950E">EC2</b></font><font color="#666666">, pode-se precisar de portas diferentes das que vem na política padrão.</font></p>
+<p><font color="#666666">Para criar um <b></font><font color="#FF950E">security group</b></font><font color="#666666"> utilize a seguinte instrução:</font></p>
+<p><font color="#666666"></font></p>
+<p><font color="#666666"></font></p>
+<p><font color="#666666"></font></p>
+<p><font color="#666666"></font></p>
+<p><font color="#666666"></font></p>
+<p><font color="#666666"></font></p>
+<p><font color="#666666">sg = ec2.create_security_group(</font></p>
+<p><font color="#666666">									GroupName=”Python-SG”,</font></p>
+<p><font color="#666666">									Description=”Grupo criado atraves do boto3”)</font></p>
+<p><font color="#666666">A variável SG irá armazenar o valor do security group. Agora você pode criar uma instância e já associá-la a esse <b></font><font color="#FF950E">security group</b></font><font color="#666666">.</font></p>
+</body>
+</html>

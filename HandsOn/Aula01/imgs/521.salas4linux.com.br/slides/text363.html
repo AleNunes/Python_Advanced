@@ -1,0 +1,17 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 367</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0088CC" vlink="#2C2C2C" alink="#0088CC">
+<center>
+<a href="text0.html">First page</a> <a href="text362.html">Back</a> <a href="text364.html">Continue</a> <a href="text415.html">Last page</a> <a href="Apostila.html">Overview</a> <a href="img363.html">Graphics</a></center><br>
+<h1><b><font color="#FFFFFF">Criando Dashboard com Flask</b></font></h1>
+<p><font color="#666666">Agora se você acessar no navegador <b></font><font color="#FF950E">localhost:5000/provisionar/</b></font><font color="#666666">, será retornada a mensagem que informamos no <b></font><font color="#FF950E">return jsonify()</b></font><font color="#666666"> no <b></font><font color="#FF950E">Dashboard.py</b></font><font color="#666666">.</font></p>
+<p><font color="#666666">Para receber os dados que foram enviados por ajax, volte na função provisionar e adicione o código:</font></p>
+<p><font color="#666666">print request.json()</font></p>
+<p><font color="#666666">O retorno virá em <b></font><font color="#FF950E">string</b></font><font color="#666666">, então, é necessário importar o módulo json e fazer o <b></font><font color="#FF950E">json.loads(request.json())</b></font><font color="#666666"> para que o python considere um dicionário.</font></p>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<h1><b>SQLAlchemy na Prática</b></h1>
+<p><b>&lt;número&gt;</b></p>
+<p>association_table = Table('analistas_servidores', 	Base.metadada,</p>
+<p>Column('analistas_id',Integer,ForeignKey('analistas.id')),</p>
+<p>Column('servidores_id',Integer,ForeignKey('servidores.id')))</p>
+<p>É muito comum também fazermos um relacionamento de <b>muitos para muitos</b>. No nosso caso, muitos analistas podem acessar muitos servidores.</p>
+
