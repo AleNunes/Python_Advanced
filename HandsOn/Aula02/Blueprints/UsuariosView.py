@@ -65,9 +65,12 @@ def delete_usuarios(id):
 
 @usuario.route("/usuarios/<id>/", methods=["GET"])
 def get_usuarios(id):
-    u = json.loads(UsuariosModel.objects(id=id).to_json())
-    response = {"Usuarios":u}
+    u = UsuariosModel.objects(id=id).first()
+    if not u:
+        return "Nao encontrado", 404
+    u = json.loads(u.to_json())
+
     status_cod = 200 #para retornar status da  pagina, por exemplo 404 Page not Found
-    return jsonify(response), status_cod
+    return jsonify(u), status_cod
 
 
