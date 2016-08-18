@@ -17,8 +17,16 @@ def usuarios():
 
 @usuario.route("/usuarios/", methods=["POST"])
 def add_usuarios():
-    print request.get_json()
-    response = {"message":"Cadastro de Usuarios"}
+    data = request.get_json()
+    novo = UsuariosModel()
+
+    #novo.nome = data.get("nome")
+    #novo.email = data.get("email")
+    for k in data.keys():
+        setattr(novo, k , data.get(k))
+
+    novo.save()
+    response = {"message":"Usuarios cadastrado"}
     return jsonify(response)
 
 
@@ -27,19 +35,39 @@ def add_usuarios():
 
 @usuario.route("/usuarios/<id>", methods=["PUT"])
 def update_usuarios(id):
-    response = {"message":"Atualizacao de Usuario"}
+
+    data = request.get_json()
+    u = UsuariosModel.objects(id=id).first()
+
+    for k in data.keys():
+        setattr(u, k , data.get(k))
+    u.save()
+
+    response = {"Usuarios":data}
     return jsonify(response)
+
 
 
 @usuario.route("/usuarios/<id>", methods=["DELETE"])
 def delete_usuarios(id):
-    response = {"message":"Excluir Usuario %s"%id }
+
+    u = UsuariosModel.objects(id=id).first()
+    if not u: #Caso u nao seja encontrado   
+        return jsonify({"Message":"Usuario nao encontrado"}),404    #retorna page not found
+    #apaga elemento
+    u.delete()
+    
+    response = {"Message":"Usuario excluido"}
     return jsonify(response)
+
+
+
 
 @usuario.route("/usuarios/<id>/", methods=["GET"])
 def get_usuarios(id):
+    u = json.loads(UsuariosModel.objects(id=id).to_json())
+    response = {"Usuarios":u}
     status_cod = 200 #para retornar status da  pagina, por exemplo 404 Page not Found
-    response = {"message":"Mostando Usuario %s"%id}
     return jsonify(response), status_cod
 
 
