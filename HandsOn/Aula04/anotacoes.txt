@@ -1,0 +1,24 @@
+GitLab:
+devops
+4linux123
+
+Criar chave publica para colocar no servidor do GitLab
+cat .ssh/id_rsa.pub
+
+git remote show     --- Para mostrar 
+git remote -v       --- Para  ver o caminho do git remoto
+git log             --- Para ver os commits que foram feitos
+git diff            --- Para ver diferencas entre arquivo ANTES DO COMMIT!!
+
+git reset --hard origin/master      --- Para zerar tudo!  Deixa tudo como esta no servidor! Usar caso fizer algo errado
+
+git reset --hard a71a8ad93ba4299b9a2347935faaf43b612cb153   --- (pegar id no git log) Zera para esse commit especifico
+
+git commit --amend  --- Para corrigir o ultimo commit, com pequenas alteracoes - Para nao gerar commit a toa
+
+
+
+Criar projeto
+    Criar Milestones (como se fossem objetivos)
+        Criar issues (tarefas)
+
