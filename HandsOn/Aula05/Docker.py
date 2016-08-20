@@ -23,12 +23,29 @@ class Docker:
         print "Container criado com sucesso"
 
 
+    def remove_container(self, name):
+        container = self.client.stop(name)
+        container = self.client.remove_container(name)
+        print "Container removido com sucesso"
+
+
+    def exec_command(self, name, cmd):
+        # Apenas cria o comando, mas nao executa. Retorna o ID para executar abaixo
+        exec_id = self.client.exec_create(name, cmd)
+        response = self.client.exec_start(exec_id)
+        print response 
+
+
+
 if __name__=="__main__":
 
     d = Docker()
+#    d.create_container("proxy","ubuntu")
 #    print d.list_container()
-    d.create_container("proxy","ubuntu")
 
+    d.exec_command("proxy", "apt-get update")
+    
+#    d.remove_container("proxy")
 
 
 
