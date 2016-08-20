@@ -1,0 +1,92 @@
+DOCKER:
+
+ - criar container
+docker run -ti ubuntu /bin/bash
+
+ - Apagar todos os containerss
+docker rm -f $(docker ps -a
+
+ - PARAR e sair do container
+CTRL+D
+
+ - Iiciar maquina novamente
+docker start [id]
+
+ - Sair do container e deixar container rodando
+CTRL+P+Q
+
+ - Para executar comando no container 
+docker exec [id] /bin/bash
+docker exec -ti 80c676498c07 /bin/bash
+
+
+ - Entra no container e RODANDO o comando que foi passado na criacao  (Ex:  /bin/bash)
+docker attach [id]
+
+ - Para pegar versao do SO:
+root@80c676498c07:/# lsb_release -a
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 16.04 LTS
+Release:	16.04
+Codename:	xenial
+
+
+ -  Parar o docker
+docker stop 80c676498c07
+
+ - Remover o docker
+docker rm 80c676498c07
+
+ - Criar container chamado web1
+docker run -dti --name web1 --hostname web1 ubuntu /bin/bash
+
+ - Lista os servicos e portas
+apt-get install net-tools
+netstat -ntpl
+
+
+ - Listar todas as bridges
+docker network ls
+
+ - Criar uma rede para o docker (chamada docker-lan3)
+docker network create --subnet 172.20.0.0/16 docker-lan3 
+
+ - Para ver informacoes da rede
+docker network inspect docker-lan3
+
+ - Criar docker com IP FIXO
+docker run -ti --name teste --net docker-lan3 --ip 172.20.0.48 ubuntu  /bin/bash
+
+ - pegar o ipp
+docker inspect teste | grep ipaddress -i
+
+ - Criar rota para pingar IP do docker
+sudo ip r add 172.20.0.0/16 via 192.168.0.2
+
+##################
+ - ALTERAR PERMISSAO PARA USAR API!!!  Usar a linha abaixo
+vim /lib/systemd/system/docker.service 
+ExecStart=/usr/bin/docker daemon -H 0.0.0.0:2376 -H fd:// 
+
+service docker restart
+
+ - Verificar se o docker esta rodando na porta configurada (2376)
+netstat -ntpl
+
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      499/sshd        
+tcp6       0      0 :::2376                 :::*                    LISTEN      2986/docker     #### <<--------
+tcp6       0      0 :::22                   :::*                    LISTEN      499/sshd 
+
+###########################
+
+ - Instalar libs do docker para o python
+sudo pip install docker-py --upgrade
+
+
+
+
+
+
