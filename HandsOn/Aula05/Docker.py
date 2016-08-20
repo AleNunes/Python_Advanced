@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+#VER ANOTACOES.TXT PARA CONFIGURAR LIB DO DOCKER
+
 
 from docker import Client
 
@@ -35,6 +37,11 @@ class Docker:
         response = self.client.exec_start(exec_id)
         print response 
 
+    
+    def inspect_container(self, name):
+        container = self.client.inspect_container(name)
+        print container
+
 
 
 if __name__=="__main__":
@@ -43,7 +50,9 @@ if __name__=="__main__":
 #    d.create_container("proxy","ubuntu")
 #    print d.list_container()
 
-    d.exec_command("proxy", "apt-get update")
+    d.exec_command("proxy", "ls -la")
+    
+    d.inspect_container("proxy")
     
 #    d.remove_container("proxy")
 
