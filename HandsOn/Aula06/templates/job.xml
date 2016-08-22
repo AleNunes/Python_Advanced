@@ -28,9 +28,6 @@
   <triggers/>
   <concurrentBuild>false</concurrentBuild>
   <builders>
-    <hudson.tasks.Shell>
-      <command>echo &quot;Comando teste&quot;</command>
-    </hudson.tasks.Shell>
   </builders>
   <publishers/>
   <buildWrappers/>

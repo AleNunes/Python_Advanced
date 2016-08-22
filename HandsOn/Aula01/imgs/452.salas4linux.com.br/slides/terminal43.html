@@ -1,8 +1,0 @@
-<h1><b>Dica</b></h1>
-<h2><b>Colocando Comentário no iptables para Agilizar na Leitura da Regra:</b></h2>
-<h2><b>1#</b> iptables -t filter -A INPUT -s 0/0 -d 127.0.0.1 -j ACCEPT <b>-m comment --comment</b> &quot;Aceita tudo Loopback&quot;</h2>
-<h2>Tudo que vier de qualquer lugar com destino a Loopback (127.0.0.1) permiti o acesso. </h2>
-<h2><b>2#</b> iptables -nL</h2>
-<p><i><b>Servidor: Security</b></i></p>
-<p><b>Facilita para obter de forma rápida o objetivo daquela regra, sem a necessidade de entrar em arquivos.</b></p>
-
