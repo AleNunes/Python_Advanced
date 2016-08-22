@@ -1,0 +1,15 @@
+<h1><b>Implementando LVM</b></h1>
+<h2><b>Implementação Prática:</b></h2>
+<h2><b>1 – Instalando e criando volumes LVM:</b></h2>
+<h2><b>1# </b>apt-get install lvm2</h2>
+<h2><b>2# </b>pvs</h2>
+<h2><b>3# </b>pvcreate /dev/md0</h2>
+<h2><b>4# </b>pvcreate /dev/md1</h2>
+<h2><b>5# </b>pvs -v</h2>
+<h2><b>6# </b>pvscan</h2>
+<h2><b>7# </b>pvdisplay</h2>
+<p><b>Volumes Físicos:</b></p>
+<p>Cada volume físico criado se comporta exatamente como uma partição, a vantagem é que estes volumes podem ser combinados conforme a necessidade do administrador.</p>
+<p>Os comandos <b>pvs</b>,<b> pvscan </b>e<b> pvdisplay</b> permitem visualizar com diferentes níveis de detalhamento os volumes criados. </p>
+<p><i><b>Servidor: Storage</b></i></p>
+

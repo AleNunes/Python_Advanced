@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 70</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text64.html">Back</a> <a href="text66.html">Continue</a> <a href="text336.html">Last page</a> <a href="452_2016_3.3_fv.html">Overview</a> <a href="img65.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Servidor DNS</b></h1>
+<p><font color="#4C4C4C">Root Servers</p>
+<p><font color="#4C4C4C">DNS Primário</p>
+<p><font color="#4C4C4C">TLD</p>
+<p><font color="#4C4C4C">(.com) </p>
+<p><font color="#4C4C4C">DNS Autoridade</p>
+<p><font color="#4C4C4C">google.com</p>
+<p><font color="#4C4C4C">1. Quem é</p>
+<p><font color="#4C4C4C">Google.com ?</p>
+<p><font color="#4C4C4C">2. Tem no Cache?</p>
+<p><font color="#4C4C4C">3. Pergunta Root </p>
+<p><font color="#4C4C4C">Servers</p>
+<p><font color="#4C4C4C">4. Indica o TLD </p>
+<p><font color="#4C4C4C">responsável</p>
+<p><font color="#4C4C4C">5. Indica o SOA </p>
+<p><font color="#4C4C4C">Responsável</p>
+<p><font color="#4C4C4C">6. Responde com o IP do </p>
+<p><font color="#4C4C4C">www.google.com</p>
+<br>
+<h3>Notes:</h3>
+<p><b>Resolução Recursiva</b></p>
+<p><b></b></p>
+<p><b>10.</b>O servidor de nomes reenvia a consulta para o servidor &quot;.br-www.exemplo.com.br;</p>
+<p><b>11.</b>&quot;.br&quot; retorna o mesmo tipo de resposta, porém como uma dica mais próxima: &quot;Não sei quem é, mas sei quem pode responder melhor: com.br.&quot;;</p>
+<p><b>12.</b>Passos 10 e 11 são efetuados mais uma vez, e agora a resposta é &quot;Não sei quem é, mas sei quem pode responder melhor: exemplo.com.br.&quot;;</p>
+<p><b>13.</b>Após repetir o passo 10, finalmente a resposta será da autoridade sobre o domínio exemplo.com.br. Vai ser respondido o IP, juntamente ao TTL do registro, ou será respondido &quot;inexistente&quot;;</p>
+<p><b>14.</b>O servidor de nomes fará &quot;cache&quot; da resposta, ao mesmo tempo que a repassa para o resolvedor original;</p>
+<p><b>15.</b>O resolvedor repassa a resposta para o navegador;</p>
+<p><b>16.</b>O navegador inicia uma conexão &quot;HTTP&quot; com o IP descoberto.</p>
+</body>
+</html>

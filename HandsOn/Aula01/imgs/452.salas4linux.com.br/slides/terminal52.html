@@ -1,0 +1,10 @@
+<h1><b>Servidor DHCP</b></h1>
+<p><i><b>Servidor: Linux Interna</b></i></p>
+<h2><b>Cliente DHCP:</b></h2>
+<h2>A máquina Linux Interna está com o IP estático, portanto precisamos alterar a configuração no arquivo de redes, para que a interface eth0 não tenha mais um ip estático e sim um ip atribuído pelo servidor DHCP.</h2>
+<h2><b>1#</b> su - root</h2>
+<h2><b>2#</b> vim /etc/network/interfaces</h2>
+<h2><b>auto eth0</b></h2>
+<h2><b>iface eth0 inet dhcp</b></h2>
+<h2>post-up route add -net 192.168.200.128/25 gw 192.168.200.129</h2>
+

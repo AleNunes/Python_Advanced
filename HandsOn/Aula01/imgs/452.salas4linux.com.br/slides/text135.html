@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 142</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text134.html">Back</a> <a href="text136.html">Continue</a> <a href="text336.html">Last page</a> <a href="452_2016_3.3_fv.html">Overview</a> <a href="img135.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Servidor Postfix</b></h1>
+<h2><b><font color="#004586">Definindo o Formato da Caixa de E-mail:</b></h2>
+<h2><b><font color="#004586">3 - Ative o padrão maildir através da </b></h2>
+<h2><b><font color="#004586">edição do arquivo main.cf:</b></h2>
+<h2><b><font color="#FF0000">1# </b>vim /etc/postfix/main.cf</h2>
+<h2><font color="#FF3333">35<font color="#993366"> home_mailbox = Maildir/</font></h2>
+<h2><font color="#993366"></h2>
+<h2><b><font color="#CC0000"></b></h2>
+<h2><font color="#004586"></h2>
+<h2><font color="#004586"></h2>
+<h2><b><font color="#FF0000">2# </b>service postfix reload</h2>
+<p><b><font color="#993366">Existem dois padrões em relação a caixa de correio Postfix:</b></p>
+<p><b><font color="#FF950E">MailBox</b> → Todas as mensagens são armazenadas em um único arquivo texto (Padrão do Postfix);</p>
+<p><font color="#FF950E"> <b>MailDir</b> → Utiliza um sistema de diretórios e distribui um arquivo para armazenar cada mensagem.</p>
+<p><i><b><font color="#993366">Servidor: Datacenter</b></i></p>
+<p><b><font color="#CC0000">&lt;Não se esqueça de comentar a linha 32 <u>mailbox_command </u>referente ao padrão mailbox&gt;</b></p>
+<br>
+<h3>Notes:</h3>
+<p><b>MailBox ou Mbox - </b>é o formato padrão para caixa de correio do Postfix. Este formato armazena todas as mensagens em um único arquivo de texto. Esses arquivos são nomeados de acordo com o nome do usuário e armazenados em geral em /var/mail ou /var/spool/mail.</p>
+<p></p>
+<p><b>Desvantagens:</b></p>
+<p>• Encarece a exclusão de mensagens (requer regravação no arquivo inteiro, exceto se a mensagem a ser excluída for a última);</p>
+<p></p>
+<p><b>MailDir -</b> usa diretórios e um arquivo por mensagem. A exclusão de mensagens sempre é muito rápida.</p>
+<p></p>
+<p><b>Desvantagem:</b></p>
+<p>• O tempo para varrer a caixa de correio e produzir uma lista de mensagens é maior, pois todos os arquivos devem ser abertos e lidos.</p>
+</body>
+</html>

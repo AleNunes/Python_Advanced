@@ -1,0 +1,14 @@
+<h1><b>Servidor Apache</b></h1>
+<p><i><b>Servidor: WebServerCloud</b></i></p>
+<h2><b>Apache SSL (https) – Ativando SSL no Site da Dexter:</b></h2>
+<ul>
+<li>Desativar o módulo do CGI que não iremos utilizar:</li>
+<li><b>1#</b> a2dismod cgi</li>
+<li>Ativar o módulo de suporte a SSL no Apache:</li>
+<li><b>2#</b> a2enmod ssl </li>
+<li>Arquivo de configuração do SSL</li>
+<li><b>3#</b> cp /opt/4linux/dexter-ssl.conf /etc/apache2/sites-vailables </li>
+<li>Configurar SSL no VirtualHost:</li>
+<li><b>4#</b> cd /etc/apache2/sites-available/</li>
+</ul>
+

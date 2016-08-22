@@ -1,0 +1,14 @@
+<h1><b>Firewall Linux</b></h1>
+<h2><b>3ª → Liberar ping do Firewall para internet e rede LAN:</b></h2>
+<h2><b>1#</b> iptables -t filter -nL --line-numbers </h2>
+<h2><b>2#</b> ping 8.8.8.8</h2>
+<h2>Ping OK, o servidor Firewall está pingando para Internet. </h2>
+<h2><b>Tente da máquina Linux Externa pingar o Firewall – Não será permitido!</b></h2>
+<h2><b>3#</b> ping 200.100.50.99</h2>
+<h2><b>Agora tente da máquina DataCenter pingar o Firewall.</b></h2>
+<h2><b>4#</b> ping 192.168.200.1 ou ping 192.168.200.129</h2>
+<h2>Ping OK, o servidor DataCenter está pingando o Firewall e vice-versa.</h2>
+<h2><b>Volte para o servidor Firewall e tente pingar o google.com.br?</b></h2>
+<h2><b>5#</b> ping google.com.br	 <b>Unknown host google.com!</b></h2>
+<p><i><b>Servidor: Security</b></i></p>
+

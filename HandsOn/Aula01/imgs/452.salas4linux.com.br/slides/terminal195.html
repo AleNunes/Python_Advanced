@@ -1,0 +1,13 @@
+<h1><b>Implementando RAID</b></h1>
+<h2><b>Configurando o Sistema RAID:</b></h2>
+<h2><b>3 – Acompanhe a sincronização dos discos através do segundo terminal:</b></h2>
+<h2>Personalities : [raid1]</h2>
+<h2>md0 : active raid1 sdd[2](S) sdc[1] sdb[0]</h2>
+<h2>      5238720 blocks super 1.2 [2/2] [UU]      </h2>
+<h2>[======&gt;..............]  resync = 34.7% (1822720/5238720) finish=3.1min speed=18108K/sec</h2>
+<h2><b>4 – Grave a configuração feita no arquivo de gerenciamento de software RAID:</b></h2>
+<h2><b>1# </b># vim /etc/mdadm/mdadm.conf</h2>
+<h2>9 DEVICE /dev/sd[bcdef]</h2>
+<h2>10 ARRAY /dev/md0 devices=/dev/sdb,/dev/sdc,/dev/sdd</h2>
+<p><i><b>Servidor: Storage</b></i></p>
+

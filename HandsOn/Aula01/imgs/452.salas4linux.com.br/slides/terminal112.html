@@ -1,0 +1,14 @@
+<h1><b>Servidor Apache</b></h1>
+<p><i><b>Servidor: WebServerCloud</b></i></p>
+<h2><b>Apache SSL (https) – Ativando SSL no Site da Dexter:</b></h2>
+<ul>
+<li>Gerar Chave Privada:</li>
+<p><b>1#</b> openssl genrsa -out /etc/ssl/dexter.key 1024</p>
+<li>Gerar Requisição (CSR - Certificate Signing Request):</li>
+<p><b>2# </b>openssl req -new -key /etc/ssl/dexter.key -out /etc/ssl/dexter.csr</p>
+<li></li>
+<li>Auto Assinar o Certificado:</li>
+<p><b>3#</b> openssl x509 -req -days 365 -in /etc/ssl/dexter.csr  -signkey  /etc/ssl/dexter.key  -out /etc/ssl/dexter.crt</p>
+</ul>
+<p> </p>
+

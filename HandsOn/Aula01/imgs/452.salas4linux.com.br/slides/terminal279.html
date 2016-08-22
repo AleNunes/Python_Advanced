@@ -1,0 +1,14 @@
+<h1><b>Servidor Proxy com Squid</b></h1>
+<p><i><b>Servidor: Security</b></i></p>
+<ul>
+<li>Entre no arquivo de configuração do Squid:</li>
+<li><b>1# </b>vim +55 /etc/squid3/squid.conf</li>
+<li><b>55</b> auth_param basic program /usr/lib/squid3/squid_ldap_auth -b dc=dexter,dc=com,dc=br -f uid=%s 192.168.200.131</li>
+<li><b>56</b> auth_param basic children 5</li>
+<li><b>57</b> auth_param basic realm Servidor Proxy Dexter Courier</li>
+<li><b>58</b> auth_param basic credentialsttl 2 hours</li>
+<li><b>84</b> acl AUTH proxy_auth REQUIRED</li>
+<li><b>86</b> acl LISTAVIP src 192.168.200.10 192.168.200.11</li>
+</ul>
+<h2><b>Implementando  a Autenticação com o LDAP:</b></h2>
+

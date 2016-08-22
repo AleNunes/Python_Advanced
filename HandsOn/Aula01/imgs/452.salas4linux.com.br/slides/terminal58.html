@@ -1,0 +1,26 @@
+<h1><b>Pergunta LPI</b></h1>
+<h2>A máquina chamada “Desktop” tem o MAC address &quot;08:00:2b:4c:59:23&quot;. Esse host precisa sempre receber do servidor DHCP o IP 192.168.1.2. Qual das alternativas permitirá que isso ocorra?</h2>
+<h2><b>A.</b> host Desktop {</h2>
+<h2>hardware-ethernet 08:00:2b:4c:59:23;</h2>
+<h2>fixed-address 192.168.1.2;</h2>
+<h2>}</h2>
+<h2><b>B.</b> host Desktop {</h2>
+<h2>mac=08:00:2b:4c:59:23;</h2>
+<h2>ip=192.168.1.2;</h2>
+<h2>}</h2>
+<h2><b>C. </b>host Desktop = 08:00:2b:4c:59:23 192.168.1.2</h2>
+<h2><b>Resposta: Alternativa D</b></h2>
+<p><b>D. host Desktop {</b></p>
+<p><b>hardware ethernet 08:00:2b:4c:59:23;</b></p>
+<p><b>fixed-address 192.168.1.2;</b></p>
+<p><b>}</b></p>
+<p><b>E.</b> host Desktop {</p>
+<p>hardware-address 08:00:2b:4c:59:23;</p>
+<p>fixed-ip 192.168.1.2;</p>
+<p>}</p>
+
+<h3>Notes:</h3>
+<p><b>Alternativa D: Resposta Correta!</b></p>
+<p><b></b></p>
+<p>Mutias questões LPI cobram comandos exatos alterando alterando apenas pequenos detalhes como no exemplo acima, por isso ao se preparar para a prova preste atenção na sintaxe de configuração e execução dos comandos apresentados em cada tópico.</p>
+

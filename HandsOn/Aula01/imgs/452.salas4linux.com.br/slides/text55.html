@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 60</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text54.html">Back</a> <a href="text56.html">Continue</a> <a href="text336.html">Last page</a> <a href="452_2016_3.3_fv.html">Overview</a> <a href="img55.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Servidor DHCP</b></h1>
+<h2><b><font color="#004586">Reinicie o Serviço:</b></h2>
+<h2><b><font color="#FF0000">1#</b> /etc/init.d/isc-dhcp-server stop</h2>
+<h2><b><font color="#FF0000">2#</b> /etc/init.d/isc-dhcp-server start</h2>
+<h2><b><font color="#FF0000">3#</b> ps aux | grep dhcp</h2>
+<h2><b><font color="#FF0000">4#</b> tail -f /var/lib/dhcp/dhcpd.leases</h2>
+<h2><b><font color="#FF950E">Na máquina Linux Interna limpe o ip e solicite um novo</b></h2>
+<h2><b><font color="#FF0000">5#</b> dhclient -r</h2>
+<h2><b><font color="#FF0000">6#</b> dhclient -v eth0</h2>
+<p><i><b><font color="#993366">Servidor: Audit</b></i></p>
+<br>
+<h3>Notes:</h3>
+<p><b>• option domain-name dexter.com.br →  </b>Nome de domínio do cliente;</p>
+<p><b></b></p>
+<p><b>• option domain-name-servers 192.168.2XX.3,192.168.2XX.2 →  </b>Essa opção lista os servidores de nomes (DNS) a serem utilizados para resolução de nomes;</p>
+<p></p>
+<p><b>• option routers 192.168.2XX.1 →  </b>O cliente, além do número IP, recebe também a informação do número do &quot;gateway&quot; de sua rede;</p>
+<p></p>
+<p><b>• default-lease-time 600 → </b>Servidores &quot;DHCP&quot; cedem endereços sob pedido por um tempo pré-determinado. O padrão nesse exemplo é ceder o endereço IP por 600 segundos, ou 10 minutos;</p>
+<p></p>
+<p><b>• max-lease-time 7200 → </b>Caso o cliente solicite um tempo maior, o tempo máximo permitido será de 7.200 segundos (2 horas);</p>
+<p></p>
+<p><b>• min-lease-time 1000 →</b> Tempo mínimo de concessão de 1000 segundos (Aproximadamente 16 minutos);</p>
+</body>
+</html>

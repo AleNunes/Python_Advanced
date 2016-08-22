@@ -1,0 +1,27 @@
+<h1><b>Servidor DHCP</b></h1>
+<h2> ddns-update-style none;</h2>
+<h2> log-facility local7; </h2>
+<h2> subnet 192.168.200.0 netmask 255.255.255.128 {</h2>
+<h2>      Authoritative;</h2>
+<h2> 		range 192.168.200.100 192.168.200.110;</h2>
+<h2> 		server-identifier audit;</h2>
+<h2> 		option domain-name &quot;dexter.com.br&quot;;</h2>
+<h2> 		option domain-name-servers 192.168.200.30,192.168.200.130;</h2>
+<h2> 		option routers 192.168.200.1;</h2>
+<h2> 		default-lease-time 600;</h2>
+<h2> 		max-lease-time 7200;</h2>
+<h2> 		min-lease-time 1000;</h2>
+<h2> }</h2>
+<p><i><b>Servidor: Audit</b></i></p>
+
+<h3>Notes:</h3>
+<p><b>• ddns-update-style → </b>Esquema de armazenamento das informações de redes dos clientes. Atualmente são implementados dois esquemas de : O modo de atualização do DNS improvisado (ad-hoc) e o modo de atualização do esquema de interação do intervalo DHCP-DNS (interim);</p>
+<p></p>
+<p><b>• deny unknown-clients →</b> Nega acesso a MAC não cadastrado;</p>
+<p></p>
+<p>• <b>log-facility local7 →</b> Criaremos uma entrada no /etc/rsyslog.conf para os logs do servidor DHCP;</p>
+<p></p>
+<p>• <b>subnet 192.168.2XX.0 netmask 255.255.255.0 →</b> Qual rede o DHCP irá responder quando for solicitado;</p>
+<p></p>
+<p>•<b> range 192.168.2XX.100 192.168.2XX.110 →</b> Faixa de IPs que será disponibilizado aos clientes;</p>
+

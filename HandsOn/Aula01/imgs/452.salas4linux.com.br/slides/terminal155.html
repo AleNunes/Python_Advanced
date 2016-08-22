@@ -1,0 +1,11 @@
+<h1><b>Servidor Postfix</b></h1>
+<h2><b>Configurando o Webmail RoundCube: </b></h2>
+<h2><b>3 – Altere a senha de acesso ao mysql e a timezone:</b></h2>
+<h2><b>1# </b>vim db.inc.php</h2>
+<h2>25 $rcmail_config['db_dsnw'] = 'mysql://roundcube:<b>4linux</b>@localhost/roundcubemail';</h2>
+<h2><b>&lt;Na linha 25 do arquivo db.inc.php substitua a senha padrão  4linux pela senha cadastrada  por você no mysql&gt;</b></h2>
+<h2><b>2# </b>vim +946 /etc/php.ini</h2>
+<h2>date.timezone = <b>America/Sao_Paulo</b></h2>
+<h2><b>3# </b>systemctl restart httpd.service</h2>
+<p><i><b>Servidor: WebServerInterno</b></i></p>
+

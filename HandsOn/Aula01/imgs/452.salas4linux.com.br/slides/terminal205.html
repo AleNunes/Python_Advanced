@@ -1,0 +1,12 @@
+<h1><b>Implementando LVM</b></h1>
+<h2><b>Implementação Prática:</b></h2>
+<h2><b>2 – Com o volume físico criado, crie um grupo de volumes:</b></h2>
+<h2><b>1# </b>vgcreate vg-samba /dev/md0</h2>
+<h2><b>2# </b>vgs -v</h2>
+<h2><b>3# </b>vgdisplay</h2>
+<h2><b>4# </b>vgextend vg-samba /dev/md1</h2>
+<h2><b>5# </b>vgs</h2>
+<p><b>Grupos de Volumes:</b></p>
+<p>Um grupo de volumes pode ser redimensionado de acordo com a sua necessidade. Se você precisa de mais espaço, basta adicionar discos através do comando <b>vgextent</b>; também é possível redimensionar espaço utilizando o comando <b>vgreduce</b>.</p>
+<p><i><b>Servidor: Storage</b></i></p>
+

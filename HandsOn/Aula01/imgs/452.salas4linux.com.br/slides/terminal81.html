@@ -1,0 +1,19 @@
+<h1><b>Servidor DNS</b></h1>
+<h2><b>DNS Secundário:</b></h2>
+<h2><b>1#</b> cp /root/dns/named.conf.local /etc/named.conf.local</h2>
+<h2><b>2#</b> cat /etc/named.conf.local</h2>
+<h2>zone &quot;dexter.com.br&quot; {</h2>
+<h2> 		type slave;</h2>
+<h2> 		masters { 192.168.200.30; };</h2>
+<h2> 		file &quot;/var/named/slaves/db.slave.dexter&quot;;</h2>
+<h2>};</h2>
+<h2>zone &quot;200.168.192.in-addr.arpa&quot; {</h2>
+<h2> 		type slave;</h2>
+<h2> 		masters { 192.168.200.30; };</h2>
+<h2> 		file &quot;/var/named/slaves/rev.slave.dexter&quot;;</h2>
+<h2>};</h2>
+<h2><b>2#</b> systemctl restart named.service</h2>
+<h2><b>3#</b> ls /var/named/slaves/</h2>
+<p><i><b>Servidor: WebServerInterno</b></i></p>
+<p><b>Hmm … algum problema</b></p>
+

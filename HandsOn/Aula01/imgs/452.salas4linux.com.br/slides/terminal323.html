@@ -1,0 +1,13 @@
+<h1><b>Servidor FTP</b></h1>
+<h2><b>Iniciando o Servidor FTP:</b></h2>
+<h2><b>1 - Insira o serviço para iniciar com o sistema:</b></h2>
+<h2><b>1#</b> systemctl enable vsftpd.service
+<b>2 – Reinicie o serviço do vsftpd:</b>
+<b>2#</b> systemctl restart vsftpd.service
+<b>3 – Verifique se o serviço foi iniciado e a porta utilizada:</b>
+<b>3# </b>ss -ntlp | grep vsftpd</h2>
+<h2><b>4 – Carregue os módulos necessários para liberar acesso passivo:</b>
+<b>4# </b>modprobe ip_conntrack</h2>
+<h2><b>5# </b>modprobe ip_nat_ftp</h2>
+<p><i><b>Servidor: WebServer Interno</b></i></p>
+

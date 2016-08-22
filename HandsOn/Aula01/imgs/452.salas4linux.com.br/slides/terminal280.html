@@ -1,0 +1,16 @@
+<h1><b>Servidor Proxy com Squid</b></h1>
+<p><i><b>Servidor: Security</b></i></p>
+<p><b>Implementando as ACLs com listas de bloqueio e Extensões:</b></p>
+<ul>
+<li>Antes de implementarmos as acls, vamos fazer a configuração das listas de controle de acesso:</li>
+<h2>89 acl LISTANEGRA url_regex &quot;/etc/squid3/acls/listanegra.list&quot;</h2>
+<h2>90 acl LISTABRANCA url_regex &quot;/etc/squid3/acls/listabranca.list&quot;</h2>
+<h2> 91 acl CONTEMTORRENT urlpath_regex -i torrent</h2>
+<h2> 92 acl CONTEMISO urlpath_regex -i \.(iso)</h2>
+<h2> 93 acl CONTEMVIDEO urlpath_regex -i \.(mpg|mpeg|avi|mov|flv|wmv|rmvb|mp3|mp4)</h2>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+

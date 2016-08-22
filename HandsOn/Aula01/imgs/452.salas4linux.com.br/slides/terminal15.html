@@ -1,0 +1,17 @@
+<h1><b>Firewall Linux</b></h1>
+<h2><b>Sobrevivendo no Iptables:</b></h2>
+<h2><b>1#</b> iptables -t filter -nL --line-numbers</h2>
+<h2><b>2#</b> iptables -t filter <b>-D</b> INPUT 1 </h2>
+<h2><b>3#</b> iptables -t filter -nL</h2>
+<h2><b>4#</b> iptables -t filter -A INPUT -j ACCEPT</h2>
+<h2><b>5#</b> iptables -t filter -nL</h2>
+<h2><b>6#</b> iptables -t filter <b>-F</b></h2>
+<h2><b>7#</b> iptables -t filter -nL</h2>
+<h2><b>8#</b> iptables -t filter -A INPUT -j ACCEPT</h2>
+<p><b>-D  →  (delete)</b> – Deleta uma regra de uma Chain;</p>
+<p><b>-F  → (flush)</b> – Deleta todas as regras das Chains de uma tabela;</p>
+<p><i><b>Servidor: Security</b></i></p>
+
+<h3>Notes:</h3>
+<p><b>Tabela de Parâmetros do Iptables</b></p>
+

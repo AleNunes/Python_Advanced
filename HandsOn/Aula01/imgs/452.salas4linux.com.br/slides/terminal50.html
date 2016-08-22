@@ -1,0 +1,19 @@
+<h1><b>Servidor DHCP</b></h1>
+<h2><b>Tipos de atribuição de endereços:</b></h2>
+<ul>
+<ul>
+<li><b>Atribuição Dinâmica</b> → Quando um cliente DHCP solicita um endereço IP, o servidor DHCP vai ao pool de endereços IP disponíveis (não utilizados) e atribui um endereço IP por um período de tempo negociável;</li>
+<li></li>
+<li><b>Atribuição Estática →</b> Usado quando desejamos que certo cliente tenha determinado endereço IP, no DHCP é possível &quot;amarrar&quot; o endereço &quot;MAC&quot; da máquina cliente ao endereço IP desejado.</li>
+</ul>
+</ul>
+
+<h3>Notes:</h3>
+<p><b>Fundamentação</b></p>
+<p></p>
+<p>O que um servidor DHCP faz é bastante simples. Ele responde aos pacotes de broadcast das estações, enviando um pacote com um dos endereços IP disponíveis e os demais dados da rede. </p>
+<p></p>
+<p>Os pacotes de broadcast são endereçados ao endereço &quot;255.255.255.255&quot; e retransmitidos pelo switch da rede para todas as portas, diferente dos pacotes endereçados a um endereço específico, que são transmitidos apenas na porta relacionada a ele.</p>
+<p></p>
+<p>Periodicamente o servidor DHCP verifica se as estações ainda estão lá, exigindo uma renovação do &quot;aluguel&quot; do endereço IP. Isso permite que os endereços IP sejam gastos apenas com quem realmente estiver online, evitando que os endereços disponíveis se esgotem.</p>
+

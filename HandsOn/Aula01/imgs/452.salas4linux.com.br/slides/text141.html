@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 148</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text140.html">Back</a> <a href="text142.html">Continue</a> <a href="text336.html">Last page</a> <a href="452_2016_3.3_fv.html">Overview</a> <a href="img141.html">Graphics</a></center><br>
+<h1></h1>
+<p><font color="#FFFFFF"></p>
+<ul>
+<li><font color="#FFFFFF">É possível bloquear esta configuração através da edição do arquivo main.cf conforme abaixo:</li>
+<p><b><font color="#FFFFFF"> <font color="#FF0000"> 1</font><font color="#FFFFFF"># </b>vim /etc/postfix/main.cf  		</font></p>
+<p><b><font color="#FFD320"> 	<font color="#FF950E">	47 disable_vrfy_command = yes </b></font></p>
+<p><b><font color="#FF0000">   2<font color="#FFFFFF"># </b>service postfix reload</font></p>
+<p><font color="#FFFFFF">  <b><font color="#FF0000">3</font><font color="#FFFFFF"># </b> telnet localhost 25</font></p>
+<p><font color="#FFFFFF">    	helo dexter.com.br</p>
+<p><b><font color="#FFFFFF">    	vrfy suporte</b></p>
+<p><b><font color="#FFFFFF"> 	<font color="#FF950E">	502 5.5.1 VRFY command is disabled</b></font></p>
+<p><font color="#FFFFFF">    quit</p>
+</ul>
+<p><b><font color="#CC0000">&lt;Adicione a linha abaixo ao final do arquivo&gt;</b></p>
+<p><font color="#FF950E">Desativando o VRFY</p>
+<p><i><b><font color="#FF950E">Servidor: Datacenter</b></i></p>
+</body>
+</html>

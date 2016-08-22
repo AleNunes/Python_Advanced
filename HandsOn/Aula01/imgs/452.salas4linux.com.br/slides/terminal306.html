@@ -1,0 +1,18 @@
+<h1><b>Servidor OpenVPN</b></h1>
+<p><b>Arquivo de configuração do cliente VPN:</b></p>
+<p>tls-client</p>
+<p>ca /etc/openvpn/ca.crt</p>
+<p>cert /etc/openvpn/linux-externa.crt</p>
+<p>key /etc/openvpn/linux-externa.key</p>
+<p>dh /etc/openvpn/dh2048.pem</p>
+<p>script-security 3 system</p>
+<p>up /etc/openvpn/update-resolv-conf</p>
+<p>down /etc/openvpn/update-resolv-conf</p>
+<p><i><b>Servidor: Security</b></i></p>
+
+<h3>Notes:</h3>
+<p><b>Descrição da diretivas</b>:</p>
+<p></p>
+<p><b>tls-client</b>: Habilita conexão TLS, ajudando a bloquear ataques DoS e flooding na porta do OpenVPN;</p>
+<p><b>script-security</b>: Permite executar scripts personalizados.</p>
+

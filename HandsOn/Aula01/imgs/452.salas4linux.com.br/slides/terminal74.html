@@ -1,0 +1,20 @@
+<h1><b>Servidor DNS</b></h1>
+<h2><b>1#</b> rndc status</h2>
+<h2><b>2#</b> rndc reload</h2>
+<h2><b>3#</b> host uol.com.br</h2>
+<h2><b>4#</b> rndc dumpdb -cache</h2>
+<h2><b>5#</b> cat /var/cache/bind/named_dump.db</h2>
+<h2><b>6#</b> grep uol /var/cache/bind/named_dump.db</h2>
+<h2><b>7#</b> rndc flush</h2>
+<h2><b>8#</b> rndc dumpdb -cache</h2>
+<h2><b>9#</b> grep uol /var/cache/bind/named_dump.db</h2>
+<p><i><b>Servidor: Audit</b></i></p>
+<p><b>Explorando a ferramenta RNDC:</b></p>
+
+<h3>Notes:</h3>
+<p><b>Utilitário RNDC</b></p>
+<p><b></b></p>
+<p>O comando rndc (Remote Named Daemon Control) é uma ferramenta de gerenciamento do named. </p>
+<p></p>
+<p>A vantagem dessa ferramenta é que ela permite controlar o named muito facilmente sem ter que ficar enviando sinais ao processo do mesmo.</p>
+

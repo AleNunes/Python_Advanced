@@ -1,0 +1,14 @@
+<h1><b>Servidor Samba</b></h1>
+<h2><b>2 – O próximo passo é alterar para &quot;ad&quot; o modo de execução do Samba 4: </b></h2>
+<h2><b>1# </b>vim /etc/default/sernet-samba</h2>
+<h2>....</h2>
+<h2>7 SAMBA_START_MODE=&quot;ad&quot;</h2>
+<h2><b></b></h2>
+<h2><b>3 – Durante a instalação um arquivo de configuração do Kerberos foi gerado, que precisa apenas ser copiado para o diretório /etc: </b></h2>
+<h2><b>2# </b>cp /var/lib/samba/private/krb5.conf /etc/krb5.conf</h2>
+<h2><b></b></h2>
+<h2><b>4 – Feito os ajustes inicie o serviço do Samba 4: </b></h2>
+<h2><b>3# </b>systemctl start sernet-samba-ad</h2>
+<p><i><b>Servidor: FileServer</b></i></p>
+<h2><b>Provisionamento do Samba:</b></h2>
+

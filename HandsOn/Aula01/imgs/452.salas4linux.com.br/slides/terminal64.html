@@ -1,0 +1,47 @@
+<h1><b>Servidor DNS</b></h1>
+<p><b>Root Servers</b></p>
+<p></p>
+<p></p>
+<p><b></b></p>
+<p><b>ccTLD</b> (Country Code Top Level Domain)</p>
+<p></p>
+<p></p>
+<p><b>gTLD</b> (Generic Top Level Domain)</p>
+<p><b>http://root-servers.org</b></p>
+<p><b>http://registro.br/dominio/</b></p>
+<p><b></b></p>
+<p><b>.</b></p>
+<p><b>
+</b></p>
+<p><b></b></p>
+<p><b>       .com         .net         .org                     .br              .uk              .pt	</b></p>
+<p><b> 					</b></p>
+<p><b></b></p>
+<p><b></b></p>
+<p><b>                                                         .com       .org</b></p>
+<p><b> 	                                                 
+                                                        
+      dexter	</b></p>
+<p><b>   </b></p>
+<p><b></b></p>
+<p><b>       www	</b></p>
+
+<h3>Notes:</h3>
+<p><b>Resolução Recursiva</b></p>
+<p>Tomando um navegador web como exemplo, a resolução para acesso a um &quot;website&quot;</p>
+<p>tem as seguintes etapas:</p>
+<p><b>1.</b>Usuário solicita acesso a &quot;www.exemplo.com.br&quot;</p>
+<p><b>2.</b>Navegador checa se já conhece o endereço IP do &quot;hostname&quot; solicitado (cache do&quot;browser&quot;);</p>
+<p><b>3.</b>Se não conhece, o navegador passa a solicitação para a biblioteca de resolução - o</p>
+<p>&quot;resolver&quot;;</p>
+<p><b>4.</b>O &quot;resolver&quot; procura o &quot;hostname&quot; solicitado no arquivo &quot;/etc/hosts&quot; local;</p>
+<p><b>5.</b>Se não encontrar, ele checa o arquivo &quot;/etc/resolv.conf&quot; para saber a quais &quot;name-</p>
+<p>servers&quot; deve solicitar a informação;</p>
+<p><b>6.</b>O &quot;resolver&quot; repassa a solicitação ao primeiro &quot;nameserver&quot; da lista, e logo após para o próximo até o fim da lista, aguardando por uma resposta de qualquer um deles;</p>
+<p><b>7.</b>O servidor de nomes acionado consulta seu &quot;cache&quot;, se houver;</p>
+<p><b>8.</b>Se não encontrar em seu &quot;cache&quot;, o servidor em questão vai diretamente ao servidor</p>
+<p>raiz e transfere a consulta - www.exemplo.com.br;</p>
+<p><b>9.</b>O servidor raiz não faz &quot;cache&quot;, e também não é autoridade sobre zonas de baixo</p>
+<p>nível, então ele apenas responde uma parte da questão: &quot;Não sei quem é, mas sei</p>
+<p>quem pode responder melhor: br.&quot;;</p>
+

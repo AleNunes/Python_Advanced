@@ -1,0 +1,16 @@
+<h1><b>Transferência de Zona</b></h1>
+<p><b>Protegendo seu DNS</b></p>
+<p><b>1#</b> vim /etc/bind/named.conf.local</p>
+<p> 	zone &quot;dexter.com.br&quot; {</p>
+<p> 			type master;</p>
+<p> 			file &quot;db.dexter&quot;;</p>
+<p> 			allow-transfer { 192.168.200.130; };</p>
+<p> 			notify yes;</p>
+<p> 			also-notify { 192.168.200.130; };</p>
+<p> 	};</p>
+<p><b>2#</b> /etc/init.d/bind9 restart</p>
+<p><b>3#</b> dig dexter.com.br axfr</p>
+<p><b>allow-transfer</b> Restringir a transferência de zona apenas para Servidores Autorizados;</p>
+<p>As opções <b>notify</b> e <b>also-notify</b> determinam se o servidor primário notifica servidores secundários quando a informação de zona for atualizada.</p>
+<p><i><b>Servidor: Audit</b></i></p>
+

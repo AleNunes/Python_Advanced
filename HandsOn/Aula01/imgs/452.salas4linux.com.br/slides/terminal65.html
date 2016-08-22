@@ -1,0 +1,30 @@
+<h1><b>Servidor DNS</b></h1>
+<p>Root Servers</p>
+<p>DNS Primário</p>
+<p>TLD</p>
+<p>(.com) </p>
+<p>DNS Autoridade</p>
+<p>google.com</p>
+<p>1. Quem é</p>
+<p>Google.com ?</p>
+<p>2. Tem no Cache?</p>
+<p>3. Pergunta Root </p>
+<p>Servers</p>
+<p>4. Indica o TLD </p>
+<p>responsável</p>
+<p>5. Indica o SOA </p>
+<p>Responsável</p>
+<p>6. Responde com o IP do </p>
+<p>www.google.com</p>
+
+<h3>Notes:</h3>
+<p><b>Resolução Recursiva</b></p>
+<p><b></b></p>
+<p><b>10.</b>O servidor de nomes reenvia a consulta para o servidor &quot;.br-www.exemplo.com.br;</p>
+<p><b>11.</b>&quot;.br&quot; retorna o mesmo tipo de resposta, porém como uma dica mais próxima: &quot;Não sei quem é, mas sei quem pode responder melhor: com.br.&quot;;</p>
+<p><b>12.</b>Passos 10 e 11 são efetuados mais uma vez, e agora a resposta é &quot;Não sei quem é, mas sei quem pode responder melhor: exemplo.com.br.&quot;;</p>
+<p><b>13.</b>Após repetir o passo 10, finalmente a resposta será da autoridade sobre o domínio exemplo.com.br. Vai ser respondido o IP, juntamente ao TTL do registro, ou será respondido &quot;inexistente&quot;;</p>
+<p><b>14.</b>O servidor de nomes fará &quot;cache&quot; da resposta, ao mesmo tempo que a repassa para o resolvedor original;</p>
+<p><b>15.</b>O resolvedor repassa a resposta para o navegador;</p>
+<p><b>16.</b>O navegador inicia uma conexão &quot;HTTP&quot; com o IP descoberto.</p>
+

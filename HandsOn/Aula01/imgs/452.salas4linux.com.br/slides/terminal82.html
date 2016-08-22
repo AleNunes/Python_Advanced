@@ -1,0 +1,7 @@
+<h1><b>Servidor DNS</b></h1>
+<p><i><b>Servidor: Security Cloud</b></i></p>
+<h2><b>Mascaramento no Firewall:</b></h2>
+<h2>Os servidores DNS estão se comunicando porém a regra que criamos de mascaramento no firewall faz com que o ip de origem seja mudado, dentro das subredes.</h2>
+<h2>Com esta mudança o servidor DNS master irá bloquear a transferência de zona, pois apenas liberamos o ip da máquina WebServer Interno.</h2>
+<h2>Para resolver este problema devemos criar uma exceção, mascarando apenas se o destino for a <b>internet</b> e não a rede interna.</h2>
+

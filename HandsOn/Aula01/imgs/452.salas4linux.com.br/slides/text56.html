@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 61</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text55.html">Back</a> <a href="text57.html">Continue</a> <a href="text336.html">Last page</a> <a href="452_2016_3.3_fv.html">Overview</a> <a href="img56.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Servidor DHCP</b></h1>
+<h2><b><font color="#004586">DHCP Estático:</b></h2>
+<ul>
+<li><b><font color="#FF0000">1#</b> vim /etc/dhcp/dhcpd.conf</li>
+<li>host linux-interna {</li>
+<li> 	hardware ethernet 00:00:00:00:00:00;</li>
+<li> 	fixed-address 192.168.200.10;</li>
+<li>}</li>
+<li><b><font color="#FF0000">2#</b> /etc/init.d/isc-dhcp-server restart</li>
+<li><font color="#993366">Faça uma nova solicitação na Linux Interna:</li>
+<li><b><font color="#FF0000">3#</b> dhclient -r ; dhclient -v eth0</li>
+</ul>
+<p><i><b><font color="#993366">Servidor: Audit</b></i></p>
+<p> Mac da máquina que deseja atribuir o ip estático.</p>
+<p><b><font color="#993366">Para visualizar o mac execute:</b></p>
+<p># ifconfig eth0 | grep -i HW</p>
+</body>
+</html>

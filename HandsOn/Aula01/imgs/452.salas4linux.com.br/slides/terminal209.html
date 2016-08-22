@@ -1,0 +1,12 @@
+<h1><b>Implementando LVM</b></h1>
+<h2><b>Reduzindo um Volume Lógico:</b></h2>
+<h2><b>1 – Da mesma forma que a ampliação, também podemos reduzir  um volume: </b></h2>
+<h2><b>1# </b>umount /mnt</h2>
+<h2><b>2# </b>e2fsck -f /dev/vg-samba/lv-extra</h2>
+<h2><b>3# </b>resize2fs -p /dev/vg-samba/lv-extra 3G</h2>
+<h2><b>4# </b>lvreduce -L -1G /dev/vg-samba/lv-extra</h2>
+<h2><b>5# </b>mount /dev/vg-samba/lv-extra /mnt</h2>
+<h2><b>6# </b>df -hT /mnt ; ls /mnt</h2>
+<p><b>&lt;Caso seja questionado sobre abortar o processo devido a diferença de tamanho dos volumes marque No&gt;</b></p>
+<p><i><b>Servidor: Storage</b></i></p>
+

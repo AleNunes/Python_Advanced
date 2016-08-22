@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 282</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text272.html">Back</a> <a href="text274.html">Continue</a> <a href="text336.html">Last page</a> <a href="452_2016_3.3_fv.html">Overview</a> <a href="img273.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Servidor Proxy com Squid</b></h1>
+<p><i><b><font color="#993366">Servidor: Security</b></i></p>
+<p><b><font color="#004586">Liberando Squid no Firewall:</b></p>
+<ul>
+<li>Libere a porta 3128 do Squid e 389 do LDAP no arquivo de configuração do Firewall:</li>
+<li><b><font color="#FF0000">1# </b>vim +109 /etc/rules</li>
+<ul>
+<li><font color="#FF3333">110 </font>iptables -t filter -A INPUT -p tcp -s $LAN -d $FWLAN --dport 3128 -j ACCEPT </li>
+<ul>
+<li>... </li>
+</ul>
+<li></li>
+<li><font color="#FF3333">118<font color="#4C4C4C"> </font>iptables -t filter -A INPUT -p tcp -s $DATACENTER --sport 389 -d $FWLAN -j ACCEPT</li>
+</ul>
+<li></li>
+<li><font color="#FF0000">2<font color="#4C4C4C"># service firewall restart</font></li>
+</ul>
+</body>
+</html>

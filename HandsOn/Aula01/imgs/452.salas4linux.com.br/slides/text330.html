@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 339</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text329.html">Back</a> <a href="text331.html">Continue</a> <a href="text336.html">Last page</a> <a href="452_2016_3.3_fv.html">Overview</a> <a href="img330.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Servidor FTP</b></h1>
+<h2><b><font color="#004586">Operando o FTP:</b></h2>
+<ul>
+<li>Alterne para o modo ftp passivo:</li>
+<li><b><font color="#CC0000">ftp&gt; pass</b></li>
+<li>Liste o Conteúdo do diretório em sua máquina:</li>
+<li><b><font color="#CC0000">ftp&gt; !ls</b></li>
+<li>Liste o conteúdo do servidor FTP:</li>
+<li><b><font color="#CC0000">ftp&gt; ls</b></li>
+<li>Envie o arquivo index.html:</li>
+<li><b><font color="#CC0000">ftp&gt; put index.html</b></li>
+<li><b><font color="#4C4C4C"></b></li>
+</ul>
+<p><i><b><font color="#993366">Servidor: WebServer Interno</b></i></p>
+<br>
+<h3>Notes:</h3>
+<p>O console FTP tem uma sintaxe de comandos próprios para operar o FTP. Alguns comandos são bem similares a comandos BASH.</p>
+<p>Para que um comando seja executado na máquina cliente o comando deve começar com !.</p>
+<p><b>Exemplo. </b></p>
+<p>No console ftp, se usar o comando ls, ira listar o conteúdo do diretório atual do servidor FTP.</p>
+<p>Se for executado o comando !ls será exibido o conteúdo do diretório atual da máquina que cliente.</p>
+<p></p>
+<p>Por padrão os comando put e get que enviam ou recebem arquivos enviam/recebem arquivos do diretório atual de onde se conectou ao ftp.</p>
+<p><b>Exemplo.</b></p>
+<p>Você esta no home do usuário suporte (/home/suporte/). Ao acessar o ftp,</p>
+<p># ftp <a href="ftp://ftp.dexter.com.br/">ftp.dexter.com.br</a></p>
+<p>Quando realizar um download, o arquivo sera salvo diretório que estava quando inciou a conexão (/home/suporte)</p>
+</body>
+</html>

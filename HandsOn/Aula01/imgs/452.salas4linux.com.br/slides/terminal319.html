@@ -1,0 +1,23 @@
+<h1><b>Servidor FTP</b></h1>
+<h2><b>FTP Modo Passivo:</b></h2>
+<p>Porta 3268</p>
+<p>Porta 21</p>
+<p>(Comandos)</p>
+<p>Porta 5150</p>
+<p>Porta </p>
+<p>5151</p>
+<p>1 – “PASSV”</p>
+<p>2 – Porta a ser usada  3268</p>
+<p>3 – Canal de Dados</p>
+<p>4 - ACK</p>
+<p>Porta 20</p>
+<p>(Dados)</p>
+<p><i><b>Servidor: WebServer Interno</b></i></p>
+
+<h3>Notes:</h3>
+<p><b>Modo Passivo</b></p>
+<p></p>
+<p>Já no modo passivo, os comandos também são enviados para o servidor através de uma porta alta pelo cliente e são recebidas na porta 21 do servidor. Neste momento, o cliente avisa ao servidor que ele deve utilizar o modo passivo através do comando &quot;PASV&quot;, e então os dados serão enviados utilizando portas altas tanto pelo cliente quando pelo servidor. </p>
+<p></p>
+<p>Neste caso, não temos mais problemas com o &quot;Firewall&quot; no lado do cliente, porém, temos que habilitar a utilização de portas altas no servidor, o que pode gerar outros problemas. Felizmente, na configuração do servidor &quot;FTP&quot; podemos especificar o &quot;range&quot; de portas que o servidor deve utilizar, minimizando assim o problema no lado do servidor.</p>
+
