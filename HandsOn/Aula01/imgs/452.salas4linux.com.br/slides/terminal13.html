@@ -1,9 +1,0 @@
-<h1><b>Firewall Linux</b></h1>
-<h2><b>Definindo Regras:</b></h2>
-<p><i><b>Servidor: Security</b></i></p>
-<p><b>A </b>→ Onde a regra será armazenada, ou seja, checada. Sempre indicamos a tabela e a Chain;</p>
-<p><b>B </b>→ A regra em si. As informações que passamos na regra são: Origem e Destino do Pacote, Porta do Serviço, Protocolo, etc;</p>
-<p><b>C</b> → A ação da regra, ou seja, o destino do pacote. Se o pacote será aceito, negado, redirecionado, etc.</p>
-<p><b>iptables  -t  filter -A INPUT    -s 127.0.0.1 -d 127.0.0.1    -j ACCEPT</b></p>
-<p>           <b>A                                              B                                                 C</b></p>
-

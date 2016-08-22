@@ -1,9 +1,0 @@
-<h1><b>Quotas de Disco</b></h1>
-<h2><b>Configuração de Quotas para Sistemas de Arquivos EXT3:</b></h2>
-<p>Os servidores da Dexter utilizam o sistema de arquivos EXT4. Logo, não aplicaremos este padrão no cenário da aula.</p>
-<p><i><b>Servidor: Fileserver</b></i></p>
-<p>Em sistemas de arquivos no formato EXT3 existe um outro modelo de quotas. Neste caso a configuração necessária no arquivo /etc/fstab possibilitando o uso de quotas seria a seguinte:</p>
-<p>.../srv ext3 defaults, <b>usrquota,grpquota</b>   0    0 </p>
-<p><b>usrquota:</b> Ativa suporte a quotas para usuários;</p>
-<p><b>grpquota: </b>Ativa suporte a quotas para grupos.</p>
-

@@ -1,9 +1,0 @@
-<h1><b>Implementando Controle de Acesso ao Sistema com sudo</b></h1>
-<ul>
-<li>Tentativas de acesso não autorizadas através do sudo podem ser monitoradas pelo arquivo /var/log/auth.log, mas é possível habilitar um log detalhado de acessos pelo sudo:</li>
-<li><b>1#</b> visudo</li>
-<h2><b> 		Defaults logfile=/var/log/sudo</b></h2>
-<li>Salve o arquivo e faça uma nova tentativa de uso do sudo com o usuário annie.dee, em seguida verifique o arquivo de log:</li>
-<li><b>2#</b> tailf /var/log/sudo</li>
-</ul>
-
