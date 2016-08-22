@@ -12,6 +12,7 @@ class Jenkins:
         
     def create_job(self, name):
         try:
+            print  jenkins.EMPTY_CONFIG_XML
             self.server.create_job(name, jenkins.EMPTY_CONFIG_XML)
             print "Job criada com sucesso!"
         except Exception as e:
@@ -21,4 +22,7 @@ class Jenkins:
 if __name__=="__main__":
     j = Jenkins()
     j.create_job("Job Python")
-        
+
+
+
+
