@@ -1,0 +1,25 @@
+<h1><b>Laboratório Dexter</b></h1>
+<ul>
+<li>Montando a partição de forma definitiva para ser ativada no boot do sistema:</li>
+</ul>
+<p><i><b>Servidor: Webserver Interno</b></i></p>
+<p><b>1#</b> cat /etc/fstab</p>
+<p><b>/dev/sdb1 	 /Files        ext2	 defaults	 	 0		 0</b></p>
+<p><b>1ª: </b>Localização do “filesystem”, em geral o “device” ou endereço de rede;</p>
+<p><b>2ª:</b> Ponto de montagem;</p>
+<p><b>3ª:</b> Tipo do filesystem: ext3, ext4, xfs, etc;</p>
+<p><b>4ª:</b> Opções de montagem: defaults = rw, suid, dev, exec, auto, nouser e async;</p>
+<p><b>5ª:</b> Aceita os valores 0 ou 1 e informa que, havendo um sistema de backup (dump) configurado, deverá ser feito o seu backup;</p>
+<p><b>6ª: </b>Aceita os valores de 0 a 2 e informa que deverá ser realizada a checagem de disco.</p>
+
+<h3>Notes:</h3>
+<p><b>Montagem automática de Filesystem no boot</b></p>
+<p></p>
+<p>Com o comando “<b>mount</b>” você aprendeu a montar um dispositivo de forma completa e manual, entretanto, há um arquivo que facilita a nossa vida: “<b>/etc/fstab</b>”. </p>
+<p></p>
+<p>Nele devem estar as informações a respeito da montagem de todos os “<b>filesystems</b>” do sistema.</p>
+<p></p>
+<p>Sendo assim, o “<b>fstab</b>” armazena as informações dos dispositivos comumente acessados, como as partições do sistema, discos removíveis e alguns dispositivos USB.</p>
+<p></p>
+<p>Entretanto não mostra informação alguma a respeito de quais dispositivos estão montados neste exato momento.</p>
+

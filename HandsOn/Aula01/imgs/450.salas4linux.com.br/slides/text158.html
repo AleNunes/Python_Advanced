@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 159</title>
+</head>
+<body text="#FFFFFF" bgcolor="#FFFFFF" link="#3A81CC" vlink="#3773B1" alink="#3A81CC">
+<center>
+<a href="text0.html">First page</a> <a href="text157.html">Back</a> <a href="text159.html">Continue</a> <a href="text417.html">Last page</a> <a href="Apostila3.2.html">Overview</a> <a href="img158.html">Graphics</a></center><br>
+<h1><b>Resumão LPI (parte 1/2)</b></h1>
+<table>
+  <tr>
+    <td>
+<p><b>Função</b></p>
+    </td>
+    <td>
+<p><b>DPKG</b></p>
+    </td>
+    <td>
+<p><b>RPM</b></p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+<p>Mostrar informações sobre um pacote</p>
+    </td>
+    <td>
+<p>dpkg -I pacote.deb</p>
+    </td>
+    <td>
+<p>rpm -qpi pacote.rpm</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+<p>Listar pacotes instalados</p>
+    </td>
+    <td>
+<p>dpkg -l</p>
+    </td>
+    <td>
+<p>rpm -qa</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+<p>Listar as dependências de um pacote</p>
+    </td>
+    <td>
+<p>dpkg -s pacote.deb | grep ^Depends</p>
+    </td>
+    <td>
+<p> rpm -qpR  pacote.rpm</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+<p>Instalar um pacote</p>
+    </td>
+    <td>
+<p>dpkg -i pacote.deb</p>
+    </td>
+    <td>
+<p>rpm -ivh pacote.rpm</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+<p>Remover um pacote</p>
+    </td>
+    <td>
+<p>dpkg -r pacote.deb</p>
+    </td>
+    <td>
+<p>rpm -e pacote.rpm</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+<p>Atualizar um pacote</p>
+    </td>
+    <td>
+<p>dpkg -i pacote.deb</p>
+    </td>
+    <td>
+<p>rpm -Uvh pacote.rpm</p>
+    </td>
+  </tr>
+</table>
+<br>
+<h3>Notes:</h3>
+<p><b><font color="#666666">DICA:</b></p>
+<p><b><font color="#666666"></b></p>
+<p><font color="#666666">Fique esperto! Comandos dos gerenciadores RPM e DPKG  são amplamente abordados nas provas LPI.</p>
+</body>
+</html>

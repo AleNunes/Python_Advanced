@@ -1,0 +1,21 @@
+<h1><b>Gerenciador de Pacotes YUM</b></h1>
+<p><b>Configuração dos repositórios CentOS:</b></p>
+<p><i><b>Servidor: Webserver Externo</b></i></p>
+<p><b>1#</b> cd /etc/yum.repos.d/</p>
+<p><b>2#</b> ls</p>
+<ul>
+<li> Configuração de um repositório:</li>
+</ul>
+<p><b>[base]</b></p>
+<p><b>name=CentOS-$releasever - Base</b></p>
+<p><b>baseurl=http://url/path_to_rpms/</b></p>
+<p><b>gpgcheck=1</b></p>
+<p><b>gpgkey=file:///etc/pki/rpm-gpg/key</b></p>
+<p><b>enabled=0</b></p>
+<p><b>Repositório YUM</b></p>
+<p><b>name</b> →  Nome descritivo, no exemplo: CentOS (versão da distribuição);</p>
+<p><b>baseurl</b> →  O endereço que contém a lista dos programas e os pacotes;</p>
+<p><b>enabled</b> →  Se o repositório está ativo ou não (1 significa sim, 0 significa não);</p>
+<p><b>gpgcheck</b> →  Se todos os pacotes devem ter sua autenticidade verificada (extremamente recomendado, 1 significa sim, 0 significa não);</p>
+<p><b>gpgkey</b> →  Qual chave criptográfica utilizar para a verificação dos pacotes.</p>
+

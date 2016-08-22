@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 202</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text194.html">Back</a> <a href="text196.html">Continue</a> <a href="text336.html">Last page</a> <a href="452_2016_3.3_fv.html">Overview</a> <a href="img195.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Implementando RAID</b></h1>
+<h2><b><font color="#993366">Configurando o Sistema RAID:</b></h2>
+<h2><b><font color="#993366">3 – Acompanhe a sincronização dos discos através do segundo terminal:</b></h2>
+<h2><font color="#FF950E">Personalities : [raid1]</h2>
+<h2><font color="#FF950E">md0 : active raid1 sdd[2](S) sdc[1] sdb[0]</h2>
+<h2><font color="#FF950E">      5238720 blocks super 1.2 [2/2] [UU]      </h2>
+<h2><font color="#FF950E">[======&gt;..............]  resync = 34.7% (1822720/5238720) finish=3.1min speed=18108K/sec</h2>
+<h2><b><font color="#993366">4 – Grave a configuração feita no arquivo de gerenciamento de software RAID:</b></h2>
+<h2><b><font color="#FF0000">1# </b># vim /etc/mdadm/mdadm.conf</h2>
+<h2><font color="#993366">9 DEVICE /dev/sd[bcdef]</h2>
+<h2><font color="#993366">10 ARRAY /dev/md0 devices=/dev/sdb,/dev/sdc,/dev/sdd</h2>
+<p><i><b><font color="#993366">Servidor: Storage</b></i></p>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<h1><b>Gerenciador de Pacotes RPM</b></h1>
+<h2><b>Removendo programas desnecessários nos servidores:</b></h2>
+<p><i><b>Servidor: Webserver Interno</b></i></p>
+<p><b>Opções do rpm</b></p>
+<p><b>-e</b> →  Remove um programa sem suas dependências;</p>
+<p><b>1#</b> rpm <b>-qa</b> | less</p>
+<p><b>2#</b> rpm <b>-qa</b> | grep figlet</p>
+<p><b>3#</b> rpm <b>-e</b> figlet</p>
+<p><b>4#</b> rpm <b>-qa</b> | grep figlet</p>
+
+<h3>Notes:</h3>
+<p><b>Verificação da integridade de Pacotes:</b></p>
+<p></p>
+<p>Uma vantagem que o RPM possui sobre DPKG é que possui ferramentas de verificação criptográfica como o GPG e o md5, além de verificação de integridade dos arquivos já instalados. Dessa forma, periodicamente você pode verificar se ocorreu alguma alteração no seu sistema sem você saber ou se sua máquina foi invadida, pode-se tentar identificar o que foi mexido nela.</p>
+<p></p>
+<p>Existe uma documentação que pode ser usada para qualquer distro baseada em RPM que pode ser encontrada em: http://www.rpm.org/RPM-HOWTO/.</p>
+

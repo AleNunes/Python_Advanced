@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 75</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text69.html">Back</a> <a href="text71.html">Continue</a> <a href="text336.html">Last page</a> <a href="452_2016_3.3_fv.html">Overview</a> <a href="img70.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Servidor DNS</b></h1>
+<h2><b><font color="#FF0000">1#</b> vim named.conf.local</h2>
+<h2> 	zone &quot;dexter.com.br&quot; {</h2>
+<h2>        type master;</h2>
+<h2>        file &quot;db.dexter&quot;;</h2>
+<h2> 	};</h2>
+<h2><b><font color="#004586">Verifique se as configurações foram realizadas com sucesso:</b></h2>
+<h2><b><font color="#FF0000">2#</b> named-checkconf</h2>
+<h2><b><font color="#004586">Entre dentro do diretório /var/cache/bind e copie o arquivo de registro:</b></h2>
+<h2><b><font color="#FF0000">3#</b> cd /var/cache/bind</h2>
+<h2><b><font color="#FF0000">4#</b> cp /root/dns/db.dexter /var/cache/bind/</h2>
+<h2><b><font color="#FF0000">5#</b> vim db.dexter</h2>
+<p><i><b><font color="#993366">Servidor: Audit</b></i></p>
+<p><b><font color="#004586">Criação do arquivo de Zonas:</b></p>
+<br>
+<h3>Notes:</h3>
+<p><b>O &quot;BIND&quot; pode operar de acordo com 6 tipos de zonas:</b></p>
+<p></p>
+<p><b>MASTER → </b>Zona de autoridade sobre o domínio. Os dados da &quot;zona&quot; serão criados, publicados e administrados a partir deste ponto.</p>
+<p><b></b></p>
+<p><b>SLAVE → </b>Basicamente uma “cópia” da zona original, nenhuma criação ou alteração respectiva a essa &quot;zona&quot; será feita diretamente neste DNS.</p>
+<p></p>
+<p><b>STUB → </b>Tipo de &quot;zona&quot; similar a Slave não é previsto em nenhuma &quot;RFC&quot; foi implementado apenas no &quot;BIND&quot;.</p>
+<p></p>
+<p><b>HINT → </b>Específica para o &quot;BIND&quot; onde ele deve começar uma busca recursiva quando estiver operando como &quot;cache&quot;.</p>
+<p></p>
+<p><b>FORWARD → </b>Serve para orientar o &quot;BIND&quot;a encaminhar a consulta sobre uma determinada &quot;zona&quot;para outro servidor em especial. </p>
+<p><b></b></p>
+<p><b>DELEGATION-ONLY → </b>Utilizada para evitar abusos de algumas autoridades sobre domínios de primeiro.</p>
+</body>
+</html>

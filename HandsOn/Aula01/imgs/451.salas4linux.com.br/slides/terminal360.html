@@ -1,0 +1,20 @@
+<h1><b>Gerenciadores de Boot</b></h1>
+<h2><b>Gerando o Arquivo grub.cfg:</b></h2>
+<h2>O comando update-grub2 verifica o conteúdo dos arquivos descritos anteriormente, executando os scritps e criando o arquivo grub.cfg.</h2>
+<h2><b></b></h2>
+<h2><b>1 – Faça um teste apagando o arquivo grub.cfg:</b></h2>
+<h2><b> 	1#</b> rm -rf /boot/grub/grub.cfg</h2>
+<h2><b> 	2#</b> ls /boot/grub/ | grep grub.cfg</h2>
+<h2><b></b></h2>
+<h2><b>2 – Execute o comando update-grub2 para gerar um novo arquivo:</b></h2>
+<h2><b> 	3#</b> update-grub2</h2>
+<h2><b> 	4#</b> cat /boot/grub/grub.cfg</h2>
+<p><i><b>Servidor: Linux Externa</b></i></p>
+
+<h3>Notes:</h3>
+<p><b>/etc/grub.d/ (diretório)</b></p>
+<p></p>
+<p>Os arquivos nessa pasta são lidos durante a execução do comando update-grub e suas instruções são incorporadas ao /boot/grub/grub.cfg.</p>
+<p></p>
+<p>A colocação dos ítens de menu no grub.cfg é determinada pela ordem em que os arquivos são executados nessa pasta. Arquivos com numeral no início são executados primeiro começando pelo menor. 10_linux é executado antes de 20_mentest que é executado antes de 40_custom.</p>
+

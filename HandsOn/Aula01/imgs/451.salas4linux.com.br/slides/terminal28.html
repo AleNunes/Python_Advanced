@@ -1,0 +1,18 @@
+<h1><b>Administração de Usuários</b></h1>
+<h2><b>Ajustando os Grupos das Pastas</b>:</h2>
+<p><i><b>Servidor: FileServer</b></i></p>
+<p><b>1#</b> ls -l </p>
+<p>drwxr-xr-x 2 bryan.leah 		root ... Diretoria</p>
+<p>drwxr-xr-x 2 antony.brooks	root ... Financeiro</p>
+<p>drwxr-xr-x 2 harry.rosemberg	root ... Infra</p>
+<p>drwxr-xr-x 2 annie.dee 		root ... Vendas</p>
+<p><b>2#</b> chgrp diretores Diretoria</p>
+<p><b>3#</b> chgrp vendedores Vendas</p>
+<p><b>4#</b> chgrp financeiro Financeiro</p>
+<p><b>5#</b> chgrp analistas Infra</p>
+<p><b>6#</b> ls -l</p>
+<p>drwxr-xr-x 2 bryan.leah 			diretores	 ... 	Diretoria</p>
+<p>drwxr-xr-x 2 antony.brooks		financeiro	 ... 	Financeiro</p>
+<p>drwxr-xr-x 2 harry.rosemberg	analistas	 ... 	Infra</p>
+<p>drwxr-xr-x 2 annie.dee	 		vendedores	 ... 	Vendas</p>
+

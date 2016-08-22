@@ -1,0 +1,13 @@
+<h1><b>Servidor OpenLDAP</b></h1>
+<ul>
+<li><b>Criando as OU (organization unit) da Dexter, Users e Groups:</b></li>
+<li><b>1#</b> vim ou.ldif</li>
+<li><b>2# </b>ldapadd -x -D &quot;cn=admin,dc=dexter,dc=com,dc=br&quot; -f ou.ldif -W</li>
+<li><b>3#</b> ldapsearch -x -LLL -b dc=dexter,dc=com,dc=br  </li>
+<li><b>Criando os Usuários da Dexter no LDAP:</b></li>
+<li><b>1#</b> vim user.ldif</li>
+<li><b>&lt; Modifique os Campos para DN, UID, SN, CN, homeDirectory e mail para o seu Nome e Sobrenome &gt;</b></li>
+<li><b>2#</b> ldapadd -x -D &quot;cn=admin,dc=dexter,dc=com,dc=br&quot; -f user.ldif -W</li>
+</ul>
+<p><i><b>Servidor: DataCenter</b></i></p>
+

@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 24</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text22.html">Back</a> <a href="text24.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img23.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Administração de Usuários</b></h1>
+<h2><b><font color="#004586">Definindo a Política de Senha dos Usuários:</b></h2>
+<p><b><font color="#FF950E">O comando chage</b></p>
+<p>O comando <b><font color="#FF950E">chage</b> é usado para determinar a política de expiração senha, onde:</p>
+<p><b><font color="#FF950E">-M →</b> Determina o intervalo que a senha irá expirar</p>
+<p><b><font color="#FF950E">-m →</b> Determina quantos dias o usuário ficará bloqueado de trocar a senha após uma troca de senha;</p>
+<p><i><b><font color="#993366">Servidor: FileServer</b></i></p>
+<p><b><font color="#004586">3 – Teste a alteração de senhas novamente:</b></p>
+<p><b><font color="#FF0000">1#</b> su – bryan.leah</p>
+<p><b><font color="#FF0000">2$</b> passwd</p>
+<p>Mudando senha para bryan.leah.</p>
+<p>Senha UNIX (atual):</p>
+<p><b><font color="#FF950E">Aguarde mais tempo para mudar a senha</b></p>
+<p><b><font color="#FF0000">3$</b> exit</p>
+<p><b><font color="#004586">4 – Altere a data do sistema:</b></p>
+<p><b><font color="#FF0000">4#</b> date MMDDYYYY <b></font><font color="#C5000B">&lt; Coloque a data de amanhã &gt;</b></font></p>
+<br>
+<h3>Notes:</h3>
+<p><b>Alterações de senha com passwd</b></p>
+<p></p>
+<p>Caso esteja modificando a senha de um usuário normal, primeiro será solicitada a senha corrente para permitir a definição de uma nova senha. Isso não acontece com o usuário “root”, que pode definir a nova senha diretamente, tanto para ele quanto para os outros usuários.</p>
+</body>
+</html>

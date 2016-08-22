@@ -1,0 +1,14 @@
+<h1><b>TCPWrappers</b></h1>
+<p><b>Suporte ao TCPWrappers:</b></p>
+<p><b>1#</b> which sshd</p>
+<p><b>2#</b> ldd /sbin/sshd</p>
+<p><b>3#</b> ldd /usr/sbin/sshd | grep wrap</p>
+<p> 	<b>libwrap.so</b>.0 =&gt; /lib/libwrap.so.0...</p>
+<p><b>4# </b>ldd /sbin/httpd | grep wrap</p>
+<p>Para que seja possível realizar controle de acesso pelo TCPWrapper primeiramente você precisa verificar se o serviço em específico tem <b>suporte a biblioteca libwrap</b>.</p>
+<p>O comando <b>ldd</b> é usado para listar todas as bibliotecas de um determinado comando.</p>
+<p>No capítulo sobre bibliotecas você verá mais detalhes sobre o ldd.</p>
+<p><i><b>Servidor: Webserver Interno</b></i></p>
+<p>Fique atento aos serviços que possuem suporte o TCPWrappers. Repare que enquanto o SSH tem suporte, o Apache não tem.</p>
+<p><b>Nenhuma saída!</b></p>
+

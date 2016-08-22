@@ -1,0 +1,68 @@
+<h1><b>Laboratório Dexter</b></h1>
+<ul>
+<li>Criaremos 3 partições primárias no /dev/sdb da seguinte maneira:</li>
+<li></li>
+<h2> </h2>
+<li>Para criar as partições usaremos dois utilitários – Fdisk e Cfdisk:</li>
+</ul>
+
+  
+    
+<p><b>Dispositivo</b></p>
+    
+    
+<p><b>Tamanho</b></p>
+    
+    
+<p><b>Montagem</b></p>
+    
+  
+  
+    
+<p>/dev/sdb1</p>
+    
+    
+<p>5GB</p>
+    
+    
+<p>/backup</p>
+    
+  
+  
+    
+<p>/dev/sdb2</p>
+    
+    
+<p>4.5GB</p>
+    
+    
+<p>/srv</p>
+    
+  
+  
+    
+<p>/dev/sdb3</p>
+    
+    
+<p>500MB</p>
+    
+    
+<p>swap</p>
+    
+  
+
+<p><i><b>Servidor: Webserver Interno</b></i></p>
+<p><b>1#</b> fdisk /dev/sdb</p>
+<p><b>2#</b> cfdisk /dev/sdb</p>
+<p><b>3#</b> fdisk -l /dev/sdb</p>
+
+<h3>Notes:</h3>
+<p><b>Criando Partições no HD</b></p>
+<p>Agora que já sabemos como montar um dispositivo precisamos saber como criar uma partição manualmente. Para isso, há duas ferramentas importantes, que fazem a mesma coisa, disponíveis em sistemas GNU/Linux, são elas: “fdisk” e “cfdisk”.</p>
+<p></p>
+<p><b>Particionamento com FDISK</b></p>
+<p>O particionador “fdisk” é o mais completo dos particionadores apesar de sua interface pouco amigável.</p>
+<p></p>
+<p><b>Particionamento com CFDISK</b></p>
+<p>A ferramenta “cfdisk” não é tão completa quanto o comando “fdisk”, mas é um pouco mais amigável, ou como se diz em inglês: &quot;user friendly&quot;.</p>
+

@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 315</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text305.html">Back</a> <a href="text307.html">Continue</a> <a href="text336.html">Last page</a> <a href="452_2016_3.3_fv.html">Overview</a> <a href="img306.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Servidor OpenVPN</b></h1>
+<p><b><font color="#004586">Arquivo de configuração do cliente VPN:</b></p>
+<p><font color="#666666">tls-client</p>
+<p><font color="#666666">ca /etc/openvpn/ca.crt</p>
+<p><font color="#666666">cert /etc/openvpn/linux-externa.crt</p>
+<p><font color="#666666">key /etc/openvpn/linux-externa.key</p>
+<p><font color="#666666">dh /etc/openvpn/dh2048.pem</p>
+<p><font color="#666666">script-security 3 system</p>
+<p><font color="#666666">up /etc/openvpn/update-resolv-conf</p>
+<p><font color="#666666">down /etc/openvpn/update-resolv-conf</p>
+<p><i><b><font color="#993366">Servidor: Security</b></i></p>
+<br>
+<h3>Notes:</h3>
+<p><b><font color="#666666">Descrição da diretivas</b>:</p>
+<p><font color="#666666"></p>
+<p><b><font color="#666666">tls-client</b>: Habilita conexão TLS, ajudando a bloquear ataques DoS e flooding na porta do OpenVPN;</p>
+<p><b><font color="#666666">script-security</b>: Permite executar scripts personalizados.</p>
+</body>
+</html>

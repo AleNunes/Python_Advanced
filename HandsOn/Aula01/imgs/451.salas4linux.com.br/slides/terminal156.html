@@ -1,0 +1,20 @@
+<h1><b>Compactadores, Empacotadores e Procedimento de Backup</b></h1>
+<h2><b>Empacotador Cpio:</b></h2>
+<h2><b>5 – Tente restaurar os dados do backup novamente:</b></h2>
+<h2><b> 1#</b> cpio -iv &lt; /backup/bkp_etc.cpio</h2>
+<h2><b> 2#</b> tail -1 /etc/passwd</h2>
+<h2><b></b></h2>
+<h2><b>6 – Para forçar a restauração ignorando arquivos recentes:</b></h2>
+<h2><b> 3#</b> cpio -iuv &lt; /backup/bkp_etc.cpio</h2>
+<h2><b> 4#</b> tail -1 /etc/passwd</h2>
+<p><i><b>Servidor: WebServerInterno</b></i></p>
+
+<h3>Notes:</h3>
+<p><b>Diferencial</b></p>
+<p></p>
+<p>O “backup” diferencial visa salvar apenas as diferenças em relação ao ultimo “backup” completo (Full), por exemplo: Um “backup” full acontece no domingo. O diferencial salvará os dados de domingo para segunda, de domingo para terça, de domingo para quarta, de domingo para quinta, de domingo para sexta e de domingo para sábado, ou seja, até chegar no próximo “backup” full.</p>
+<p></p>
+<p><b>Incremental</b></p>
+<p></p>
+<p>Diferente do diferencial, o incremental, faz apenas os incrementos, assim gerando um volume menor de dados. Se o “backup” completo foi gerado no domingo, ele salva de domingo para segunda, de segunda para terça, de terça para quarta e assim até o próximo “backup” full chegar.</p>
+

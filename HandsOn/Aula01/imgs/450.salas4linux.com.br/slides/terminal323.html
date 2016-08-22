@@ -1,0 +1,15 @@
+<h1><b>Inicialização do Sistema</b></h1>
+<p><b>Systemd:</b></p>
+<ul>
+<li> O <b>systemd</b> funciona através de &quot;targets&quot; (ou destinos), é um substituto bem mais flexível para tratar (entre outras coisas) os runlevels.</li>
+<li> Verifique o seu runlevel Default:</li>
+</ul>
+<p><i><b>Servidor: Webserver Interno</b></i></p>
+<p><b>1#</b> systemctl get-default</p>
+<p><b>		ou</b></p>
+<p><b>1#</b> runlevel</p>
+<ul>
+<li> Verifique os runlevels existentes:</li>
+</ul>
+<p><b>2#</b> ls -l /lib/systemd/system/runlevel[12345].target</p>
+

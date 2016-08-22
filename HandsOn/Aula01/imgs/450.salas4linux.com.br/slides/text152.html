@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 153</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#3A81CC" vlink="#3773B1" alink="#3A81CC">
+<center>
+<a href="text0.html">First page</a> <a href="text151.html">Back</a> <a href="text153.html">Continue</a> <a href="text417.html">Last page</a> <a href="Apostila3.2.html">Overview</a> <a href="img152.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Gerenciador de Pacotes DPKG</b></h1>
+<h2><b><font color="#004586">Instalação de baixo nível da ferramenta sysstat:</b></h2>
+<p><i><b><font color="#993366">Servidor: Máquina Linux Interna</b></i></p>
+<p><b><font color="#FF0000">1#</b> cd /root/pacotes/</p>
+<p><b><font color="#FF0000">2#</b> dpkg <b>-I</b> htop.deb</p>
+<p><b><font color="#FF0000">3#</b> dpkg <b>-I</b> htop.deb<b> </b>| grep -i depends</p>
+<p><b><font color="#FF0000">4#</b> dpkg <b>-l</b> | egrep &quot;libc6|libncursesw5|libtinfo5&quot;</p>
+<p><b><font color="#FF0000">5#</b> dpkg <b>-i</b> htop.deb</p>
+<p><b><font color="#FF0000">6#</b> dpkg <b>-l</b> | grep htop</p>
+<p><b><font color="#FF0000">7#</b> dpkg <b>-L</b> htop</p>
+<p><b><font color="#004586">Opções do dpkg:</b></p>
+<p><b><font color="#004586">-I</b> → (Info) Exibe informações de um pacote a ser instalado;</p>
+<p><b><font color="#004586">-i</b> → (install)  Realiza a instalação de um pacote;</p>
+<p><b><font color="#004586">-L</b> → (list)  Lista todos os arquivos gravados no disco referente a um programa instalado;</p>
+<br>
+<h3>Notes:</h3>
+<p><b>DPKG (Debian Package) - Gerenciador de Pacotes do Debian</b></p>
+<p></p>
+<p>O DPKG é uma ferramenta em linguagem de baixo nível. Front ends de alto nível são exigidos para buscar pacotes em lugares remotos ou ajudar no solucionamento de conflitos nas dependências dos pacotes. Para esta finalidade, o Debian fornece aptitude e o apt-get.</p>
+<p></p>
+<p>Se necessário consulte as opções do dpkg:</p>
+<p><b># dpkg -- help</b></p>
+</body>
+</html>

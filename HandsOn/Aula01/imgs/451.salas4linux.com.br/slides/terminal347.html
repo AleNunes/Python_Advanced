@@ -1,0 +1,20 @@
+<h1><b>Compilação de Kernel</b></h1>
+<ul>
+<li>Um passo extremamente importante antes de configurar o nosso “kernel” é sempre adicionar uma EXTRAVERSION afim de organizar uma eventual estrutura de módulos no “/lib”:</li>
+<li></li>
+<li><b>1#</b> vim Makefile</li>
+<li>EXTRAVERSION = -v1</li>
+</ul>
+<p><i><b>Máquina Linux Externa</b></i></p>
+<p><b>DICA: </b>Em distribuições Debian o conjunto de pacotes abaixo pode ser substituido pelo pacote: <b>build-essential</b>, no exemplo abaixo, bastaria instalar este pacote e o pacote libncurses5</p>
+<ul>
+<li>No Debian instale os pacotes necessários para a compilação:</li>
+<li></li>
+<li><b>2#</b> aptitude install make gcc g++ autoconf libncurses5 libncurses5-dev ncurses-base ncurses-bin ncurses-term</li>
+</ul>
+
+<h3>Notes:</h3>
+<p><b>Extraversion</b></p>
+<p></p>
+<p>Um passo extremamente importante antes de configurar o nosso “kernel” é sempre adicionar uma EXTRAVERSION afim de organizar uma eventual estrutura de módulos no “/lib”.</p>
+

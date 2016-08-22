@@ -1,0 +1,11 @@
+<h1><b>Limitando Acesso ao SSH</b></h1>
+<p>Alterando a opção “PermitRootLogin yes” para “no” no arquivo do servidor <b>Security Cloud </b>nós limitaremos o root de poder logar via SSH, porém todos os demais usuários do servidor ainda possuem acesso a realizar uma conexão SSH. </p>
+<p>Vamos limitar esse acesso apenas ao usuário suporte:</p>
+<p><i><b>Servidor: Security Cloud</b></i></p>
+<p><b>1#</b> vim +20 /etc/ssh/sshd_config</p>
+<p><b>	AllowUsers suporte</b></p>
+<p><b>2#</b> /etc/init.d/ssh restart</p>
+<p>Vá no <b>WebServer Interno</b> e teste o acesso:</p>
+<p><b>3#</b> ssh -p2222 -l helpdesk 192.168.200.1 <b>Não Passou</b></p>
+<p><b>4#</b> ssh -p2222 -l suporte 192.168.200.1  <b>Passou</b></p>
+

@@ -1,0 +1,27 @@
+<h1><b>Compactadores, Empacotadores e Procedimento de Backup</b></h1>
+<h2><b>Estimando o tempo utilizado pelo tar para empacotar com diferentes formatos de compressão:</b></h2>
+<h2><b> 1 – Empacotar o conteúdo do diretório /etc:</b></h2>
+<h2><b> 1#</b> cd /backup</h2>
+<h2><b> 2#</b> time tar -cvf bkp_etc.tar /etc</h2>
+<h2><b>2 – Empacotar usando o Compactador GZIP:</b></h2>
+<h2><b>3#</b> time tar -cvzf bkp_etc.tar.gz  /etc/</h2>
+<h2><b>3 – Empacotar usando o Compactador BZIP2:</b></h2>
+<h2><b>4#</b> time tar -cvjf bkp_etc.tar.bz2  /etc/</h2>
+<p>O comando <b>time </b>é utilizado<b> </b>para definir informações sobre os recursos utilizados por outros programas. </p>
+<p>Sua saída apresenta a seguinte sintaxe:</p>
+<p><b>-real</b>→Tempo real decorrido na execução;</p>
+<p><b>-user</b>→Tempo de execução na CPU;</p>
+<p><b>-sys</b>→Tempo utilizado nas chamadas de sistema efetuadas ao kernel.</p>
+<p><i><b>Servidor: WebServerInterno</b></i></p>
+
+<h3>Notes:</h3>
+<p>A sintaxe do TAR é:</p>
+<p></p>
+<p><b>tar [ parâmetros ] [ - f arquivo ] [ - C diretório ] [ arquivos ...].</b></p>
+<p><b></b></p>
+<p><b>Bzip2 ou Gzip?</b></p>
+<p><b></b></p>
+<p>Utilizando os parâmetros <b>-j </b>e <b>-z</b>  estamos utilizando os padrões de compressão gzip e bzip2 respectivamente através do auxílio do comando time e verificando o tamanho do arquivo é fácil aferir que:</p>
+<p></p>
+<p>O padrão bzip2 possui maior poder de compressão e consequentemente demandará mais tempo na execução, enquanto o padrão gzip possui menos poder de compressão executando o processo em menor tempo.</p>
+

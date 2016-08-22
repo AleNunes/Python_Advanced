@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 182</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text180.html">Back</a> <a href="text182.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img181.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Agendamento de Tarefas</b></h1>
+<h2>O comando at é utilizado para criar agendamento únicos no sistema.</h2>
+<ul>
+<li><b></b></li>
+<li>Para efetuar a instalação do at execute:</li>
+<li><b><font color="#FF0000">1#</b> yum install at</li>
+<li><b><font color="#FF0000">2# </b>apt-get install at</li>
+<li><b></b></li>
+</ul>
+<p>O agendamento fica armazenado em arquivos com o nome do</p>
+<p>usuário dono da tabela no diretório <b>/var/spool/at/*</b></p>
+<p>Caso seja necessário remover uma tarefa agendada utilize o comando <b>atrm </b>seguido do número da tarefa (job) a ser removido.</p>
+<p><b><font color="#004586">At: Agendamento Único</b></p>
+<p><i><b><font color="#993366">Servidor: WebServer Interno</b></i></p>
+<br>
+<h3>Notes:</h3>
+<p><b>Agendamento de Tarefas com AT</b></p>
+<p></p>
+<p>O comando &quot;at&quot; pode agendar tarefas de forma semelhante ao cron, e é integrado à interface de linha de comando do Linux. É muito eficiente se aplicado no agendamento de tarefas que sejam disparadas somente uma vez. O at permite o controle dos usuários que podem agendar comandos através dos arquivos /etc/at.allow e /etc/at.deny.</p>
+<p></p>
+<p>Estes arquivos são organizados no formato de um usuário por linha. Durante o agendamento é verificado primeiro o arquivo /etc/at.allow (listando quem pode executar o comando) e depois /etc/at.deny. </p>
+<p></p>
+<p>Caso eles não existam, o agendamento de comando é permitido a todos os usuários.</p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<h1><b>Gerenciador de Pacotes APT</b></h1>
+<p><b>Funcionalidades avançadas:</b></p>
+<p><b>1#</b> ls /var/cache/apt/archives</p>
+<p><b>2#</b> apt-get clean</p>
+<p><b>3#</b> ls /var/cache/apt/archives</p>
+<p><b>4#</b> apt-get autoremove</p>
+<p><b>5#</b> apt-get -f install</p>
+<p><b>6#</b> apt-get -f remove</p>
+<p><b>7#</b> apt-get -d install htop</p>
+<p><b>8#</b> htop</p>
+<p><b>9# </b>ls /var/cache/apt/archives</p>
+<p><i><b>Servidor: Webserver Externo</b></i></p>
+<p><b>Opções do APT</b></p>
+<p><b>clean</b> → Limpa o diretório de pacotes que são baixados para realizar uma instalação;</p>
+<p><b>dist-upgrade</b> → Caso disponível, atualiza a distribuição do Debian;</p>
+<p><b>autoremove</b> → Localiza e remove todos os pacotes “orfãos”;</p>
+<p><b>-f install</b> → Aciona o sistema de resolução de problemas do APT;</p>
+<p><b>-f remove</b> →  Similar ao “-f install”, porém ele dá preferência para remover os pacotes com problemas ao invés de tentar instalar;</p>
+<p><b>-d</b> →  Não instala, apenas faz download.</p>
+
+<h3>Notes:</h3>
+<p><b>Removendo pacotes que não serão mais usados</b></p>
+<p><b></b></p>
+<p>Quando você instala um pacote o apt busca das fontes listadas em &quot;/etc/apt/sources.list&quot; os arquivos necessários são baixados e guardados em um repositório local &quot;/var/cache/apt/archives/&quot;, para só então ser feita a instalação, em algum tempo o repositório local pode crescer e ocupar muito espaço em disco. </p>
+<p></p>
+<p>Felizmente o apt fornece uma ótima ferramenta para lidar com seu repositório local, o &quot;apt-get clean&quot; remove tudo exceto os arquivos de lock dos diretórios &quot;/var/cache/apt/archives/&quot; e &quot;/var/cache/apt/archives/partial/&quot;. </p>
+<p></p>
+<p>Caso a remoção seja feita e você deseje instalar um novo pacote, o apt irá buscá-lo novamente quando o comando de instalação for executado.</p>
+

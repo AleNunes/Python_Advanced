@@ -1,0 +1,22 @@
+<h1><b>Gerenciamento Avançado de Partições</b></h1>
+<h2></h2>
+<h2></h2>
+<p><i><b>Servidor: Webserver Interno</b></i></p>
+<ul>
+<li>Ative essa nova partição de “swap”:</li>
+</ul>
+<p><b>2#</b> swapon /dev/sdb3</p>
+<ul>
+<li>Para visualizar as partições swaps ativas:</li>
+</ul>
+<p><b>3#</b> cat /proc/swaps</p>
+<p><b>4#</b> swapon -s</p>
+<p><b>1#</b> mkswap /dev/sdb3</p>
+<ul>
+<li>Vamos aproveitar a partição criada na aula anterior e aplicar o Swap à ela:</li>
+</ul>
+<h2><b>Gerenciar partições SWAP</b></h2>
+
+<h3>Notes:</h3>
+<p>A SWAP é o tipo de partição utilizada para fornecer suporte a memória virtual ao GNU/Linux em adição a memória RAM instalada no sistema. Somente os dados na memória RAM são processados pelo processador, por ser mais rápida. Desta maneira quando você estiver executando um programa e a memória RAM começar a encher, o GNU/Linux moverá automaticamente os dados que não estão sendo utilizados para a partição Swap e libera a memória RAM para continuar carregando os dados necessários pelo programa. Quando os dados movidos para a partição Swap são solicitados, o GNU/Linux move os dados da partição Swap para a Memória. Por este motivo a partição Swap também é chamada de Área de Troca ou memória virtual. A velocidade em que os dados são movimentados da memória RAM para a partição é muito alta. </p>
+

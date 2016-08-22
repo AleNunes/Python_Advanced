@@ -1,0 +1,16 @@
+<h1><b>Gerenciamento Avançado de Partições</b></h1>
+<p><i><b>Servidor: Webserver Interno</b></i></p>
+<ul>
+<li>Vamos converter ext2 para ext3, sem perder os dados:</li>
+</ul>
+<p><b>2#</b> tune2fs -j /dev/sdb1</p>
+<ul>
+<li>Monte novamente a partição:</li>
+</ul>
+<p><b>3#</b> mount /dev/sdb1 /backup</p>
+<p><b>1#</b> umount /backup</p>
+<ul>
+<li>Desmonte a partição /backup:</li>
+</ul>
+<h2><b>Migrar Filesystem:  ext2 para ext3</b></h2>
+

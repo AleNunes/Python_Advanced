@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 69</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="img0.html">First page</a> <a href="img63.html">Back</a> <a href="img65.html">Continue</a> <a href="img336.html">Last page</a> <a href="452_2016_3.3_fv.html">Overview</a> <a href="text64.html">Text</a></center><br>
+<center><img src="img64.png" alt=""></center>
+<h3>Notes:</h3><br>
+
+<p><p><b>Resolução Recursiva</b></p>
+<p>Tomando um navegador web como exemplo, a resolução para acesso a um &quot;website&quot;</p>
+<p>tem as seguintes etapas:</p>
+<p><b>1.</b>Usuário solicita acesso a &quot;www.exemplo.com.br&quot;</p>
+<p><b>2.</b>Navegador checa se já conhece o endereço IP do &quot;hostname&quot; solicitado (cache do&quot;browser&quot;);</p>
+<p><b>3.</b>Se não conhece, o navegador passa a solicitação para a biblioteca de resolução - o</p>
+<p>&quot;resolver&quot;;</p>
+<p><b>4.</b>O &quot;resolver&quot; procura o &quot;hostname&quot; solicitado no arquivo &quot;/etc/hosts&quot; local;</p>
+<p><b>5.</b>Se não encontrar, ele checa o arquivo &quot;/etc/resolv.conf&quot; para saber a quais &quot;name-</p>
+<p>servers&quot; deve solicitar a informação;</p>
+<p><b>6.</b>O &quot;resolver&quot; repassa a solicitação ao primeiro &quot;nameserver&quot; da lista, e logo após para o próximo até o fim da lista, aguardando por uma resposta de qualquer um deles;</p>
+<p><b>7.</b>O servidor de nomes acionado consulta seu &quot;cache&quot;, se houver;</p>
+<p><b>8.</b>Se não encontrar em seu &quot;cache&quot;, o servidor em questão vai diretamente ao servidor</p>
+<p>raiz e transfere a consulta - www.exemplo.com.br;</p>
+<p><b>9.</b>O servidor raiz não faz &quot;cache&quot;, e também não é autoridade sobre zonas de baixo</p>
+<p>nível, então ele apenas responde uma parte da questão: &quot;Não sei quem é, mas sei</p>
+<p>quem pode responder melhor: br.&quot;;</p>
+
+</p>
+</body>
+</html>

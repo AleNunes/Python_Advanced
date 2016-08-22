@@ -1,0 +1,24 @@
+<h1><b>Gerenciamento Avançado de Partições</b></h1>
+<h2></h2>
+<h2></h2>
+<p><i><b>Servidor: Webserver Interno</b></i></p>
+<ul>
+<li>Para visualizar as partições swaps ativas:</li>
+</ul>
+<p><b>2#</b> swapon -s</p>
+<ul>
+<li>Dê um nome para a nova partição SWAP:</li>
+</ul>
+<p><b>3#</b> mkswap -L SWAP /dev/sdb3</p>
+<p><b>1#</b> swapoff /dev/sdb3</p>
+<ul>
+<li>Para desabilitar a partição swap:</li>
+</ul>
+<h2><b>Montagem automática no boot</b></h2>
+
+<h3>Notes:</h3>
+<p>O comando swapon tem a opção -p que habilita a prioridade:</p>
+<p>-p, --priority &lt;nº&gt; </p>
+<p> 	</p>
+<p>Quanto maior o número maior  a prioridade que pode variar entre 0 e 32767.      </p>
+

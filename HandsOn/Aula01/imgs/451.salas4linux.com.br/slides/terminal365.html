@@ -1,0 +1,9 @@
+<h1><b>Gerenciadores de Boot</b></h1>
+<h2><b>Recuperação de Senhas de Root CentOS 7:</b></h2>
+<h2><b>1 -</b> Inicie o sistema e, na tela de inicialização do GRUB 2, pressione a tecla <b>e</b> para editar.</h2>
+<h2><b>2- </b>Retire os parâmetros <b>rhgb</b> e <b>quiet</b> do final, ou perto do fim, da linha linux16.</h2>
+<h2><b>3 -</b> Adicione os seguintes parâmetros no final da linha de linux16, deve ficar da seguinte maneira:</h2>
+<h2>.. biosdevname=0 <b>rd.break enforcing=0</b> (Adicionando o enforcing = 0 permite omitir a configuração do SELINUX)</h2>
+<h2><b></b></h2>
+<p><i><b>Servidor: Web Server Interno</b></i></p>
+

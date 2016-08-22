@@ -1,0 +1,13 @@
+<h1><b>Data e Hora do Sistema e Servidor de NTP</b></h1>
+<h2><b>Configuração de Fuso Horário:</b></h2>
+<h2><b>3 – Verifique se houve alteração na data:</b></h2>
+<h2><b>1#</b> date</h2>
+<h2><b>4 – Faça a correção do fuso horário:</b></h2>
+<h2><b>2#</b> rm -rf /etc/localtime</h2>
+<h2><b>3#</b> timedatectl America/Sao_Paulo</h2>
+<h2><b>4#</b> date</h2>
+<p>O comando <b>ln</b> possui a função de criar um link, um tipo de arquivo existente em sistemas UNIX que faz ligações entre arquivos.</p>
+<p>Para alterar o fuso horário criamos um link físico (hard link) entre o arquivo de fuso horário e o arquivo /<b>etc/localtime</b>.</p>
+<p>Outra opção para alteração de fuso horário é o comando <b>tzselect</b> </p>
+<p><i><b>Servidor: WebServerInterno</b></i></p>
+

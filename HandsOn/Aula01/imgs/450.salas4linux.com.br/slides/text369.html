@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 370</title>
+</head>
+<body text="#FFFFFF" bgcolor="#FFFFFF" link="#3A81CC" vlink="#3773B1" alink="#3A81CC">
+<center>
+<a href="text0.html">First page</a> <a href="text368.html">Back</a> <a href="text370.html">Continue</a> <a href="text417.html">Last page</a> <a href="Apostila3.2.html">Overview</a> <a href="img369.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Laboratório Dexter</b></h1>
+<ul>
+<li><font color="#666666">Na primeira coluna do fstab podemos especificar a localização do device das 3 maneiras: Device, UUID e Label</li>
+</ul>
+<p><i><b><font color="#993366">Servidor: Webserver Interno</b></i></p>
+<ul>
+<li><b><font color="#FF0000">1<font color="#666666">#</b> blkid | grep sdb1 </font></li>
+<li><b><font color="#FF0000">2<font color="#666666">#</b> blkid | grep sdb1 | awk '{print $3}' | sed -e s/\&quot;//g</font></li>
+<li><b><font color="#FF0000">3<font color="#666666">#</b> blkid | grep sdb1 | awk '{print $3}' | sed -e s/\&quot;//g</font> <b></font><font color="#CC0000">&gt;&gt;</b></font><font color="#333333"> </font><font color="#666666">/etc/fstab</font></li>
+<li><b><font color="#FF0000">4<font color="#666666">#</b> vim /etc/fstab</font></li>
+<li><font color="#666666"> 	UUID=683dc-c6a0-4b-6b-64f23e	/backup	ext2	defaults	0 0</li>
+<li><font color="#666666"> 	LABEL=dados						/srv/		ext3	defaults	0 0 </li>
+<p><font color="#666666"></p>
+<li><b><font color="#FF0000">5<font color="#666666">#</b> mount -a ; df -h</font></li>
+<li><b><font color="#FF0000">6<font color="#666666">#</b> cat /etc/mtab</font></li>
+</ul>
+</body>
+</html>

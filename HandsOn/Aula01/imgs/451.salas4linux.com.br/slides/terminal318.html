@@ -1,0 +1,16 @@
+<h1><b>Rsyslog</b></h1>
+<h2><b>Testando o Logrotate:</b></h2>
+<h2><b>4 – Verifique a rotação de LOG:</b></h2>
+<h2><b>1#</b> ls -l /var/log/all*</h2>
+<h2><b>2#</b> du -hs /var/log/all*</h2>
+<h2><b>5 – Acrescente compressão de dados após a linha endscript:</b></h2>
+<h2><b>3#</b> vim /etc/logrotate.d/all</h2>
+<h2><b>   </b>compress</h2>
+<h2><b>6 – Repita os passos 1 a 4 para comparar a diferença.</b></h2>
+<p><i><b>Servidor: Audit</b></i></p>
+
+<h3>Notes:</h3>
+<p><b>Opções do Rotacionamento acima:</b></p>
+<p><b></b></p>
+<p><b>compress → </b>Define a compressão do arquivos rotacionados.</p>
+

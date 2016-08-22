@@ -1,0 +1,10 @@
+<h1><b>Implementando NFS</b></h1>
+<h2>Para que os clientes possam acessar o servidor NFS, é necessário que os seguintes serviços estejam sendo executados no servidor:</h2>
+<ul>
+<li><b>Portmapper → </b>Converte processos RPC em números no protocolo TCP/IP. Através deste daemon os clientes conseguem o número da porta do servidor NFS;</li>
+<li><b>Status → </b>Oferece informações sobre o compartilhamento a fim de evitar erros;</li>
+<li><b>Nlockmgr → </b>Gerenciador de bloqueios do NFS;</li>
+<li><b>Nfsd → </b> Atende às requisições dos clientes;</li>
+<li><b>Mountd → </b>Executa as solicitações do nfsd (montagem dos clientes).</li>
+</ul>
+

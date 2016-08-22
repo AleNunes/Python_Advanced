@@ -1,0 +1,42 @@
+<h1><b>Manipulando Hardware e Dispositivos</b></h1>
+<p><b>Tipos de Partições</b></p>
+<p><b>Primárias</b> → Todo disco suporte apenas 4 partições primárias;</p>
+<p><b>Estendida</b> → Tipo especial de partição usada para armazenar as partições lógicas;</p>
+<p><b>Lógicas</b> → Extensão das partições permitindo uma melhor organização do disco.</p>
+<p><b>sda1</b></p>
+<p><b>sda2</b></p>
+<p><b>/dev/sda</b></p>
+<p><b>sda1</b></p>
+<p><b>sda2</b></p>
+<p><b>sda1</b></p>
+<p><b>sda2</b></p>
+<p><b>/dev/sdb</b></p>
+<p><b>sdb1</b></p>
+<p><b>sdb2</b></p>
+<p><b>Diretórios Particionáveis</b></p>
+<p></p>
+<p><b>/ 				/boot </b></p>
+<p><b>/var			/tmp</b></p>
+<p><b>/usr			/srv	</b></p>
+<p><b>/home			/opt</b></p>
+<p></p>
+<p><b>Diretórios Não Particionados</b></p>
+<p></p>
+<p><b>/etc 			/lib </b></p>
+<p><b>/bin			/sbin</b></p>
+<p><b>/dev			/sys</b></p>
+<p><b>/proc	</b></p>
+<h2><b>Partições do Linux:</b></h2>
+
+<h3>Notes:</h3>
+<p><b>O que é uma partição?</b></p>
+<p>Uma partição é um espaço do disco que se destina a receber um sistema de arquivos ou, em um caso particular que veremos adiante, outras partições.</p>
+<p></p>
+<p><b>Partição estendida</b></p>
+<p>Isso mesmo, no singular. Só pode haver uma partição estendida em cada disco. Uma partição estendida é um tipo especial de partição primária que não pode conter um sistema de arquivos. Ao invés disso, ela contém partições lógicas. Se existir uma partição estendida, ela toma o lugar de uma das partições primárias, podendo haver apenas três.</p>
+<p></p>
+<p><b>Partições lógicas</b></p>
+<p>Também chamadas de unidades lógicas, as partições lógicas residem dentro da partição estendida. As partições lógicas são numeradas a partir de 5.</p>
+<p></p>
+<p></p>
+

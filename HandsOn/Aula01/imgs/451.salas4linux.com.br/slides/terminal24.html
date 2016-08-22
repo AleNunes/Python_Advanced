@@ -1,0 +1,19 @@
+<h1><b>Administração de Usuários</b></h1>
+<h2><b>Definindo a Política de Senha dos Usuários:</b></h2>
+<p><b>Não esqueça de voltar a data ao normal depois dos testes!</b></p>
+<p><b>O comando passwd</b></p>
+<p>O comando <b>passwd</b> por ser usado para definição de senhas ou para bloqueio de usuários:</p>
+<p><b>-l →</b> Bloqueia o usuário (lock)</p>
+<p><b>-u →</b> Desbloqueia o usuário (unlock);</p>
+<p><i><b>Servidor: FileServer</b></i></p>
+<p><b>4 – Logue com o usuário e tente novamente:</b></p>
+<p><b>1#</b> su – bryan.leah</p>
+<p><b>2$</b> passwd</p>
+<p><b>&lt; Ele irá permitir a troca de senha &gt;</b></p>
+<p><b>&lt; Tente utilizar a senha 123 &gt;</b></p>
+<p><b>3$</b> exit</p>
+<p><b>5 – Simule a senha Expirada verificando a data e alterando para +1 dia:</b></p>
+<p><b>4#</b> chage -l bryan.leah </p>
+<p><b>5#</b> date MMDDYY </p>
+<p><b>&lt; Tente logar novamente em um terminal &gt;</b></p>
+

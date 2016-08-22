@@ -1,0 +1,13 @@
+<h1><b>Inicialização do Sistema</b></h1>
+<p><i><b>Servidor: Webserver Interno</b></i></p>
+<p><b>Inicialização de Serviços (parte 2/2):</b></p>
+<ul>
+<li> Desative o serviço ssh da inicialização do sistema:</li>
+</ul>
+<p><b>1# </b>systemctl disable sshd.service</p>
+<p><b>2# </b>ls /etc/systemd/system/multi-user.target.wants/sshd*</p>
+<ul>
+<li> Ative novamente o serviço ssh na inicialização do sistema:</li>
+</ul>
+<p><b>4# </b>systemctl enable sshd.service</p>
+

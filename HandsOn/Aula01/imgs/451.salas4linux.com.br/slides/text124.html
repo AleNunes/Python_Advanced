@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 125</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text123.html">Back</a> <a href="text125.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img124.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Redes Avançado</b></h1>
+<h2><b><font color="#004586">Dividindo a Rede 192.168.200.0<font color="#FF0000">/24</font><font color="#4C4C4C">  </font><font color="#004586">em 2 Sub-Redes:</b></font></h2>
+<h2><b><font color="#004586">2ª Regra:</b><font color="#4C4C4C">    </font>N = Número de Bits que se deve ligar </h2>
+<h2>Máscara Padrão = 11111111.11111111.11111111.00000000 </h2>
+<h2>Nova Máscara = 11111111.11111111.11111111.<b><font color="#FF420E">1</b>0000000<font color="#4C4C4C"> </font></h2>
+<h2><b><font color="#004586">Calculando:</b></h2>
+<p>2<b><font color="#FF950E">1</b><font color="#4C4C4C"> </font>≥ 2</p>
+<table>
+  <tr>
+    <td>
+<p><b><font color="#FFFFFF">128</b></p>
+    </td>
+    <td>
+<p><b><font color="#FFFFFF">64</b></p>
+    </td>
+    <td>
+<p><b><font color="#FFFFFF">32</b></p>
+    </td>
+    <td>
+<p><b><font color="#FFFFFF">16</b></p>
+    </td>
+    <td>
+<p><b><font color="#FFFFFF">8</b></p>
+    </td>
+    <td>
+<p><b><font color="#FFFFFF">4</b></p>
+    </td>
+    <td>
+<p><b><font color="#FFFFFF">2</b></p>
+    </td>
+    <td>
+<p><b><font color="#FFFFFF">1</b></p>
+    </td>
+    <td>
+<p><b><font color="#FFFFFF">Soma-se os Bits 1</b></p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+<p><font color="#4C4C4C">1</p>
+    </td>
+    <td>
+<p><font color="#4C4C4C">0</p>
+    </td>
+    <td>
+<p><font color="#4C4C4C">0</p>
+    </td>
+    <td>
+<p><font color="#4C4C4C">0</p>
+    </td>
+    <td>
+<p><font color="#4C4C4C">0</p>
+    </td>
+    <td>
+<p><font color="#4C4C4C">0</p>
+    </td>
+    <td>
+<p><font color="#4C4C4C">0</p>
+    </td>
+    <td>
+<p><font color="#4C4C4C">0</p>
+    </td>
+    <td>
+<p><font color="#4C4C4C">= <b>128 → /25</b></p>
+    </td>
+  </tr>
+</table>
+<p><i><b><font color="#993366">Servidor: Audit</b></i></p>
+<br>
+<h3>Notes:</h3>
+<p>Sabendo qual o número mínimo de sub-redes basta descobrirmos quantos bits são equivalentes a este número, aqui entra uma simplificação realmente providencial em relação ao cálculo:</p>
+<p></p>
+<p><b>2n <u>&gt;</u> Número de Sub-redes</b></p>
+<p><b></b></p>
+<p>Onde o valor de<b> “n”</b> deverá ser definido para que a regra<b> 2n <u>&gt;</u> Número de Sub-redes </b>seja validada.</p>
+<p></p>
+<p>Em nosso modelo a condição <b>22 <u>&gt;</u> 4 </b>é verdadeira<b> </b>logo dois bits a mais alterados para “1” garantirão no mínimo 4 sub-redes conforme queremos em nossa divisão.</p>
+<p></p>
+</body>
+</html>

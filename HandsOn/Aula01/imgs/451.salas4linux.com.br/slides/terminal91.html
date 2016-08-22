@@ -1,0 +1,11 @@
+<h1><b>Implementando Controle de Acesso ao Sistema com PAM</b></h1>
+<h2><b>Implementação Prática do PAM – Módulo nologin:</b></h2>
+<p><i><b>Servidor: Fileserver</b></i></p>
+<p><b>1 – Vamos fazer um teste simples que serve para bloquear usuários comuns. Abra o arquivo &quot;/etc/pam.d/login&quot; e visualize o módulo &quot;pam_nologin.so&quot;:</b></p>
+<p><b>1#</b> vim /etc/pam.d/login</p>
+<p> #2	account		required   pam_nologin.so </p>
+<p></p>
+<p><b>2 – Para esse “módulo” funcionar ele necessita que o arquivo “nologin” esteja criado dentro do diretório /etc. Execute:</b></p>
+<p><b>2#</b> touch /etc/nologin</p>
+<p><b>TENTE SE LOGAR COM O USUÁRIO suporte E SENHA @123Mudar</b></p>
+

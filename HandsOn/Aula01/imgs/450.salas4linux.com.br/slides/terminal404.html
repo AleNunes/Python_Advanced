@@ -1,0 +1,21 @@
+<h1><b>Servidor de Impressão CUPS</b></h1>
+<h2><b></b></h2>
+<h2><b></b></h2>
+<p>O diretório <b>/var/spool/cups</b> é o responsável por armazenar os trabalhos de impressão.</p>
+<p>É possível efetuar impressões pelo terminal utilizando os comandos <b>lp</b>  e <b>lpr</b>.</p>
+<p>Para deletar um trabalho utilize o comando <b>lprm, </b>trabalhos ainda não impressos poderão ser visualizados através do comando<b> lpq</b>. </p>
+<h2><b>Gerenciando Impressão em Modo Texto:</b></h2>
+<p><b>4 – Envie um trabalho para impressão:</b></p>
+<p><b>1#</b> su - suporte</p>
+<p><b>2$</b> lp -d PDF /etc/hostname</p>
+<p></p>
+<p><b>5 – Verifique os trabalhos de impressão:</b></p>
+<p><b>3$</b> su - </p>
+<p><b>4#</b> ls /var/spool/cups</p>
+<p></p>
+<p><b>6 – Envie 5 cópias de um trabalho para </b></p>
+<p><b>Impressão:</b></p>
+<p><b>5$</b> su - </p>
+<p><b>6#</b> lpr -P PDF /etc/hosts -#5</p>
+<p><i><b>Servidor: Máquina Linux Interna</b></i></p>
+

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 8</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text5.html">Back</a> <a href="text7.html">Continue</a> <a href="text336.html">Last page</a> <a href="452_2016_3.3_fv.html">Overview</a> <a href="img6.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Firewall Linux</b></h1>
+<h2><b><font color="#004586">Iptables:</b></h2>
+<ul>
+<li>O iptables é um firewall em nível de pacotes e funciona baseado no endereço/porta de origem/destino do pacote, prioridade;</li>
+<li>Ele funciona através da comparação de regras para saber se um pacote tem ou não permissão para passar;</li>
+<li>Possui 2 políticas: ACCEPT, DROP e REJECT;</li>
+<li>Possui 5 tabelas: Filter , Nat, Mangle,  Raw e Security;</li>
+<li>Possui 5 Chains: INPUT, OUTPUT, FORWARD, PREROUTING, POSTROUTING.</li>
+</ul>
+<br>
+<h3>Notes:</h3>
+<p><b>Iptables</b></p>
+<p></p>
+<p>Os sistema GNU/Linux com Kernel 2.6 trabalham com o &quot;Iptables&quot; para fazer o gerenciamento de regras de Firewall. Lembrando que o &quot;Iptables&quot; é apenas um &quot;frontend&quot; que gerencia o suporte &quot;Netfilter&quot; no &quot;Kernel&quot;.</p>
+<p></p>
+<p><b>O que são as CHAINS?</b></p>
+<p><b></b></p>
+<p>Basicamente no iptables as regras são organizadas em tabelas, essas tabelas possuem o que chamamos de CHAINS. É nas CHAINS que são definidas as regras para o nosso &quot;firewall&quot; sendo que uma CHAIN deverá possuir também uma política padrão (drop ou accept).</p>
+<p></p>
+<p>A tradução literal para CHAIN seria &quot;correntes&quot;, assim cada tabela teria uma corrente, onde cada elo corresponderia a uma regra.</p>
+</body>
+</html>

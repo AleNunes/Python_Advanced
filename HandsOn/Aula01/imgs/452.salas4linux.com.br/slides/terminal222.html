@@ -1,0 +1,12 @@
+<h1><b>Laboratório Dexter</b></h1>
+<ul>
+<li>Precisamos que o novo volume configurado na aula de RAID esteja disponível na configuração do samba4. Para isso, utilizaremos um compartilhamento com NFS no servidor <b>Fileserver</b>:</li>
+<h2><b>1 – Instale o client NFS e Crie o compartilhamento no servidor Fileserver:</b></h2>
+<li><b>1# </b>yum install nfs-utils</li>
+<li><b>2# </b>cd /srv/</li>
+<li><b>3# </b>mkdir publico</li>
+<li><b>4# </b>chmod 777 publico</li>
+<li><b>5# </b>mount -t nfs 192.168.200.50:/srv/samba/publico /srv/publico/</li>
+</ul>
+<p><i><b>Servidor: Fileserver</b></i></p>
+

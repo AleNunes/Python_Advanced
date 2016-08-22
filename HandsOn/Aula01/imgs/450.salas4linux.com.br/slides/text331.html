@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 332</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#3A81CC" vlink="#3773B1" alink="#3A81CC">
+<center>
+<a href="text0.html">First page</a> <a href="text330.html">Back</a> <a href="text332.html">Continue</a> <a href="text417.html">Last page</a> <a href="Apostila3.2.html">Overview</a> <a href="img331.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Inicialização do Sistema</b></h1>
+<ul>
+<li> O comando que manipula os scripts de inicialização do sistema e iniciar/parar um serviço é o <b><font color="#FF950E">systemctl</b>;</li>
+<li> Para ativar ou desativar um serviço do sistema siga a instrução:</li>
+</ul>
+<p><i><b><font color="#993366">Servidor: Webserver Interno</b></i></p>
+<p><b><font color="#004586">Iniciar/Parar um serviço no Systemd:</b></p>
+<p><b># </b>systemctl start/stop <font color="#CC0000">servico.service</p>
+<ul>
+<li> Pare o serviço ssh:</li>
+</ul>
+<p><b><font color="#FF0000">1# </b>systemctl stop sshd.service</p>
+<ul>
+<li> Inicie o serviço ssh:</li>
+</ul>
+<p><b><font color="#FF0000">2# </b>systemctl start sshd.service</p>
+<ul>
+<li> Verifique o status do serviço ssh:</li>
+</ul>
+<p><b><font color="#FF0000">3# </b>systemctl status sshd.service</p>
+</body>
+</html>

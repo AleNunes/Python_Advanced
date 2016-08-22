@@ -1,0 +1,17 @@
+<h1><b>Administração de Usuários</b></h1>
+<p>Cada pasta departamental da Dexter terá seu gerente como dono e o departamento como grupo dono.</p>
+<p>O comando <b>chown</b> é usado alterar o dono de pastas e arquivos, já o comando <b>chgrp</b> é usando para alterar o grupo dono de pastas e arquivos.</p>
+<p><i><b>Servidor: FileServer</b></i></p>
+<p><b>1#</b> cd /srv/dexter</p>
+<p><b>2#</b> mkdir {Diretoria,Vendas,Financeiro,Infra}</p>
+<p><b>3#</b> ls -l </p>
+<p>drwxr-xr-x 2 root root ... Diretoria</p>
+<p>drwxr-xr-x 2 root root ... Financeiro</p>
+<p>drwxr-xr-x 2 root root ... Infra</p>
+<p>drwxr-xr-x 2 root root ... Vendas</p>
+<p><b>4#</b> chown bryan.leah Diretoria</p>
+<p><b>5#</b> chown annie.dee Vendas</p>
+<p><b>6#</b> chown antony.brooks Financeiro</p>
+<p><b>7#</b> chown harry.rosemberg Infra</p>
+<h2><b>Adicionando as Pastas Departamentais e Ajustando os Proprietários:</b></h2>
+

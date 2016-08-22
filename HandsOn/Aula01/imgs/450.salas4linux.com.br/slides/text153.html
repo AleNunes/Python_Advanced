@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 154</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#3A81CC" vlink="#3773B1" alink="#3A81CC">
+<center>
+<a href="text0.html">First page</a> <a href="text152.html">Back</a> <a href="text154.html">Continue</a> <a href="text417.html">Last page</a> <a href="Apostila3.2.html">Overview</a> <a href="img153.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Gerenciador de Pacotes DPKG</b></h1>
+<h2><b><font color="#004586">Removendo programas desnecessários nos servidores:</b></h2>
+<p><i><b><font color="#993366">Servidor: Máquina Linux Interna</b></i></p>
+<p><b><font color="#FF0000">1#</b> dpkg <b>-l</b> | less</p>
+<p><b><font color="#FF0000">2#</b> dpkg <b>-l</b> | grep  figlet</p>
+<p><b><font color="#FF0000">3#</b> dpkg <b>-r</b> figlet</p>
+<p><b><font color="#FF0000">4#</b> dpkg <b>-l</b> | grep figlet</p>
+<p><b><font color="#FF0000">5#</b> dpkg <b>-r</b> fetchmail</p>
+<p><b><font color="#FF0000">6#</b> dpkg <b>-l</b> | grep fetchmail</p>
+<p><b><font color="#FF0000">7#</b> dpkg <b>--purge</b> fetchmail</p>
+<p><b><font color="#FF0000">8#</b> dpkg <b>-l</b> | grep fetchmail</p>
+<p><b><font color="#004586">Opções do dpkg</b></p>
+<p><b><font color="#004586">-r</b> → (remove) Remove um programa sem suas dependências. Remoção Parcial;</p>
+<p><b><font color="#004586">--purge</b> → Remove um programa e seus arquivos de configuração. Remoção Completa.</p>
+<br>
+<h3>Notes:</h3>
+<p><b>Expurgando pacotes</b></p>
+<p></p>
+<p>É muito comum que, ao removermos um determinado pacote dependências deste pacote não sejam desinstaladas, neste caso o parâmetro <b>--purge</b> pode ser utilizado para remover estes pacotes limpando completamente o sistema da aplicação anteriormente instalada.</p>
+</body>
+</html>

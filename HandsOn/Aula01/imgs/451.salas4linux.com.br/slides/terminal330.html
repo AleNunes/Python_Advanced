@@ -1,0 +1,22 @@
+<h1><b>Gerência de Módulos</b></h1>
+<h2><b>1 - Carregue o módulo vfat:</b></h2>
+<h2><b> 1#</b> modprobe vfat</h2>
+<h2><b></b></h2>
+<h2><b>2 - Verifique se o módulo foi carregado:</b></h2>
+<h2><b>2#</b> lsmod | grep vfat</h2>
+<h2>O modprobe além de carregar o módulo, carregou também as dependências do módulo. </h2>
+<h2><b></b></h2>
+<h2><b>3 - Descarregue o módulo:</b></h2>
+<h2><b>3#</b> modprobe -r vfat</h2>
+<h2><b>4#</b> lsmod | grep vfat</h2>
+<p>O comando <b>modprobe</b> tem a função de carregar e descarregar módulos externos na memória.</p>
+<p><b>Na versão do Debian 7 a opção -l para listar todos os módulos disponíveis foi desativada.</b></p>
+<p><i><b>Servidor: Audit</b></i></p>
+
+<h3>Notes:</h3>
+<p><b>Carregando Módulos</b></p>
+<p><b></b></p>
+<p>O kernel provê o comando modprobe para facilitar o gerenciamento de dependências.</p>
+<p></p>
+<p>Este comando tenta carregar automaticamente qualquer dependência do módulo solicitado. Por exemplo, ao tentar carregar o módulo MS-DOS, o comando modprobe carrega primeiro o módulo fat, seguido por MS-DOS.</p>
+

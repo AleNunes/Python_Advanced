@@ -1,0 +1,31 @@
+<h1><b>Gerenciamento Avançado de Partições</b></h1>
+<h2></h2>
+<h2></h2>
+<p><i><b>Servidor: Webserver Interno</b></i></p>
+<ul>
+<li>Monte o sistema de arquivo:</li>
+</ul>
+<p><b>2#</b> mount /dev/sdb2 /srv</p>
+<ul>
+<li>Verifique o tipo de sistema de arquivos:</li>
+</ul>
+<p><b>3#</b> mount</p>
+<p><b>1#</b> e2fsck -pf /dev/sdb2</p>
+<ul>
+<li>Cheque o sistema de arquivos do dispositivo:</li>
+</ul>
+<p><b>4#</b> cat /srv/index.html</p>
+<ul>
+<li>Visualize o arquivo index.html para ver que não corrompeu:</li>
+</ul>
+<h2><b>Migrar Filesystem:  ext3 para ext4</b></h2>
+
+<h3>Notes:</h3>
+<p>É possível utilizar diversos comandos no Linux para verificar se uma partição foi montada: </p>
+<p></p>
+<p> # df -h </p>
+<p> </p>
+<p># cat /etc/mtab </p>
+<p></p>
+<p> # cat /proc/mounts</p>
+

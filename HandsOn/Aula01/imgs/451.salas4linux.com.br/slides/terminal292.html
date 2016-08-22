@@ -1,0 +1,14 @@
+<h1><b>Data e Hora do Sistema e Servidor de NTP</b></h1>
+<h2><b>Implementando um Servidor de NTP:</b></h2>
+<p><b>3 – Dentro do arquivo de configuração, altere o conteúdo das linhas 21 a 25 deixando no seguinte padrão:</b></p>
+<p>21 server 	0.debian.pool.ntp.org  iburst</p>
+<p>22 server 	1.debian.pool.ntp.org  iburst</p>
+<p>23 server		a.ntp.br	iburst prefer </p>
+<p>24 server		b.ntp.br	</p>
+<p>25 server		c.ntp.br</p>
+<p><b>Parâmetros adicionais:</b></p>
+<p><b></b></p>
+<p><b>→Iburst: </b>Esta opção aumenta para 8 o número de pacotes enviados durante a sincronização inicial de data e hora.</p>
+<p><b>→ prefer:</b> A opção prefer força a verificação da resposta dada pelo servidor preferido, se essa resposta diferir muito da resposta dos demais servidores ela será descartada.</p>
+<p><i><b>Servidor: Audit</b></i></p>
+

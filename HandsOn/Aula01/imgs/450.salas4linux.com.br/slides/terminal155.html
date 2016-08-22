@@ -1,0 +1,28 @@
+<h1><b>Gerenciador de Pacotes RPM</b></h1>
+<h2><b>Instalação de baixo nível da ferramenta sysstat:</b></h2>
+<p><i><b>Servidor: Webserver Interno</b></i></p>
+<p><b>1#</b> cd /root/pacotes</p>
+<p><b>2#</b> rpm <b>-qa</b> | grep htop</p>
+<p><b>3#</b> rpm <b>-qpi</b> htop.rpm</p>
+<p><b>4#</b> rpm <b>-qpR</b> htop.rpm</p>
+<p><b>5#</b> rpm <b>-ivh</b> htop.rpm</p>
+<p><b>6#</b> rpm <b>-qa </b>| grep htop</p>
+<p><b>7#</b> rpm <b>-ql</b> htop</p>
+<p><b>8#</b> htop</p>
+<p><b>Opções do rpm</b></p>
+<p><b>-qa </b>→ Lista todos os pacotes instalados;</p>
+<p><b>-qpi</b> →  Exibe informações de um pacote a ser instalado;</p>
+<p><b>-qpR</b> → Lista dependências do pacote;</p>
+<p><b>-ivh</b> → Instala um pacote mostrando detalhes (v) com uma barra de progresso (h);</p>
+<p><b>-ql</b> → Lista todos os arquivos do programa.</p>
+
+<h3>Notes:</h3>
+<p><b>Base de dados RPM</b></p>
+<p><b></b></p>
+<p>Atrás do gerenciador de pacotes está o banco de dados RPM. Ele consiste em uma lista duplamente ligada que contém todas as informações de todos os RPM instalados.</p>
+<p></p>
+<p>O banco de dados lista todos os arquivos que são criados ou modificados quando um usuário instala um programa e facilita a remoção destes mesmos arquivos. Se o banco de dados fica corrompido (o que acontece facilmente se o cliente de RPM é fechado subitamente), as ligações duplas garantem que eles possam ser reconstruídos sem nenhum problema.</p>
+<p></p>
+<p>Em computadores com o sistema operacional RedHat instalado, este banco de dados encontra-se em /var/lib/rpm.</p>
+<p></p>
+

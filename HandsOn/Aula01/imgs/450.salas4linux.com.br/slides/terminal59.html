@@ -1,0 +1,25 @@
+<h1><b>Laboratório Dexter</b></h1>
+<ul>
+<li>Copiando o issue:</li>
+</ul>
+<p><i><b>Servidor: Webserver Interno / Webserver Externo</b></i></p>
+<p><b>1#</b> cd /etc</p>
+<p><b>2#</b> cp issue  issue.net</p>
+<ul>
+<li>Arquivo issue:</li>
+</ul>
+<p><b>3#</b> vim /etc/issue</p>
+<p><b>&lt; Substitua a barra invertida &quot;\&quot;  por &quot;\\&quot; : &gt;</b></p>
+<p> 	:%s<b>/\</b>\<b>/\</b>\<b>\</b>\<b>/</b>g</p>
+<p><b>4#</b> logout</p>
+<p><b>DEU TUDO CERTO!</b></p>
+<p><b>Particularidades da issue:</b></p>
+<p></p>
+<p>Devido às variáveis do getty, será necessário proteger todas as \ do desenho em Ascii.</p>
+<p>O arquivo<b> </b>issue.net, pelo contrário, é um arquivo texto normal, portanto não precisa de exceção na barra invertida.</p>
+<p>Veja um exemplo de proteção:</p>
+<p><b>1</b># echo L<b>!</b>nux </p>
+<p>	-bash: !nux: event not found</p>
+<p><b>2</b># echo L\<b>!</b>nux</p>
+<p>	L!nux</p>
+

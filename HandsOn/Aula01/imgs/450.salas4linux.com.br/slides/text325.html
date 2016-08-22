@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 326</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#3A81CC" vlink="#3773B1" alink="#3A81CC">
+<center>
+<a href="text0.html">First page</a> <a href="text324.html">Back</a> <a href="text326.html">Continue</a> <a href="text417.html">Last page</a> <a href="Apostila3.2.html">Overview</a> <a href="img325.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Inicialização do Sistema</b></h1>
+<ul>
+<li> Alterando  do runlevel atual (3) para o runlevel 1: </li>
+</ul>
+<p><i><b><font color="#993366">Servidor: Webserver Interno</b></i></p>
+<p><b><font color="#004586">Alterar o runlevel atual:</b></p>
+<p><b><font color="#FF0000">1#</b> systemctl isolate rescue.target</p>
+<p><b><font color="#CC0000">					ou</b></p>
+<p><b><font color="#FF0000">1#</b> systemctl isolate runlevel1.target</p>
+<ul>
+<li> Para voltar para o runlevel 3:</li>
+</ul>
+<p><b><font color="#FF0000">2#</b> systemctl isolate multi-user.target</p>
+<p><font color="#4C4C4C">					<b><font color="#CC0000">ou</b></font></p>
+<p><b><font color="#FF0000">2#</b> systemctl isolate runlevel3.target</p>
+<p><b><font color="#993366">Forneça a senha de root</b></p>
+<p><b><font color="#993366">Realize o login e senha</b></p>
+<p><b><font color="#FF950E">NOTA: </b>Outra forma de alterar o runlevel é através do parâmetro set-default.<b> Ex:</b> systemctl	set-default &lt;nomedotarget&gt;.target</p>
+</body>
+</html>

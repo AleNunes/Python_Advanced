@@ -1,0 +1,86 @@
+<h1><b>Resumão LPI (parte 1/2)</b></h1>
+
+  
+    
+<p><b>Função</b></p>
+    
+    
+<p><b>DPKG</b></p>
+    
+    
+<p><b>RPM</b></p>
+    
+  
+  
+    
+<p>Mostrar informações sobre um pacote</p>
+    
+    
+<p>dpkg -I pacote.deb</p>
+    
+    
+<p>rpm -qpi pacote.rpm</p>
+    
+  
+  
+    
+<p>Listar pacotes instalados</p>
+    
+    
+<p>dpkg -l</p>
+    
+    
+<p>rpm -qa</p>
+    
+  
+  
+    
+<p>Listar as dependências de um pacote</p>
+    
+    
+<p>dpkg -s pacote.deb | grep ^Depends</p>
+    
+    
+<p> rpm -qpR  pacote.rpm</p>
+    
+  
+  
+    
+<p>Instalar um pacote</p>
+    
+    
+<p>dpkg -i pacote.deb</p>
+    
+    
+<p>rpm -ivh pacote.rpm</p>
+    
+  
+  
+    
+<p>Remover um pacote</p>
+    
+    
+<p>dpkg -r pacote.deb</p>
+    
+    
+<p>rpm -e pacote.rpm</p>
+    
+  
+  
+    
+<p>Atualizar um pacote</p>
+    
+    
+<p>dpkg -i pacote.deb</p>
+    
+    
+<p>rpm -Uvh pacote.rpm</p>
+    
+  
+
+
+<h3>Notes:</h3>
+<p><b>DICA:</b></p>
+<p><b></b></p>
+<p>Fique esperto! Comandos dos gerenciadores RPM e DPKG  são amplamente abordados nas provas LPI.</p>
+

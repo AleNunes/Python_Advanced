@@ -1,0 +1,17 @@
+<h1><b>Laboratório Dexter</b></h1>
+<ul>
+<li>Primeiramente é necessário verificar em qual terminal este usuário está logado:</li>
+</ul>
+<p><b>1# </b>w</p>
+<p> 15:42:47 up  1:18,  2 users,  load average: 0,00, 0,01, 0,04</p>
+<p>USER     TTY      FROM               LOGIN@   IDLE   JCPU   PCPU WHAT</p>
+<p>root     tty1                      			14:24      6:13    0.42s    0.32s   -bash</p>
+<p><b>root     pts/0    scorpion.local   		15:42      0.00s  0.03s    0.00s     w</b></p>
+<ul>
+<li>Repare que há uma conexão no terminal /dev/pts/0:</li>
+</ul>
+<p><b>2# </b>fuser -k /dev/pts/0</p>
+<p>Com o comando fuser também é possível matar processos.</p>
+<p><i><b>Servidor: Webserver Interno</b></i></p>
+<h2><b>Dropando conexão indesejada:</b></h2>
+

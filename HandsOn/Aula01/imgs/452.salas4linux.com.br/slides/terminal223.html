@@ -1,0 +1,13 @@
+<h1><b>Laboratório Dexter</b></h1>
+<h2><b>2 – Verifique o funcionamento do compartilhamento criado:</b></h2>
+<h2><b>1# </b>df -h</h2>
+<h2><b>2# </b>touch /srv/publico/teste.txt</h2>
+<h2><b>&lt;Verifique se consegue visualizar o arquivo na pasta /srv/samba/publico do servidor Storage&gt;</b></h2>
+<h2><b>3</b># umount -l /srv/publico</h2>
+<h2><b>4# </b>vim /etc/fstab</h2>
+<h2>192.168.200.50:/srv/samba/publico/  /srv/publico/   nfs   defaults 0 0</h2>
+<h2><b>5# </b>mount -a ; mount</h2>
+<p><i><b>Servidor: Fileserver</b></i></p>
+<p><b>Verifique os Ips conectados no Storage pelo XFS:</b></p>
+<p><b>		1# netstat -an | grep 2049</b></p>
+

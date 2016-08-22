@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 293</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text291.html">Back</a> <a href="text293.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img292.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Data e Hora do Sistema e Servidor de NTP</b></h1>
+<h2><b><font color="#004586">Implementando um Servidor de NTP:</b></h2>
+<p><b><font color="#004586">3 – Dentro do arquivo de configuração, altere o conteúdo das linhas 21 a 25 deixando no seguinte padrão:</b></p>
+<p>21 server 	0.debian.pool.ntp.org  iburst</p>
+<p>22 server 	1.debian.pool.ntp.org  iburst</p>
+<p>23 server		a.ntp.br	iburst prefer </p>
+<p>24 server		b.ntp.br	</p>
+<p>25 server		c.ntp.br</p>
+<p><b><font color="#FF950E">Parâmetros adicionais:</b></p>
+<p><b></b></p>
+<p><b><font color="#FF950E">→Iburst: </b>Esta opção aumenta para 8 o número de pacotes enviados durante a sincronização inicial de data e hora.</p>
+<p><b><font color="#FF950E">→ prefer:</b> A opção prefer força a verificação da resposta dada pelo servidor preferido, se essa resposta diferir muito da resposta dos demais servidores ela será descartada.</p>
+<p><i><b><font color="#993366">Servidor: Audit</b></i></p>
+</body>
+</html>

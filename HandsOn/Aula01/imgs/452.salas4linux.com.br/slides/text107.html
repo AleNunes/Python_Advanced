@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 113</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text106.html">Back</a> <a href="text108.html">Continue</a> <a href="text336.html">Last page</a> <a href="452_2016_3.3_fv.html">Overview</a> <a href="img107.html">Graphics</a></center><br>
+<h1></h1>
+<p><b><font color="#FF950E">Protegendo seu Apache:</b></p>
+<p><b><font color="#FF0000">1<font color="#FFFFFF">#</b> vim /etc/httpd/conf/httpd.conf </font></p>
+<p><font color="#FFFFFF"> 	<b><font color="#FF950E">2</b></font><font color="#FFFFFF"> ServerTokens Prod</font></p>
+<p><font color="#FFFFFF"> 	<b><font color="#FF950E">3</b></font><font color="#FFFFFF"> ServerSignature Off</font></p>
+<p><b><font color="#FF0000">2<font color="#FFFFFF">#</b> systemctl restart httpd.service</font></p>
+<p><b><font color="#FF950E">ServerTokens:</b></p>
+<p><b><font color="#FF950E">Prod</b> –<font color="#E6E6FF"> Informa apenas Apache;</font></p>
+<p><b><font color="#FF950E">Min</b> –<font color="#E6E6FF"> Revela a versão do Apache;</font></p>
+<p><b><font color="#FF950E">OS</b> –<font color="#E6E6FF"> Revela SO e versão do Apache;</font></p>
+<p><b><font color="#FF950E">Full</b> –<font color="#E6E6FF"> Revela SO, versão do Apache e módulos ativos.</font></p>
+<p><b><font color="#FF950E">ServerSignature</b> →<font color="#E6E6FF"> Desativa a assinatura no rodapé do browser quando acessamos uma página não existente.</font></p>
+<p><i><b><font color="#FF950E">Servidor: WebServerInterno</b></i></p>
+<p><b><font color="#FF950E">Repita o Teste na Linux Interna:</b></p>
+<p><font color="#4C4C4C"> <b><font color="#FF0000">1</font><font color="#FFFFFF">#</b> nmap -sV intranet.dexter.com.br </font></p>
+<p><font color="#4C4C4C"> <font color="#FFFFFF">intranet.dexter.com.br/nata.html </font></p>
+<p><b><font color="#FF950E">Restringindo Informações</b></p>
+</body>
+</html>

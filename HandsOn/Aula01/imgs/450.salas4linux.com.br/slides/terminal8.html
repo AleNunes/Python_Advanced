@@ -1,0 +1,27 @@
+<h1><b>Mapeamento do Sistema</b></h1>
+<h2></h2>
+<h2></h2>
+<p><b>Reconfigurando o teclado:</b></p>
+<ul>
+<li>Reconfigurando o teclado no Debian:</li>
+</ul>
+<p><b>1#</b> dpkg-reconfigure keyboard-configuration</p>
+<p><b>2#</b> /etc/init.d/keyboard-setup restart</p>
+<ul>
+<li>Reconfigurando o teclado no CentOS:</li>
+</ul>
+<p><b>3#</b> loadkeys -d br-abnt2</p>
+<p><b>4#</b> loadkeys -d us-acentos</p>
+<p><i><b>Servidor: Webserver Interno / Linux Interna</b></i></p>
+
+<h3>Notes:</h3>
+<p><b>Quando reconfigurar o teclado?</b></p>
+<p></p>
+<p>É muito comum, num primeiro acesso a um sistema Linux, você se deparar com o teclado desconfigurado, principalmente quando estamos falando de Acesso Remoto, pois no momento da instalação, pode ser que o analista que realizou a instalação estava usando um teclado diferente do que você tem em seu Desktop.</p>
+<p></p>
+<p><b>Loadkeys x System-config-keyboard</b></p>
+<p><b></b></p>
+<p>Em um sistema CentOS temos a opção de utilizar o comando “loadkeys” para alterar o “layout” de teclado durante a sessão mas, essa alteração será temporária.</p>
+<p></p>
+<p>Alterações definiticas devem ser feitas através do comando System-config-keyboard.</p>
+

@@ -1,0 +1,24 @@
+<h1><b>Filtrando Processos</b></h1>
+<h2><b>1#</b> lsof		(Listar todos os arquivos abertos)</h2>
+<h2><b>2#</b> lsof -u root		(Listar todos os arquivos abertos pelo root)</h2>
+<h2><b>3#</b> lsof -i		(Listar as conexões ativas, parecido com ss -nltp)</h2>
+<h2><b>4#</b> lsof /bin/bash (Listar quem está usando o arquivo ou diretório)</h2>
+<p>O comando “lsof” (List Open Files) é utilizado para mostrar os arquivos que estão abertos no sistema.</p>
+<p><i><b>Servidor: Webserver Interno</b></i></p>
+<h2><b>Filtrando Informações sobre Processos:</b></h2>
+
+<h3>Notes:</h3>
+<p><b>lsof</b></p>
+<p></p>
+<p>O comando lsof é um dos mais importantes comandos para quem administra sistemas Linux, principalmente na área de segurança. Este comando lista todos os arquivos abertos por todos os processos.</p>
+<p></p>
+<p>Sua listagem inclui também recursos que funcionam como arquivos (podem ser abertos, mapeados na memória, entre outros). Tal como bibliotecas, sockets e etc.</p>
+<p></p>
+<p><b>Alguns dos usos mais comuns do lsof incluem:</b></p>
+<p></p>
+<p>• 	Ver se algum processo está escutando uma porta na rede;</p>
+<p>• 	Ver que processo está usando um certo arquivo (lsof );</p>
+<p>• 	Ver que tipo de conexão esta sendo feita no sistema;</p>
+<p>• 	Medir as memórias utilizadas pelos processos.</p>
+<p></p>
+

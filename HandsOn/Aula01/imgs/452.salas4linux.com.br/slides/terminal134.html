@@ -1,0 +1,12 @@
+<h1><b>Servidor Postfix</b></h1>
+<h2><b>Testando o Postfix:</b></h2>
+<h2><b>1 - Reinicie o postfix e em outro terminal abra o log de e-mail:</b></h2>
+<h2><b>1# </b>service postfix restart</h2>
+<h2><b>2# </b>tail -f /var/log/mail.log</h2>
+<h2></h2>
+<h2><b>2 - Envie um e-mail de teste e verifique o spool:</b></h2>
+<h2><b>3# </b>echo &quot;Teste de Envio&quot; | mail -s &quot;Primeiro Email&quot; suporte@dexter.com.br</h2>
+<h2><b>4# </b>cat /var/spool/mail/suporte</h2>
+<p><b>&lt;Envie uma nova mensagem e verifique que o destino dela será sempre o mesmo arquivo&gt;</b></p>
+<p><i><b>Servidor: Datacenter</b></i></p>
+

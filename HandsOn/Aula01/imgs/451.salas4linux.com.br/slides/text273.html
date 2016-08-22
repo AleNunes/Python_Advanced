@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 274</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text272.html">Back</a> <a href="text274.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img273.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Laboratório Dexter</b></h1>
+<h2><b><font color="#004586">1 – Abra um segundo terminal e digite o seguinte comando:</b></h2>
+<h2><b><font color="#FF0000">1#</b> watch -n 0,1 vmstat</h2>
+<h2><b><font color="#004586">2 – Em seguida volte ao terminal anterior e execute um teste de 15 segundos:</b></h2>
+<h2><b><font color="#FF0000">2#</b> stress --vm 2 --timeout 15</h2>
+<h2><b><font color="#004586">3 – No segundo terminal cancele o comando anterior e execute:</b></h2>
+<h2><b><font color="#FF0000">3#</b> watch -n 0.1 free -m</h2>
+<h2><b><font color="#004586">4 – Teste, novamente, a memória alocando 256Mb de memória do servidor que somente serão liberados ao término do processo (após 30 segundos):</b></h2>
+<h2><b><font color="#FF0000">4#</b> stress --vm 2 --vm-bytes 128M --vm-hang 30 --timeout 30</h2>
+<p><i><b><font color="#993366">Servidor: WebServerInterno/ WebServerCloud</b></i></p>
+<p><b><font color="#004586">Testes de Stress de Memória:</b></p>
+<br>
+<h3>Notes:</h3>
+<p><b>O Jmeter pode ser uma boa opção</b></p>
+<p><b></b></p>
+<p>Saindo do escopo de Planejar a infraestrutura e indo direto ao Planejamento de Capacidade relacionado ao funcionamento e desempenho de serviços o uso da plataforma JMeter torna-se uma interessante alternativa.</p>
+<p><b></b></p>
+<p>Jmeter é uma aplicação apache open source, projetada para efetuar testes medindo o desempenho/performance de aplicações web.</p>
+</body>
+</html>

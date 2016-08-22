@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 234</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text232.html">Back</a> <a href="text234.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img233.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Gerenciando de dados SQL</b></h1>
+<ul>
+<li>Acesse a base backup recém criada:</li>
+<li><b><font color="#FF0000">1&gt; </b>use backup;</li>
+<li><b><font color="#FF0000">2&gt; </b>show tables;</li>
+<li><b><font color="#FF0000">3&gt; </b></font><font color="#FF950E">&lt;CTRL+L&gt; (Limpa a Tela)</font></li>
+</ul>
+<p><i><b><font color="#993366">Servidor: WebServerInterno</b></i></p>
+<ul>
+<li>Crie uma tabela que irá armazenar os dados do backup:</li>
+<li><b><font color="#FF0000">4&gt; </b>CREATE TABLE log ( </li>
+<p> 	id INT NOT NULL AUTO_INCREMENT, </p>
+<p> 	inicio TIMESTAMP, </p>
+<p> 	fim TIMESTAMP,</p>
+<p> 	server VARCHAR(100),</p>
+<p> 	arquivo VARCHAR(100),</p>
+<p> 	status VARCHAR(5),</p>
+<p> 	PRIMARY KEY (id));</p>
+</ul>
+<br>
+<h3>Notes:</h3>
+<p>O servidor MySql armazena as informações dos usuários em quatro tabelas localizadas no banco de dados padrão chamado Mysql.</p>
+<p></p>
+<p>São estas:</p>
+<p><b>Tabela user:</b> Armazena as informações de todos os usuários do banco e seus privilégisos a nível global;</p>
+<p></p>
+<p><b>Tabela db:</b> Armazena os privilégios dos usuários específicos de um banco de dados;</p>
+<p></p>
+<p><b>Tabela tables_priv e columns_priv: </b>Armazenam os privilégios associados a tabelas e colunas, respectivamente;</p>
+</body>
+</html>

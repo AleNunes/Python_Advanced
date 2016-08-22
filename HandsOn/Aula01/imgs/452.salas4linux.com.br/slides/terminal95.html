@@ -1,0 +1,24 @@
+<h1><b>Servidor Apache</b></h1>
+<ul>
+<li>Suporta várias linguagens de programação;</li>
+<li>Multiplataforma (Unix, Linux, Windows);</li>
+<li>Modular, você libera os módulos (funcionalidades) de acordo com a necessidade;</li>
+<li>A partir do Apache 2 foi implementado o MPM (Módulo de MultiProcessamento);</li>
+<li><b>PreFork</b> → Usa múltiplos processos sem thread;</li>
+<li><b>Worker</b> → Usa múltiplos processos com várias threads cada processo.</li>
+<li><b>Event</b> → Uma evolução do Worker, principalmente com melhorias de performance.</li>
+</ul>
+<p><b>Apache – Servidor de Web (Hospedagem de Sites):</b></p>
+
+<h3>Notes:</h3>
+<p><b>MPM PreFork e MPM Worker</b></p>
+<p><b></b></p>
+<p>A documentação oficial do projeto Apachempm indica que é possível escolher entre algumas configurações que ajudam a otimizar a performance ou manter a compatibilidade com aplicações antigas, por exemplo. Vamos entender as particularidades dos modos &quot;PreFork&quot; e &quot;Worker&quot;.</p>
+<p></p>
+<p><b>MPM Pre Fork</b></p>
+<p><b></b></p>
+<p>Neste modo, o Apache trabalhará com a implementação de multi processos, de acordo com a estrutura clássica de um processo Unix, similar a versão 1.3 do Web Server em questão.</p>
+<p>Assim sendo, um único processo será responsável por executar novos processos que serão utilizados para aguardar novas conexões e responder as requisições existentes. Este modo é ideal para quem precisa manter compatibilidade com aplicações e bibliotecas que NÃO SUPORTAM o modo &quot;thread&quot;.</p>
+<p></p>
+<p></p>
+

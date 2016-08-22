@@ -1,0 +1,13 @@
+<h1><b>Servidor Apache</b></h1>
+<p><i><b>Servidor: WebServerCloud</b></i></p>
+<h2><b>Apache SSL (https) – Ativando SSL no Site da Dexter:</b></h2>
+<ul>
+<li>Redirecionando Requisições HTTP para HTTPS:</li>
+<p><b>1#</b> vim /etc/apache2/sites-enabled/dexter.conf</p>
+<p><b>29</b>         CustomLog ${APACHE_LOG_DIR}/dexter-access.log combined</p>
+<p><b>31</b>         # Redirecionar para Porta 443</p>
+<p><b>32</b>         RewriteEngine On</p>
+<p><b>33</b>         RewriteCond %{SERVER_PORT} 80</p>
+<p><b>34</b>         RewriteRule ^(.*)$ https://www.dexter.com.br/ [R,L]</p>
+</ul>
+

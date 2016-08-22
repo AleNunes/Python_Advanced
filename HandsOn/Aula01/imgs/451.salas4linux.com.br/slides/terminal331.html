@@ -1,0 +1,19 @@
+<h1><b>Gerência de Módulos</b></h1>
+<ul>
+<li>Existe outro comando para carregar módulos, mas é necessário passar o caminho completo do módulo e carregar primeiro todas as suas dependência:</li>
+</ul>
+<p><i><b>Servidor: Audit</b></i></p>
+<p><b>1#</b> modinfo -n vfat</p>
+<p><b>1 - Tente carregar o módulo sem carregar suas dependências:</b></p>
+<p><b>2#</b> insmod $(modinfo -n vfat)</p>
+<p><b>2 - Carregue as dependências do Módulo vfat:</b></p>
+<p><b>3#</b> modprobe --show-depends vfat</p>
+<p><b>4#</b> insmod $(modinfo -n fat)</p>
+<p><b>5#</b> insmod $(modinfo -n vfat)</p>
+<p><b>6#</b> lsmod | grep fat</p>
+
+<h3>Notes:</h3>
+<p><b></b></p>
+<p></p>
+<p></p>
+

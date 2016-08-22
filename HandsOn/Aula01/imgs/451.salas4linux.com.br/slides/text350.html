@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 351</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text349.html">Back</a> <a href="text351.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img350.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Compilação de Kernel</b></h1>
+<ul>
+<li>Se o nosso kernel tiver sido compilado com módulos que sejam extremamente necessários durante o boot, será necessário criar uma “imagem de boot”;</li>
+<li>Para isso, precisamos instalar o seguinte pacote no Debian:</li>
+<li><b><font color="#FF0000">1#</b> aptitude install initramfs-tools</li>
+<li>Agora, devemos construir nosso arquivo “initrd” no “/boot” e atualizar o gerenciador de inicialização:</li>
+<li><b><font color="#FF0000">2#</b> mkinitramfs -vo /boot/initrd.img-<u><b><font color="#FF420E">3.2.4</b></u></font>-v1 <u><b><font color="#FF420E">3.2.4</b></u></font>-v1</li>
+<li><b><font color="#FF0000">3#</b> update-grub2</li>
+</ul>
+<p><i><b><font color="#993366">Máquina Linux Externa</b></i></p>
+<br>
+<h3>Notes:</h3>
+<p><b>Imagem de Boot</b></p>
+<p></p>
+<p>Se o nosso kernel tiver sido compilado com módulos que sejam extremamente necessários durante o boot, será necessário criar uma “imagem de Boot”. Por isso hoje em dia, praticamente qualquer compilação de Kernel utiliza o padrão Initramfs gerando o arquivo com a imagem de boot.</p>
+<p></p>
+<p>Após a compilação o comando update-grub2 deverá ser executado, para que a nova versão de kernel seja reconhecida e o novo kernel seja disponibilizado.</p>
+</body>
+</html>

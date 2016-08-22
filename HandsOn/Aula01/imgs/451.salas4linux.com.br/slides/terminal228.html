@@ -1,0 +1,21 @@
+<h1><b>Shell Script</b></h1>
+<h2>Vamos criar um script trabalhando com funções para listar os diretórios de forma estática e de forma dinâmica, interagindo com o usuário:</h2>
+<p>#!/bin/bash</p>
+<p>function lista() {</p>
+<p>ls /etc/</p>
+<p>}</p>
+<p>lista</p>
+<p><b>1</b># vim funcao.sh</p>
+<p>#!/bin/bash</p>
+<p>function lista() {</p>
+<p>ls $1</p>
+<p>}</p>
+<p>lista $1</p>
+<p><b>1</b># vim funcao2.sh</p>
+<p><b>2</b># chmod +x funcao.sh</p>
+<p><b>3</b># ./funcao.sh</p>
+<p><b>2</b># chmod +x funcao2.sh</p>
+<p><b>3</b># ./funcao2.sh /home/</p>
+<p><i><b>Servidor: WebServer Interno</b></i></p>
+<p><b>Trabalhando com funções:</b></p>
+

@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 369</title>
+</head>
+<body text="#FFFFFF" bgcolor="#FFFFFF" link="#3A81CC" vlink="#3773B1" alink="#3A81CC">
+<center>
+<a href="text0.html">First page</a> <a href="text367.html">Back</a> <a href="text369.html">Continue</a> <a href="text417.html">Last page</a> <a href="Apostila3.2.html">Overview</a> <a href="img368.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Laboratório Dexter</b></h1>
+<ul>
+<li><font color="#666666">Montando a partição de forma definitiva para ser ativada no boot do sistema:</li>
+</ul>
+<p><i><b><font color="#993366">Servidor: Webserver Interno</b></i></p>
+<p><b><font color="#FF0000">1<font color="#666666">#</b> cat /etc/fstab</font></p>
+<p><b><font color="#666666">/dev/sdb1 	 /Files<font color="#4C4C4C">   </font><font color="#FF950E">     </font><font color="#00AE00">ext2</font>	 </font><font color="#B3B300">defaults</font><font color="#333333">	</font><font color="#FF950E"> 	</font><font color="#FF3366"> 0		 0</b></font></p>
+<p><b><font color="#FF950E">1ª: </b><font color="#666666">Localização do “filesystem”, em geral o “device” ou endereço de rede;</font></p>
+<p><b><font color="#FF950E">2ª:</b><font color="#4C4C4C"> </font><font color="#666666">Ponto de montagem;</font></p>
+<p><b><font color="#FF950E">3ª:</b><font color="#4C4C4C"> </font><font color="#666666">Tipo do filesystem: ext3, ext4, xfs, etc;</font></p>
+<p><b><font color="#FF950E">4ª:</b><font color="#4C4C4C"> </font><font color="#666666">Opções de montagem: defaults = rw, suid, dev, exec, auto, nouser e async;</font></p>
+<p><b><font color="#FF950E">5ª:</b><font color="#4C4C4C"> </font><font color="#666666">Aceita os valores 0 ou 1 e informa que, havendo um sistema de backup (dump) configurado, deverá ser feito o seu backup;</font></p>
+<p><b><font color="#FF950E">6ª: </b><font color="#666666">Aceita os valores de 0 a 2 e informa que deverá ser realizada a checagem de disco.</font></p>
+<br>
+<h3>Notes:</h3>
+<p><b><font color="#666666">Montagem automática de Filesystem no boot</b></p>
+<p><font color="#666666"></p>
+<p><font color="#666666">Com o comando “<b>mount</b>” você aprendeu a montar um dispositivo de forma completa e manual, entretanto, há um arquivo que facilita a nossa vida: “<b>/etc/fstab</b>”. </p>
+<p><font color="#666666"></p>
+<p><font color="#666666">Nele devem estar as informações a respeito da montagem de todos os “<b>filesystems</b>” do sistema.</p>
+<p><font color="#666666"></p>
+<p><font color="#666666">Sendo assim, o “<b>fstab</b>” armazena as informações dos dispositivos comumente acessados, como as partições do sistema, discos removíveis e alguns dispositivos USB.</p>
+<p><font color="#666666"></p>
+<p><font color="#666666">Entretanto não mostra informação alguma a respeito de quais dispositivos estão montados neste exato momento.</p>
+</body>
+</html>

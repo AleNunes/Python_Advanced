@@ -1,0 +1,19 @@
+<h1><b>Inicialização do Sistema</b></h1>
+<ul>
+<li> Alterando  do runlevel atual (3) para o runlevel 1: </li>
+</ul>
+<p><i><b>Servidor: Webserver Interno</b></i></p>
+<p><b>Alterar o runlevel atual:</b></p>
+<p><b>1#</b> systemctl isolate rescue.target</p>
+<p><b>					ou</b></p>
+<p><b>1#</b> systemctl isolate runlevel1.target</p>
+<ul>
+<li> Para voltar para o runlevel 3:</li>
+</ul>
+<p><b>2#</b> systemctl isolate multi-user.target</p>
+<p>					<b>ou</b></p>
+<p><b>2#</b> systemctl isolate runlevel3.target</p>
+<p><b>Forneça a senha de root</b></p>
+<p><b>Realize o login e senha</b></p>
+<p><b>NOTA: </b>Outra forma de alterar o runlevel é através do parâmetro set-default.<b> Ex:</b> systemctl	set-default &lt;nomedotarget&gt;.target</p>
+

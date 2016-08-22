@@ -1,0 +1,12 @@
+<h1><b>Laboratório Dexter</b></h1>
+<ul>
+<li>Configure o fstab garantindo a montagem na inicialização do sistema:</li>
+<li><b>1# </b>blkid</li>
+<li><b>2# </b>blkid | grep publico | awk '{ print $2}' | sed -&shy;e s/\&quot;//g <b>&gt;&gt;</b> /etc/fstab</li>
+<li><b>3# </b>vim /etc/fstab</li>
+<li>UUID=84f793e5-fa82-42e0-b4f2-058a87a2e317	/srv/samba/publico	ext4	defaults	0 0</li>
+<li><b>4# </b>umount /srv/samba/publico ; mount -a ; mount</li>
+</ul>
+<p><b>&lt;Atenção no uso do operador “&gt;&gt;” para não apagar o fstab!&gt;</b></p>
+<p><i><b>Servidor: Storage</b></i></p>
+

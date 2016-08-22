@@ -1,0 +1,23 @@
+<h1><b>Servidor DNS</b></h1>
+<h2><b>Quem é o servidor de e-mail do google?</b></h2>
+<h2>host -t mx google.com </h2>
+<h2><b>Qual é o endereço do servidor webmail.4linux.com.br? </b></h2>
+<h2>host -t A webmail.4linux.com.br</h2>
+<h2><b>Quais são os servidores DNS da 4linux?</b> </h2>
+<h2>host -t NS 4linux.com.br </h2>
+<h2><b>Fazendo uma pesquisa por um DNS em específico:</b></h2>
+<h2>dig @8.8.8.8 -t NS 4linux.com.br </h2>
+<p><b>Exemplos de Consultas DNS:</b></p>
+<p><i><b>Servidor: Audit</b></i></p>
+
+<h3>Notes:</h3>
+<p><b>Comando host</b></p>
+<p><b></b></p>
+<p>O comando &quot;host&quot; é concebido para dar respostas objetivas, limitando-se na maioria dos casos a uma só linha. Repostas detalhadas podem ser obtidas com a utilização de parâmetros. Ao contrário do &quot;dig&quot;, o &quot;host&quot; consulta a &quot;search list&quot; do arquivo &quot;/etc/resolv.conf&quot;.</p>
+<p></p>
+<p><b>Comando dig</b></p>
+<p><b></b></p>
+<p>O comando &quot;dig&quot; é o acrônimo para &quot;Domain Information Groper&quot;, que significa algo como &quot;<b>aquele que busca por informações de domínio no escuro</b>&quot;, e ao mesmo tempo, a palavra &quot;dig&quot; em inglês significa literalmente &quot;escavar&quot;. </p>
+<p></p>
+<p>O &quot;dig&quot; não utiliza a opção &quot;search&quot; do &quot;/etc/resolv.conf&quot;, por isso é necessário utilizar &quot;FQDN&quot; em todas as buscas.</p>
+

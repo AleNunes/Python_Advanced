@@ -1,0 +1,27 @@
+<h1><b>Auditando o Shell</b></h1>
+<p><b>Definir a variável TMOUT  no SHELL:</b></p>
+<p><i><b>Servidor: Webserver Interno / Webserver Externo</b></i></p>
+<p><b>1#</b> echo $TMOUT</p>
+<p><b></b></p>
+<p><b>2#</b> export TMOUT=300  (Segundos)</p>
+<p><b></b></p>
+<p><b>3#</b> set | grep TMOUT</p>
+<p><b></b></p>
+<p><b>4#</b> vim /etc/profile</p>
+<p>export TMOUT=120</p>
+<p><b></b></p>
+<p><b>5#</b> source /etc/profile</p>
+<p><b></b></p>
+<p><b>6#</b> echo $TMOUT</p>
+<p>A variável TMOUT é responsável por controlar o tempo de inatividade do Shell.</p>
+<p>Declarando ela no arquivo <b>/etc/profile</b> qualquer usuário que logar no modo texto e ficar inativo por 300 segundos (5 minutos) será deslogado automaticamente.</p>
+
+<h3>Notes:</h3>
+<p><b>O arquivo /etc/profile</b></p>
+<p></p>
+<p>Quando uma “bash” é executada como uma “shell” de “login” interativo ela lê e executa o arquivo “/etc/profile”, se ele existir. Esse arquivo deve conter as configurações gerais que se aplicam a todos os usuários do sistema.</p>
+<p></p>
+<p>Sendo assim, para criar “aliases” ou definir variáveis ou funções que sejam comuns a todos os usuários, devemos incluí-las no arquivo “/etc/profile”. </p>
+<p></p>
+<p>Caso o usuário necessite é possível  adicionar configurações pessoais de personalização utilizando os arquivos “ /.bash_profile”, “ /.bash_login”, “ /.profile” ou “ /.bashrc”.</p>
+

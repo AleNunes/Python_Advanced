@@ -1,0 +1,13 @@
+<h1><b>Pergunta LPI</b></h1>
+<h2>Após compilar um módulo o mesmo foi movido para /lib/modules/VERSÃO corretamente, porém quando é executado o comando modprobe &lt;module&gt;  é retornado um erro. O que é preciso fazer para que o módulo possa ser usado?</h2>
+<h2>A. modules.conf ou modprobe.conf devem ser editados;</h2>
+<h2>B. O Kernel precisa ser recompilado;</h2>
+<h2>C. É necessário executar make modules_install;</h2>
+<h2><b>D. É necessário executar o depmod;</b></h2>
+<h2><b>Resposta: alternativa D</b></h2>
+
+<h3>Notes:</h3>
+<p><b>Alternativa D: RESPOSTA CORRETA!</b></p>
+<p><b></b></p>
+<p>Deve-se executar o comando depmod toda vez que alterações forem feitas em relação aos módulos, Este comando produzirá um novo arquivo contendo as dependências dos módulos do kernel a serem instalados.</p>
+

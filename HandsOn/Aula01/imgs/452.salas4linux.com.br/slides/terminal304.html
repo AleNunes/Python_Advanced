@@ -1,0 +1,19 @@
+<h1><b>Servidor OpenVPN</b></h1>
+<p><b>Arquivo de configuração do cliente VPN:</b></p>
+<p>  <b>1# </b>mkdir /root/client</p>
+<p><b>   2# </b>vim /root/client/linux-externa.conf</p>
+<p>dev tun</p>
+<p>proto udp					</p>
+<p>client</p>
+<p>pull			  </p>
+<p>remote 200.100.50.99</p>
+<p>port 5000</p>
+<p>comp-lzo</p>
+<p><i><b>Servidor: Security</b></i></p>
+
+<h3>Notes:</h3>
+<p><b>Descrição da diretivas</b>:</p>
+<p></p>
+<p><b>client</b>: Define que a maquina é um cliente VPN; </p>
+<p><b>pull</b>: Define que o cliente aceite configurações fornecidas pelo servidor; <b>remote</b>	: Define o hostname/IP do servidor VPN (endereço publico);   </p>
+

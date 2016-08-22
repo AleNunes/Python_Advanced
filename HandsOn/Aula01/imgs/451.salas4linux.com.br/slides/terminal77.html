@@ -1,0 +1,14 @@
+<h1><b>Quotas de Disco</b></h1>
+<ul>
+<li>Além da criação de quotas por usuário também é possível criar quotas por grupo, que são aplicadas a diretórios com base no grupo do diretório;</li>
+<li>No cenário da empresa dexter aplicaremos quotas a pasta do setor <b>infra</b> pertencente ao grupo <b>analistas</b>.</li>
+</ul>
+<p><i><b>Servidor: Fileserver</b></i></p>
+<p><b>Definir quotas por grupo:</b></p>
+<p><b>1 – Verifique se a pasta departamental infra pertence ao grupo analistas:</b></p>
+<p><b>1#</b> ls -l /srv/dexter/</p>
+<p>drwxrwxs—T 2 bryan.leah	diretores	4096	Mai 6 16:53 Diretoria</p>
+<p>drwxrwxs—T 3 antony.brooks	financeiro	4096	Mai 6 16:53 Financeiro</p>
+<p><b>drwxrwxs—T 2 harry.rosemberg 	analistas 4096	Mai 6 16:53 Infra</b></p>
+<p>drwxrwxs—T 2 annie.dee		vendedores	4096	Mai 6 16:53 Vendas</p>
+

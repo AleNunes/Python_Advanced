@@ -1,0 +1,21 @@
+<h1><b>Shell Script</b></h1>
+<p>#!/bin/bash</p>
+<p>echo &quot;Realizando a leitura do arquivo usuarios.txt&quot;</p>
+<p>echo</p>
+<p>for i in $(cat /root/usuarios.txt); do</p>
+<p>        USUARIO=$(cat /etc/passwd | grep ^$i | cut -d: -f1)</p>
+<p>        test -z $USUARIO</p>
+<p>        if [ $? -eq 0 ]; then</p>
+<p>                echo</p>
+<p>                echo &quot;O usuário $i não está cadastrado&quot;</p>
+<p>                echo &quot;Para cadastrar o usuário pressione &lt;ENTER&gt;&quot;</p>
+<p>                read</p>
+<p>                useradd $i</p>
+<p>                echo &quot;Usuário $i Cadastrado com Sucesso!&quot;</p>
+<p>        else</p>
+<p>                echo &quot;O usuário $i já está cadastrado&quot;</p>
+<p>        fi</p>
+<p>done</p>
+<p><i><b>Servidor: WebServer Interno</b></i></p>
+<p><b>(Parte 3/3)</b></p>
+

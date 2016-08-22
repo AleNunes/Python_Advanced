@@ -1,0 +1,12 @@
+<h1><b>Implementando Controle de Acesso ao Sistema com PAM</b></h1>
+<h2><b>1 – Para usar o PAM para gerenciar o login do root, vamos abrir o arquivo /etc/pam.d/login e adicionar a linha abaixo:</b></h2>
+<h2><b>1#</b> vim /etc/pam.d/login</h2>
+<h2>    #2 	account    requisite  pam_time.so</h2>
+<h2></h2>
+<h2><b>2 – Vamos negar o login do root no terminal, editando o arquivo /etc/security/time.conf” e acrescentando na última linha:</b></h2>
+<h2><b>1#</b> vim /etc/security/time.conf</h2>
+<h2> 	login;*;root;!Al0000-2400</h2>
+<p><b>&lt; Tente logar em qualquer terminal &gt;</b></p>
+<p><i><b>Servidor: Fileserver</b></i></p>
+<h2><b>Implementação Prática do PAM – Módulo time:</b></h2>
+

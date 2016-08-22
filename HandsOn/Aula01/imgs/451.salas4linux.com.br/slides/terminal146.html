@@ -1,0 +1,23 @@
+<h1><b>Redes Avançado</b></h1>
+<h2><b>Testando o IPv6:</b></h2>
+<h2><b>1 – Utilizando o FileServer, efetue um ping no endereço IPv6 do servidor Audit:</b></h2>
+<ul>
+<ul>
+<li><b>1#</b> ping6 -I eth0 fe80:: <b>… … … &lt; Endereço IPv6 obtido na Audit &gt; </b> </li>
+<h2><b>2 – Faça um segundo teste pingando o endereço de loopback da máquina FileServer:</b></h2>
+<li><b>2#</b> ping6 -I lo ::1 ou</li>
+<li><b>3#</b> ping6 -I lo 0000:0000:0000:0000:0000:0000:0000:0001</li>
+</ul>
+</ul>
+<p><i><b>Servidor: FileServer</b></i></p>
+
+<h3>Notes:</h3>
+<p><b>Endereços Anycast</b></p>
+<p></p>
+<p>Esse tipo de endereço é utilizado para identificar um grupo de interfaces pertencentes a hosts diferentes. Um pacote destinado a um endereço Anycast é enviado para um das interfaces identificadas pelo endereço. Especificamente, o pacote é enviado para a interface mais próxima, de acordo com o protocolo de roteamento.</p>
+<p></p>
+<p></p>
+<p><b>Endereço Multicast</b></p>
+<p></p>
+<p>Da mesma forma que o endereço Anycast, este endereço identifica um grupo de interfaces pertencente a diferentes hosts mas um pacote destinado a um endereço Multicast é enviado para todas as interfaces que fazem parte deste grupo.</p>
+

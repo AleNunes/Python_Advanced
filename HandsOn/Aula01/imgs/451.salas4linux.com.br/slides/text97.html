@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 98</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text96.html">Back</a> <a href="text98.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img97.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Implementando Controle de Acesso ao Sistema com PAM</b></h1>
+<h2><b><font color="#004586">3 – Para negar o acesso ao <font color="#993366">root</font><font color="#004586"> via ssh abra arquivo de configuração do ssh /etc/ssh/sshd_config e </font><font color="#993366">inclua</font><font color="#004586"> na linha abaixo:</b></font></h2>
+<h2><b><font color="#FF0000">1#</b> vim /etc/pam.d/sshd<b> </b></h2>
+<h2><font color="#993366"> 	#2		account    required    pam_time.so</h2>
+<h2><b><font color="#004586">4 – Completando a configuração abra o arquivo /etc/security/time.conf e adicione no final:</b></h2>
+<h2><b><font color="#FF0000">2#</b> vim /etc/security/time.conf<b> </b></h2>
+<h2><font color="#993366"> 	sshd;*;root;!Al0000-2400</h2>
+<p><b><font color="#004586">Acesse o servidor <font color="#993366">Security Cloud</font><font color="#004586"> e tente acessar a máquina Fileserver via ssh:</b></font></p>
+<p><b><font color="#004586"></b></p>
+<p><b><font color="#FF0000">1#</b> ssh root@192.168.200.40</p>
+<p><b><font color="#FF3333"> Connection closed by 192.168.200.40</b></p>
+<p><i><b><font color="#993366">Servidor: Fileserver</b></i></p>
+<h2><b><font color="#993366">Implementação Prática do PAM – Módulo time:</b></h2>
+</body>
+</html>

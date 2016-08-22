@@ -1,0 +1,16 @@
+<h1><b>Laboratório Dexter</b></h1>
+<ul>
+<li>Realizando backup do diretório /var/logs no servidor <b>Audit</b> e enviando para o HD de backup do <b>WebServer Interno</b>:</li>
+</ul>
+<p><i><b>Servidor: Audit / WebServerInterno</b></i></p>
+<p><b>1#</b> hostname -s</p>
+<p><b>2#</b> date </p>
+<p><b>3#</b> date +%d-%m-%y</p>
+<p><b>4#</b> tar -cvjf /tmp/bkp_var_log_$(hostname -s)_$(date +%d-%m-%y).tar.bz2  /var/log</p>
+<p><b>5#</b> ls /tmp</p>
+<p><b>6#</b> scp root@192.168.200.30:/tmp/bkp*   /backup</p>
+<p><b>7#</b> ls /backup</p>
+<ul>
+<li>Acesse o Servidor WebServerInterno e execute os sequintes comandos:</li>
+</ul>
+

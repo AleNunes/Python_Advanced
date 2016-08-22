@@ -1,0 +1,17 @@
+<h1><b>Laboratório Dexter</b></h1>
+<ul>
+<li>Agora, criaremos uma rotina com o CRON para automatizar os backups dos Servidores WebServerCloud e WebServerInterno;</li>
+<li>Criaremos uma rotina de minutos para ter volume no /backup. Em um servidor em produção, uma rotina diária é o suficiente;</li>
+<li>Começaremos pelo WebServerCloud:</li>
+<li><b>1#</b> mkdir /etc/cron.minute/</li>
+<li><b>2#</b> cd /etc/cron.minute</li>
+</ul>
+<p><i><b>Servidor: WebServerCloud /WebServer Interno</b></i></p>
+
+<h3>Notes:</h3>
+<p><b>Cuidados Especiais com Scripts de Backup</b></p>
+<p><b></b></p>
+<p>Utilize nos comandos do script e no agendador, sempre o (path) caminho completo do aplicativo a ser executado, exemplo para o comando tar, use /bin/tar, também na linha de comando que inserir no cron use o caminho completo para o script, por exemplo, executar um script que está em /home/zago, use a linha: /home/zago/nome-do-script e não somente nome-do-script.</p>
+<p></p>
+<p>Muito cuidado com scripts, o comodismo pode cair no esquecimento e não atualizar o script de backup quando incluir novos serviços, diretórios ou usuários, monitore constantemente, teste e avalie o que está sendo feito.</p>
+

@@ -1,0 +1,9 @@
+<h1><b>Redes Avançado</b></h1>
+<h2><b>Adicionando rota entre as SubRedes:</b></h2>
+<p>Para adicionar uma rota até a SubRede 2 (192.168.200.128/25) utilizando como Gateway o IP 192.168.200.129 do servidor Security:</p>
+<p><i><b>Servidor: Audit</b></i></p>
+<h2><b>Comando route:</b></h2>
+<p><b>1</b># route add -net 192.168.200.128/25 gw 192.168.200.129</p>
+<p><b>2</b># ping -c4 192.168.200.130</p>
+<p><b>3</b># route del -net 192.168.200.128/25 gw 192.168.200.129</p>
+

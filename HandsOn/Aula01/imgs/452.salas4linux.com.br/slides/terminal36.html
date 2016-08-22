@@ -1,0 +1,9 @@
+<h1><b>Firewall Linux</b></h1>
+<h2><b>7ª → Libere acesso a internet para as máquinas das SubRedes:</b></h2>
+<h2>Para trabalhar com MASQUERADE, NAT ou até mesmo roteamento de pacotes por tabela de roteamento é necessário ativar o repasse de pacotes entre placas fisicamente no kernel:</h2>
+<h2><b>1#</b> vim /etc/sysctl.conf</h2>
+<h2><b> 	28</b> net.ipv4.ip_forward=1</h2>
+<h2><b>2#</b> sysctl -p </h2>
+<h2><b>3#</b> cat /proc/sys/net/ipv4/ip_forward </h2>
+<p><i><b>Servidor: Security</b></i></p>
+

@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 338</title>
+</head>
+<body text="#FFFFFF" bgcolor="#FFFFFF" link="#3A81CC" vlink="#3773B1" alink="#3A81CC">
+<center>
+<a href="text0.html">First page</a> <a href="text336.html">Back</a> <a href="text338.html">Continue</a> <a href="text417.html">Last page</a> <a href="Apostila3.2.html">Overview</a> <a href="img337.html">Graphics</a></center><br>
+<h1><b>Inicialização do Sistema</b></h1>
+<p>Se apertamos<b> CTRL + ALT + DEL</b>, nosso sistema sem pensar duas vezes vai reiniciar. Mas não é muito bom deixar isso habilitado.</p>
+<p><b><font color="#CC0000">Solução:</b> Abrir o arquivo /etc/inittab e alterar a linha que define o reinício do sistema:</p>
+<p><i><b><font color="#993366">Servidor: Máquina Linux Interna</b></i></p>
+<p><b><font color="#FF0000">1#</b> vim +33 /etc/inittab</p>
+<p>ca:12345:ctrlaltdel:/bin/echo &quot;CTRL+ALT+DEL Bloqueado&quot;</p>
+<p>Para atualizar as configurações sem reiniciar o servidor execute:</p>
+<p><b><font color="#FF0000">2#</b> init q</p>
+</body>
+</html>

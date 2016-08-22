@@ -1,0 +1,22 @@
+<h1><b>Implementando Controle de Acesso ao Sistema com PAM</b></h1>
+<ul>
+<li>O <b>controle</b> especifica o que fazer após a resposta gerada pelo módulo, ou seja, que ações tomar caso a regra do módulo seja ou não validada;</li>
+<li>Existem quatro controles possíveis: </li>
+<li><b>→ requisite</b></li>
+<li><b>→ required</b></li>
+<li><b>→ sufficient</b></li>
+<li><b>→ optional</b></li>
+</ul>
+<h2><b>Introdução Teórica – Gerenciadores do PAM:</b></h2>
+
+<h3>Notes:</h3>
+<p><b>Descrição dos controles</b></p>
+<p><b></b></p>
+<p><b>→ required</b>: Checa a existência do módulo solicitado. Caso esse módulo falhe, somente depois de verificar se todos os módulos do mesmo tipo estão disponíveis é que o usuário será avisado;</p>
+<p></p>
+<p><b>→ requisite</b>: Checa a existência do módulo solicitado e avisa o usuário imediatamente caso este módulo falhe;</p>
+<p></p>
+<p><b>→ sufficient</b>:  Somente a verificação do módulo é suficiente para a autenticação, desde que nenhum módulo marcado como required falhe;</p>
+<p></p>
+<p><b>→ optional</b>: O sucesso ou a falha deste módulo não interfere no processo de autenticação.</p>
+

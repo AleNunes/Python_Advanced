@@ -1,0 +1,8 @@
+<h1><b>Implementando Controle de Acesso ao Sistema com PAM</b></h1>
+<h2><b>Implementação Prática do PAM – Módulo securetty:</b></h2>
+<p><b>1 – Vamos bloquear o acesso de root ao terminal do servidor sem o uso do PAM, apenas editando o arquivo /etc/securetty:</b></p>
+<p><b>1#</b> vim /etc/securetty</p>
+<p> 15	#tty3 </p>
+<p><b>2 – Tente logar-se com o usuário root no TTY1 e em seguida no TTY3.</b></p>
+<p><b>&lt; O login deverá ser bloqueado SOMENTE na TTY3 &gt;</b></p>
+

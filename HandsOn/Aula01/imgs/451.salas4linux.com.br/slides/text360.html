@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 361</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text359.html">Back</a> <a href="text361.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img360.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Gerenciadores de Boot</b></h1>
+<h2><b><font color="#004586">Gerando o Arquivo grub.cfg:</b></h2>
+<h2>O comando update-grub2 verifica o conteúdo dos arquivos descritos anteriormente, executando os scritps e criando o arquivo grub.cfg.</h2>
+<h2><b></b></h2>
+<h2><b><font color="#004586">1 – Faça um teste apagando o arquivo grub.cfg:</b></h2>
+<h2><b><font color="#FF0000"> 	1#</b> rm -rf /boot/grub/grub.cfg</h2>
+<h2><b><font color="#FF0000"> 	2#</b> ls /boot/grub/ | grep grub.cfg</h2>
+<h2><b><font color="#4C4C4C"></b></h2>
+<h2><b><font color="#004586">2 – Execute o comando update-grub2 para gerar um novo arquivo:</b></h2>
+<h2><b><font color="#FF0000"> 	3#</b> update-grub2</h2>
+<h2><b><font color="#FF0000"> 	4#</b> cat /boot/grub/grub.cfg</h2>
+<p><i><b><font color="#993366">Servidor: Linux Externa</b></i></p>
+<br>
+<h3>Notes:</h3>
+<p><b>/etc/grub.d/ (diretório)</b></p>
+<p></p>
+<p>Os arquivos nessa pasta são lidos durante a execução do comando update-grub e suas instruções são incorporadas ao /boot/grub/grub.cfg.</p>
+<p></p>
+<p>A colocação dos ítens de menu no grub.cfg é determinada pela ordem em que os arquivos são executados nessa pasta. Arquivos com numeral no início são executados primeiro começando pelo menor. 10_linux é executado antes de 20_mentest que é executado antes de 40_custom.</p>
+</body>
+</html>

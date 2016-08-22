@@ -1,0 +1,12 @@
+<h1><b>Laboratório Dexter</b></h1>
+<ul>
+<li>Definindo um LABEL para as partições:</li>
+</ul>
+<p><i><b>Servidor: Webserver Interno</b></i></p>
+<h2><b>LABEL e UUID:</b></h2>
+<p><b>1#</b> tune2fs -L backup /dev/sdb1</p>
+<p><b>2#</b> tune2fs -l /dev/sdb1 | egrep -i “name|uuid”</p>
+<p><b>3#</b> tune2fs -L dados /dev/sdb2</p>
+<p><b>4#</b> tune2fs -l /dev/sdb2 | egrep -i “name|uuid”</p>
+<p></p>
+

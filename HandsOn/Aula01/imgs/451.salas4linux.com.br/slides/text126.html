@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 127</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text125.html">Back</a> <a href="text127.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img126.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Redes Avançado</b></h1>
+<h2><b><font color="#004586">Dividindo a Rede 192.168.200.0<font color="#FF420E">/24</font><font color="#4C4C4C">  </font><font color="#004586">em 2 Sub-Redes:</b></font></h2>
+<h2><b><font color="#004586">Resumo:</b> 2 Sub-Redes de Máscara /25 (255.255.255.128) com 128 IPs cada, onde 126 são Hosts Válidos.</h2>
+<table>
+  <tr>
+    <td>
+<p><b><font color="#FFFFFF">REDE</b></p>
+    </td>
+    <td>
+<p><b><font color="#FFFFFF">Network</b></p>
+    </td>
+    <td>
+<p><b><font color="#FFFFFF">Range</b></p>
+    </td>
+    <td>
+<p><b><font color="#FFFFFF">Broadcast</b></p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+<p><font color="#4C4C4C">1</p>
+    </td>
+    <td>
+<p><font color="#4C4C4C">192.168.200.0</p>
+    </td>
+    <td>
+<p><font color="#4C4C4C">192.168.200.1 a 192.168.200.126</p>
+    </td>
+    <td>
+<p><font color="#4C4C4C">192.168.200.127</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+<p><font color="#4C4C4C">2</p>
+    </td>
+    <td>
+<p><font color="#4C4C4C">192.168.200.128</p>
+    </td>
+    <td>
+<p><font color="#4C4C4C">192.168.200.129 a 192.168.200.254</p>
+    </td>
+    <td>
+<p><font color="#4C4C4C">192.168.200.255</p>
+    </td>
+  </tr>
+</table>
+<p><i><b><font color="#993366">Servidor: Audit</b></i></p>
+<br>
+<h3>Notes:</h3>
+<p>No nosso exemplo foram disponibilizados 2 bits do último octeto para serem utilizados na máscara de sub-rede. Logo 6 bits estão disponíveis para identificação dos hosts, aplicando a fórmula do slide anterior temos:</p>
+<p></p>
+<p>  <b>26 – 2 = 62 hosts válidos por sub-rede.</b></p>
+</body>
+</html>

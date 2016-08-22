@@ -1,0 +1,10 @@
+<h1><b>Introdução a Redes</b></h1>
+<p>Um computador precisa de um roteador padrão (Gateway) para navegar em outras redes, ou seja, para sair para a internet. No Linux, o comando que define de forma temporária o gateway do sistema é o comando <b>ip route</b>.</p>
+<p><i><b>Servidor: Webserver Interno </b></i></p>
+<ul>
+<li> Deletando o Roteador Padrão:</li>
+</ul>
+<p><b>1#</b> ip route del default via 192.168.200.1</p>
+<p><b>2#</b> ip route show ; ping -c4 8.8.8.8</p>
+<p><b>3# </b>ip route add default via 192.168.200.1 ; ping -c4 8.8.8.8</p>
+

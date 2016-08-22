@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 140</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text132.html">Back</a> <a href="text134.html">Continue</a> <a href="text336.html">Last page</a> <a href="452_2016_3.3_fv.html">Overview</a> <a href="img133.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Servidor Postfix</b></h1>
+<h2><b><font color="#004586">Configuração do Postfix:</b></h2>
+<h2><b><font color="#004586">1 – Faça uma cópia do arquivo de configuração do Postfix e baixe o arquivo customizado para o curso:</b></h2>
+<h2><b><font color="#FF0000">1# </b>mv /etc/postfix/main.cf  /etc/postfix/main.cf.dist</h2>
+<h2><b><font color="#FF0000">2# </b>cp /root/mail/main.cf /etc/postfix/</h2>
+<h2><b><font color="#FF0000">3# </b>vim /etc/postfix/main.cf</h2>
+<h2><b><font color="#FF0000">4# </b>vim /etc/mailname</h2>
+<h2><font color="#004586">  <font color="#993366">dexter.com.br</font></h2>
+<p><i><b><font color="#993366">Servidor: Datacenter</b></i></p>
+<p>Acompanhe a explicação do Arquivo <b>main.cf</b> pelo Terminal</p>
+<br>
+<h3>Notes:</h3>
+<p><b>Arquivos de configuração</b></p>
+<p></p>
+<p>Os arquivos de configuração do &quot;Postfix&quot;, podem ser encontrados no diretório &quot;/etc/postfix&quot;, onde os seus principais arquivos são:</p>
+<p></p>
+<p><b>main.cf -</b> Arquivo principal do &quot;Postfix&quot; onde ficam todas as configurações principais relacionadas ao funcionamento do &quot;Postfix&quot;.</p>
+<p></p>
+<p><b>master.cf -</b> É o arquivo que controla a ação de cada &quot;daemon&quot; do &quot;Postfix&quot;. Nele podemos dizer quantos processos &quot;smtpd&quot; estarão em execução, por exemplo. Caso tenhamos uma estrutura grande de máquina, uma ajuste nesses &quot;daemons&quot; serão bem compensadores em termos de performance.</p>
+</body>
+</html>

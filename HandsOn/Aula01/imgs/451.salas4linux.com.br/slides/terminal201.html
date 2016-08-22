@@ -1,0 +1,22 @@
+<h1><b>Shell Script</b></h1>
+<h2><b>Expressões Matemáticas com Shell Script:</b></h2>
+<h2><b>Vamos fazer um script que calcula a média de um aluno:</b></h2>
+<h2></h2>
+<p><i><b>Servidor: WebServerInterno</b></i></p>
+<p><b>1</b># vim script1.sh</p>
+<p>#!/bin/bash</p>
+<p>echo “Digite seu nome:” </p>
+<p>read ALUNO</p>
+<p>echo “Por favor, digite sua primeira nota:”</p>
+<p>read N1</p>
+<p>echo “Agora digite sua segunda nota:”</p>
+<p>read N2</p>
+<p>SOMA=$(expr $N1 + $N2)</p>
+<p>MEDIA=$(expr $SOMA / 2)</p>
+<p>echo “Sua média $ALUNO é: $MEDIA”</p>
+
+<h3>Notes:</h3>
+<p><b>Expr</b></p>
+<p></p>
+<p>Muitas vezes quando fazemos “scripts”, precisamos de uma função que faça o trabalho das operações matemáticas básicas como soma, divisão, multiplicação e subtração. Em “shell script” podemos usar o comando “expr” para realizá-las.</p>
+

@@ -1,0 +1,20 @@
+<h1><b>Manipulando Hardware e Dispositivos</b></h1>
+<ul>
+<li><b>1# </b>lsmod</li>
+</ul>
+<p>Module           Size  			Used by</p>
+<p>ppdev             12651  			0 </p>
+<p>lp                    12797  			0 </p>
+<p>bnep               17288  			2 </p>
+<p>rfcomm           28448  			0 </p>
+<p>bluetooth        99230  			10 rfcomm,bnep</p>
+<p>rfkill                18715  			2 bluetooth</p>
+<p>uinput             12991  			1 </p>
+<p>nfsd                173559  			2</p>
+<p><b>NOTA: </b>a coluna&nbsp;<b>Module&nbsp;</b>mostra o nome do modulo carregado, enquanto a coluna <b>Used</b> mostra os&nbsp;módulos&nbsp;que estão usando aquele recurso.</p>
+<p><i><b>Servidor: Máquina Linux Interna</b></i></p>
+<ul>
+<li>O lsmod lista os módulos ativos no sistema pelo kernel, também pode ser usado o comando <b>cat /proc/modules</b>.</li>
+</ul>
+<h2><b>Comando lsmod:</b></h2>
+

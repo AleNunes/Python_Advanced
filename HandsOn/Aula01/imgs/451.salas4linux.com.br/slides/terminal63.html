@@ -1,0 +1,24 @@
+<h1><b>Quotas de Disco</b></h1>
+<h2><b>1 – Verifique como foi feito o particionamento do disco:</b></h2>
+<h2><b></b></h2>
+<h2><b>1#</b> df -h</h2>
+<h2><b>2#</b> mount</h2>
+<h2><b>3#</b> blkid</h2>
+<h2><b></b></h2>
+<h2><b></b></h2>
+<h2><b>2 – Abra o arquivo /etc/fstab para definir as opções que habilitaram o uso das quotas:</b></h2>
+<h2><b></b></h2>
+<h2><b> 1#</b> vim /etc/fstab</h2>
+<p><b>← Verifique o esquema de montagem dos disco da fileserver para definir em qual disco e partição montaremos as quotas.</b></p>
+<p><b>← Se necessário confirme o UUID da partição utilizando o blkid</b></p>
+<p><i><b>Servidor: Fileserver</b></i></p>
+
+<h3>Notes:</h3>
+<p><b>Habilitando Quotas no fstab:</b></p>
+<p></p>
+<p>O sistema de quotas é uma funcionalidade do “filesystem” e do kernel, sendo assim, ambos têm que serem capazes de suportá-lo.</p>
+<p></p>
+<p>Uma vez que o “filesystem” suporta quotas, devemos adicionar os parâmetros de montagem, que utilizaremos com esse sistema. Isso é feito no arquivo “/etc/fstab”. </p>
+<p></p>
+<p>Além disso, temos que criar, o sistema deverá criar na raiz desses “filesystems”, os arquivos de controle, chamados <b>“aquota.user”</b> e <b>“aquota.group”.</b></p>
+

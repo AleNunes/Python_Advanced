@@ -1,0 +1,13 @@
+<h1><b>Servidor de Impressão CUPS</b></h1>
+<h2><b>1 – Instale o pacote cups na máquina cliente:</b></h2>
+<h2><b> 		1#</b> yum install cups <b>(CentOS/RedHat)</b></h2>
+<h2><b> 		2#</b> apt-get install cups <b>(Debian/Ubuntu)</b></h2>
+<h2><b></b></h2>
+<h2><b>2 – Crie o arquivo client.conf com contendo o IP do servidor CUPS:</b></h2>
+<h2><b> 		3#</b> vim /etc/cups/client.conf</h2>
+<h2><b>          </b>ServerName 192.168.200.10 		 	</h2>
+<h2><b>3 – Reinicialize o daemon do cups para aplicar a alteração:</b></h2>
+<h2><b>         4# </b>service cups restart</h2>
+<h2><b>Configurar Cliente Cups:</b></h2>
+<p><i><b>Servidor: Web Server Interno</b></i></p>
+

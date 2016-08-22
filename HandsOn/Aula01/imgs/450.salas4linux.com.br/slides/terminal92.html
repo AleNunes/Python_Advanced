@@ -1,0 +1,35 @@
+<h1><b>Criando Atalhos de Comandos</b></h1>
+<p><i><b>Servidor: Webserver Interno / Webserver Externo</b></i></p>
+<ul>
+<li> Personalizando o Shell de forma definitiva:</li>
+</ul>
+<p><b>1#</b> vim /root/.bashrc</p>
+<p>Descomentar as Linhas abaixo:</p>
+<p>export LS_OPTIONS='--color=auto'</p>
+<p>alias ls='ls $LS_OPTIONS'</p>
+<p>alias ll='ls $LS_OPTIONS -l'</p>
+<p>alias l='ls $LS_OPTIONS -lA'</p>
+<p>alias rm='rm -i'</p>
+<p>alias cp='cp -i'</p>
+<p>alias mv='mv -i'</p>
+<p><b>2# </b>source /root/.bashrc</p>
+<p><b>3# </b>alias</p>
+<p>O arquivo .bashrc é o responsável por armazenar os alias dos usuários do Sistema.</p>
+<p>Cada usuário possui em seu diretório home um arquivo .bashrc</p>
+<p>É possível também definir alias de forma global, ou seja, que estarão disponíveis para todos os usuários, no arquivo do bash no /etc/:</p>
+<p><b>/etc/bash.bashrc</b></p>
+<p><b>/etc/bashrc</b></p>
+
+<h3>Notes:</h3>
+<p><b>Outros arquivos de personalização:</b></p>
+<p></p>
+<p>Os arquivos abaixo podem ser encontrados em algumas distribuições e são opções para criação de variáveis permanentes, ou seja, variáveis que sejam declaradas todas vez que o sistema for iniciado/reiniciado.</p>
+<p></p>
+<p>/.profile</p>
+<p>/.bash-profile</p>
+<p></p>
+<p>Para executar funções durante os processos de login e logut utilize os seguintes arquivos:</p>
+<p></p>
+<p>/.bash_login</p>
+<p>/.bash_logout</p>
+

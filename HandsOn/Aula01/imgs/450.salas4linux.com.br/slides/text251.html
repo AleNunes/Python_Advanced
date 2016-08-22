@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 252</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#3A81CC" vlink="#3773B1" alink="#3A81CC">
+<center>
+<a href="text0.html">First page</a> <a href="text250.html">Back</a> <a href="text252.html">Continue</a> <a href="text417.html">Last page</a> <a href="Apostila3.2.html">Overview</a> <a href="img251.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Laboratório Dexter</b></h1>
+<p><i><b><font color="#993366">Servidor: Webserver Interno</b></i></p>
+<ul>
+<li> Gere uma chave sem senha no <b><font color="#993366">Webserver Interno</b>:</li>
+</ul>
+<p><b><font color="#FF0000">1#</b> ssh-keygen</p>
+<p><font color="#4C4C4C">Generating public/private rsa key pair.</p>
+<p><font color="#4C4C4C">Enter file in which to save the key (/root/.ssh/id_rsa):<b><font color="#CC0000">(Pressione ENTER)</b></font> </font></p>
+<p><font color="#4C4C4C">Enter passphrase (empty for no passphrase):<b><font color="#CC0000">(Pressione ENTER)</b></font></p>
+<p><font color="#4C4C4C">Enter same passphrase again: <b><font color="#CC0000">(Pressione ENTER)</b></font></p>
+<p><font color="#4C4C4C">Your <b>identification</b> has been saved in /root/.ssh/id_rsa.</p>
+<p><font color="#4C4C4C">Your <b>public key</b> has been saved in /root/.ssh/id_rsa.pub.</p>
+<p><font color="#4C4C4C">The key fingerprint is:</p>
+<p><font color="#4C4C4C">bb:9e:4a:a8:e0:0f:2b:4f:89:12:05:43:77:bd:52:0f <a href="mailto:root@webserverinterno.dexter.com.br">root@webserverinterno.dexter.com.br</a></p>
+<p><b><font color="#FF0000">2#</b> cd /root/.ssh</p>
+<p><b><font color="#FF0000">3#</b> ls</p>
+<p><b><font color="#FF950E">id_rsa</b> </font>→ Chave privada. Não pode ser compartilhada!<font color="#4C4C4C"> </font></p>
+<p><b><font color="#FF950E">id_rsa.pub</b> </font>→  Chave pública que deve ser enviada ao servidor que deseja acessar sem senha.</p>
+<br>
+<h3>Notes:</h3>
+<p><b>Geração de chaves</b></p>
+<p></p>
+<p>O comando acima gera os arquivos &quot;.ssh/id_rsa&quot; e &quot;.ssh/id_rsa.pub&quot; dentro do seu diretório home, que são, respectivamente, sua chave privada e sua chave pública. O &quot;.ssh/id_rsa&quot; é um arquivo secreto, que deve usar obrigatoriamente o modo de acesso &quot;600&quot;, para evitar que outros usuários da máquina possam lê-lo. </p>
+<p></p>
+<p>Muitos servidores recusam a conexão caso os arquivos estejam com as permissões abertas.</p>
+<p></p>
+<p>Como só há um par que se completa, apenas quem possuir a chave privada poderá estabelecer uma conexão utilizando a respectiva chave pública.</p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 222</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text220.html">Back</a> <a href="text222.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img221.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Shell Script</b></h1>
+<p>case $OPT in</p>
+<p>1)</p>
+<p>         clear</p>
+<p>        echo -n &quot;Digite o nome do usuário a ser adicionado: &quot;</p>
+<p>        read USUARIO</p>
+<p>        echo -n &quot;Digite a senha: &quot;</p>
+<p>        read -s SENHA</p>
+<p>     </p>
+<p>        echo &quot;Adicionando novo usuário ($USUARIO) no sistema.&quot;</p>
+<p>        adduser $USUARIO</p>
+<p>        echo $SENHA | passwd $USUARIO --stdin</p>
+<p>        if [ $? -eq 0 ]; then</p>
+<p>                echo &quot;O usuario $USUARIO adicionado com sucesso!&quot;</p>
+<p>        else</p>
+<p>                echo &quot;Não foi possivel adicionar o usuário no sistema!&quot;</p>
+<p>        fi</p>
+<p>;;</p>
+<p><i><b><font color="#993366">Servidor: WebServer Interno</b></i></p>
+<p><b><font color="#004586">Parte 2/4:</b></p>
+</body>
+</html>

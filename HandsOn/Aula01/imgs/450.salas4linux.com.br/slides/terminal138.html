@@ -1,0 +1,20 @@
+<h1><b>Resolução de Nomes</b></h1>
+<p><i><b>Servidor: Webserver Interno / Linux Interna </b></i></p>
+<p><b>1# </b>cat /etc/resolv.conf</p>
+<p><b>2#</b> ping -c4 gateway.dexter.com.br</p>
+<p><b>3#</b> vim /etc/hosts</p>
+<p>....</p>
+<p>192.168.200.1   gateway.dexter.com.br    gateway</p>
+<p></p>
+<p><b>4#</b> ping -c4 gateway</p>
+<p><b>5#</b> ping -c4 gateway.dexter.com.br</p>
+<ul>
+<li>Existem basicamente 2 formas de resolver nomes no Linux:</li>
+</ul>
+<ul>
+<ul>
+<li>Configurar um servidor DNS (/etc/resolv.conf);</li>
+<li>Definir resolução manual (/etc/hosts).</li>
+</ul>
+</ul>
+

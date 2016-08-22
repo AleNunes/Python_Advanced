@@ -1,0 +1,10 @@
+<h1><b>Limitando as Consultas ao Servidor NTP</b></h1>
+<ul>
+<li>Adicione a seguinte informação a linha 42:</li>
+<h2> 	restrict 192.168.200.0 </h2>
+<h2> 	(Substitua o IP acima pelo IP do servidor Fileserver)</h2>
+<li>Tente utilizar o comando ntpdate para atualizar a data através da fileserver.</li>
+<li><b>A partir de agora só a fileserver poderá obter data e hora consultando a Audit!</b></li>
+</ul>
+<p><i><b>Servidor: Audit</b></i></p>
+

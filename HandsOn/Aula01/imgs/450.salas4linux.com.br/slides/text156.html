@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 157</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#3A81CC" vlink="#3773B1" alink="#3A81CC">
+<center>
+<a href="text0.html">First page</a> <a href="text155.html">Back</a> <a href="text157.html">Continue</a> <a href="text417.html">Last page</a> <a href="Apostila3.2.html">Overview</a> <a href="img156.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Gerenciador de Pacotes RPM</b></h1>
+<h2><b><font color="#004586">Removendo programas desnecessários nos servidores:</b></h2>
+<p><i><b><font color="#993366">Servidor: Webserver Interno</b></i></p>
+<p><b><font color="#004586">Opções do rpm</b></p>
+<p><b><font color="#004586">-e</b> →  Remove um programa sem suas dependências;</p>
+<p><b><font color="#FF0000">1#</b> rpm <b>-qa</b> | less</p>
+<p><b><font color="#FF0000">2#</b> rpm <b>-qa</b> | grep figlet</p>
+<p><b><font color="#FF0000">3#</b> rpm <b>-e</b> figlet</p>
+<p><b><font color="#FF0000">4#</b> rpm <b>-qa</b> | grep figlet</p>
+<br>
+<h3>Notes:</h3>
+<p><b>Verificação da integridade de Pacotes:</b></p>
+<p></p>
+<p>Uma vantagem que o RPM possui sobre DPKG é que possui ferramentas de verificação criptográfica como o GPG e o md5, além de verificação de integridade dos arquivos já instalados. Dessa forma, periodicamente você pode verificar se ocorreu alguma alteração no seu sistema sem você saber ou se sua máquina foi invadida, pode-se tentar identificar o que foi mexido nela.</p>
+<p></p>
+<p>Existe uma documentação que pode ser usada para qualquer distro baseada em RPM que pode ser encontrada em: http://www.rpm.org/RPM-HOWTO/.</p>
+</body>
+</html>

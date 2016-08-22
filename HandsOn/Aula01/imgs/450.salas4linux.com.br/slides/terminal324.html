@@ -1,0 +1,18 @@
+<h1><b>Inicialização do Sistema</b></h1>
+<p><b>Systemd:</b></p>
+<ul>
+<li> Links simbólicos:</li>
+</ul>
+<p><i><b>Servidor: Webserver Interno</b></i></p>
+<p>Repare que os arquivos de runlevels são links simbólicos para três arquivos:</p>
+<ul>
+<ul>
+<li>/lib/systemd/system/runlevel1.target -&gt;<b> rescue.target</b></li>
+<li>/lib/systemd/system/runlevel2.target -&gt; <b>multi-user.target</b></li>
+<li>/lib/systemd/system/runlevel3.target -&gt; <b>multi-user.target</b></li>
+<li>/lib/systemd/system/runlevel4.target -&gt; <b>multi-user.target</b></li>
+<li>/lib/systemd/system/runlevel5.target -&gt; <b>graphical.target</b></li>
+</ul>
+</ul>
+<p><b>NOTA:</b> Note que os runlevels 2 3 e 4 apontam para o mesmo arquivo (multi-user.target) portanto o systemd não fará distinção entre os 3 runlevels</p>
+

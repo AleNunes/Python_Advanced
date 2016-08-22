@@ -1,0 +1,13 @@
+<h1><b>Firewall Linux</b></h1>
+<h2><b>2ª → Liberar acesso ao loopback – 127.0.0.1:</b></h2>
+<p><i><b>Servidor: Security</b></i></p>
+<p><b>1#</b> iptables -t filter -A INPUT -s 0/0 -d 127.0.0.1 -j ACCEPT</p>
+<p>Tudo que entrar no Servidor Security com destino ao Localhost (127.0.0.1) será liberado.</p>
+<p></p>
+<p><b>2#</b> iptables -t filter -A OUTPUT -s 0/0 -d 127.0.0.1 -j ACCEPT</p>
+<p>Tudo que sair do Servidor Security com destino ao Localhost (127.0.0.1) será liberado.</p>
+<p></p>
+<p><b>3#</b> iptables -t filter -nL --line-numbers  </p>
+<p><b>4#</b> ssh 127.0.0.1</p>
+<p><b>5#</b> ping 127.0.0.1</p>
+

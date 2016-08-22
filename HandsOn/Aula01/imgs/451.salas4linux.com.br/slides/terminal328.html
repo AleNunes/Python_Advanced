@@ -1,0 +1,20 @@
+<h1><b>Gerência de Módulos</b></h1>
+<h2><b>3 – Visualize todos os módulos sendo utilizados:</b></h2>
+<h2><b>1#</b> lsmod</h2>
+<h2><b>2#</b> cat /proc/modules</h2>
+<h2><b>4 - Em seguida liste apenas os módulos disponíveis:</b></h2>
+<h2><b>3#</b> find /lib/modules/$(uname -r) -iname *.ko</h2>
+<p>O comando <b>lsmod</b> tem a função de listar todos os módulos externos ativos na máquina.</p>
+<p><i><b>Servidor: Audit</b></i></p>
+
+<h3>Notes:</h3>
+<p><b>Listando Módulos</b></p>
+<p></p>
+<p>Ao executar o comando lsmod você pode ver quais módulos estão carregados atualmente no seu kernel. Veja que a saída do comando lsmod é em colunas, é listado todos módulos que estão carregados em memória, inclusive os que não estão em uso.</p>
+<p></p>
+<p>Onde:</p>
+<p></p>
+<p><b>Module → </b>Exibe o nome do módulo</p>
+<p><b>Size → </b>Exibe em bytes, o tamanho da memória do módulo</p>
+<p><b>Used by → </b>Exibe a contagem de quantas instâncias do módulo estão carregadas e o módulo que está usando; os valores são importantes porque não podemos remover um módulo que esteja sendo usado, a não ser que nesse campo, o valor seja zero.</p>
+

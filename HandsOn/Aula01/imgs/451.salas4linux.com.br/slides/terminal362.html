@@ -1,0 +1,19 @@
+<h1><b>Gerenciadores de Boot</b></h1>
+<h2><b>Colocando Imagem no Grub2:</b></h2>
+<h2><b>2 – Abra o script 05_debian_theme e comente as linhas 128, 129 e 130, após isso edite conforme abaixo:</b></h2>
+<h2><b>1#</b> vim +153 /etc/grub.d/05_debian_theme</h2>
+<h2>if set_background_image<b> &quot;/boot/grub/imagem_bg/dexterlogo.png&quot;</b>; then</h2>
+<h2><b>3 – Atualize o grub para que a nova imagem seja carregada e reinicialize o sistema para ver o resultado:</b></h2>
+<h2><b>2#</b> update-grub2</h2>
+<h2>Generating grub.cfg ...</h2>
+<h2>Found background image: /boot/grub/imagem_bg/dexterlogo.png</h2>
+<h2><b>3#</b> init 6</h2>
+<p><i><b>Servidor: Linux Externa</b></i></p>
+
+<h3>Notes:</h3>
+<p><b>/boot/grub/grub.cfg</b></p>
+<p></p>
+<p>É o que mais se assemelha ao /boot/grub/menu.lst do GRUB mas diferentemente desse o grub.cfg não se destina a ser editado. Cada seção é claramente delimitada com “(### BEGIN)” e a referência do arquivo na pasta /etc/grub.d a partir da qual a informação foi gerada. grub.cfg é atualizado executando o comando update-grub e é automaticamente modificado quando há uma atualização ou instalação/remoção de Kernel.</p>
+<p></p>
+<p>Por padrão, e sempre que o comando update-grub é executado, este arquivo é feito “somente leitura”. Isto porque a intenção é que o arquivo não seja editado manualmente.</p>
+

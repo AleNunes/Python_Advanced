@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 301</title>
+</head>
+<body text="#FFFFFF" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text299.html">Back</a> <a href="text301.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img300.html">Graphics</a></center><br>
+<h1><b>Pergunta LPI</b></h1>
+<h2>Qual comando irá setar no sistema o timezone UTC?</h2>
+<h2>A. date timezone=UTC</h2>
+<h2>B. mv /usr/timezone/UTC /etc</h2>
+<h2>C. cat UTC &gt; /etc/timezone</h2>
+<h2><b>D. ln -s  /usr/share/zoneinfo/UTC  /etc/localtime</b></h2>
+<h2><b>Resposta: Alternativa D</b></h2>
+<h2>O timezone do sistema é setado por um link no /etc/localtime. Onde ficam armazenados os arquivos de zona?</h2>
+<h2><b> Resposta: /usr/share/zoneinfo/</b></h2>
+<br>
+<h3>Notes:</h3>
+<p><b><font color="#666666">Alternativa D: RESPOSTA CORRETA!</b></p>
+<p><b><font color="#666666"></b></p>
+<p><font color="#666666">O conteúdo do arquivo <b>/etc/localtime</b> é gerado a partir de um  hard link (obtido pelo comando ln) ou através de um link simbólico (obtido pelo comando ln -s) criado entre o arquivo original e o arquivo alvo para criação do link, o arquivo localtime.</p>
+<p><font color="#666666"></p>
+<p><u><b><font color="#666666">______________________________________________________________________</b></u></p>
+<p><font color="#666666"></p>
+<p><b><font color="#666666">RESPOTA CORRETA: /usr/share/zoneinfo/</b></p>
+<p><font color="#666666"></p>
+<p><font color="#666666">Assim como exemplificado na pergunta anterior e como comentado em aula, todos os arquivos de fuso horário de um sistema GNU/Linux estão alocados dentro do diretório /usr/share/zoneinfo/.</p>
+</body>
+</html>

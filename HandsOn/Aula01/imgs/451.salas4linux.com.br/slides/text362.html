@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 363</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text361.html">Back</a> <a href="text363.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img362.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Gerenciadores de Boot</b></h1>
+<h2><b><font color="#004586">Colocando Imagem no Grub2:</b></h2>
+<h2><b><font color="#004586">2 – Abra o script 05_debian_theme e comente as linhas 128, 129 e 130, após isso edite conforme abaixo:</b></h2>
+<h2><b><font color="#FF0000">1#</b> vim +153 /etc/grub.d/05_debian_theme</h2>
+<h2>if set_background_image<b> &quot;<font color="#993366">/boot/grub/imagem_bg/dexterlogo.png&quot;</b>; then</h2>
+<h2><b><font color="#004586">3 – Atualize o grub para que a nova imagem seja carregada e reinicialize o sistema para ver o resultado:</b></h2>
+<h2><b><font color="#FF0000">2#</b> update-grub2</h2>
+<h2><font color="#993366">Generating grub.cfg ...</h2>
+<h2><font color="#993366">Found background image: /boot/grub/imagem_bg/dexterlogo.png</h2>
+<h2><b><font color="#FF0000">3#</b> init 6</h2>
+<p><i><b><font color="#993366">Servidor: Linux Externa</b></i></p>
+<br>
+<h3>Notes:</h3>
+<p><b>/boot/grub/grub.cfg</b></p>
+<p></p>
+<p>É o que mais se assemelha ao /boot/grub/menu.lst do GRUB mas diferentemente desse o grub.cfg não se destina a ser editado. Cada seção é claramente delimitada com “(### BEGIN)” e a referência do arquivo na pasta /etc/grub.d a partir da qual a informação foi gerada. grub.cfg é atualizado executando o comando update-grub e é automaticamente modificado quando há uma atualização ou instalação/remoção de Kernel.</p>
+<p></p>
+<p>Por padrão, e sempre que o comando update-grub é executado, este arquivo é feito “somente leitura”. Isto porque a intenção é que o arquivo não seja editado manualmente.</p>
+</body>
+</html>

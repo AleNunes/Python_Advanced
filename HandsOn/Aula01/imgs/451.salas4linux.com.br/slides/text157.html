@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 158</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text156.html">Back</a> <a href="text158.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img157.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Compactadores, Empacotadores e Procedimento de Backup</b></h1>
+<h2><b><font color="#004586">Empacotador TAR:</b></h2>
+<h2><b><font color="#004586">1 – Empacotar o conteúdo do diretório /home:</b></h2>
+<h2><b><font color="#FF0000"> 1#</b> cd /backup</h2>
+<h2><b><font color="#FF0000"> 2#</b> tar -cvf bkp_home.tar /home</h2>
+<h2><b><font color="#FF0000"> 3#</b> ls -l</h2>
+<h2><b><font color="#4C4C4C"></b></h2>
+<h2><b><font color="#004586">2 – Visualizar o conteúdo do Backup:</b></h2>
+<h2><b><font color="#FF0000"> 4#</b> tar -tf bkp_home.tar 	ou</h2>
+<h2><b><font color="#FF0000"> 5#</b> tar tf bkp_home.tar</h2>
+<p><b><font color="#FF950E">Opções do TAR:</b></p>
+<p><b><font color="#FF950E">-c</b> →Cria um novo arquivo tar;</p>
+<p><b><font color="#FF950E">-v</b> →Exibe detalhes da operação;</p>
+<p><b><font color="#FF950E">-z</b> →Comprime ou extrai arquivos tar resultante com o gzip;</p>
+<p><b><font color="#FF950E">-j</b> →Comprime ou extrai arquivos tar resultante com o bzip2;</p>
+<p><b><font color="#FF950E">-f</b> →Especifica o arquivo tar a ser usado;</p>
+<p><b><font color="#FF950E">-t</b> →Mostrar uma tabela com o conteúdo do backup<font color="#004586">.</font></p>
+<p><i><b><font color="#993366">Servidor: WebServerInterno</b></i></p>
+<br>
+<h3>Notes:</h3>
+<p><b>Utilizando o TAR</b></p>
+<p></p>
+<p>A utilização da ferramenta “tar” é bastante simples. Seguindo o filosofia Unix “faça apenas uma tarefa, mas faça bem feito”, o “tar” é um programa especialista em empacotar vários arquivos. Dessa forma, quando utilizamos os parâmetros “z” ou “j” estamos na realidade fazendo uma chamada externa aos comandos “gzip” ou “bzip2”, especialistas em compressão de dados.</p>
+</body>
+</html>

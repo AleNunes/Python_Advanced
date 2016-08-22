@@ -1,0 +1,17 @@
+<h1><b>Laboratório Dexter</b></h1>
+<p><i><b>Servidor: Webserver Interno </b></i></p>
+<p><b>1#</b> vim /etc/sysconfig/network-scripts/ifcfg-eth1</p>
+<p>DEVICE=eth1</p>
+<p>NM_CONTROLLED=&quot;no&quot;</p>
+<p>ONBOOT=&quot;yes&quot;</p>
+<p>BOOTPROTO=static</p>
+<p>IPADDR=10.10.0.20</p>
+<p>NETMASK=255.255.0.0</p>
+<p></p>
+<p><b>2#</b> systemctl restart network</p>
+<p></p>
+<p><b>3#</b> ip a show </p>
+<ul>
+<li><b>Adicionar uma nova interface para se comunicar com a rede 10.10.0.0/16</b></li>
+</ul>
+

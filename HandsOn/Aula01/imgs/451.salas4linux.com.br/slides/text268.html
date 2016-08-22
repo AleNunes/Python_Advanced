@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 269</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text267.html">Back</a> <a href="text269.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img268.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Capacity Planning com sysstat</b></h1>
+<h2><b><font color="#004586">3 – Utilize o comando iostat para gerar um novo relatório de disco e verifique a taxa de gravação (Blk_wrtn/s) no disco de backup (sdb):</b></h2>
+<h2><b><font color="#004586"></b></h2>
+<h2><b><font color="#FF0000">1<font color="#4C4C4C">#</b> iostat -d</font></h2>
+<h2><font color="#4C4C4C"></h2>
+<h2><b><font color="#004586">4 – Verifique informações gerais de processamento:</b></h2>
+<h2><b><font color="#004586"></b></h2>
+<h2><b><font color="#FF0000">2#</b> mpstat</h2>
+<h2><font color="#4C4C4C"></h2>
+<h2><b><font color="#004586">5 – Faça verificações em um único processador e em um único processo:</b></h2>
+<h2><b><font color="#004586"></b></h2>
+<h2><b><font color="#FF0000">3#</b> mpstat -P 0</h2>
+<h2><b><font color="#FF0000">4#</b> pidstat -p $(pgrep cron)</h2>
+<p><i><b><font color="#993366">Servidor: WebServer Interno</b></i></p>
+<br>
+<h3>Notes:</h3>
+<p><b>mpstat e pidstat</b></p>
+<p></p>
+<p>O programa <b>mpstat</b> trabalha de forma similar ao iostat, porém reporta informações apenas sobre o processador e permite um nível maior de detalhamento em relação as informações reportadas;</p>
+<p></p>
+<p>Já o comando <b>pidstat</b> pode ser extremamente útil para monitorar as requisiçõpes feitas por aplicações especificas através de seu PID.</p>
+</body>
+</html>

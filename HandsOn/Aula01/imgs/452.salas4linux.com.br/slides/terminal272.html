@@ -1,0 +1,11 @@
+<h1><b>Servidor Proxy com Squid</b></h1>
+<p><b>Regras das ACLs:</b></p>
+<ul>
+<li><b>http_access → </b>Permite ou nega acessos baseados nas ACLs pré definidas. É utilizado seguido de allow ou deny;</li>
+<li>Se a ACL for precedida de um ponto de exclamação significa que será a negação da ACL. As regras serão lidas na ordem em que aparecem;</li>
+<li><b>Exemplos:</b></li>
+<li>http_access allow DIRETOR</li>
+<li>http_access deny FACEBOOK !HORARIO_ALMOCO</li>
+<li>http_access deny EXTENSAO_PROIBIDA<b>:</b></li>
+</ul>
+

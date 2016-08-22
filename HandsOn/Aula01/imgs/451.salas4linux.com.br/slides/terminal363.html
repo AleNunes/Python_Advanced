@@ -1,0 +1,21 @@
+<h1><b>Gerenciadores de Boot</b></h1>
+<h2><b>O arquivo /etc/default/grub:</b></h2>
+<h2>Além dos scripts, uma saída para edição é o arquivo <b>“/etc/default/grub”. </b>Sua organização é mais simples, o que facilita a criação de entradas e configurações.</h2>
+<h2><b>1 – Verifique o conteúdo deste arquivo:</b></h2>
+<h2><b>1#</b> cat /etc/default/grub</h2>
+<p><i><b>Servidor: Linux Externa</b></i></p>
+<p><b>NOTA:</b> Alterações efetuadas aqui também serão validadas após execução do comando update-grub2.</p>
+
+<h3>Notes:</h3>
+<p>Principais informações disponíveis no arquivo <b>/etc/default/grub:</b></p>
+<p><b></b></p>
+<p><b>- GRUB_DEFAULT → </b>Configura a entrada padrão do GRUB no menu de inicialização.</p>
+<p></p>
+<p><b>- GRUB_TIMEOUT → </b> Configura o tempo</p>
+<p><b></b></p>
+<p><b>- GRUB_HIDDEN_TIMEOUT → </b> Permite ocultar o menu do GRUB.</p>
+<p><b></b></p>
+<p><b>- GRUB_GFXMODE=640×480 →</b> Descomente essa linha para mudar a resolução. Ela fornece resoluções suportadas pela placa de vídeo do usuário (640×480, 800×600, 1280×1024, etc).</p>
+<p></p>
+<p><b>- GRUB_DISABLE_LINUX_RECOVERY →</b>  Adicione ou descomente essa linha se não desejar o “Recovery” mode no menu.</p>
+

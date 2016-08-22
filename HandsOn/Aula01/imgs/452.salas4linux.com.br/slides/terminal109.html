@@ -1,0 +1,22 @@
+<h1><b>Servidor Apache</b></h1>
+<p><i><b>Servidor: WebServerCloud</b></i></p>
+<ul>
+<li>Desativando o site default do Apache:</li>
+<li><b>1#</b> a2dissite 000-default.conf</li>
+<li><b>2#</b> ls /etc/apache2/sites-enabled/ </li>
+<li><b>3#</b> service apache2 reload</li>
+<li>Ativando o site da Dexter em sites-available:</li>
+<li><b>4#</b> cd /etc/apache2/sites-available/</li>
+</ul>
+<h2><b>Apache SSL (https) – Ativando SSL no Site da Dexter:</b></h2>
+
+<h3>Notes:</h3>
+<p><b>Conhecendo a estrutura do Apache</b></p>
+<p>No Debian, a localização dos arquivos do Apache fica em “/etc/apache2”. Abaixo um resumo da função de cada um dos itens:</p>
+<p></p>
+<p><b>sites-available/ - </b>Configuração de VirtualHost disponíveis;</p>
+<p><b>sites-enabled/ -</b> Configuração de VirtualHost ativos;</p>
+<p><b>mods-available/ -</b> Módulos disponíveis;</p>
+<p><b>mods-enabled/ -</b> Módulos habilitados;</p>
+<p><b>conf.d/ -</b> Configurações extras, como ajustes de segurança (arquivo security) e charset (configurações de condificação).</p>
+

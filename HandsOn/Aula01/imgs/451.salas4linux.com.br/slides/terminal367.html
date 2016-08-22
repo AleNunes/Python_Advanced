@@ -1,0 +1,11 @@
+<h1><b>Segurança no Grub2</b></h1>
+<ul>
+<li>De forma similar ao procedimento efetuado no grub, também é possível definir uma senha para o grub2;</li>
+<li>Primeiro gere uma senha e a direcione para o sricpt 00_header:</li>
+<li><b>1#</b> (echo 123456;echo 123456) | grub-&shy;mkpasswd&shy;-pbkdf2 &gt;&gt; </li>
+<li>/etc/grub.d/00_header</li>
+<li><b>2#</b> vim /etc/grub.d/00_header</li>
+<li>Em seguida, localize a senha gerada ao final do arquivo e edite conforme o próximo slide.</li>
+</ul>
+<p><i><b>Servidor: Linux Externa</b></i></p>
+

@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 162</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text154.html">Back</a> <a href="text156.html">Continue</a> <a href="text336.html">Last page</a> <a href="452_2016_3.3_fv.html">Overview</a> <a href="img155.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Servidor Postfix</b></h1>
+<h2><b><font color="#004586">Configurando o Webmail RoundCube: </b></h2>
+<h2><b><font color="#993366">3 – Altere a senha de acesso ao mysql e a timezone:</b></h2>
+<h2><b><font color="#FF0000">1# </b>vim db.inc.php</h2>
+<h2><font color="#FF3333">25 $rcmail_config['db_dsnw'] = 'mysql://roundcube:<b>4linux</b>@localhost/roundcubemail';</h2>
+<h2><b><font color="#FF950E">&lt;Na linha 25 do arquivo db.inc.php substitua a senha padrão  <u>4linux</u> pela senha cadastrada  por você no mysql&gt;</b></h2>
+<h2><b><font color="#FF0000">2# </b>vim +946 /etc/php.ini</h2>
+<h2><font color="#993366">date.timezone = <b>America/Sao_Paulo</b></h2>
+<h2><b><font color="#FF0000">3# </b>systemctl restart httpd.service</h2>
+<p><i><b><font color="#993366">Servidor: WebServerInterno</b></i></p>
+</body>
+</html>

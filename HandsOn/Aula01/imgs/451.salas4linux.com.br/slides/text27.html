@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 28</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text26.html">Back</a> <a href="text28.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img27.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Administração de Usuários</b></h1>
+<p>Cada pasta departamental da Dexter terá seu gerente como dono e o departamento como grupo dono.</p>
+<p>O comando <b><font color="#FF950E">chown</b> é usado alterar o dono de pastas e arquivos, já o comando <b><font color="#FF950E">chgrp</b></font> é usando para alterar o grupo dono de pastas e arquivos.</p>
+<p><i><b><font color="#993366">Servidor: FileServer</b></i></p>
+<p><b><font color="#FF0000">1#</b> cd /srv/dexter</p>
+<p><b><font color="#FF0000">2#</b> mkdir {Diretoria,Vendas,Financeiro,Infra}</p>
+<p><b><font color="#FF0000">3#</b> ls -l </p>
+<p>drwxr-xr-x 2 root root ... Diretoria</p>
+<p>drwxr-xr-x 2 root root ... Financeiro</p>
+<p>drwxr-xr-x 2 root root ... Infra</p>
+<p>drwxr-xr-x 2 root root ... Vendas</p>
+<p><b><font color="#FF0000">4#</b> chown bryan.leah Diretoria</p>
+<p><b><font color="#FF0000">5#</b> chown annie.dee Vendas</p>
+<p><b><font color="#FF0000">6#</b> chown antony.brooks Financeiro</p>
+<p><b><font color="#FF0000">7#</b> chown harry.rosemberg Infra</p>
+<h2><b><font color="#004586">Adicionando as Pastas Departamentais e Ajustando os Proprietários:</b></h2>
+</body>
+</html>

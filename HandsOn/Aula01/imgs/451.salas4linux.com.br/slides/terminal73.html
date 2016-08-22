@@ -1,0 +1,14 @@
+<h1><b>Quotas de Disco</b></h1>
+<h2>Vamos testar as quotas criadas para o usuário <b>bryan</b> antes de replicarmos a todos os usuários da empresa dexter, para isso, abra um terminal e efetue login com o usuário bryan.leah</h2>
+<h2><b></b></h2>
+<h2><b></b></h2>
+<h2><b>1 – Teste as quotas por espaço em disco:</b></h2>
+<h2><b>1</b># su – bryan.leah</h2>
+<h2><b>2# </b>yes linux &gt; arquivo_grande</h2>
+<h2><b>3#</b> du -hs /srv/homes/bryan.leah</h2>
+<h2><b>4#</b> exit</h2>
+<h2><b>2 – Com usuário root visualize o relatório de quotas:</b></h2>
+<h2><b>3#</b> repquota -va</h2>
+<p><i><b>Servidor: Fileserver</b></i></p>
+<p>O comando <b>yes </b>exibe uma determinada saída repetidamente até que seu processo seja interrompido, no exemplo a saída foi redirecionada  para um arquivo que cresce infinitamente até atingir a quota de disco.</p>
+

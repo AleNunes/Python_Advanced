@@ -1,0 +1,13 @@
+<h1></h1>
+<ul>
+<li>Dentro do arquivo smb.conf é possível 	criar restrições no samba de forma que, sejam aceitas requisições de  acesso apenas a partir de uma interface:</li>
+<li>Abra o arquivo smb.conf e descomente as linhas abaixo:</li>
+<li><b>1# </b>vim /etc/samba/smb.conf</li>
+<li><b>8  interfaces = eth0 </b></li>
+<li><b>9  bind interfaces only = Yes</b></li>
+<li><b>2# </b>systemctl restart sernet-samba-ad</li>
+<li><b>3# </b>samba-tool testparm</li>
+</ul>
+<p><i><b>Servidor: FileServer</b></i></p>
+<p><b>Restringindo Conexões ao Samba</b></p>
+

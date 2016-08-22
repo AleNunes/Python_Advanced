@@ -1,0 +1,21 @@
+<h1><b>Servidor DNS</b></h1>
+<h2><b>1#</b> named-checkzone dexter.com.br /var/cache/bind/db.dexter</h2>
+<h2><b>2#</b> tail -f /var/log/daemon.log &gt; /dev/tty2 &amp;</h2>
+<h2><b>3#</b> /etc/init.d/bind9 stop</h2>
+<h2><b>4#</b> /etc/init.d/bind9 start</h2>
+<h2><b>5#</b> dig -t soa dexter.com.br</h2>
+<h2><b>6#</b> host dexter.com.br</h2>
+<h2><b>7#</b> host intranet.dexter.com.br</h2>
+<p><i><b>Servidor: Audit</b></i></p>
+
+<h3>Notes:</h3>
+<p><b>Informações encontradas em um Registro de Zona</b></p>
+<p><b></b></p>
+<p><b>Refresh → </b>Tempo que o servidor secundário vai aguardar até checar se há atualizações no servidor primário;</p>
+<p></p>
+<p><b>Retry → </b>Em caso de falha do &quot;refresh&quot;, o tempo até a próxima verificação;</p>
+<p><b></b></p>
+<p><b>Expire → </b>O tempo que o secundário aguardará o primário voltar, se esgotar, o secundário para de responder por essa zona;</p>
+<p></p>
+<p><b>Negative caching TTL → </b>Se a zona expirar, esse será o tempo pelo qual um servidor &quot;cache&quot; armazenará a informação &quot;NXDOMAIN&quot; antes de iniciar uma nova busca recursiva. O máximo são 3 horas.</p>
+

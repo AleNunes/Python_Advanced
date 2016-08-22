@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 334</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text332.html">Back</a> <a href="text334.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img333.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Gerência de Módulos</b></h1>
+<h2><b><font color="#004586">Como o “modprobe” sabe quais as dependências dos módulos?</b></h2>
+<h2><b><font color="#004586"> 1 – Verifique o arquivo modules:</b></h2>
+<h2><b><font color="#FF0000">1#</b> cd /lib/modules/$(uname -r) </h2>
+<h2><b><font color="#FF0000">2#</b> ls -l </h2>
+<h2><b><font color="#FF0000">3#</b> less modules.dep</h2>
+<h2><b><font color="#FF0000">4#</b> rm -rf modules.dep*</h2>
+<h2><b><font color="#004586">2 - Tente iniciar o Módulo vfat com o modprobe:</b></h2>
+<h2><b><font color="#FF0000">5#</b> modprobe vfat</h2>
+<h2><font color="#993366">libkmod: ERROR ../libkmod/libkmod.c:554 kmod_search_moddep: could not open  	moddep file '/lib/modules/3.2.0-4-486/modules.dep.bin'</h2>
+<h2><font color="#993366">FATAL: Module vfat not found.</h2>
+<p> O arquivo <b><font color="#993366">modules.dep</b> diz quais são as dependências para carregar determinado módulo.</p>
+<p><i><b><font color="#993366">Servidor: Audit</b></i></p>
+<br>
+<h3>Notes:</h3>
+<p><b>O arquivo modules.dep</b></p>
+<p></p>
+<p>O comando modprobe faz uso de um arquivo chamado modules.dep para determinar as dependências de todos os módulos compilados para o kernel corrente.</p>
+<p></p>
+<p>Este arquivo é gerado pela execução, no start-up da máquina, de outro programa chamado depmod.</p>
+<p></p>
+<p>Ele avalia, durante o carregamento inicial do kernel, todos os módulos compilados, normalmente armazenados em /lib/modules, e gera o arquivo modules.dep.</p>
+</body>
+</html>

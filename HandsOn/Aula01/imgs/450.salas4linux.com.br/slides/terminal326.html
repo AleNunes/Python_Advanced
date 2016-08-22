@@ -1,0 +1,10 @@
+<h1><b>Inicialização do Sistema</b></h1>
+<ul>
+<li> O arquivo <b>&quot;inittab&quot;</b> não é mais utilizado quando o systemd é usado, colocar configurações neste arquivo não terá nenhum efeito sobre o sistema;</li>
+<li> Se você quer alterar de forma &quot;definitiva&quot; o modo padrão de inicialização, vai precisar seguir alguns passos. Antes de tudo, é preciso apagar o links simbólico existente: </li>
+</ul>
+<p><i><b>Servidor: Webserver Interno</b></i></p>
+<p><b>Systemd:</b></p>
+<p><b>NOTA: </b>O arquivo default.target é o arquivo que deve receber o link do arquivo de runlevel que deseja ser o padrão.</p>
+<p><b>1#</b> rm /etc/systemd/system/default.target </p>
+

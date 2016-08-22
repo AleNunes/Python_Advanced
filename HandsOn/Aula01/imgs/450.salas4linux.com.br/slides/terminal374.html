@@ -1,0 +1,18 @@
+<h1><b>Gerenciamento Avançado de Partições</b></h1>
+<h2></h2>
+<h2></h2>
+<p><i><b>Servidor: Webserver Interno</b></i></p>
+<ul>
+<li>Desmonte a partição /srv:</li>
+</ul>
+<p><b>2#</b> umount /srv</p>
+<ul>
+<li>Agora vamos converter de ext3  para ext4, sem perder os dados:</li>
+</ul>
+<p><b>3#</b> tune2fs -O extents,uninit_bg,dir_index /dev/sdb2</p>
+<p><b>1#</b> echo “Dexter Courier” &gt; /srv/index.html</p>
+<ul>
+<li>Antes de iniciar a conversão, crie um arquivo na partição /srv:</li>
+</ul>
+<h2><b>Migrar Filesystem:  ext3 para ext4</b></h2>
+

@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 67</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text65.html">Back</a> <a href="text67.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img66.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Quotas de Disco</b></h1>
+<h2><b><font color="#004586">Configuração de Quotas para Sistemas de Arquivos EXT3:</b></h2>
+<p>Os servidores da Dexter utilizam o sistema de arquivos EXT4. Logo, não aplicaremos este padrão no cenário da aula.</p>
+<p><i><b><font color="#993366">Servidor: Fileserver</b></i></p>
+<p>Em sistemas de arquivos no formato EXT3 existe um outro modelo de quotas. Neste caso a configuração necessária no arquivo /etc/fstab possibilitando o uso de quotas seria a seguinte:</p>
+<p>.../srv ext3 defaults,<font color="#4C4C4C"> <b><font color="#993366">usrquota</font><font color="#004586">,</font><font color="#FF950E">grpquota</b></font><font color="#4C4C4C">   </font>0    0 </p>
+<p><b><font color="#993366">usrquota:</b><font color="#000000"> </font>Ativa suporte a quotas para usuários;</p>
+<p><b><font color="#FF950E">grpquota:<font color="#4C4C4C"> </b></font>Ativa suporte a quotas para grupos.</p>
+</body>
+</html>

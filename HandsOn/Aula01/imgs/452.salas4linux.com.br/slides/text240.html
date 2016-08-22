@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 248</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text239.html">Back</a> <a href="text241.html">Continue</a> <a href="text336.html">Last page</a> <a href="452_2016_3.3_fv.html">Overview</a> <a href="img240.html">Graphics</a></center><br>
+<h1></h1>
+<ul>
+<li><font color="#FFFFFF">Dentro do arquivo smb.conf é possível 	criar restrições no samba de forma que, sejam aceitas requisições de  acesso apenas a partir de uma interface:</li>
+<li><font color="#FFFFFF">Abra o arquivo smb.conf e descomente as linhas abaixo:</li>
+<li><b><font color="#FF0000">1<font color="#FFFFFF"># </b>vim /etc/samba/smb.conf</font></li>
+<li><b><font color="#FFD320">8  <font color="#FF950E">interfaces = eth0 </b></font></li>
+<li><b><font color="#FF950E">9  bind interfaces only = Yes</b></li>
+<li><b><font color="#FF0000">2<font color="#FFFFFF"># </b>systemctl restart sernet-samba-ad</font></li>
+<li><b><font color="#FF0000">3<font color="#FFFFFF"># </b>samba-tool testparm</font></li>
+</ul>
+<p><i><b><font color="#FF950E">Servidor: FileServer</b></i></p>
+<p><b><font color="#FF950E">Restringindo Conexões ao Samba</b></p>
+</body>
+</html>

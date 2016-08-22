@@ -1,0 +1,21 @@
+<h1><b>Administração de Usuários</b></h1>
+<h2><b>Definindo a Política de Senha dos Usuários:</b></h2>
+<p><b>Política de Senha da Dexter</b></p>
+<p>- Mínimo de 6 caracteres;</p>
+<p>- Senha expira de 30 em 30 dias;</p>
+<p>- Usuário de férias, login bloqueado;</p>
+<p>Para bloquear os usuários em férias utilize os seguintes parâmetros do comando <b>usermod</b>:</p>
+<p><b>-L →</b> Bloqueia o usuário (lock);</p>
+<p><b>-U →</b> Desbloqueia o usuário (unlock);</p>
+<p><i><b>Servidor: FileServer</b></i></p>
+<p><b>1 – Verifique a política atual de senhas:</b></p>
+<p><b>1#</b> chage -l bryan.leah</p>
+<p><b>2 – Altere a política de senhas com o chage:</b></p>
+<p><b>2#</b> chage -M 30 -m 1 bryan.leah</p>
+<p><b>3#</b> chage -l bryan.leah </p>
+
+<h3>Notes:</h3>
+<p><b>Comando Chage</b></p>
+<p></p>
+<p>O comando “chage” configura algumas características da senha, como: data de va- lidade, data de aviso de troca, dentre outras opções do arquivo shadow, fique atento, porque esse comando é muito útil em seu dia-a-dia.</p>
+

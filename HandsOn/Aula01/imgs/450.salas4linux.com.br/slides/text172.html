@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 173</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#3A81CC" vlink="#3773B1" alink="#3A81CC">
+<center>
+<a href="text0.html">First page</a> <a href="text171.html">Back</a> <a href="text173.html">Continue</a> <a href="text417.html">Last page</a> <a href="Apostila3.2.html">Overview</a> <a href="img172.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Gerenciador de Pacotes YUM</b></h1>
+<p><b><font color="#004586">Configuração dos repositórios CentOS:</b></p>
+<p><i><b><font color="#993366">Servidor: Webserver Externo</b></i></p>
+<p><b><font color="#FF0000">1#</b> cd /etc/yum.repos.d/</p>
+<p><b><font color="#FF0000">2#</b> ls</p>
+<ul>
+<li> Configuração de um repositório:</li>
+</ul>
+<p><b>[base]</b></p>
+<p><b><font color="#1C1C1C">name=CentOS-$releasever - Base</b></p>
+<p><b><font color="#1C1C1C">baseurl=http://url/path_to_rpms/</b></p>
+<p><b><font color="#1C1C1C">gpgcheck=1</b></p>
+<p><b>gpgkey=file:///etc/pki/rpm-gpg/key</b></p>
+<p><b><font color="#1C1C1C">enabled=0</b></p>
+<p><b><font color="#004586">Repositório YUM</b></p>
+<p><b><font color="#004586">name</b> →  Nome descritivo, no exemplo: CentOS (versão da distribuição);</p>
+<p><b><font color="#004586">baseurl</b> →  O endereço que contém a lista dos programas e os pacotes;</p>
+<p><b><font color="#004586">enabled</b> →  Se o repositório está ativo ou não (1 significa sim, 0 significa não);</p>
+<p><b><font color="#004586">gpgcheck</b> →  Se todos os pacotes devem ter sua autenticidade verificada (extremamente recomendado, 1 significa sim, 0 significa não);</p>
+<p><b><font color="#004586">gpgkey</b> →  Qual chave criptográfica utilizar para a verificação dos pacotes.</p>
+</body>
+</html>

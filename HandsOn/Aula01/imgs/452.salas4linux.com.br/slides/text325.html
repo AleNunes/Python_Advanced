@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 334</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text324.html">Back</a> <a href="text326.html">Continue</a> <a href="text336.html">Last page</a> <a href="452_2016_3.3_fv.html">Overview</a> <a href="img325.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Servidor FTP</b></h1>
+<h2><b><font color="#004586">Criando usuário do FTP:</b></h2>
+<ul>
+<li>Crie o usuário webmaster:</li>
+<li><b><font color="#FF0000">1#</b> adduser webmaster -d /var/www/html -g apache</li>
+<li>Defina a senha do usuário:
+<b><font color="#FF0000">2</font>#</b> passwd webmaster</li>
+<li>Defina o dono e grupo do diretório como o grupo <b>apache:<font color="#4C4C4C">
+<font color="#FF0000">3</font>#</b> chown -R apache:apache /var/www/html/</li>
+<li>Adicione permissão no diretório:</li>
+<li><b><font color="#FF0000">4#</b> chmod -R 775 /var/www/html/</li>
+</ul>
+<p><i><b><font color="#993366">Servidor: WebServer Interno</b></i></p>
+<br>
+<h3>Notes:</h3>
+<p>O comando <b>adduser</b> pode ser utilizado com diversos parâmetros para a criação de usuários. Foram utilizados as opções:</p>
+<p></p>
+<p># adduser webmaster -d /var/www/html -g apache -s /bin/false</p>
+<p></p>
+<p><b>-d</b> Para definir um diretório pessoal (home) para o usuário</p>
+<p><b>-g</b> Para definir o grupo principal que o usuário ira fazer parte.</p>
+<p><b>-s</b> Para definir o shell do usuário.</p>
+</body>
+</html>

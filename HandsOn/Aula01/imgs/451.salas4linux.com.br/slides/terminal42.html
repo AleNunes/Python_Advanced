@@ -1,0 +1,28 @@
+<h1><b>Regras de Acesso a Arquivos</b></h1>
+<h2><b>Acertando o Valor de Umask dos demais usuários:</b></h2>
+<h2><b>1#</b> unalias -a</h2>
+<h2><b>2#</b> for FUNCIONARIO in $(ls /srv/homes/)</h2>
+<h2>&gt; do</h2>
+<h2>&gt; cp -v /etc/skel/.bashrc /srv/homes/$FUNCIONARIO/</h2>
+<h2>&gt; done</h2>
+<h2><b>3#</b> su – casey.milo</h2>
+<h2><b>4</b>$ umask</h2>
+<h2><b>5</b>$ exit</h2>
+<p> No cenário da Dexter, os funcionários deveriam estar gravando pastas com permissão 770 (rwxrwx---) e arquivos com permissão 660 (rw-rw----)</p>
+<p><b>Primeira Parte do Problema 3 Resolvida.</b></p>
+<p><b>3º Problema: Alterar o valor de Umask dos Usuários</b></p>
+<p><i><b>Servidor: FileServer</b></i></p>
+
+<h3>Notes:</h3>
+<p><b>Resumindo:</b></p>
+<p></p>
+<p>Para dominar o cálculo de “umask” basta assumir algumas regras simples:</p>
+<p></p>
+<p>Para diretórios: Sempre substituir de 777;</p>
+<p></p>
+<p>Para arquivos: Verificar o “umask”. Se o número for ímpar, subtrair somente onde temos execução, em números pares mantemos os números.</p>
+<p></p>
+<p><b>DICA:</b></p>
+<p></p>
+<p>Fique atento! Cálculo de Umask costuma ser um arquivo muito abordado em provas LPI.</p>
+

@@ -1,0 +1,16 @@
+<h1><b>Servidor Proxy com Squid</b></h1>
+<p><i><b>Servidor: Security</b></i></p>
+<p><b>Script de Geração do Log do Squid Analyzer:</b></p>
+<ul>
+<li>Na instalação do sarg ele já configura suas rotinas de criação de logs no cron, conforme a agenda padrão dele:</li>
+<li><b>1# </b>ls -R /etc/cron.*</li>
+<li><b>2# </b>cp /usr/local/bin/squid-analyzer /etc/cron.daily</li>
+</ul>
+<p><b>Gerando o Relatório Manualmente:</b></p>
+<ul>
+<li>Após a alteração da data, gere o relatório manualmente:</li>
+<li><b>3# </b>squid-analyzer</li>
+<li>Enviando o relatório de log:</li>
+<li><b>3# </b>scp -r /var/www/squidanalyzer root@192.168.200.130: /var/www/html</li>
+</ul>
+

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 25</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text23.html">Back</a> <a href="text25.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img24.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Administração de Usuários</b></h1>
+<h2><b><font color="#004586">Definindo a Política de Senha dos Usuários:</b></h2>
+<p><b><font color="#CC0000">Não esqueça de voltar a data ao normal depois dos testes!</b></p>
+<p><b><font color="#FF950E">O comando passwd</b></p>
+<p>O comando <b><font color="#FF950E">passwd</b> por ser usado para definição de senhas ou para bloqueio de usuários:</p>
+<p><b><font color="#FF950E">-l →</b> Bloqueia o usuário (lock)</p>
+<p><b><font color="#FF950E">-u →</b> Desbloqueia o usuário (unlock);</p>
+<p><i><b><font color="#993366">Servidor: FileServer</b></i></p>
+<p><b><font color="#004586">4 – Logue com o usuário e tente novamente:</b></p>
+<p><b><font color="#FF0000">1#</b> su – bryan.leah</p>
+<p><b><font color="#FF0000">2$</b> passwd</p>
+<p><b><font color="#CC0000">&lt; Ele irá permitir a troca de senha &gt;</b></p>
+<p><b><font color="#CC0000">&lt; Tente utilizar a senha 123 &gt;</b></p>
+<p><b><font color="#FF0000">3$</b> exit</p>
+<p><b><font color="#004586">5 – Simule a senha Expirada verificando a data e alterando para +1 dia:</b></p>
+<p><b><font color="#FF0000">4#</b> chage -l bryan.leah </p>
+<p><b><font color="#FF0000">5#</b> date MMDDYY </p>
+<p><b><font color="#CC0000">&lt; Tente logar novamente em um terminal &gt;</b></p>
+</body>
+</html>

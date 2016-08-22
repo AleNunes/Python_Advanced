@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 253</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#3A81CC" vlink="#3773B1" alink="#3A81CC">
+<center>
+<a href="text0.html">First page</a> <a href="text251.html">Back</a> <a href="text253.html">Continue</a> <a href="text417.html">Last page</a> <a href="Apostila3.2.html">Overview</a> <a href="img252.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Laboratório Dexter</b></h1>
+<p><i><b><font color="#993366">Servidor: Webserver Interno</b></i></p>
+<ul>
+<li> Envie a chave pública para o <b><font color="#993366">Webserver Interno</b>:</li>
+</ul>
+<p><b><font color="#FF0000">1#</b> ssh-copy-id ”<b>-p2222</b> suporte@192.168.200.20”</p>
+<p><b><font color="#FF0000">2#</b> ssh <a href="mailto:suporte@192.168.200.1">suporte@192.168.200.1</a> -p2222</p>
+<p><b><font color="#FF0000">3#</b> cd /home/suporte/.ssh</p>
+<p><b><font color="#FF0000">4#</b> ls</p>
+<p><b><font color="#FF950E">authorized_keys</b> </font>→ Arquivo que armazena as chaves públicas de todas as máquinas que possuem autorização de se conectar nesse servidor com palavra-chave ou sem senha, como é o nosso caso.</p>
+<p><b><font color="#FF950E">NOTA:<font color="#800000"> </b></font><font color="#4C4C4C"> </font>Também é possível realizar a mesma configuração de ssh sem senha através dos comandos<font color="#4C4C4C"> <b></font><font color="#CC0000">ssh-agent</b> </font>e<font color="#4C4C4C"> <b></font><font color="#CC0000">ssh-add</b></font></p>
+<br>
+<h3>Notes:</h3>
+<p><b>O comando ssh-copy-id</b></p>
+<p><b></b></p>
+<p>Em resumo, o que o ssh-copy-id faz nada mais é do que copiar o conteúdo do arquivo &quot;.ssh/id_rsa.pub&quot;, dentro do seu diretório home, para o arquivo &quot;.ssh/authorized_keys&quot; dentro do diretório home do servidor remoto, esta operação pode ser realizada manualmente.</p>
+<p><b></b></p>
+<p><b>Quando utilizar uma frase senha?</b></p>
+<p></p>
+<p>Criar um par de chaves assimétricas tem basicamente duas funções:</p>
+<p></p>
+<p>• Aumentar o nível de segurança - “Definir uma frase senha aumentará o nível de segurança de seu acesso”;</p>
+<p></p>
+<p>• Facilitar a execução de scripts remotamente - “Neste modelo não se deve definir uma frase senha”.</p>
+</body>
+</html>

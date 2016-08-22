@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 293</title>
+</head>
+<body text="#FFFFFF" bgcolor="#FFFFFF" link="#3A81CC" vlink="#3773B1" alink="#3A81CC">
+<center>
+<a href="text0.html">First page</a> <a href="text291.html">Back</a> <a href="text293.html">Continue</a> <a href="text417.html">Last page</a> <a href="Apostila3.2.html">Overview</a> <a href="img292.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Gerenciando Processos</b></h1>
+<p><font color="#993366">Faça o mesmo procedimento realizado anteriormente, abra um arquivo com VIM no tty1 (Deixe o VIM Aberto) e logue no tty2.</p>
+<p><font color="#993366">O comando<b> kill</b> faz o tratamento apenas pelo <b>PID</b>.</p>
+<p><i><b><font color="#993366">Servidor: Webserver Interno</b></i></p>
+<h2><b><font color="#004586">Enviando o sinal:</b></h2>
+<p><b><font color="#FF0000"> 1<font color="#666666">#</b> pidof vim</font></p>
+<p><font color="#666666"> 	<b>10562</b>   (PID do processo VIM)</p>
+<p><b><font color="#FF0000"> 2<font color="#666666">#</b> kill -9 10562</font></p>
+<p> 		<font color="#CC0000">	<b>ou</b></font></p>
+<p><b><font color="#FF0000"> 3<font color="#666666">#</b> kill -KILL 10562</font></p>
+<p><b><font color="#C5000B">Atenção!</b> <font color="#666666">Muito cuidado ao enviar o <b>sinal (9) KILL</b>, este sinal encerra o proceso bruscamente. Se fosse o processo do mysql, pode ocorrer de corromper a base.</font></p>
+</body>
+</html>

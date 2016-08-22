@@ -1,0 +1,21 @@
+<h1><b>Gerência de Módulos</b></h1>
+<h2><b>1 - Execute os seguintes comandos para saber informações a respeito de um módulo:</b></h2>
+<h2><b> 	1#</b> modinfo vfat</h2>
+<h2><b> 	2#</b> modinfo cdrom</h2>
+<h2></h2>
+<h2><b>2 - Verifique se o módulo vfat está carregado:</b></h2>
+<h2><b> 	3#</b> lsmod | grep fat</h2>
+<h2></h2>
+<h2><b>3 - Verifique as dependências de um módulo:</b></h2>
+<h2><b> 	4#</b> modprobe --show-depends vfat</h2>
+<p>O comando <b>modinfo</b> tem a função de mostrar informações de um determinado módulo.</p>
+<p>Para que o comando funcione o módulo precisa estar presente no diretório de módulos.</p>
+<p><i><b>Servidor: Audit</b></i></p>
+
+<h3>Notes:</h3>
+<p><b>Dependências</b></p>
+<p></p>
+<p>Algumas vezes, um módulo depende de outro para realizar determinadas operações. Se o módulo B depende de A, este deve ser carregado antes de ser possível carregar B. </p>
+<p></p>
+<p>O usage counter de A é incrementado sempre que um módulo que depende dele é carregado. Deste modo, não se permite que A seja removido antes de seus dependentes.</p>
+

@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 185</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text183.html">Back</a> <a href="text185.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img184.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Laboratório Dexter</b></h1>
+<h2><b><font color="#FF0000">1#</b> vim /etc/cron.minute/backup.sh</h2>
+<h2><font color="#993366">#!/bin/bash </h2>
+<h2><font color="#993366">tar -cjf /<b>tmp</b>/bkp_etc_$(hostname -s)_$(date +%d-%m-%y-%H\:%M).tar.bz2 /etc/</h2>
+<h2><font color="#993366">tar -cjf /<b>tmp</b>/bkp_www_$(hostname -s)_$(date +%d-%m-%y-%H\:%M).tar.bz2 /var/www/</h2>
+<h2><b><font color="#FF0000">2#</b> chmod +x /etc/cron.minute/backup.sh<b> </b></h2>
+<h2><b><font color="#FF0000">3#</b> vim /etc/crontab</h2>
+<h2><font color="#993366">*/15 * * * * root /etc/cron.minute/backup.sh</h2>
+<h2><b><font color="#FF950E">Faça o mesmo processo no Servidor WebServerInterno</b></h2>
+<p><i><b><font color="#993366">Servidor: WebServerCloud /WebServer Interno</b></i></p>
+<br>
+<h3>Notes:</h3>
+<p><b>Cuidados Especiais com Scripts de Backup</b></p>
+<p><b></b></p>
+<p>Fique atento às permissões, quando possível agende como root para executar o script;</p>
+<p></p>
+<p>Use o &quot;sudo&quot; para dar permissões de execução em programas que requer poderes de root na execução, acesso a diretórios de backup e etc....</p>
+</body>
+</html>

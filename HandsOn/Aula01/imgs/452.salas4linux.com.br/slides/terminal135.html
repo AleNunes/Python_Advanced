@@ -1,0 +1,28 @@
+<h1><b>Servidor Postfix</b></h1>
+<h2><b>Definindo o Formato da Caixa de E-mail:</b></h2>
+<h2><b>3 - Ative o padrão maildir através da </b></h2>
+<h2><b>edição do arquivo main.cf:</b></h2>
+<h2><b>1# </b>vim /etc/postfix/main.cf</h2>
+<h2>35 home_mailbox = Maildir/</h2>
+<h2></h2>
+<h2><b></b></h2>
+<h2></h2>
+<h2></h2>
+<h2><b>2# </b>service postfix reload</h2>
+<p><b>Existem dois padrões em relação a caixa de correio Postfix:</b></p>
+<p><b>MailBox</b> → Todas as mensagens são armazenadas em um único arquivo texto (Padrão do Postfix);</p>
+<p> <b>MailDir</b> → Utiliza um sistema de diretórios e distribui um arquivo para armazenar cada mensagem.</p>
+<p><i><b>Servidor: Datacenter</b></i></p>
+<p><b>&lt;Não se esqueça de comentar a linha 32 mailbox_command referente ao padrão mailbox&gt;</b></p>
+
+<h3>Notes:</h3>
+<p><b>MailBox ou Mbox - </b>é o formato padrão para caixa de correio do Postfix. Este formato armazena todas as mensagens em um único arquivo de texto. Esses arquivos são nomeados de acordo com o nome do usuário e armazenados em geral em /var/mail ou /var/spool/mail.</p>
+<p></p>
+<p><b>Desvantagens:</b></p>
+<p>• Encarece a exclusão de mensagens (requer regravação no arquivo inteiro, exceto se a mensagem a ser excluída for a última);</p>
+<p></p>
+<p><b>MailDir -</b> usa diretórios e um arquivo por mensagem. A exclusão de mensagens sempre é muito rápida.</p>
+<p></p>
+<p><b>Desvantagem:</b></p>
+<p>• O tempo para varrer a caixa de correio e produzir uma lista de mensagens é maior, pois todos os arquivos devem ser abertos e lidos.</p>
+

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 23</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text21.html">Back</a> <a href="text23.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img22.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Administração de Usuários</b></h1>
+<h2><b><font color="#004586">Definindo a Política de Senha dos Usuários:</b></h2>
+<p><b><font color="#FF950E">Política de Senha da Dexter</b></p>
+<p>- Mínimo de 6 caracteres;</p>
+<p>- Senha expira de 30 em 30 dias;</p>
+<p>- Usuário de férias, login bloqueado;</p>
+<p>Para bloquear os usuários em férias utilize os seguintes parâmetros do comando <b><font color="#FF950E">usermod</b>:</p>
+<p><b><font color="#FF950E">-L →</b> Bloqueia o usuário (lock);</p>
+<p><b><font color="#FF950E">-U →</b> Desbloqueia o usuário (unlock);</p>
+<p><i><b><font color="#993366">Servidor: FileServer</b></i></p>
+<p><b><font color="#004586">1 – Verifique a política atual de senhas:</b></p>
+<p><b><font color="#FF0000">1#</b> chage -l bryan.leah</p>
+<p><b><font color="#004586">2 – Altere a política de senhas com o chage:</b></p>
+<p><b><font color="#FF0000">2#</b> chage -M 30 -m 1 bryan.leah</p>
+<p><b><font color="#FF0000">3#</b> chage -l bryan.leah </p>
+<br>
+<h3>Notes:</h3>
+<p><b>Comando Chage</b></p>
+<p></p>
+<p>O comando “chage” configura algumas características da senha, como: data de va- lidade, data de aviso de troca, dentre outras opções do arquivo shadow, fique atento, porque esse comando é muito útil em seu dia-a-dia.</p>
+</body>
+</html>

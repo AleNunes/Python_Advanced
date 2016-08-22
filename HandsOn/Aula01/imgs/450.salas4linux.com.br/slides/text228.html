@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 229</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#3A81CC" vlink="#3773B1" alink="#3A81CC">
+<center>
+<a href="text0.html">First page</a> <a href="text227.html">Back</a> <a href="text229.html">Continue</a> <a href="text417.html">Last page</a> <a href="Apostila3.2.html">Overview</a> <a href="img228.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Serviço SSH</b></h1>
+<p><b><font color="#004586">Verificando o Servidor SSH:</b></p>
+<p><b><font color="#FF0000">1#</b> su – root (<b><font color="#FF6600">Senha: 4linux</b></font>)</p>
+<p><b><font color="#FF0000">1#</b> dpkg -l | grep openssh</p>
+<p><b><font color="#FF0000">2# </b>netstat -ntlp | grep 22</p>
+<p><b><font color="#FF0000">3#</b> /etc/init.d/ssh status</p>
+<p><b><font color="#FF0000">4#</b> /etc/init.d/ssh start</p>
+<p><b><font color="#FF0000">5#</b> /etc/init.d/ssh status</p>
+<p><b><font color="#FF0000">6#</b> netstat -ntlp | grep 22</p>
+<p><i><b><font color="#993366">Servidor: Máquina Linux Interna</b></i></p>
+<p>Para usar o SSH é necessário ter o pacote do servidor e do cliente instalados.</p>
+<p>A porta padrão do SSH é a <b>22</b>. Se o serviço está ativo, essa porta é liberada para aceitar conexões SSH no servidor.</p>
+<p>Ativaremos o serviço SSH no <b><font color="#993366">WebServer Interno</b> para permitir conexão SSH através da máquina  <b><font color="#993366">Linux Interna</b></font>.</p>
+<br>
+<h3>Notes:</h3>
+<p><b>Porta de conexão do SSH</b></p>
+<p></p>
+<p>Em geral o SSH utiliza a porta 22/tcp porém este padrão pode ser alterado através de seu arquivo de configuração, procedimento que veremos durante esta aula.</p>
+</body>
+</html>

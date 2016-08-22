@@ -1,0 +1,24 @@
+<h1><b>Compactadores, Empacotadores e Procedimento de Backup</b></h1>
+<h2><b>Empacotador TAR:</b></h2>
+<h2><b>1 – Empacotar o conteúdo do diretório /home:</b></h2>
+<h2><b> 1#</b> cd /backup</h2>
+<h2><b> 2#</b> tar -cvf bkp_home.tar /home</h2>
+<h2><b> 3#</b> ls -l</h2>
+<h2><b></b></h2>
+<h2><b>2 – Visualizar o conteúdo do Backup:</b></h2>
+<h2><b> 4#</b> tar -tf bkp_home.tar 	ou</h2>
+<h2><b> 5#</b> tar tf bkp_home.tar</h2>
+<p><b>Opções do TAR:</b></p>
+<p><b>-c</b> →Cria um novo arquivo tar;</p>
+<p><b>-v</b> →Exibe detalhes da operação;</p>
+<p><b>-z</b> →Comprime ou extrai arquivos tar resultante com o gzip;</p>
+<p><b>-j</b> →Comprime ou extrai arquivos tar resultante com o bzip2;</p>
+<p><b>-f</b> →Especifica o arquivo tar a ser usado;</p>
+<p><b>-t</b> →Mostrar uma tabela com o conteúdo do backup.</p>
+<p><i><b>Servidor: WebServerInterno</b></i></p>
+
+<h3>Notes:</h3>
+<p><b>Utilizando o TAR</b></p>
+<p></p>
+<p>A utilização da ferramenta “tar” é bastante simples. Seguindo o filosofia Unix “faça apenas uma tarefa, mas faça bem feito”, o “tar” é um programa especialista em empacotar vários arquivos. Dessa forma, quando utilizamos os parâmetros “z” ou “j” estamos na realidade fazendo uma chamada externa aos comandos “gzip” ou “bzip2”, especialistas em compressão de dados.</p>
+

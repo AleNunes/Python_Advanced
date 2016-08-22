@@ -1,0 +1,25 @@
+<h1><b>Rsyslog</b></h1>
+<h2><b>Exemplo de Configuração de logrotate Local:</b></h2>
+<h2>/var/log/all.log  {</h2>
+<h2> 	daily</h2>
+<h2> 	size 3M</h2>
+<h2> 	sharedscripts</h2>
+<h2> 	postrotate</h2>
+<h2> 	 	/usr/bin/pkill -1  rsyslog</h2>
+<h2> 	endscript</h2>
+<h2> 	rotate 5</h2>
+<h2> }</h2>
+<p><i><b>Servidor: Audit</b></i></p>
+
+<h3>Notes:</h3>
+<p><b>Opções do Rotacionamento acima:</b></p>
+<p></p>
+<p><b>/var/log/all.log → </b>Representa o arquivo que  será rotacionado; diariamente até 5 vezes, caso o arquivo tenha pelo menos 3M.</p>
+<p><b>daily → </b>O sistema de logs será diário.</p>
+<p><b>size 3M →  </b>Faz a rotação somente se o arquivo alcançar 3M.</p>
+<p><b>sharedscripts → </b>Marca o início do bloco de comandos.</p>
+<p><b>postrotate → </b>Executa os scripts após aplicar a rotação aos arquivos.</p>
+<p><b>/usr/bin/pkill -1 rsyslog → </b>Envia sinal 1 ao processo rsyslog.</p>
+<p><b>endscript → </b>Encerra o bloco de comandos.</p>
+<p><b>rotate 5 → </b>Aplica a rotação aos arquivos 5 vezes.</p>
+

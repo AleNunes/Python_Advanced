@@ -1,0 +1,18 @@
+<h1><b>Laboratório Dexter</b></h1>
+<p><i><b>Servidor: Webserver Interno </b></i></p>
+<ul>
+<li>Definir Servidor DNS:</li>
+</ul>
+<p><b>6#</b> vim /etc/resolv.conf</p>
+<p>search dexter.com.br (Se o domínio não foi passado, search preenche!)</p>
+<p>domain dexter.com.br (Indica qual domínio o servidor pertence)</p>
+<p>nameserver 8.8.8.8  (responsável pela resolução de nomes)</p>
+<p>nameserver 8.8.4.4  (responsável pela resolução de nomes)</p>
+
+<h3>Notes:</h3>
+<p><b>Atualizando o hostname sem reboot:</b></p>
+<p>Caso queira alterar o hostname da sua máquina sem de reboot, você pode mandar o valor diretamente para o kernel, no caso o arquivo /proc/sys/kernel/hostname.</p>
+<p></p>
+<p><b>Parâmetros do comando hostname:</b></p>
+<p>O comando hostname irá mostrar o nome da sua máquina, mas também há parâmetros como “-f” que irá mostrar o nome completo da máquina (FQDN), “-s” que irá mostrar o primeiro nome e “-d” que irá mostrar apenas o domínio. </p>
+

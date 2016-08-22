@@ -1,0 +1,22 @@
+<h1><b>Administração de Usuários</b></h1>
+<h2><b>Definindo a Política de Senha dos Usuários:</b></h2>
+<p><b>O comando chage</b></p>
+<p>O comando <b>chage</b> é usado para determinar a política de expiração senha, onde:</p>
+<p><b>-M →</b> Determina o intervalo que a senha irá expirar</p>
+<p><b>-m →</b> Determina quantos dias o usuário ficará bloqueado de trocar a senha após uma troca de senha;</p>
+<p><i><b>Servidor: FileServer</b></i></p>
+<p><b>3 – Teste a alteração de senhas novamente:</b></p>
+<p><b>1#</b> su – bryan.leah</p>
+<p><b>2$</b> passwd</p>
+<p>Mudando senha para bryan.leah.</p>
+<p>Senha UNIX (atual):</p>
+<p><b>Aguarde mais tempo para mudar a senha</b></p>
+<p><b>3$</b> exit</p>
+<p><b>4 – Altere a data do sistema:</b></p>
+<p><b>4#</b> date MMDDYYYY <b>&lt; Coloque a data de amanhã &gt;</b></p>
+
+<h3>Notes:</h3>
+<p><b>Alterações de senha com passwd</b></p>
+<p></p>
+<p>Caso esteja modificando a senha de um usuário normal, primeiro será solicitada a senha corrente para permitir a definição de uma nova senha. Isso não acontece com o usuário “root”, que pode definir a nova senha diretamente, tanto para ele quanto para os outros usuários.</p>
+

@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 359</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text357.html">Back</a> <a href="text359.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img358.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Gerenciadores de Boot</b></h1>
+<h2><b><font color="#004586">GRUB2 (Padrão Debian):</b></h2>
+<h2>Ao invés de editar o arquivo grub.cfg, opções deverão ser editadas através dos scritps disponíveis em <b>“/etc/grub.d”</b>, ou através do arquivo “<b>/etc/default/grub”.</b></h2>
+<h2><b><font color="#4C4C4C"></b></h2>
+<h2><b><font color="#004586">1 – Verifique quais são os scripts disponíveis em /etc/grub.d:<font color="#FF0000">	</b></font></h2>
+<h2><b><font color="#FF0000">1#</b> ls /etc/grub.d/</h2>
+<p><i><b><font color="#993366">Servidor: Linux Externa</b></i></p>
+<p><b><font color="#FF950E">NOTA:</b> Alterações são inseridas no arquivo grub.cfg, de acordo com os scripts desse diretório. Esses scripts são executados pela ordem de seu numeral, do menor, para o maior.</p>
+<br>
+<h3>Notes:</h3>
+<p>- O usuário pode criar um arquivo personalizado em /etc/grub.d/40_custom com suas próprias entradas.</p>
+<p></p>
+<p>- O arquivo de configuração principal para alterar as configurações do menu é o /etc/default/grub.</p>
+<p></p>
+<p>- Existem vários arquivos para configurar o menu - /etc/default/grub mencionado acima e todos os arquivos da pasta /etc/grub.d/.</p>
+<p></p>
+<p>- Mudou a numeração das partições. A primeira partição agora é 1 em vez de 0. O primeiro dispositivo no entanto continua 0 (não mudou).</p>
+<p></p>
+<p>- Buscas automáticas para outros sistema operacionais como Windows sempre que update-grub é executado.</p>
+<p></p>
+<p>- Nenhuma mudança na configuração dos arquivos acontecerá até que o comando update-grub seja executado.</p>
+</body>
+</html>

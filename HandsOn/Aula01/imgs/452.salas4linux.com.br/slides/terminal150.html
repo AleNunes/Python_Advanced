@@ -1,0 +1,12 @@
+<h1><b>Servidor Postfix</b></h1>
+<h2><b>Instalando o Webmail RoundCube: </b></h2>
+<h2><b>3 – Libere o RoundCube para atuar escutar sua rede interna:</b></h2>
+<h2><b>1# </b>vim /etc/httpd/conf.d/roundcubemail.conf</h2>
+<h2>...</h2>
+<h2>        &lt;ifModule mod_authz_core.c&gt;</h2>
+<h2> 				12 # Apache 2.4</h2>
+<h2> 				13 Require <b>all granted</b></h2>
+<h2><b> 		</b>&lt;/ifModule&gt;</h2>
+<h2>...</h2>
+<p><i><b>Servidor: WebServerInterno</b></i></p>
+

@@ -1,0 +1,50 @@
+<h1><b>Regras de Acesso a Arquivos</b></h1>
+<h2><b></b></h2>
+<h2><b></b></h2>
+<h2><b></b></h2>
+
+  
+    
+<p>Suid Bit</p>
+    
+    
+<p>4</p>
+    
+    
+<p>s</p>
+    
+    
+<p>Em binários, no momento da execução, herda o “poder” do dono</p>
+    
+  
+
+<p><b>7#</b> su – suporte</p>
+<p><b>8</b>$ ifconfig</p>
+<p><b>ifconfig: comando não encontrado</b></p>
+<p><b>9</b>$ /sbin/ifconfig</p>
+<p><b>10</b>$ /sbin/ifconfig eth0:1 10.0.0.1</p>
+<p><b>11</b>$ /sbin/ifconfig</p>
+<p><b>12</b>$ exit </p>
+<p><b>13#</b> chmod u-s /sbin/ifconfig</p>
+<p><b>14#</b> ifconfig eth0:1 down</p>
+<p><b>15#</b> service networking restart</p>
+<p><b>Exemplo de SUID Bit na máquina Audit:</b></p>
+<p><i><b>Servidor: Audit</b></i></p>
+<p><b>1#</b> su – suporte</p>
+<p><b>2</b>$ ifconfig</p>
+<p><b>ifconfig: comando não encontrado</b></p>
+<p><b>3</b>$ /sbin/ifconfig</p>
+<p><b>4</b>$ /sbin/ifconfig eth0:1 10.0.0.1</p>
+<p><b>SIOCSIFFLAGS: Permissão negada</b></p>
+<p><b>5</b>$ exit </p>
+<p><b>6#</b> chmod u+s /sbin/ifconfig</p>
+
+<h3>Notes:</h3>
+<p><b>Suid bit:</b></p>
+<p></p>
+<p>O “SUID bit” é atribuído a um arquivo binário com permissão de execução, quando desejamos que um usuário qualquer execute o comando com as permissões do usuário dono do comando. </p>
+<p></p>
+<p>Se esse comando pertencer ao usuário “root” um usuário qualquer irá executá-lo com as permissões de “root” desde que tenha permissões para executá-lo. </p>
+<p></p>
+<p>Por esse motivo o “SUID” constitui uma grande ameaça de segurança e sua utilização deve ser bastante cautelosa.</p>
+

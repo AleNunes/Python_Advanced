@@ -1,0 +1,24 @@
+<h1><b>Laboratório Dexter</b></h1>
+<ul>
+<li>Simulando problemas de Biblioteca:</li>
+</ul>
+<p>A biblioteca<b> libattr.so </b>é utilizada pela maioria dos comandos no Linux. </p>
+<p></p>
+<p><b>DICA: </b> Configurar o novo caminho da biblioteca.</p>
+<p>Note que ao movermos uma biblioteca para um diretório desconhecido do do ld.so (Loader) o comando ls parou de funcionar.</p>
+<p><b>Vamos corrigir esse problema!</b></p>
+<p><i><b>Servidor: Webserver Interno</b></i></p>
+<p><b>1#</b> ls /etc/</p>
+<p><b>2#</b> which ls </p>
+<p><b>3#</b> ldd /bin/ls | grep libattr</p>
+<p><b>4#</b> mkdir /opt/lib  </p>
+<p><b>5#</b> mv /lib64/libattr.so.1 /opt/lib/</p>
+<p><b>6#</b> ls /etc/</p>
+
+<h3>Notes:</h3>
+<p><b>Referenciando Bibliotecas</b></p>
+<p></p>
+<p>No exemplo acima, não foi possível executar o comando ls, pois a biblioteca compartilhada não pôde ser carregada por estar em um diretório que não é referenciado em /etc/ld.so.cache para os linkadores carregarem-na.</p>
+<p></p>
+<p></p>
+

@@ -1,0 +1,11 @@
+<h1><b>Laboratório Dexter</b></h1>
+<h2><b>1 – Volte ao segundo terminal e monitore o disco:</b></h2>
+<h2><b>1#</b> watch -n 0,1 iostat -d</h2>
+<h2><b>2 – Em seguida, execute no terminal original:</b></h2>
+<h2><b>2# </b>stress  --io 6 --timeout 10s</h2>
+<h2><b>3#</b> stress --hdd 20</h2>
+<h2><b>3 – Também é possível executar múltiplos testes, simultaneamente:</b></h2>
+<h2><b>4#</b> stress --cpu 1k  --vm 2 --vm-bytes 128M --timeout 20</h2>
+<p><i><b>Servidor: WebServerInterno/ WebServerCloud</b></i></p>
+<p><b>Testes de Stress de Disco e I/O:</b></p>
+

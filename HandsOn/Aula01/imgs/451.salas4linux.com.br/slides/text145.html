@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 146</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text144.html">Back</a> <a href="text146.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img145.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Redes Avançado</b></h1>
+<h2><b><font color="#004586">Testando o IPv6:</b></h2>
+<h2><b><font color="#004586">1 – Verifique o endereço IPv6 da interface loopback na máquina Audit:</b></h2>
+<h2><b><font color="#FF0000">1#</b> ifconfig lo | grep inet6</h2>
+<h2><b><font color="#004586">2 – Em seguida, verifique o endereço IPv6 da interface eth0: </b></h2>
+<h2><b><font color="#FF0000">2#</b> ifconfig eth0 | grep inet6</h2>
+<p><i><b><font color="#993366">Servidor: Audit</b></i></p>
+<p><b><font color="#FF950E">NOTA:</b> Blocos vazios contínuos podem ser representados pelos caracteres :: (quatro pontos) <b>uma única vez dentro do endereço.</b></p>
+<p><b></b></p>
+<p>Assim, o endereço de loopback: 0000:0000:0000:0000:0000:0000:0000:0001</p>
+<p>Pode ser representado dessa forma:  ::1</p>
+<br>
+<h3>Notes:</h3>
+<p>Segundo a RFC 2374, uma mesma interface, que utiliza o protocolo IPv6, pode utilizar mais de um endereço, diferentemente do IPv4, onde tal característica só era possível em roteadores.</p>
+<p></p>
+<p>Nas interfaces IPV6 existem 3 tipos de endereços:</p>
+<p></p>
+<p><b>Endereço de Unicast:</b></p>
+<p></p>
+<p>Esse tipo de endereço é comumente usado em IPv4, que identifica apenas uma única interface. Desta forma um pacote destinado a um endereço do tipo Unicast é enviado diretamente para a interface associada a esse endereço.</p>
+</body>
+</html>

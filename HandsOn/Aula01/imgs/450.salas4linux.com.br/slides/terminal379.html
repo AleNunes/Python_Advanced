@@ -1,0 +1,32 @@
+<h1><b>Gerenciamento Avançado de Partições</b></h1>
+<h2></h2>
+<h2></h2>
+<p><i><b>Servidor: Webserver Interno</b></i></p>
+<ul>
+<li>Desabilite a SWAP do novo dispositivo e teste a configuração</li>
+</ul>
+<p><b>2#</b> swapoff /dev/sdb3</p>
+<p><b>3#</b> mount -a</p>
+<ul>
+<li>Para visualizar as partições swaps ativas:</li>
+</ul>
+<p><b>4#</b> swapon -s</p>
+<p><b>1#</b> vim /etc/fstab</p>
+<p>UUID=683dc-c6a0-4b-6b-64f23e	/backup	<b>ext3</b>	defaults	0 0</p>
+<p>LABEL=dados						/srv/		<b>ext4</b>	defaults	0 0 </p>
+<p><b>LABEL=SWAP	none	     swap	sw		0		 0</b></p>
+<ul>
+<li>Abra o arquivo /etc/fstab e adicione a linha do SWAP e altere as informações do sistema de arquivo que migramos de ext2 para ext3 e de ext3 para ext4:</li>
+</ul>
+<h2><b>Montagem automática no boot</b></h2>
+
+<h3>Notes:</h3>
+<p><b>Relembrando …</b></p>
+<p>As informações nas colunas do arquivo /etc/fstab são:</p>
+<p>1° Coluna: Localização do “filesystem”</p>
+<p>2° Coluna: Ponto de montagem;</p>
+<p>3° Coluna: Tipo do filesystem:</p>
+<p>4° Coluna: Opções de montagem:</p>
+<p>5° Coluna: Aceita os valores 0 ou 1 e informa que, havendo um sistema de backup (dump) configurado, deverá ser feito o seu backup; </p>
+<p>6° Coluna: Aceita os valores de 0 a 2 e informa que deverá ser realizada a checagem (pass) de integridade do sistema de arquivos. O valor zero desativa a funcionalidade, o valor 1 deve ser especificado apenas para o “/” e o valor 2 deve ser especificado para quaisquer outros sistemas de arquivo.</p>
+

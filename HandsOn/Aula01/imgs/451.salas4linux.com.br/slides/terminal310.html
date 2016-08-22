@@ -1,0 +1,20 @@
+<h1><b>Rsyslog</b></h1>
+<h2><b>Configurando o Rsyslog:</b></h2>
+<ul>
+<li><b>1 – Abra o arquivo de configuração do rsyslog:</b></li>
+<ul>
+<li><b>1#</b> vim +63 /etc/rsyslog.conf</li>
+</ul>
+<li><b>2 – Descomente a linha referente aos logs do cron:</b></li>
+<ul>
+<li>63 cron.*            /var/log/cron.log</li>
+</ul>
+<li><b>3 – Reinicie o rsyslog para que as alterações entrem em vigor e o crontab gere entradas no log:</b></li>
+<ul>
+<li><b>2#</b> service rsyslog restart</li>
+<li><b>3#</b> service cron restart</li>
+<li><b>4#</b> tailf /var/log/cron.log</li>
+</ul>
+</ul>
+<p><i><b>Servidor: Audit</b></i></p>
+

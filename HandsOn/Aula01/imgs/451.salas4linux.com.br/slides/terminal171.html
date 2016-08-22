@@ -1,0 +1,23 @@
+<h1><b>Agendamento de Tarefas</b></h1>
+<ul>
+<li><b> crontab (usuários): minuto hora dia mês dia-da-semana comando;</b></li>
+<li><b> crontab (sistema): minuto hora dia mês dia da semana USUÁRIO comando;</b></li>
+<ul>
+<li><b> minuto</b> varia de 0-59;</li>
+<li><b> hora</b> varia de 0-23;</li>
+<li><b> dia</b> varia de 1-31;</li>
+<li><b> mês</b> varia de 1-12;</li>
+<li><b> dia da semana</b> varia de 0-7, sendo 0 e 7 são o domingo;</li>
+<li><b> usuário</b> um usuário válido no sistema;</li>
+<li><b> comando</b> o path completo para o comando.</li>
+</ul>
+</ul>
+<p><b>Crontab: Sintaxe de Agendamento e Valores Válidos</b></p>
+
+<h3>Notes:</h3>
+<p><b>Cuidados ao elaborar scripts para execução pelo cron:</b></p>
+<p></p>
+<p>Scripts agendados não podem conter comandos cuja execução requer interação com o usuário, tal como pedir senha para completar a conexão de um ftp, ou comandos que requerem confirmação para execução como por  exemplo apagar arquivos (O comando rm costuma pedir confirmação, a não ser que seja adicionado o parâmetro -rf). </p>
+<p></p>
+<p>Nestes casos todas as instruções devem ser colocadas dentro do script de maneira que possa completar a conexão passando o login e senha.</p>
+

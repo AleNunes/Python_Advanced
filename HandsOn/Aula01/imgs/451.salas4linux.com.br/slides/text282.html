@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 283</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text281.html">Back</a> <a href="text283.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img282.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Data e Hora do Sistema e Servidor de NTP</b></h1>
+<h2><b><font color="#004586">Configuração de Fuso Horário:</b></h2>
+<h2><b><font color="#004586">1 - Verifique qual é a sua localização geográfica no CentOS:</b></h2>
+<h2><b><font color="#FF0000"> 		1#</b> timedatectl</h2>
+<h2><b><font color="#004586">2 – Faça alteração de fuso horário através do arquivo /etc/localtime:</b></h2>
+<h2><b><font color="#FF0000">2#</b> timedatectl list-timezones</h2>
+<h2><b><font color="#FF0000">3#</b> timedatectl set-timezone America/Los_Angeles</h2>
+<h2><b><font color="#FF0000">4#</b> timedatectl</h2>
+<p>No CentOS 6 o arquivo <b><font color="#FF950E">/etc/localtime</b> pode ser alterado diretamente, sendo possível criar links simbólicos das time zones encontradas em /usr/share/zoneinfo/</p>
+<p><i><b><font color="#993366">Servidor: WebServerInterno</b></i></p>
+<br>
+<h3>Notes:</h3>
+<p><b>DICA:</b></p>
+<p></p>
+<p>Se pretende prestar a LPI tome nota da função e localização dos arquivos <b>“localtime”</b> e  dos arquivos de fuso horário disponíveis em “<b>/usr/share/zoneinfo/” </b>pois ambos podem ser cobrados em prova.</p>
+</body>
+</html>

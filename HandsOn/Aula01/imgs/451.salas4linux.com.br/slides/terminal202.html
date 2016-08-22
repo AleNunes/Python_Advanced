@@ -1,0 +1,25 @@
+<h1><b>Shell Script</b></h1>
+<h2><b>Variáveis Especiais:</b></h2>
+<p><i><b>Servidor: WebServerInterno</b></i></p>
+<p><b>$1</b> → Armazena primeiro parâmetro, <b>$2</b> → Armazena segundo parâmetro, <b>$3</b> …....</p>
+<p><b>Sintaxe</b>: comando &lt;parâmetro&gt; &lt;parâmetro&gt; &lt;parâmetro&gt;</p>
+<p><b></b></p>
+<p><b>Exemplo de uso em linha de comando:</b></p>
+<p><b>1</b># echo Curso Linux 4Linux</p>
+<p><b></b></p>
+<p><b>Exemplo de uso em Shell Script:</b></p>
+<p><b>2</b># vim script2.sh</p>
+<p>#!/bin/bash</p>
+<p>echo $1 $2 $3</p>
+<p><b></b></p>
+<p><b>3</b>#./script2.sh Curso Linux 4Linux</p>
+
+<h3>Notes:</h3>
+<p><b>A Variável $n</b></p>
+<p></p>
+<p>Em algumas situações, pode ser necessário fornecer parâmetros para um “script”. Por exemplo, para criar um script que recebe um determinado valor, sendo que este valor não é fixo, e pode variar conforme a data ou o local de execução do script.</p>
+<p></p>
+<p>Assim para que você não tenha de mexer no script a cada execução, o valor a ser recebido deverá ser passado no momento da execução. Como fazer isso?</p>
+<p></p>
+<p>Uma das alternativas para receber este valor é através de variáveis especiais conforme o modelo acima.</p>
+

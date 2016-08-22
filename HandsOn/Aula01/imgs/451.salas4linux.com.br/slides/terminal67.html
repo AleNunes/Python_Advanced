@@ -1,0 +1,14 @@
+<h1><b>Quotas de Disco</b></h1>
+<h2>O Comando quotacheck é utilizado para criar, checar e reparar quotas, além de checar o funcionamento do sistema de quotas em um filesystem.</h2>
+<p><b>1 – Faça uma checagem do sistema de quotas:</b></p>
+<p><b>1#</b> quotacheck -mcug /srv</p>
+<p><b>2 - Verifique se o arquivos de controle de quota foram criados:</b></p>
+<p><b>2#</b> ls -l /srv</p>
+<p><b>Opções do comando quotacheck</b> </p>
+<p><b> -c → </b>Cria os arquivos de quota;</p>
+<p><b>-u → </b>Checa quotas de usuários;</p>
+<p><b>-g → </b>Checa quotas de grupos;</p>
+<p><b>-f →</b> Força a checagem das quotas;</p>
+<p><b>-m →</b> Força checagem no filesystem montado como leitura e escrita. </p>
+<p><i><b>Servidor: Fileserver</b></i></p>
+

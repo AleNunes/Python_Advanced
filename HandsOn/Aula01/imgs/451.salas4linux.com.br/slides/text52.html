@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 53</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text51.html">Back</a> <a href="text53.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img52.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Regras de Acesso a Arquivos</b></h1>
+<h2><b><font color="#FF950E"></b></h2>
+<h2><b><font color="#FF0000"></b></h2>
+<h2><b><font color="#FF0000"></b></h2>
+<table>
+  <tr>
+    <td>
+<p>Suid Bit</p>
+    </td>
+    <td>
+<p>4</p>
+    </td>
+    <td>
+<p>s</p>
+    </td>
+    <td>
+<p>Em binários, no momento da execução, herda o “poder” do dono</p>
+    </td>
+  </tr>
+</table>
+<p><b><font color="#FF0000">7#</b> su – suporte</p>
+<p><b><font color="#FF0000">8</b>$ ifconfig</p>
+<p><b><font color="#FF950E">ifconfig: comando não encontrado</b></p>
+<p><b><font color="#FF0000">9</b>$ /sbin/ifconfig</p>
+<p><b><font color="#FF0000">10</b>$ /sbin/ifconfig eth0:1 10.0.0.1</p>
+<p><b><font color="#FF0000">11</b>$ /sbin/ifconfig</p>
+<p><b><font color="#FF0000">12</b>$ exit </p>
+<p><b><font color="#FF0000">13#</b> chmod u-s /sbin/ifconfig</p>
+<p><b><font color="#FF0000">14#</b> ifconfig eth0:1 down</p>
+<p><b><font color="#FF0000">15#</b> service networking restart</p>
+<p><b><font color="#004586">Exemplo de SUID Bit na máquina Audit:</b></p>
+<p><i><b><font color="#993366">Servidor: Audit</b></i></p>
+<p><b><font color="#FF0000">1#</b> su – suporte</p>
+<p><b><font color="#FF0000">2</b>$ ifconfig</p>
+<p><b><font color="#FF950E">ifconfig: comando não encontrado</b></p>
+<p><b><font color="#FF0000">3</b>$ /sbin/ifconfig</p>
+<p><b><font color="#FF0000">4</b>$ /sbin/ifconfig eth0:1 10.0.0.1</p>
+<p><b><font color="#FF950E">SIOCSIFFLAGS: Permissão negada</b></p>
+<p><b><font color="#FF0000">5</b>$ exit </p>
+<p><b><font color="#FF0000">6#</b> chmod u+s /sbin/ifconfig</p>
+<br>
+<h3>Notes:</h3>
+<p><b>Suid bit:</b></p>
+<p></p>
+<p>O “SUID bit” é atribuído a um arquivo binário com permissão de execução, quando desejamos que um usuário qualquer execute o comando com as permissões do usuário dono do comando. </p>
+<p></p>
+<p>Se esse comando pertencer ao usuário “root” um usuário qualquer irá executá-lo com as permissões de “root” desde que tenha permissões para executá-lo. </p>
+<p></p>
+<p>Por esse motivo o “SUID” constitui uma grande ameaça de segurança e sua utilização deve ser bastante cautelosa.</p>
+</body>
+</html>

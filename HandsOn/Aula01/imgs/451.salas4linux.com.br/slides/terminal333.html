@@ -1,0 +1,23 @@
+<h1><b>Gerência de Módulos</b></h1>
+<h2><b>Como o “modprobe” sabe quais as dependências dos módulos?</b></h2>
+<h2><b> 1 – Verifique o arquivo modules:</b></h2>
+<h2><b>1#</b> cd /lib/modules/$(uname -r) </h2>
+<h2><b>2#</b> ls -l </h2>
+<h2><b>3#</b> less modules.dep</h2>
+<h2><b>4#</b> rm -rf modules.dep*</h2>
+<h2><b>2 - Tente iniciar o Módulo vfat com o modprobe:</b></h2>
+<h2><b>5#</b> modprobe vfat</h2>
+<h2>libkmod: ERROR ../libkmod/libkmod.c:554 kmod_search_moddep: could not open  	moddep file '/lib/modules/3.2.0-4-486/modules.dep.bin'</h2>
+<h2>FATAL: Module vfat not found.</h2>
+<p> O arquivo <b>modules.dep</b> diz quais são as dependências para carregar determinado módulo.</p>
+<p><i><b>Servidor: Audit</b></i></p>
+
+<h3>Notes:</h3>
+<p><b>O arquivo modules.dep</b></p>
+<p></p>
+<p>O comando modprobe faz uso de um arquivo chamado modules.dep para determinar as dependências de todos os módulos compilados para o kernel corrente.</p>
+<p></p>
+<p>Este arquivo é gerado pela execução, no start-up da máquina, de outro programa chamado depmod.</p>
+<p></p>
+<p>Ele avalia, durante o carregamento inicial do kernel, todos os módulos compilados, normalmente armazenados em /lib/modules, e gera o arquivo modules.dep.</p>
+

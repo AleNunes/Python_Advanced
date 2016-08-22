@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 141</title>
+</head>
+<body text="#FFFFFF" bgcolor="#FFFFFF" link="#3A81CC" vlink="#3773B1" alink="#3A81CC">
+<center>
+<a href="text0.html">First page</a> <a href="text139.html">Back</a> <a href="text141.html">Continue</a> <a href="text417.html">Last page</a> <a href="Apostila3.2.html">Overview</a> <a href="img140.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Resolução de Nomes</b></h1>
+<p><b><font color="#FF0000">1<font color="#666666"># </b>vim /etc/nsswitch.conf</font></p>
+<ul>
+<li>  <font color="#CC0000"> 11</font><font color="#4C4C4C">  </font><font color="#666666">hosts:    files dns</font></li>
+</ul>
+<p><font color="#666666">O arquivo <b><font color="#FF950E">nsswitch.conf</b></font><font color="#666666"> (Name Services Switch) é responsável por definir a ordem da resolução de nomes, onde a resolução de rede é uma das opções desse arquivo.</font></p>
+<p><font color="#666666">dns → Lê o arquivo /etc/resolv.conf.</p>
+<p><font color="#666666">files → Lê o arquivo /etc/hosts</p>
+<p><font color="#4C4C4C">Experimente trocar a ordem de resolução e pingar novamente o <b>gateway.dexter.com.br</b></p>
+<p><b><font color="#CC0000">Não esqueça de manter o nsswitch na ordem padrão (files dns) depois dos testes.</b></p>
+<ul>
+<li><font color="#666666"> Ordem de resolução de nomes:</li>
+</ul>
+<p><i><b><font color="#993366">Servidor: Webserver Interno / Linux Interna </b></i></p>
+</body>
+</html>

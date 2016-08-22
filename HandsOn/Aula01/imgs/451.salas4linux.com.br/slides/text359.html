@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 360</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text358.html">Back</a> <a href="text360.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img359.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Gerenciadores de Boot</b></h1>
+<ul>
+<li>Cada script possui uma finalidade, conforme a descrição abaixo. Esses scripts atualizam o grub.cfg através do comando update-grub2:</li>
+<li><b><font color="#993366">00_header  → </b>Cabeçalhos do GRUB;</li>
+<li><b><font color="#993366">05_debian_theme  →</b> Temas para o GRUB2;</li>
+<li><b><font color="#993366">10_linux  → </b>Partições mapeadas;</li>
+<li><b><font color="#993366">20_linux_xen  → </b>Especificações para Citrix XEN;</li>
+<li><b><font color="#993366">30_os-prober → </b>Script que busca pelos sistemas operacionais disponíveis;</li>
+<li><b><font color="#993366">40_custom  → </b>Personalizar entradas no menu;</li>
+<li><b><font color="#993366">41_custom  →  </b>Arquivo que pode ser manipulado para personalização.</li>
+</ul>
+<p><i><b><font color="#993366">Servidor: Linux Externa</b></i></p>
+<br>
+<h3>Notes:</h3>
+<p><b>/etc/grub.d/ (diretório)</b></p>
+<p></p>
+<p>Os arquivos nessa pasta são lidos durante a execução do comando update-grub e suas instruções são incorporadas ao /boot/grub/grub.cfg.</p>
+<p></p>
+<p>A colocação dos ítens de menu no grub.cfg é determinada pela ordem em que os arquivos são executados nessa pasta. Arquivos com numeral no início são executados primeiro começando pelo menor. 10_linux é executado antes de 20_mentest que é executado antes de 40_custom.</p>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<h1><b>Administração de Usuários</b></h1>
+<h2><b>1- Faça a correção para os usuários Dexter e Bryan antes de continuar:</b></h2>
+<p><i><b>Servidor: FileServer</b></i></p>
+<p><b>1# </b>usermod -m -d /srv/homes/dexter dexter </p>
+<p><b>2# </b>usermod -m -d /srv/homes/bryan.leah bryan.leah </p>
+<p><b>3#</b> ls /srv/homes</p>
+<p><b>4#</b> tail -n 3 /etc/passwd</p>
+<p><b>O diretório home está sem as pastas da regra geral (Documentos, Downloads, Imagens):</b></p>
+<p><b>5# </b>ls /srv/homes/bryan.leah</p>
+<p><b>6# </b>ls /etc/skel</p>
+<p><b>7# </b>mkdir /etc/skel/{Documentos,Downloads,Imagens}</p>
+<p><b>8# </b>ls /etc/skel/</p>
+

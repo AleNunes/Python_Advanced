@@ -1,0 +1,23 @@
+<h1><b>Servidor FTP</b></h1>
+<h2><b>Criando usuário do FTP:</b></h2>
+<ul>
+<li>Crie o usuário webmaster:</li>
+<li><b>1#</b> adduser webmaster -d /var/www/html -g apache</li>
+<li>Defina a senha do usuário:
+<b>2#</b> passwd webmaster</li>
+<li>Defina o dono e grupo do diretório como o grupo <b>apache:
+3#</b> chown -R apache:apache /var/www/html/</li>
+<li>Adicione permissão no diretório:</li>
+<li><b>4#</b> chmod -R 775 /var/www/html/</li>
+</ul>
+<p><i><b>Servidor: WebServer Interno</b></i></p>
+
+<h3>Notes:</h3>
+<p>O comando <b>adduser</b> pode ser utilizado com diversos parâmetros para a criação de usuários. Foram utilizados as opções:</p>
+<p></p>
+<p># adduser webmaster -d /var/www/html -g apache -s /bin/false</p>
+<p></p>
+<p><b>-d</b> Para definir um diretório pessoal (home) para o usuário</p>
+<p><b>-g</b> Para definir o grupo principal que o usuário ira fazer parte.</p>
+<p><b>-s</b> Para definir o shell do usuário.</p>
+

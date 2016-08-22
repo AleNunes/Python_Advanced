@@ -1,0 +1,8 @@
+<h1><b>Implementando RAID</b></h1>
+<h2><b>Configurando o Sistema RAID:</b></h2>
+<h2><b>1 – Para que seja possível acompanhar a sincronização dos discos, abra um segundo terminal e digite:</b></h2>
+<h2><b>1# </b>watch -n0 cat /proc/mdstat</h2>
+<h2><b>2 – Crie o primeiro sistema RAID utilizado dois discos de armazenamento e um de paridade:</b></h2>
+<h2><b>2# </b>mdadm --create /dev/md0 --level 1 --raid-devices=2 /dev/sdb /dev/sdc --spare-devices=1 /dev/sdd</h2>
+<p><i><b>Servidor: Storage</b></i></p>
+

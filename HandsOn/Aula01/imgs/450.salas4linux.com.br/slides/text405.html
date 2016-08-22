@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 406</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#3A81CC" vlink="#3773B1" alink="#3A81CC">
+<center>
+<a href="text0.html">First page</a> <a href="text404.html">Back</a> <a href="text406.html">Continue</a> <a href="text417.html">Last page</a> <a href="Apostila3.2.html">Overview</a> <a href="img405.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Servidor de Impressão CUPS</b></h1>
+<h2><b>7 – Aumente a quantidade de trabalhos na fila de impressão:</b></h2>
+<h2><b><font color="#FF0000">1#</b> su – suporte</h2>
+<h2><b><font color="#FF0000">2$ </b>while true; do lp -d PDF /etc/hosts; done</h2>
+<h2><b>8 – Cancele após uma certa quantidade de trabalhos ser enviada e em seguida verifique a fila de impressão:</b></h2>
+<h2><b><font color="#FF0000">3$</b> lpq -P PDF</h2>
+<h2><b>9 – Remova o último trabalho da fila de impressão e verifique a fila novamente:</b></h2>
+<h2><b><font color="#FF0000">4$</b> lprm -P PDF </font><font color="#CC0000">&lt;job&gt;</font></h2>
+<h2><b><font color="#FF0000">5$ </b>lpq -P PDF</h2>
+<h2><b><font color="#004586">Gerenciando Impressão em Modo Texto:</b></h2>
+<p><i><b><font color="#993366">Servidor: Máquina Linux Interna</b></i></p>
+</body>
+</html>

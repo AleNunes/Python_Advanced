@@ -1,0 +1,28 @@
+<h1><b>Servidor FTP</b></h1>
+<h2><b>Operando o FTP:</b></h2>
+<ul>
+<li>Alterne para o modo ftp passivo:</li>
+<li><b>ftp&gt; pass</b></li>
+<li>Liste o Conteúdo do diretório em sua máquina:</li>
+<li><b>ftp&gt; !ls</b></li>
+<li>Liste o conteúdo do servidor FTP:</li>
+<li><b>ftp&gt; ls</b></li>
+<li>Envie o arquivo index.html:</li>
+<li><b>ftp&gt; put index.html</b></li>
+<li><b></b></li>
+</ul>
+<p><i><b>Servidor: WebServer Interno</b></i></p>
+
+<h3>Notes:</h3>
+<p>O console FTP tem uma sintaxe de comandos próprios para operar o FTP. Alguns comandos são bem similares a comandos BASH.</p>
+<p>Para que um comando seja executado na máquina cliente o comando deve começar com !.</p>
+<p><b>Exemplo. </b></p>
+<p>No console ftp, se usar o comando ls, ira listar o conteúdo do diretório atual do servidor FTP.</p>
+<p>Se for executado o comando !ls será exibido o conteúdo do diretório atual da máquina que cliente.</p>
+<p></p>
+<p>Por padrão os comando put e get que enviam ou recebem arquivos enviam/recebem arquivos do diretório atual de onde se conectou ao ftp.</p>
+<p><b>Exemplo.</b></p>
+<p>Você esta no home do usuário suporte (/home/suporte/). Ao acessar o ftp,</p>
+<p># ftp ftp.dexter.com.br</p>
+<p>Quando realizar um download, o arquivo sera salvo diretório que estava quando inciou a conexão (/home/suporte)</p>
+

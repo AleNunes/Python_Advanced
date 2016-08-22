@@ -1,0 +1,26 @@
+<h1><b>Inicialização do Sistema</b></h1>
+<p><b>Níveis de Execução do System V</b></p>
+<p><i><b>Servidor: Máquina Linux Interna</b></i></p>
+<ul>
+<li> Para exibir o runlevel padrão use o comando:</li>
+</ul>
+<p><b>1#</b> runlevel</p>
+<ul>
+<li> Para alternar entre runlevels use o comando:</li>
+<li><b>#</b> init &lt;valor_runlevel&gt; exemplo:</li>
+</ul>
+<p><b>2#</b> init 1		<b>ou</b> 	 <b>2#</b> telinit 1 				(<b>Senha: 4linux</b>)</p>
+<ul>
+<li> Para definir o runlevel padrão no sistema:</li>
+</ul>
+<p><b>3#</b> vim /etc/inittab</p>
+<p>id: <b>X</b> :initdefault:</p>
+<ul>
+<li> No qual <b>X</b> é o número do runlevel definido que, no caso do Debian, é o nível 2 e no CentOS 6 é o nível 5.</li>
+</ul>
+
+<h3>Notes:</h3>
+<p><b>Definindo o runlevel padrão no sistema</b></p>
+<p><b></b></p>
+<p>O arquivo /etc/inittab é o arquivo responsável pela configuração do runlevel padrão no nosso sistema, note que no próprio arquivo é alertado de não colocar o valor 0 e 6 como valor padrão, sendo 0 o desligamento da máquina e 6 o reboot.</p>
+

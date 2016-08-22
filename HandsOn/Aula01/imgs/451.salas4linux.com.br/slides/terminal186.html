@@ -1,0 +1,13 @@
+<h1><b>Restringindo o Uso de Crontab</b></h1>
+<ul>
+<li>Restringindo o acesso do usuário suporte ao cron:</li>
+<li><b>1#</b> vim /etc/cron.deny</li>
+<li><b>&lt; Adicione uma linha como o nome suporte &gt;</b></li>
+<li>Suporte:</li>
+<li><b>&lt; Saia do arquivo e tente executar um agendamento &gt;</b></li>
+<li><b>1#</b> su - suporte</li>
+<li><b>2#</b> crontab -e</li>
+</ul>
+<p><b>&lt; Repita o teste utilizando os agendamentos do at e o arquivo at.deny &gt;</b></p>
+<p><i><b>Servidor: WebServer Interno</b></i></p>
+

@@ -1,0 +1,10 @@
+<h1><b>Implementando Controle de Acesso ao Sistema com PAM</b></h1>
+<h2><b>Implementação Prática do PAM – Máquina Datacenter:</b></h2>
+<p><i><b>Servidor: Fileserver</b></i></p>
+<p><b>1 – Para começar, verifique quais módulos do PAM estão instalados:</b></p>
+<p><b>1#</b> ls /lib/security/</p>
+<p><b>2 – Para descobrir se sua aplicação tem suporte no PAM, basta utilizar o comando &quot;ldd&quot;</b>.</p>
+<p><b>2#</b> ldd /bin/login | grep libpam </p>
+<p><b>3 – Podemos verificar também quais serviços trabalham com o PAM</b></p>
+<p><b>3#</b> ls /etc/pam.d/</p>
+

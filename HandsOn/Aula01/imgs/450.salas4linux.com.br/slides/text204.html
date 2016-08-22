@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 205</title>
+</head>
+<body text="#FFFFFF" bgcolor="#FFFFFF" link="#3A81CC" vlink="#3773B1" alink="#3A81CC">
+<center>
+<a href="text0.html">First page</a> <a href="text203.html">Back</a> <a href="text205.html">Continue</a> <a href="text417.html">Last page</a> <a href="Apostila3.2.html">Overview</a> <a href="img204.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Laboratório Dexter</b></h1>
+<ul>
+<li><font color="#666666">Configurando o <b><font color="#FF950E">NTOP</b></font><font color="#666666">:</font></li>
+</ul>
+<p><b><font color="#FF0000">1<font color="#666666">#</b> cd /usr/local/src/ntopng/confs4linux</font></p>
+<p><b><font color="#FF0000">2<font color="#666666">#</b> cp ntopng.init /etc/init.d/ntopng</font></p>
+<p><b><font color="#FF0000">3<font color="#666666">#</b> /etc/init.d/ntopng start</font></p>
+<p><b><font color="#FF0000">4<font color="#666666">#</b> ss -ntlp | grep 3000</font></p>
+<p><font color="#000000">Exemplo de Gráfico do Ntop</p>
+<ul>
+<li><font color="#666666">Na máquina<b><font color="#993366"> Linux Interna</b></font><font color="#666666"> acesse:</font></li>
+</ul>
+<ul>
+<li><font color="#666666">192.168.200.20:3000 &gt;</li>
+<li><font color="#666666">Usuário <b>admin</b> / Senha <b>admin</b></li>
+</ul>
+<p><i><b><font color="#993366">Servidor: Webserver Interno</b></i></p>
+<br>
+<h3>Notes:</h3>
+<p><b><font color="#666666">Script de Inicialização:</b></p>
+<p><font color="#666666">Os scripts de inicialização dos serviços são encontrados dentro do diretório /etc/init.d onde você terá mais embasamento na aula de inicialização de sistema.</p>
+<p><font color="#666666"></p>
+<p><font color="#666666">Como estamos compilando o NTOP essa inclusão no diretório deve ser feita manualmente, portanto iremos copiar script chamado ntopng.init encontrado no diretório ../confs4linux, para o diretório onde encontra-se  os scripts de inicialização do sistema /etc/init.d.</p>
+</body>
+</html>

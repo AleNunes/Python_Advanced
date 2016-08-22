@@ -1,0 +1,13 @@
+<h1><b>Implementando RAID</b></h1>
+<h2><b>Simulando Falhas:</b></h2>
+<h2><b>1 – O comando mdadm possui funções que permitem simular falhas no funcionamento do disco:</b></h2>
+<h2><b>1# </b>mount /dev/md0 /mnt</h2>
+<h2><b>2# </b>mdadm /dev/md0 --fail /dev/sdb</h2>
+<h2><b>3# </b>mdadm --detail /dev/md0</h2>
+<h2><b>2 – Caso um disco falhe é possível trocá-lo “a quente” ou seja, sem desligar o sistema:</b></h2>
+<h2><b>4# </b>mdadm /dev/md0 --remove /dev/sdb</h2>
+<h2><b>5# </b>mdadm /dev/md0 --add /dev/sdb</h2>
+<h2><b>6# </b>mdadm --detail /dev/md0</h2>
+<h2><b>6# </b>umount /dev/md0</h2>
+<p><i><b>Servidor: Storage</b></i></p>
+

@@ -1,0 +1,13 @@
+<h1><b>Servidor Apache</b></h1>
+<p><i><b>Servidor: Linux Interna</b></i></p>
+<h2><b>Apache SSL (https) – Ativando SSL no Site da Dexter:</b></h2>
+<ul>
+<li>Acesse novamente o terminal da Cloud e verifique o ip da interface eth0 </li>
+<li><b>1#</b> ifconfig eth0</li>
+<li>Acesse Máquina <b>Audit</b> e troque a zona DNS configurada:</li>
+<li><b>1#</b> vim /var/cache/bind/db.dexter</li>
+<p><b>	3</b> 2016060502 ; serial</p>
+<p><b>	13</b>	www	 IN 	A “IP da Web Server Cloud”</p>
+<li><b>2#</b> rndc reload</li>
+</ul>
+

@@ -1,0 +1,12 @@
+<h1><b>Quotas de Disco</b></h1>
+<h2><b>Configuração do arquivo /etc/fstab para sistema de arquivos EXT4:</b></h2>
+<p><b>← Confirme se a o disco foi montado no diretório /srv com as opções de montagem adicionadas ao arquivo /etc/fstab</b></p>
+<p><i><b>Servidor: Fileserver</b></i></p>
+<p><b>3 – Edite a linha referente ao ponto de montagem /srv adicionando as opções grifadas abaixo:</b></p>
+<p><b></b></p>
+<p>.../srv ext4 defaults,<b>usrjquota=aquota.user, grpjquota=aquota.group,jqfmt=vfsv0</b>   0    2</p>
+<p><b> 
+4 – Salve as alterações e remonte a partição através do comando abaixo:</b></p>
+<p><b>1#</b> mount -o remount /srv</p>
+<p><b>2#</b> mount</p>
+

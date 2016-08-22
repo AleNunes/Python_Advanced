@@ -1,0 +1,15 @@
+<h1><b>Gerenciando Processos</b></h1>
+<h2><b>Iniciar com a prioridade alterada:</b></h2>
+<h2><b> 1#</b> killall cron</h2>
+<h2><b> 2#</b> nice --20 crond</h2>
+<h2><b> 3#</b> htop</h2>
+<h2></h2>
+<h2><b> 4#</b> pgrep cron</h2>
+<h2> 	<b>4693</b></h2>
+<h2><b> 5#</b> renice -2 <b>4693</b></h2>
+<p><b>&lt; F4 Filter e busque por cron &gt; </b></p>
+<p>Utilizando o <b>nice</b> para iniciar um programa já com prioridade alterada. </p>
+<p>Para alterar a prioridade de um programa em execução utiliza-se o <b>renice</b>.</p>
+<p>A prioridade <b>padrão é 0</b>.</p>
+<p><i><b>Servidor: Webserver Interno</b></i></p>
+

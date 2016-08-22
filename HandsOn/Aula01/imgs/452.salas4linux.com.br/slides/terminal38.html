@@ -1,0 +1,11 @@
+<h1><b>Firewall Linux</b></h1>
+<h2><b>8ª → Libere Acesso a Consulta DNS para as Máquinas das SubRedes:</b></h2>
+<h2><b>1#</b> iptables -t filter -A FORWARD -p udp -s 192.168.200.0/24 -d 0/0 --dport 53<b> </b>-j ACCEPT</h2>
+<h2>Tudo que vier da rede interna com destino a internet na porta 53 eu permito o repasse de pacotes </h2>
+<h2><b>2#</b> iptables -t filter -A FORWARD -p udp -s 0/0 --sport 53 -d 192.168.200.0/24 -j ACCEPT</h2>
+<h2>Tudo que vier da internet na porta 53 com destino a rede interna eu permito o repasse de pacotes</h2>
+<p><i><b>Servidor: Security</b></i></p>
+<p><b>Tente do Servidor Audit acessar a Internet  – Será permitido!</b></p>
+<p><b>3#</b> apt-get update</p>
+<p><b>Executar na máquina Audit.</b></p>
+

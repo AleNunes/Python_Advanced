@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 405</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#3A81CC" vlink="#3773B1" alink="#3A81CC">
+<center>
+<a href="text0.html">First page</a> <a href="text403.html">Back</a> <a href="text405.html">Continue</a> <a href="text417.html">Last page</a> <a href="Apostila3.2.html">Overview</a> <a href="img404.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Servidor de Impressão CUPS</b></h1>
+<h2><b><font color="#FF950E"></b></h2>
+<h2><b></b></h2>
+<p>O diretório <b><font color="#993366">/var/spool/cups</b> é o responsável por armazenar os trabalhos de impressão.</p>
+<p>É possível efetuar impressões pelo terminal utilizando os comandos <b><font color="#FF950E">lp</b>  e<font color="#FF950E"> <b>lpr</b></font>.</p>
+<p>Para deletar um trabalho utilize o comando <b>lprm, </b>trabalhos ainda não impressos poderão ser visualizados através do comando<b><font color="#FF950E"> lpq</b>. </p>
+<h2><b><font color="#004586">Gerenciando Impressão em Modo Texto:</b></h2>
+<p><b>4 – Envie um trabalho para impressão:</b></p>
+<p><b><font color="#FF0000">1#</b> su - suporte</p>
+<p><b><font color="#FF0000">2$</b> lp -d PDF /etc/hostname</p>
+<p><font color="#4C4C4C"></p>
+<p><b>5 – Verifique os trabalhos de impressão:</b></p>
+<p><b><font color="#FF0000">3$</b> su - </p>
+<p><b><font color="#FF0000">4#</b> ls /var/spool/cups</p>
+<p><font color="#4C4C4C"></p>
+<p><b>6 – Envie 5 cópias de um trabalho para </b></p>
+<p><b>Impressão:</b></p>
+<p><b><font color="#FF0000">5$</b> su - </p>
+<p><b><font color="#FF0000">6#</b> lpr -P PDF /etc/hosts -#5</p>
+<p><i><b><font color="#993366">Servidor: Máquina Linux Interna</b></i></p>
+</body>
+</html>

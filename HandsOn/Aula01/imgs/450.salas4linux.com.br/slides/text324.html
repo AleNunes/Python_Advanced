@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 325</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#3A81CC" vlink="#3773B1" alink="#3A81CC">
+<center>
+<a href="text0.html">First page</a> <a href="text323.html">Back</a> <a href="text325.html">Continue</a> <a href="text417.html">Last page</a> <a href="Apostila3.2.html">Overview</a> <a href="img324.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Inicialização do Sistema</b></h1>
+<p><b><font color="#004586">Systemd:</b></p>
+<ul>
+<li> Links simbólicos:</li>
+</ul>
+<p><i><b><font color="#993366">Servidor: Webserver Interno</b></i></p>
+<p>Repare que os arquivos de runlevels são links simbólicos para três arquivos:</p>
+<ul>
+<ul>
+<li>/lib/systemd/system/runlevel1.target -&gt;<b><font color="#FF9900"> <font color="#CC0000">rescue.target</b></font></li>
+<li>/lib/systemd/system/runlevel2.target -&gt;<font color="#4C4C4C"> <b><font color="#CC0000">multi-user.target</b></font></li>
+<li>/lib/systemd/system/runlevel3.target -&gt;<font color="#4C4C4C"> <b><font color="#CC0000">multi-user.target</b></font></li>
+<li>/lib/systemd/system/runlevel4.target -&gt;<font color="#4C4C4C"> <b><font color="#CC0000">multi-user.target</b></font></li>
+<li>/lib/systemd/system/runlevel5.target -&gt;<font color="#CC0000"> <b>graphical.target</b></li>
+</ul>
+</ul>
+<p><b><font color="#FF950E">NOTA:</b> Note que os runlevels 2 3 e 4 apontam para o mesmo arquivo (multi-user.target) portanto o systemd não fará distinção entre os 3 runlevels</p>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 394</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#3A81CC" vlink="#3773B1" alink="#3A81CC">
+<center>
+<a href="text0.html">First page</a> <a href="text392.html">Back</a> <a href="text394.html">Continue</a> <a href="text417.html">Last page</a> <a href="Apostila3.2.html">Overview</a> <a href="img393.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Servidor X</b></h1>
+<p><b><font color="#004586">Exportação do Display:</b></p>
+<p><b><font color="#FF0000">1#</b> apt-get install xdm</p>
+<p><b><font color="#FF0000">2#</b> vim /etc/X11/xdm/Xaccess</p>
+<p><b><font color="#B84700"> <font color="#CC0000">&lt;  Descomentar a linha, tirando o “#” &gt;</b></font></p>
+<p><b><font color="#FF950E">46</b><font color="#4C4C4C"> <b></font>*</b>    #any host caqn get a log in window</p>
+<p><b><font color="#FF0000">3#</b> vim /etc/X11/xdm/xdm-config </p>
+<p><b><font color="#CC0000"> &lt;  Comentar a linha, adicionando um “!” &gt;</b></p>
+<p><b><font color="#FF950E">36</b><font color="#4C4C4C"> <b></font>!</b> DisplayManager.requestPort:   0</p>
+<p><i><b><font color="#993366">Servidor: Máquina Linux Externa</b></i></p>
+<br>
+<h3>Notes:</h3>
+<p><b>Servidor X Remoto</b></p>
+<p></p>
+<p>O “Xterminal” é um recurso dos servidores gráficos X presentes em todos os computadores com GNU/Linux. Este recurso possibilita que uma máquina com menor desempenho possa executar uma aplicação gráfica a partir de um servidor, onde toda a carga de processamento é “depositada” nele, e a nossa estação atua somente como um terminal.</p>
+</body>
+</html>

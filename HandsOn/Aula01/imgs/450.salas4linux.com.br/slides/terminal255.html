@@ -1,0 +1,15 @@
+<h1><b>Laboratório Dexter</b></h1>
+<p><i><b>Servidor:  Webserver Externo</b></i></p>
+<ul>
+<li> Acesse o servidor Webserver Externo e realize os seguintes procedimentos:</li>
+</ul>
+<p><b>Migração do Site – Dexter Courier:</b></p>
+<p><b>1#</b> <b> </b>ssh -l email@dominio.com.br cloud.4linux.com.br</p>
+<p><b>2#</b> <b> </b>cd /var/www/html</p>
+<p><b>3#</b> <b> </b>rm -rf /var/www/html/*</p>
+<p><b>4#</b> <b> </b>wget http://repositorio_interno/dexter.tar.gz</p>
+<p><b>5#</b> <b> </b>tar -xf dexter.tar.gz</p>
+<p><b>6#</b> /etc/init.d/apache2 restart</p>
+<p><b>7#</b> /etc/init.d/mysql restart</p>
+<p><b>NOTA: </b> Parabéns! A migração do site para a Cloud foi realizada com sucesso!</p>
+

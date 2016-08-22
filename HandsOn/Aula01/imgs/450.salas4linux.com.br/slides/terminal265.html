@@ -1,0 +1,9 @@
+<h1><b>TCPWrappers</b></h1>
+<ul>
+<li> O <b>TCPWrappers</b> se resume basicamente em 2 arquivos de controle de acesso:</li>
+<li> O arquivo hosts.allow tem prioridade, pois é o primeiro a ser lido;</li>
+<li> Se um cliente é liberado para se conectar, o <b>TCPWrappers</b> libera o controle da conexão para o serviço solicitado e não participa mais da comunicação entre o cliente e o servidor.</li>
+</ul>
+<p><b>/etc/hosts.allow</b> → Regras de liberação de acesso; </p>
+<p><b>/etc/hosts.deny → </b>Regras de bloqueio de acesso; </p>
+

@@ -1,0 +1,28 @@
+<h1><b>Pergunta LPI</b></h1>
+<h2><b>1)</b> Qual o arquivo de configuração responsável pelos DNS ?</h2>
+<h2>/etc/resolv.conf</h2>
+<h2><b>2) </b>Qual das linhas abaixo você encontra no arquivo /etc/nsswitch.conf?</h2>
+<h2>a. domain mycompany.com</h2>
+<h2><b>b. hosts: files dns</b></h2>
+<h2>c. order hosts,bind</h2>
+<h2>d. 192.168.168.4 dnsserver</h2>
+<p><b>Resposta: b</b></p>
+
+<h3>Notes:</h3>
+<p><b>RESPOSTA CORRETA: /etc/resolv.conf</b></p>
+<p><b></b></p>
+<p>Como visto em aula o arquivo responsável pela resolução de nomes é o arquivo /etc/resolv.conf onde possui a seguinte sintaxe:</p>
+<p>nameserver: ipDoServidorDNS</p>
+<p></p>
+<p>Ex:</p>
+<p>/etc/resolv.conf</p>
+<p>nameserver 8.8.8.8</p>
+<p></p>
+<p>Para mais informações consulte: <b>man 5 resolv.conf</b></p>
+<p><b></b></p>
+<p><b>__________________________________________________________</b></p>
+<p><b></b></p>
+<p><b>Alternativa b: RESPOSTA CORRETA</b>!</p>
+<p></p>
+<p>O arquivo nsswitch.conf é responsável por definir a ordem do processo de resolução de nomes da máquina, no modelo acima a alternativa B estabelece que a resolução será feita primeiro consultado o arquivo de hosts da máquina (representado por <b>files</b>) e em seguida consultado os Servidor DNS disponíveis declarados em /etc/resolv.conf (representado por <b>dns</b>).</p>
+

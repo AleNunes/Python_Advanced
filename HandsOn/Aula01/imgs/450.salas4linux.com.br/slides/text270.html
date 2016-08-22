@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 271</title>
+</head>
+<body text="#FFFFFF" bgcolor="#FFFFFF" link="#3A81CC" vlink="#3773B1" alink="#3A81CC">
+<center>
+<a href="text0.html">First page</a> <a href="text269.html">Back</a> <a href="text271.html">Continue</a> <a href="text417.html">Last page</a> <a href="Apostila3.2.html">Overview</a> <a href="img270.html">Graphics</a></center><br>
+<h1><b>TCPWrappers</b></h1>
+<p>O bloqueio está sendo realizado porém não temos log dos acessos negado. Para isso usamos a opção spawn do tcpwrappers:</p>
+<p><i><b><font color="#FF950E">Servidor: Webserver Interno</b></i></p>
+<p><b><font color="#FF0000">1#</b> vim /etc/hosts.deny</p>
+<ul>
+<ul>
+<li>sshd: 192.168.200.<b>  :spawn /bin/echo “$(date) - Conexao Recusada - SSH - %a” &gt;&gt; /var/log/tcpwrappers_deny.log</b></li>
+</ul>
+</ul>
+<p>Tente acessar o servidor <b><font color="#FF950E">Webwerver Interno</b> pela Máquina Linux Interna:</p>
+<p><b><font color="#FF0000">2#</b> tail -f  /var/log/tcpwrappers_deny.log  (Monitorar o Log)</p>
+<br>
+<h3>Notes:</h3>
+<p><b><font color="#666666">Criando log no TCPWrappers</b></p>
+<p><b><font color="#666666"></b></p>
+<p><font color="#666666">Muitas vezes precisamos ter um melhor controle sobre quem esta acessando nosso servidor e onde estes acessos se originam.</p>
+<p><font color="#666666"></p>
+<p><font color="#666666">A opção spawn no serviço TCPWrapper irá realizar uma auditoria referente as ações do deamon especificado, direcionando toda a saída para um arquivo de log, especificado na própria sintaxe da opção.</p>
+<p><font color="#666666"></p>
+<p><font color="#666666">Vale lembrar que o arquivo de log apenas será criado caso caia na regra especificada, no caso dos arquivos hosts.allow e hosts.deny.</p>
+</body>
+</html>

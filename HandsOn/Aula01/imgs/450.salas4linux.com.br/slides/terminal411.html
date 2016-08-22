@@ -1,0 +1,12 @@
+<h1><b>Servidor de Impressão CUPS</b></h1>
+<h2><b>4 – Habilite o acesso a guia admin pelo modo gráfico, editando a seção &lt;Location&gt; do arquivo de configuração do cups, conforme abaixo:</b></h2>
+<h2><b> 		1#</b> vim +40 /etc/cups/cupsd.conf</h2>
+<h2> 		 	&lt;Location /admin&gt;</h2>
+<h2> 		 		Order allow,deny</h2>
+<h2> 		 		<b>Allow All</b></h2>
+<h2> 		 	&lt;/Location&gt;</h2>
+<h2><b>5 – Reinicialize o daemon do cups para aplicar a alteração:</b></h2>
+<h2><b> 		2#</b> service cups restart</h2>
+<h2><b>Gerenciando Impressão em Modo Gráfico:</b></h2>
+<p><i><b>Servidor: Máquina Linux Interna</b></i></p>
+

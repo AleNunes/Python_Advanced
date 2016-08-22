@@ -1,0 +1,27 @@
+<h1><b>Servidor DNS</b></h1>
+<h2>$TTL 86400 ; Tempo em Seg que o Cache permanece nos DNS do Mundo </h2>
+<h2>@       IN      SOA     ns1.dexter.com.br.  root.dexter.com.br. ( </h2>
+<h2>                2015030301; serial </h2>
+<h2>                8h ; refresh </h2>
+<h2>                1h ; retry </h2>
+<h2>                3d ; expire </h2>
+<h2>                3h ) ; negative caching ttl </h2>
+<h2>@               IN              NS      ns1.dexter.com.br. </h2>
+<h2>ns1             IN              A       192.168.200.30</h2>
+<h2>@               IN              A       192.168.200.30 </h2>
+<h2>audit           IN              A       192.168.200.30</h2>
+<h2>; Acesse o WebServer Cloud e configure seu Ip na linha abaixo</h2>
+<h2>;www             IN              A       172.17.XXX.XXX</h2>
+<p><i><b>Servidor: Audit</b></i></p>
+
+<h3>Notes:</h3>
+<p><b>Informações encontradas em um Registro de Zona</b></p>
+<p><b></b></p>
+<p><b>Dono → </b>É o nome do registro. Quando substituído pelo símbolo &quot;@&quot;, o dono é o próprio domínio. Caso o dono fique em branco, o &quot;BIND&quot;assume o nome do registro imediatamente superior;</p>
+<p></p>
+<p><b>TTL → </b>Um valor, em segundos, para a permanência dos dados deste registro no &quot;cache&quot;de um servidor. Raramente utilizado. classe - Podem ser &quot;CH&quot; (Chaos), &quot;HS&quot; (Hesiod) ou &quot;IN&quot; (Internet).</p>
+<p><b></b></p>
+<p><b>Tipo → </b>No momento existem mais de 30 tipos de registro, dentre os quais veremos &quot;SOA&quot;, &quot;NS&quot;, &quot;MX&quot;, &quot;A&quot;, &quot;CNAME&quot;, &quot;TXT&quot; e &quot;PTR&quot;.</p>
+<p></p>
+<p><b>Serial → </b>É a referência para os &quot;slaves&quot; saberem se a &quot;zona&quot; sofreu alterações;</p>
+

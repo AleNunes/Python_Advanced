@@ -1,0 +1,21 @@
+<h1><b>Redes Avançado</b></h1>
+<h2><b>Testando o IPv6:</b></h2>
+<h2><b>1 – Verifique o endereço IPv6 da interface loopback na máquina Audit:</b></h2>
+<h2><b>1#</b> ifconfig lo | grep inet6</h2>
+<h2><b>2 – Em seguida, verifique o endereço IPv6 da interface eth0: </b></h2>
+<h2><b>2#</b> ifconfig eth0 | grep inet6</h2>
+<p><i><b>Servidor: Audit</b></i></p>
+<p><b>NOTA:</b> Blocos vazios contínuos podem ser representados pelos caracteres :: (quatro pontos) <b>uma única vez dentro do endereço.</b></p>
+<p><b></b></p>
+<p>Assim, o endereço de loopback: 0000:0000:0000:0000:0000:0000:0000:0001</p>
+<p>Pode ser representado dessa forma:  ::1</p>
+
+<h3>Notes:</h3>
+<p>Segundo a RFC 2374, uma mesma interface, que utiliza o protocolo IPv6, pode utilizar mais de um endereço, diferentemente do IPv4, onde tal característica só era possível em roteadores.</p>
+<p></p>
+<p>Nas interfaces IPV6 existem 3 tipos de endereços:</p>
+<p></p>
+<p><b>Endereço de Unicast:</b></p>
+<p></p>
+<p>Esse tipo de endereço é comumente usado em IPv4, que identifica apenas uma única interface. Desta forma um pacote destinado a um endereço do tipo Unicast é enviado diretamente para a interface associada a esse endereço.</p>
+

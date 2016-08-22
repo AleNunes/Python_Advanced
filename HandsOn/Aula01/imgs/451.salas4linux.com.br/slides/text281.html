@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 282</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text280.html">Back</a> <a href="text282.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img281.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Data e Hora do Sistema e Servidor de NTP</b></h1>
+<h2><b><font color="#004586">Configuração de Fuso Horário:</b></h2>
+<h2><b><font color="#004586">1 - Verifique qual é a sua localização geográfica e a data:</b></h2>
+<h2><b><font color="#FF0000"> 		1#</b> cat /etc/timezone ; date</h2>
+<h2><b><font color="#004586">2 - Altere o fuso horário para Europa/Amsterdam</b>:</h2>
+<h2><b><font color="#FF0000"> 		2#</b> dpkg-reconfigure tzdata</h2>
+<h2><b><font color="#004586">3 – Verifique novamente a localização e a data</b>:</h2>
+<h2><b><font color="#FF0000"> 		3#</b> cat /etc/timezone ; date<font color="#4C4C4C">  </font></h2>
+<p><b><font color="#CC0000">Corrija novamente a localização para America/São Paulo</b></p>
+<p><i><b><font color="#993366">Servidor: Audit</b></i></p>
+<br>
+<h3>Notes:</h3>
+<p><b>Timezone</b></p>
+<p></p>
+<p>No que diz respeito a configuração de data e hora no sistema um ponto importante é a configuração da &quot;timezone&quot;, ou seja, o fuso horário em que a máquina se encontra. </p>
+<p></p>
+<p>Essa configuração pode ser efetuada utilizando os comandos “dpkg-reconfigure tzdata&quot; (específico do Debian) e &quot;system-config-date&quot; em distribuições como CentOS, Suse e Gentoo.</p>
+</body>
+</html>

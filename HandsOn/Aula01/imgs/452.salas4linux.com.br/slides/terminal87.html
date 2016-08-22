@@ -1,0 +1,10 @@
+<h1><b>DNS Recursivo</b></h1>
+<ul>
+<li>DNS Recursivo é a funcionalidade que o DNS possui por padrão de realizar consultas para todos os domínios mesmo que ele não seja o servidor autoritativo daquele domínio;</li>
+<li>Para evitar abuso em servidores DNS que ficam disponíveis na internet, é importante limitar a recursividade apenas para redes autorizadas;</li>
+<li><b>1#</b> host 8.8.8.8</li>
+<li><b>2#</b> dig @8.8.8.8 -t a uol.com.br</li>
+<li><b>3#</b> host ns1.google.com</li>
+<li><b>4#</b> dig @216.239.32.10 -t a uol.com.br</li>
+</ul>
+

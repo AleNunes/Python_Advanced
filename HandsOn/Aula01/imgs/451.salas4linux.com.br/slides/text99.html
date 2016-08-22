@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 100</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text98.html">Back</a> <a href="text100.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img99.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Implementando Controle de Acesso ao Sistema com PAM</b></h1>
+<ul>
+<li>No <b><font color="#993366">Centos 7 </b>diferentemente do Debian, para você permitir com que um usuário tenha permissão ao comando su, você precisa adicionar o mesmo no grupo wheel. </li>
+<li>O usuário só será permitido utilizar o comando desde que o mesmo esteja no grupo Wheel</li>
+</ul>
+<p><i><b><font color="#993366">Servidor: Fileserver</b></i></p>
+<p><b><font color="#004586">Implementação Prática do PAM – Módulo whell:</b></p>
+<p><b><font color="#004586">1 – Adicionando os usuários do grupo analistas ao grupo wheel:</b></p>
+<p><b><font color="#FF0000">1#</b> grep analistas /etc/group</p>
+<p><b><font color="#FF0000">2# usermod -a -G wheel harry.rosemberg</b></p>
+<p><b><font color="#FF0000">3# usermod -a -G wheel você.sobrenome</b></p>
+<p><b><font color="#004586">2 – Abra o arquivo /etc/pam.d/su, <font color="#993366">descomente</font><font color="#004586"> e </font><font color="#993366">edite</font><font color="#004586"> a linha 6 abaixo:</b></font></p>
+<p><b><font color="#FF0000">2#</b> vim +6 /etc/pam.d/su</p>
+<p><font color="#993366"> 6	auth       required   pam_wheel.so use_uid</p>
+</body>
+</html>

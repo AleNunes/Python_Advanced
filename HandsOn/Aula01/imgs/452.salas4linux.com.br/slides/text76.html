@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 81</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text75.html">Back</a> <a href="text77.html">Continue</a> <a href="text336.html">Last page</a> <a href="452_2016_3.3_fv.html">Overview</a> <a href="img76.html">Graphics</a></center><br>
+<h1><b><font color="#FF950E">Transferência de Zona</b></h1>
+<p><b><font color="#FF950E">Protegendo seu DNS</b></p>
+<p><b><font color="#FF0000">1<font color="#FFFFFF">#</b> vim /etc/bind/named.conf.local</font></p>
+<p><font color="#FFFFFF"> 	zone &quot;dexter.com.br&quot; {</p>
+<p><font color="#FFFFFF"> 			type master;</p>
+<p><font color="#FFFFFF"> 			file &quot;db.dexter&quot;;</p>
+<p><font color="#FFFFFF"> 			<font color="#FF950E">allow-transfer { 192.168.200.130; };</font></p>
+<p><font color="#FF950E"> 			notify yes;</p>
+<p><font color="#FF950E"> 			also-notify { 192.168.200.130; };</p>
+<p><font color="#FFFFFF"> 	};</p>
+<p><b><font color="#FF0000">2<font color="#FFFFFF">#</b> /etc/init.d/bind9 restart</font></p>
+<p><b><font color="#FF0000">3<font color="#FFFFFF">#</b> dig dexter.com.br axfr</font></p>
+<p><b><font color="#E6E6FF">allow-transfer</b> Restringir a transferência de zona apenas para Servidores Autorizados;</p>
+<p><font color="#E6E6FF">As opções <b>notify</b> e <b>also-notify</b> determinam se o servidor primário notifica servidores secundários quando a informação de zona for atualizada.</p>
+<p><i><b><font color="#993366">Servidor: Audit</b></i></p>
+</body>
+</html>

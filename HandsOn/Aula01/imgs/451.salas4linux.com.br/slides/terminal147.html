@@ -1,0 +1,19 @@
+<h1><b>Redes Avançado</b></h1>
+<h2><b>Testando o IPv6:</b></h2>
+<h2><b>1 - Faça um ping6 em todos os hosts disponíveis:</b></h2>
+<ul>
+<ul>
+<ul>
+<li><b>1#</b> ping6 -I eth0 ff02::1</li>
+</ul>
+</ul>
+<li>Diferente do <b>IPv4</b>, onde as respostas ao ping para endereços de broadcast podem ser desabilitadas; em <b>IPv6</b> este comportamento não pode ser desabilitado, exceto pela utilização de um firewall.</li>
+</ul>
+<p>Existe uma série de endereços multcast reservados para funções específicas. Uma boa fonte é a lista disponível em: <b>http://ipv6.br/entenda/enderecamento/#multicast</b></p>
+<p><i><b>Servidor: WebServer Interno</b></i></p>
+
+<h3>Notes:</h3>
+<p>Outra característica marcante do IPv6 é que não existem mais os endereços broadcast, que endereçavam todos os hosts de um mesmo domínio de colisão, isto é, uma pacote com endereço de destino do tipo broadcast era enviado para todos os hosts de seu domínio de colisão. </p>
+<p></p>
+<p>Com a abolição desse tipo endereço, outro protocolo muito comum no IPv4 também ficou em desuso, o ARP – Address Resolution Protocol, que usava endereços broadcast para descoberta do endereço MAC da interface referente ao endereço de destino do pacote.</p>
+

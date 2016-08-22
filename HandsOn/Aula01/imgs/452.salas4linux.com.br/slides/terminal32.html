@@ -1,0 +1,10 @@
+<h1><b>Firewall Linux</b></h1>
+<h2><b>5ª → Permitir acesso a internet pelo Firewall:</b></h2>
+<h2><b>1#</b> iptables -t filter -A OUTPUT -p tcp -m multiport -s  10.0.2.15  -d 0/0 --dport 80,443 -j ACCEPT</h2>
+<h2>Tudo que sair do Servidor Security sendo protocolo TCP com destino a qualquer lugar nas portas 80 e 443 (http e https) será liberado.</h2>
+<h2><b>2#</b> iptables -t filter -A INPUT -p tcp -m multiport -s 0/0 --sport 80,443 -d  10.0.2.15 <b> </b>-j ACCEPT</h2>
+<h2>Tudo que entrar sendo protocolo TCP vindo de qualquer lugar pelas portas 80 e 443 no Servidor Security será liberado.</h2>
+<h2><b>3#</b> iptables -t filter -nL --line-numbers </h2>
+<h2><b>4#</b> apt-get update</h2>
+<p><i><b>Servidor: Security</b></i></p>
+

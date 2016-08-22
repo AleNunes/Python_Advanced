@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 297</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text295.html">Back</a> <a href="text297.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img296.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Data e Hora do Sistema e Servidor de NTP</b></h1>
+<h2>Agora que nosso servidor NTP está pronto, vamos ajustar os servidores internos da Dexter para atualizar data e hora de forma interna:</h2>
+<h2><b><font color="#004586">1 – Instale o pacote nptdate no servidor FileServer:</b></h2>
+<h2><b><font color="#FF0000"> 	1#</b> yum install ntpdate</h2>
+<h2><b><font color="#004586">2 – Configure o arquivo default do ntpdate indicando o IP do servidor da audit como fonte de atualização de data e hora:</b></h2>
+<ul>
+<li><b><font color="#FF0000">2#</b> vim /etc/ntp/step-tickers</li>
+<h2><font color="#993366"> 192.168.200.30</h2>
+<h2><b><font color="#4C4C4C"> 	<font color="#FF0000">3</font>#</b> ntpdate 192.168.200.30</h2>
+</ul>
+<p><i><b><font color="#993366">Servidor: FileServer</b></i></p>
+<p><b><font color="#FF950E">NOTA: </b>Seja paciente, seu servidor NTP só irá fornecer a hora para os clientes quando ele estiver totalmente sincronizado com um Stratum acima dele. </p>
+</body>
+</html>

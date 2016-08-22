@@ -1,0 +1,25 @@
+<h1><b>Laboratório Dexter</b></h1>
+<ul>
+<li>Simulando problemas de Biblioteca:</li>
+</ul>
+<p>A biblioteca<b> libattr.so </b>é utilizada pela maioria dos comandos no Linux. </p>
+<p><b>Pronto, agora o comando voltou a funcionar!</b></p>
+<p><i><b>Servidor: Webserver Interno</b></i></p>
+<p><b>1#</b> echo “/opt/lib/” &gt;&gt; /etc/ld.so.conf.d/bibliotecas.conf</p>
+<p><b>2#</b> ldconfig</p>
+<p><b>3#</b> ldd /bin/ls | grep libattr</p>
+<p><b>4#</b> ls /etc/</p>
+
+<h3>Notes:</h3>
+<p><b>Referenciando Bibliotecas</b></p>
+<p></p>
+<p>Você já imaginou ficar sem a librt.so.1? Sem essa lib, muitos recursos de movimentação pelo terminal não iram responder.</p>
+<p></p>
+<p>Nesses casos em que as bibliotecas estão em um diretório diferente é necessário dizer ao sistema para buscar bibliotecas em sua nova localização.</p>
+<p></p>
+<p>No exemplo acima simplesmente criamos um arquivo em /etc/ld.so.conf.d com a extensão .conf que referência a localização de nossa biblioteca.</p>
+<p></p>
+<p>Após criarmos a referência bastou atualizar a lista de diretórios de bibliotecas com o comando ldconfig.</p>
+<p></p>
+<p></p>
+

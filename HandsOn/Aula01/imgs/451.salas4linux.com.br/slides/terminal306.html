@@ -1,0 +1,25 @@
+<h1><b>Rsyslog</b></h1>
+<h2><b>Configuração do Rsyslog na Máquina Local:</b></h2>
+<ul>
+<li>As configurações do rsyslog podem ser alteradas através do  arquivo <b>rsyslog.conf</b> localizado no diretório /etc/:</li>
+<ul>
+<li>1<b>#</b> less /etc/rsyslog.conf</li>
+</ul>
+<li>O formato deste arquivo segue a seguinte sintaxe:</li>
+<ul>
+<li><b>recurso(facilities).nível(level)				destino</b></li>
+<h2>   <b>Exemplos:	</b>cron.*			/var/log/cron.log</h2>
+<h2> 				kern.info		/var/log/kernel.info</h2>
+</ul>
+</ul>
+<p><i><b>Servidor: Audit</b></i></p>
+
+<h3>Notes:</h3>
+<p><b>Configurando o Rsyslog</b></p>
+<p></p>
+<p>Uma vez que se tenha conhecimento da quantidade de mensagens geradas pelo sistema, é fácil entender a necessidade de se organizar veementemente essas informações, permitindo verificações futuras;</p>
+<p></p>
+<p>Fica a cargo do serviço rsyslog a responsabilidade de armazenar essas mensagens;</p>
+<p></p>
+<p>O rsyslog permitirá, entre muitas opções, armazenar essas mensagens em diferentes arquivos e organizá-las de acordo com nível e importância e origem. </p>
+

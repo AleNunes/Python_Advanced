@@ -1,0 +1,15 @@
+<h1><b>Administração de Usuários</b></h1>
+<h2><b>1- Automatizando a criação dos demais usuários com Shell Script:</b></h2>
+<p><i><b>Servidor: FileServer</b></i></p>
+<p><b>1# </b>vim createuser.sh</p>
+<p><b>1</b> #!/bin/bash</p>
+<p><b>2</b> test -e /root/funcionarios.txt || exit </p>
+<p><b>3</b> while read FUNCIONARIO</p>
+<p><b>4</b> do</p>
+<p><b>5</b> NOME=$(echo $FUNCIONARIO | cut -d&quot;;&quot; -f1 | tr [:upper:] [:lower:] | tr &quot; &quot; &quot;.&quot;)</p>
+<p><b>6</b> DEPARTAMENTO=$(echo $FUNCIONARIO | cut -d&quot;;&quot; -f2)</p>
+<p><b>7</b> useradd -m -b /srv/homes -c &quot;$FUNCIONARIO&quot; -s /bin/bash $NOME</p>
+<p><b>8</b> echo -e &quot;dexter\ndexter&quot; | passwd $NOME</p>
+<p><b>9</b> done &lt; /root/funcionarios.txt</p>
+<p><b>2# </b>bash /root/createuser.sh</p>
+

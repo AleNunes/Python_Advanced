@@ -1,0 +1,10 @@
+<h1><b>Implementando Controle de Acesso ao Sistema com PAM</b></h1>
+<h2><b>2 – A configuração do módulo é feita no arquivo /etc/security/limits.conf:</b></h2>
+<h2>sintaxe: &lt;usuario/grupo&gt; &lt;tipo_de_limite&gt; &lt;recurso&gt; &lt;valor_do_limite&gt;</h2>
+<h2><b>3 – Vamos limitar o número de terminais consecutivos que um usuário pode utilizar.</b></h2>
+<h2><b>1#</b> vim /etc/security/limits.conf</h2>
+<h2><b> 	@analistas	hard		maxlogins		2</b></h2>
+<h2><b>4 – Para testar,  logue 3 vezes com o usuário Harry Rosemberg por SSH ou Localmente;</b></h2>
+<p><i><b>Servidor: Fileserver</b></i></p>
+<p><b>Implementação Prática do PAM – Módulo limits:</b></p>
+

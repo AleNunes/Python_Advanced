@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 105</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="img0.html">First page</a> <a href="img98.html">Back</a> <a href="img100.html">Continue</a> <a href="img336.html">Last page</a> <a href="452_2016_3.3_fv.html">Overview</a> <a href="text99.html">Text</a></center><br>
+<center><img src="img99.png" alt=""></center>
+<h3>Notes:</h3><br>
+
+<p><p><b>ServerRoot &quot;/etc/httpd&quot;:</b> Configuração do Apache</p>
+<p><b>&lt;IfModule prefork.c&gt;:</b> Se for prefork usa essa configuração</p>
+<p><b>StartServers       8 : </b> Quantos processos instancia , para ficar esperando se alguém for acessar o site.</p>
+<p><b>MinSpareServers    5 :</b> Se ninguém acessar o site, quantos processos você quer manter no servidor. (Processos ocioso) </p>
+<p><b>MaxSpareServers   20:  </b>Suponha que veio 50 pessoas no site, vai atender as 50 e dps o mínimo vai cai para 20 processos.</p>
+<p><b>ServerLimit      256: </b>Quantos processos ele vai instanciar até 256.</p>
+<p><b>MaxClients       256:</b> No máximo eu vou ter 256 clientes <b>simultâneos.</b></p>
+<p><b>MaxRequestsPerChild  4000: </b>O máximo que cada processo vai pode fazer de request (4000 cliques, ou chamados próprias do site).</p>
+<p><b>Listen 80: </b> Porta que o Apache irá ouvir. </p>
+<p><b>User apache: </b> Usuário do Apache</p>
+<p><b>Group apache:</b> po do Apache</p>
+<p><b>ServerAdmin root@admin: </b> E-mail do administrador do Apache</p>
+<p><b>ServerName 127.0.0.1:80:</b>  Nome do host e a porta. </p>
+<p><b>DocumentRoot &quot;/var/www/html&quot;:</b> Diretório dos sites. </p>
+
+</p>
+</body>
+</html>

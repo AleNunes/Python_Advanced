@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 88</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#3A81CC" vlink="#3773B1" alink="#3A81CC">
+<center>
+<a href="text0.html">First page</a> <a href="text86.html">Back</a> <a href="text88.html">Continue</a> <a href="text417.html">Last page</a> <a href="Apostila3.2.html">Overview</a> <a href="img87.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Variáveis no Shell</b></h1>
+<p><i><b><font color="#993366">Servidor: Webserver Interno</b></i></p>
+<ul>
+<li> Listar variáveis Locais e Globais:</li>
+</ul>
+<p>Para definir as variáveis de forma definitiva usamos o arquivo profile.</p>
+<p>Cada usuário possui, em seu home, o arquivo <b><font color="#FF950E">.bash_profile</b> ou <b><font color="#FF950E">.profile</b></font></p>
+<p>Caso queira definir de forma global para todos os usuários a variável deve ser declarada no <b><font color="#FF950E">/etc/profile.</b></p>
+<p><b><font color="#FF0000">1#</b> set</p>
+<ul>
+<li> Listar variáveis Globais:</li>
+</ul>
+<p><b><font color="#FF0000">2# </b>env</p>
+<ul>
+<li> Excluindo uma variável:</li>
+</ul>
+<p><b><font color="#FF0000">3#</b> echo $CURSO</p>
+<p><b><font color="#FF0000">4#</b> unset CURSO</p>
+<p><b><font color="#FF0000">5#</b> echo $CURSO</p>
+<br>
+<h3>Notes:</h3>
+<p><b>Visualizando variáveis com set e env</b></p>
+<p></p>
+<p>Variáveis locais e globais podem ser definidas utilizando os comandos “set” e “env” respectivamente. </p>
+<p></p>
+<p>Quando falamos em visualização de variáveis o comando “env” permite visualizar as variáveis globais, enquanto o comando “set”, visualiza ambas as variáveis (Locais e Globais).</p>
+<p></p>
+<p>O comando “echo” é usado para imprimir algo na tela ou direcionar para um arquivo, na linha de comando o “echo” é muito útil para inspecionar variáveis.</p>
+<p></p>
+<p>O comando “printenv” também pode ser utilizado para definir variáveis globais.</p>
+</body>
+</html>

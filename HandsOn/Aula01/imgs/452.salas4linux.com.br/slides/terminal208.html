@@ -1,0 +1,12 @@
+<h1><b>Implementando LVM</b></h1>
+<h2><b>Estendendo um Volume Lógico:</b></h2>
+<h2><b>5 – Verifique se o espaço foi ampliado: 	</b></h2>
+<h2><b>1# </b>df -hT /mnt</h2>
+<h2><b>2# </b>umount /mnt</h2>
+<h2><b>3# </b>e2fsck -f /dev/vg-samba/lv-extra</h2>
+<h2><b>4# </b>resize2fs /dev/vg-samba/lv-extra </h2>
+<h2><b>5# </b>mount /dev/vg-samba/lv-extra /mnt</h2>
+<h2><b>6# </b>df -hT /mnt ; ls /mnt</h2>
+<p><i><b>Servidor: Storage</b></i></p>
+<p>O comando <b>resize2fs</b> é responsável por aumentar/diminuir o sistema de arquivos para ocupar todo o espaço disponível na partição.</p>
+

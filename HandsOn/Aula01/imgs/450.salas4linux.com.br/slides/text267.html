@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 268</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#3A81CC" vlink="#3773B1" alink="#3A81CC">
+<center>
+<a href="text0.html">First page</a> <a href="text266.html">Back</a> <a href="text268.html">Continue</a> <a href="text417.html">Last page</a> <a href="Apostila3.2.html">Overview</a> <a href="img267.html">Graphics</a></center><br>
+<h1><b><font color="#009999">TCPWrappers</b></h1>
+<ul>
+<li> Sintaxe dos arquivos de controle de acesso:</li>
+<li><b><font color="#004586"> &lt;daemon list&gt;</b> → Uma lista separada por vírgula de nomes de serviços (como é apresentado no processo) ou o carácter ALL;</li>
+<li><b><font color="#004586"> &lt;client list&gt;</b> → Uma lista separada por vírgula de  host (IP ou FQDN);</li>
+<li><b><font color="#004586"> &lt;option&gt;</b> → Uma ação opcional ou lista separada por dois pontos de ações realizadas quando a regra é acionada. </li>
+</ul>
+<p><b><font color="#FF950E">&lt;daemon list&gt;: &lt;client list&gt; [: &lt;option&gt;: &lt;option&gt;: ...]</b> </p>
+<br>
+<h3>Notes:</h3>
+<p><b>Entendendo o TCPWrappers</b></p>
+<p>Existem dezenas de possibilidades de configuração para o tcp_wrappers e você pode estudá-las em extensão através das páginas de manual “hosts_access” e “hosts_options”.</p>
+<p></p>
+<p>Curingas podem ser utilizados tanto na lista de daemons quanto na lista de clientes. Entre os existentes, pode-se destacar os seguintes:</p>
+<p></p>
+<p><b>ALL -</b> Significa todos os serviços ou todos os clientes, dependendo apenas do campo em que se encontra.</p>
+<p></p>
+<p><b>LOCAL -</b> Este curinga casa com qualquer nome de máquina que não contenha um caractere ponto “.”, isto é, uma máquina local.</p>
+<p></p>
+<p><b>PARANOID -</b> Casa com qualquer nome de máquina que não case com seu endereço. Geralmente ocorre quando um servidor DNS está mal configurado ou alguma máquina está tentando se passar por outra.</p>
+</body>
+</html>

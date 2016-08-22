@@ -1,0 +1,17 @@
+<h1><b>Laboratório Dexter</b></h1>
+<ul>
+<li>Na primeira coluna do fstab podemos especificar a localização do device das 3 maneiras: Device, UUID e Label</li>
+</ul>
+<p><i><b>Servidor: Webserver Interno</b></i></p>
+<ul>
+<li><b>1#</b> blkid | grep sdb1 </li>
+<li><b>2#</b> blkid | grep sdb1 | awk '{print $3}' | sed -e s/\&quot;//g</li>
+<li><b>3#</b> blkid | grep sdb1 | awk '{print $3}' | sed -e s/\&quot;//g <b>&gt;&gt;</b> /etc/fstab</li>
+<li><b>4#</b> vim /etc/fstab</li>
+<li> 	UUID=683dc-c6a0-4b-6b-64f23e	/backup	ext2	defaults	0 0</li>
+<li> 	LABEL=dados						/srv/		ext3	defaults	0 0 </li>
+<p></p>
+<li><b>5#</b> mount -a ; df -h</li>
+<li><b>6#</b> cat /etc/mtab</li>
+</ul>
+

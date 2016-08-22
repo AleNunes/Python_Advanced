@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 64</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text62.html">Back</a> <a href="text64.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img63.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Quotas de Disco</b></h1>
+<h2><b><font color="#004586">1 – Verifique como foi feito o particionamento do disco:</b></h2>
+<h2><b><font color="#004586"></b></h2>
+<h2><b><font color="#FF0000">1#</b> df -h</h2>
+<h2><b><font color="#FF0000">2#</b> mount</h2>
+<h2><b><font color="#FF0000">3#</b> blkid</h2>
+<h2><b><font color="#4C4C4C"></b></h2>
+<h2><b><font color="#004586"></b></h2>
+<h2><b><font color="#004586">2 – Abra o arquivo /etc/fstab para definir as opções que habilitaram o uso das quotas:</b></h2>
+<h2><b><font color="#004586"></b></h2>
+<h2><b><font color="#FF0000"> 1#</b> vim /etc/fstab</h2>
+<p><b><font color="#CC0000">← Verifique o esquema de montagem dos disco da fileserver para definir em qual disco e partição montaremos as quotas.</b></p>
+<p><b><font color="#CC0000">← Se necessário confirme o UUID da partição utilizando o blkid</b></p>
+<p><i><b><font color="#993366">Servidor: Fileserver</b></i></p>
+<br>
+<h3>Notes:</h3>
+<p><b>Habilitando Quotas no fstab:</b></p>
+<p></p>
+<p>O sistema de quotas é uma funcionalidade do “filesystem” e do kernel, sendo assim, ambos têm que serem capazes de suportá-lo.</p>
+<p></p>
+<p>Uma vez que o “filesystem” suporta quotas, devemos adicionar os parâmetros de montagem, que utilizaremos com esse sistema. Isso é feito no arquivo “/etc/fstab”. </p>
+<p></p>
+<p>Além disso, temos que criar, o sistema deverá criar na raiz desses “filesystems”, os arquivos de controle, chamados <b>“aquota.user”</b> e <b>“aquota.group”.</b></p>
+</body>
+</html>

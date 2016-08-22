@@ -1,0 +1,17 @@
+<h1><b>Servidor Proxy com Squid</b></h1>
+<p><i><b>Servidor: WebServerInterno</b></i></p>
+<p><b>Configurando o Novo VirtualHost:</b></p>
+<ul>
+<li>Entre no arquivo de configuração do apache e adicione a linha do alias:</li>
+<li><b>4# </b>vim /etc/httpd/conf/httpd.conf</li>
+<ul>
+<li>99 Alias /squidreport /var/www/html/squidanalyzer</li>
+</ul>
+<li><b>4# </b>systemctl restart httpd</li>
+</ul>
+<p><b>Visualizando os Relatórios via Browser:</b></p>
+<ul>
+<li>Abra um browser na máquina Linux Interna e acesse:</li>
+<li><b>5# </b>intranet.dexter.com.br/squidreport</li>
+</ul>
+

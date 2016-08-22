@@ -1,0 +1,21 @@
+<h1><b>Auditando o Shell</b></h1>
+<p><b>Implementar  Registro de Data e Hora no  History:</b></p>
+<p><i><b>Servidor: Webserver Interno / Webserver Externo</b></i></p>
+<p><b>1#</b> history</p>
+<p><b></b></p>
+<p><b>2#</b> echo $HISTSIZE</p>
+<p><b></b></p>
+<p><b>3#</b> echo $HISTFILE</p>
+<p><b></b></p>
+<p><b>4#</b> vim /root/.bashrc</p>
+<p>export HISTSIZE=1000</p>
+<p>export HISTCONTROL='erasedups'</p>
+<p>export HISTTIMEFORMAT='%d-%m-%Y %H:%M - '</p>
+<p><b></b></p>
+<p><b>5#</b> source /root/.bashrc</p>
+<p><b></b></p>
+<p><b>6#</b> history</p>
+<p>Para remover os comandos duplicados usa-se a variável HISTCONTROL. </p>
+<p>A quantidade de comandos que será armazenado no history é definido na variável HISTSIZE (Padrão CentOs 500 e Debian 1000).</p>
+<p>A personalização é feita na variável HISTTIMEFORMAT.</p>
+

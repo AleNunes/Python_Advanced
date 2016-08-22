@@ -1,0 +1,14 @@
+<h1><b>Administração de Usuários</b></h1>
+<h2><b>Explorando Comandos para Criar um Shell Script:</b></h2>
+<p>O comando <b>tr</b> é um comando usado para substituir (trocar) ocorrências. </p>
+<p>Quando concatenado com o “|”, (pipe) as alterações são mostradas na saída padrão ao invés de serem gravadas.</p>
+<p>De forma similar ao comando cpio, o tr sempre deverá receber uma determinada saída e atuar sobre ela, por isso o uso do redirecionar “&lt;” (volta).</p>
+<p><i><b>Servidor: FileServer</b></i></p>
+<p><b>1 – Testando substituições com o comando tr:</b></p>
+<p><b>1#</b> echo dexter | tr &quot;e&quot; &quot;&amp;&quot;</p>
+<p><b>2#</b> cat funcionarios.txt</p>
+<p><b>3#</b> cat funcionarios.txt | tr &quot;;&quot; &quot;\t&quot;</p>
+<p><b>2 – O “tr” também substitui o texto caixa alta </b></p>
+<p><b>(upper), por caixa baixa (lower) e vice-versa.</b></p>
+<p><b>4#</b> tr [:upper:] [:lower:] <b>&lt;</b> funcionarios.txt</p>
+

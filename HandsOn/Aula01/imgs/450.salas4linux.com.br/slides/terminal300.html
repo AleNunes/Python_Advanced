@@ -1,0 +1,21 @@
+<h1><b>Gerenciando Processos</b></h1>
+<p>Iniciar um programa em segundo plano sem  prendê-lo ao terminal (<b>nohup</b>).</p>
+<p>O <b>nohup </b>registra um arquivo no local em que foi executado com a saída do comando.</p>
+<p><i><b>Servidor: Webserver Interno</b></i></p>
+<h2><b>Iniciando ntpo em Segundo Plano:</b></h2>
+<p><b> 1#</b> nohup ping 8.8.8.8 &amp;</p>
+<p><b> 2#</b> ps aux | grep ping</p>
+<p><b> 3#</b> logout</p>
+<p><b></b></p>
+<p><b> 4#</b> ps aux | grep ping</p>
+<p><b> 5# </b>tail -f nohup.out</p>
+
+<h3>Notes:</h3>
+<p><b>NOHUP</b></p>
+<p><b></b></p>
+<p>O comando nohup ignora os sinais de interrupção de conexão durante a execução do comando especificado. Assim, é possível ao comando continuar sua execução mesmo depois que o usuário se desconectar do sistema.</p>
+<p></p>
+<p>Se a saída padrão é uma tty, esta saída e o erro padrão são redirecionados para o arquivo “nohup.out” (primeira opção) ou para o arquivo “$HOME/nohup.out” (segunda opção). </p>
+<p></p>
+<p>O nohup não coloca o comando que ele executa em background. Isto deve ser feito explicitamente pelo usuário como no exemplo acima  onde executamos um ping com o nohup.</p>
+

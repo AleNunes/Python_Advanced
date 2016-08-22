@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 317</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#3A81CC" vlink="#3773B1" alink="#3A81CC">
+<center>
+<a href="text0.html">First page</a> <a href="text315.html">Back</a> <a href="text317.html">Continue</a> <a href="text417.html">Last page</a> <a href="Apostila3.2.html">Overview</a> <a href="img316.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Inicialização do Sistema</b></h1>
+<p><b><font color="#004586">Níveis de Execução do System V</b></p>
+<p><i><b><font color="#993366">Servidor: Máquina Linux Interna</b></i></p>
+<ul>
+<li> Para exibir o runlevel padrão use o comando:</li>
+</ul>
+<p><b><font color="#FF0000">1#</b> runlevel</p>
+<ul>
+<li> Para alternar entre runlevels use o comando:</li>
+<li><b>#</b> init &lt;valor_runlevel&gt; exemplo:</li>
+</ul>
+<p><b><font color="#FF0000">2#</b> init 1	<font color="#4C4C4C">	<b></font><font color="#CC0000">ou</b></font><font color="#4C4C4C"> 	 <b></font><font color="#FF0000">2</font>#</b> telinit 1 				(<b><font color="#FF6600">Senha: 4linux</b></font>)</p>
+<ul>
+<li> Para definir o runlevel padrão no sistema:</li>
+</ul>
+<p><b><font color="#FF0000">3#</b> vim /etc/inittab</p>
+<p>id: <b>X</b> :initdefault:</p>
+<ul>
+<li> No qual <b>X</b> é o número do runlevel definido que, no caso do Debian, é o nível 2 e no CentOS 6 é o nível 5.</li>
+</ul>
+<br>
+<h3>Notes:</h3>
+<p><b>Definindo o runlevel padrão no sistema</b></p>
+<p><b></b></p>
+<p>O arquivo /etc/inittab é o arquivo responsável pela configuração do runlevel padrão no nosso sistema, note que no próprio arquivo é alertado de não colocar o valor 0 e 6 como valor padrão, sendo 0 o desligamento da máquina e 6 o reboot.</p>
+</body>
+</html>

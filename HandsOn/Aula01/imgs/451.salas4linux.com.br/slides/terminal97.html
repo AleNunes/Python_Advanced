@@ -1,0 +1,14 @@
+<h1><b>Implementando Controle de Acesso ao Sistema com PAM</b></h1>
+<h2><b>3 – Para negar o acesso ao root via ssh abra arquivo de configuração do ssh /etc/ssh/sshd_config e inclua na linha abaixo:</b></h2>
+<h2><b>1#</b> vim /etc/pam.d/sshd<b> </b></h2>
+<h2> 	#2		account    required    pam_time.so</h2>
+<h2><b>4 – Completando a configuração abra o arquivo /etc/security/time.conf e adicione no final:</b></h2>
+<h2><b>2#</b> vim /etc/security/time.conf<b> </b></h2>
+<h2> 	sshd;*;root;!Al0000-2400</h2>
+<p><b>Acesse o servidor Security Cloud e tente acessar a máquina Fileserver via ssh:</b></p>
+<p><b></b></p>
+<p><b>1#</b> ssh root@192.168.200.40</p>
+<p><b> Connection closed by 192.168.200.40</b></p>
+<p><i><b>Servidor: Fileserver</b></i></p>
+<h2><b>Implementação Prática do PAM – Módulo time:</b></h2>
+

@@ -1,0 +1,10 @@
+<h1><b>Implementando LVM</b></h1>
+<h2><b>Implementação Prática:</b></h2>
+<h2><b>3 – Com o grupo de volumes criado, basta criar o volume lógico a ser disponibilizado para o sistema:</b></h2>
+<h2><b>1# </b>lvcreate -L 2GB -n lv-extra vg-samba</h2>
+<h2><b>2# </b>lvcreate -L 1GB -n lv-smb-publico vg-samba</h2>
+<h2><b>3# </b>lvs ; vgs</h2>
+<h2><b>4# </b>mkfs.ext4 /dev/vg-samba/lv-smb-publico</h2>
+<h2><b>5# </b>mkfs.ext4 /dev/vg-samba/lv-extra</h2>
+<p><i><b>Servidor: Storage</b></i></p>
+

@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 49</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text43.html">Back</a> <a href="text45.html">Continue</a> <a href="text336.html">Last page</a> <a href="452_2016_3.3_fv.html">Overview</a> <a href="img44.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Dica</b></h1>
+<h2><b><font color="#FF0000">1#</b> iptables -t filter -A INPUT -s 0/0 -d 200.100.50.99 -p tcp   --dport 22 -j<b> LOG --log-prefix '[Acesso SSH Security]'</b></h2>
+<h2><font color="#993366">Tudo que vier de qualquer lugar com destino a 200.100.50.99 na porta 22 cria o log “Acesso SSH Security”. </h2>
+<h2><b><font color="#FF0000">2#</b> iptables -nL </h2>
+<h2><b><font color="#FF0000">3#</b> tail -f /var/log/messages</h2>
+<h2><b><font color="#0066CC">
+Tente da máquina Linux Interna acessar o Firewall por SSH!</b></h2>
+<p><i><b><font color="#993366">Servidor: Security</b></i></p>
+<p><b><font color="#004586">Criando Registro de LOG do iptables:</b></p>
+</body>
+</html>

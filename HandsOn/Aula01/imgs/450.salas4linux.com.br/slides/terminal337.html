@@ -1,0 +1,9 @@
+<h1><b>Inicialização do Sistema</b></h1>
+<p>Se apertamos<b> CTRL + ALT + DEL</b>, nosso sistema sem pensar duas vezes vai reiniciar. Mas não é muito bom deixar isso habilitado.</p>
+<p><b>Solução:</b> Abrir o arquivo /etc/inittab e alterar a linha que define o reinício do sistema:</p>
+<p><i><b>Servidor: Máquina Linux Interna</b></i></p>
+<p><b>1#</b> vim +33 /etc/inittab</p>
+<p>ca:12345:ctrlaltdel:/bin/echo &quot;CTRL+ALT+DEL Bloqueado&quot;</p>
+<p>Para atualizar as configurações sem reiniciar o servidor execute:</p>
+<p><b>2#</b> init q</p>
+

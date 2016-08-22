@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 349</title>
+</head>
+<body text="#FFFFFF" bgcolor="#FFFFFF" link="#3A81CC" vlink="#3773B1" alink="#3A81CC">
+<center>
+<a href="text0.html">First page</a> <a href="text347.html">Back</a> <a href="text349.html">Continue</a> <a href="text417.html">Last page</a> <a href="Apostila3.2.html">Overview</a> <a href="img348.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Manipulando Hardware e Dispositivos</b></h1>
+<ul>
+<li><font color="#666666">Dispositivo → Todo o componente de hardware e do sistema operacional (ex: impressora, mouse, portas,etc);</li>
+<li><font color="#666666">No Linux, os dispositivos físicos são tratados como arquivos que são armazenados no /dev;</li>
+</ul>
+<h2><b><font color="#004586">Dispositivos no Linux:</b></h2>
+<p><b><font color="#993366">devfs →<font color="#004586"> </b></font><font color="#666666">Gerenciador de dispositivos, o devfs tem com principal característica criar todos os arquivos de dispositivos na hora do boot, populando todo o /dev/;</font></p>
+<p><b><font color="#993366">udev →<font color="#FF950E"> </b></font><font color="#666666">Gerenciador de dispositivos dinâmico, o udev tem como principal característica criar o arquivo de dispositivo no acionamento do dispositivo deixando o /dev/ apenas com  “dispositivos em uso”.</font></p>
+<br>
+<h3>Notes:</h3>
+<p><b><font color="#666666">Explorando o /dev</b></p>
+<p><font color="#666666">O diretório “/dev” consiste de um “filesystem” (sistema de arquivos) especial e pode ser de dois tipos: “devfs” ou “udev”. </p>
+<p><font color="#666666"></p>
+<p><font color="#666666">Uma das diferenças entre os dois é que no “devfs” os arquivos de dispositivos são criados uma única vez, dessa forma, o diretório “/dev” contém os dispositivos para todos os hardwares suportados pelo Linux, não importando se eles existem de fato na máquina ou não. </p>
+<p><font color="#666666"></p>
+<p><font color="#666666">Com o “udev” os dispositivos são criados de acordo com a disponibilidade no sistema. Dessa forma, o diretório contém apenas os arquivos de dispositivo para o “hardware” presentes na máquina.</p>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<h1><b>Implementando NFS</b></h1>
+<h2><b>Implementando NFS no Storage:</b></h2>
+<h2><b>2 – Configure o compartilhamento no arquivo exports e reinicie os daemons posrtmap e nfs-kernel-server:</b></h2>
+<h2><b>1# </b>vim /etc/exports</h2>
+<h2>/srv/samba/publico 192.168.200.0/24(rw,no_root_squash,no_subtree_check,async)</h2>
+<h2><b>2# </b>exportfs -av</h2>
+<h2><b>3# </b>service rpcbind restart</h2>
+<h2><b>4# </b>service nfs-kernel-server restart</h2>
+<p><i><b>Servidor: Storage</b></i></p>
+

@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 292</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text290.html">Back</a> <a href="text292.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img291.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Data e Hora do Sistema e Servidor de NTP</b></h1>
+<h2><b><font color="#004586">Implementando um Servidor de NTP:</b></h2>
+<h2>Além ajustar a hora com base em um servidor, é possível criar uma estrutura própria com servidor NTP. Configuraremos a Audit para trabalhar como servidor NTP interno da empresa Dexter.</h2>
+<h2><b><font color="#004586">1 – Instale o servidor ntp provido pelo pacote ntp:</b></h2>
+<h2><b><font color="#FF0000"> 	1#</b> apt-get install ntp</h2>
+<h2><b><font color="#004586">2 – Abra o arquivo /etc/ntp.conf para configurar o servidor:</b></h2>
+<h2><b><font color="#FF0000"> 	2#</b> vim /etc/ntp.conf</h2>
+<p><i><b><font color="#993366">Servidor: Audit</b></i></p>
+<br>
+<h3>Notes:</h3>
+<p><b>Com qual nível devo sincronizar?</b></p>
+<p></p>
+<p>A menos que estejamos montando um servidor para ser um &quot;stratum 1&quot;, 2 ou 3, nunca devemos utilizar os servidores &quot;stratum 1&quot;ou 2 para sincronizarmos nossos servidores; mas sim acessar um &quot;stratum 3&quot;. Dessa forma deixamos os níveis mais baixos para as máquinas que realmente precisam acessá-los.</p>
+<p></p>
+<p></p>
+</body>
+</html>

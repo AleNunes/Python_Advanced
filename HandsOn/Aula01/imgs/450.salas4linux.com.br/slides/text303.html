@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 304</title>
+</head>
+<body text="#FFFFFF" bgcolor="#FFFFFF" link="#3A81CC" vlink="#3773B1" alink="#3A81CC">
+<center>
+<a href="text0.html">First page</a> <a href="text302.html">Back</a> <a href="text304.html">Continue</a> <a href="text417.html">Last page</a> <a href="Apostila3.2.html">Overview</a> <a href="img303.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Gerenciando Processos</b></h1>
+<h2><b><font color="#004586">Iniciar com a prioridade alterada:</b></h2>
+<h2><b><font color="#FF0000"> 1<font color="#666666">#</b> killall cron</font></h2>
+<h2><b><font color="#FF0000"> 2<font color="#666666">#</b> nice --20 crond</font></h2>
+<h2><b><font color="#FF0000"> 3<font color="#666666">#</b> htop</font></h2>
+<h2></h2>
+<h2><b><font color="#FF0000"> 4<font color="#666666">#</b> pgrep cron</font></h2>
+<h2><font color="#666666"> 	<b>4693</b></h2>
+<h2><b><font color="#FF0000"> 5<font color="#666666">#</b> renice -2 <b>4693</b></font></h2>
+<p><b><font color="#FF950E">&lt; F4 Filter e busque por cron &gt;<font color="#FF420E"> </b></font></p>
+<p><font color="#666666">Utilizando o <b>nice</b> para iniciar um programa já com prioridade alterada. </p>
+<p><font color="#666666">Para alterar a prioridade de um programa em execução utiliza-se o <b>renice</b>.</p>
+<p><font color="#666666">A prioridade <b>padrão é 0</b>.</p>
+<p><i><b><font color="#993366">Servidor: Webserver Interno</b></i></p>
+</body>
+</html>

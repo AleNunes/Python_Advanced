@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 147</title>
+</head>
+<body text="#666666" bgcolor="#FFFFFF" link="#2A76C6" vlink="#215D9C" alink="#2A76C6">
+<center>
+<a href="text0.html">First page</a> <a href="text145.html">Back</a> <a href="text147.html">Continue</a> <a href="text371.html">Last page</a> <a href="Apostila_3.3.html">Overview</a> <a href="img146.html">Graphics</a></center><br>
+<h1><b><font color="#009999">Redes Avançado</b></h1>
+<h2><b><font color="#004586">Testando o IPv6:</b></h2>
+<h2><b><font color="#004586">1 – Utilizando o FileServer, efetue um ping no endereço IPv6 do servidor Audit:</b></h2>
+<ul>
+<ul>
+<li><b><font color="#FF0000">1#</b> ping6 -I eth0 fe80:: <b></font><font color="#FF950E">… … … </font><font color="#CC0000">&lt; Endereço IPv6 obtido na Audit &gt; </b> </font></li>
+<h2><b><font color="#004586">2 – Faça um segundo teste pingando o endereço de loopback da máquina FileServer:</b></h2>
+<li><b><font color="#FF0000">2#</b> ping6 -I lo ::1 ou</li>
+<li><b><font color="#FF0000">3#</b> ping6 -I lo 0000:0000:0000:0000:0000:0000:0000:0001</li>
+</ul>
+</ul>
+<p><i><b><font color="#993366">Servidor: FileServer</b></i></p>
+<br>
+<h3>Notes:</h3>
+<p><b>Endereços Anycast</b></p>
+<p></p>
+<p>Esse tipo de endereço é utilizado para identificar um grupo de interfaces pertencentes a hosts diferentes. Um pacote destinado a um endereço Anycast é enviado para um das interfaces identificadas pelo endereço. Especificamente, o pacote é enviado para a interface mais próxima, de acordo com o protocolo de roteamento.</p>
+<p></p>
+<p></p>
+<p><b>Endereço Multicast</b></p>
+<p></p>
+<p>Da mesma forma que o endereço Anycast, este endereço identifica um grupo de interfaces pertencente a diferentes hosts mas um pacote destinado a um endereço Multicast é enviado para todas as interfaces que fazem parte deste grupo.</p>
+</body>
+</html>

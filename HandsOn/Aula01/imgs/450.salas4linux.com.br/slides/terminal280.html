@@ -1,0 +1,30 @@
+<h1><b>Filtrando Processos</b></h1>
+<p><b>USER</b> → Usuário que iniciou o processo (dono).					</p>
+<p><b>PID</b> → Número único do processo.</p>
+<p><b>%CPU</b> → Utilização da CPU em porcentagem.</p>
+<p><b>START</b> → A hora em que o processo foi iniciado. Caso a hora seja do dia anterior, é representado pelo dia e mês.</p>
+<p><b>COMMAND</b> → O comando executado e todos seus argumentos.</p>
+<h2><b>Filtrar Informações sobre Processos:</b></h2>
+<p><i><b>Servidor: Webserver Interno</b></i></p>
+<p><b>1#</b> ps aux</p>
+<p></p>
+<p>USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND</p>
+<p>root         1  0.0  0.2   2900  1424 ?        Ss   11:36   0:02 /sbin/init</p>
+<p>...............................................</p>
+
+<h3>Notes:</h3>
+<p><b>Parâmetros do comando ps:</b></p>
+<p><b></b></p>
+<p><b>A →</b> Mostra todos os processos não associados com um terminal;</p>
+<p><b>U →</b> Exibe o nome do usuário que iniciou determinado processo e a hora em que isso ocorreu; </p>
+<p><b>X →</b> Exibe os processos que não estão associados a terminais;</p>
+<p></p>
+<p><b>Outras informações disponibilizadas pelo comando ps:</b></p>
+<p></p>
+<p><b>% MEM →</b> Porcentagem da memória usada ;</p>
+<p><b>VSZ →  </b>Indica o tamanho virtual do processo ;</p>
+<p><b>RSS →</b> Resident Set Size, indica a quantidade de memória em uso (KB);</p>
+<p><b>TTY → </b>Indica o identificador do terminal do processo ;</p>
+<p><b>STAT → </b>Indica o estado atual do processo , sendo representado</p>
+<p>por uma letra conforme a descrição da próxima página.</p>
+

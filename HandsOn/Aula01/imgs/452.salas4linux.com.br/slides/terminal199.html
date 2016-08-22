@@ -1,0 +1,9 @@
+<h1><b>Implementando RAID</b></h1>
+<h2><b>1 – Crie um segundo sistema RAID utilizando os discos sde e sdf:</b></h2>
+<h2><b>1# </b>mdadm --create /dev/md1 --level 1 --raid-devices=2 /dev/sde /dev/sdf </h2>
+<h2></h2>
+<h2><b>2 – Configure o disco recém criado no arquivo mdadm.conf:</b></h2>
+<h2><b>2# </b>vim /etc/mdadm/mdadm.conf</h2>
+<h2>11 ARRAY /dev/md1 devices=/dev/sde,/dev/sdf</h2>
+<p><i><b>Servidor: Storage</b></i></p>
+

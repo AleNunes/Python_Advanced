@@ -1,0 +1,22 @@
+<h1><b>Servidor Apache</b></h1>
+<h2><b> </b></h2>
+<p><i><b>Servidor: WebServerCloud</b></i></p>
+<ul>
+<li>Ativando o site da Dexter em sites-available:</li>
+<li><b>1#</b> cp /opt/4linux/dexter.conf /etc/apache2/sites-avaliables</li>
+<li><b>2#</b> a2ensite dexter.conf</li>
+<li><b>3#</b> cd /var/www/html</li>
+<li><b>4#</b> mkdir dexter</li>
+<li><b>5#</b> tar -xf /opt/4linux/dexter.tar.gz -C dexter/</li>
+<li><b>6#</b> chown -R www-data dexter/</li>
+<li><b>7#</b> service apache2 restart</li>
+</ul>
+<h2><b>Apache SSL (https) – Ativando SSL no Site da Dexter:</b></h2>
+
+<h3>Notes:</h3>
+<p><b>Ativando / Desativando sites no apache</b></p>
+<p><b></b></p>
+<p>O comando a2dissite é utilizado para “desativar” o site do qual você esteja passando como parâmetro.</p>
+<p></p>
+<p>Caso queira “Ativar” um site, o comando é a2ensite, e o mesmo será ativado no nosso servidor Apache.</p>
+
