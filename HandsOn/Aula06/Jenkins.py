@@ -14,12 +14,12 @@ class Jenkins:
     def create_job(self, name):
         try:
             with open("templates/job.xml","r") as f:
-                xml = f.read().replace("REPO_TESTE","git@git.com.br")
+                xml = f.read().replace("REPO_URL","git@git.com.br")
             
             xml = self.generate_steps(xml)
                 
             #print  jenkins.EMPTY_CONFIG_XML
-            self.server.create_job(name, jenkins.EMPTY_CONFIG_XML)
+            self.server.create_job(name, xml)
             print "Job criada com sucesso!"
         except Exception as e:
             print "Falhou ao criar job: ", e     
@@ -30,14 +30,23 @@ class Jenkins:
         root = etree.XML(xml)
         for b in root.findall("builders"):
             builder = b
-        for c in builder.iterchildren():
-            print c.tag, c.text
-            for j in c.iterchildren():
-                print j.tag
-            
+        with open("comandos.txt","r") as f:
+            for c in f.readlines():
+        
+                command = etree.Element("command")
+                command.text = 'ssh forlinux@192.168.0.2 "%s"'%c
+
+                shell = etree.Element("hudson.tasks.Shell")
+                shell.append(command)
+                builder.append(shell)
+
+        return etree.tostring(root)
+
+
+        
 if __name__=="__main__":
     j = Jenkins()
-    j.create_job("Job Python 2")
+    j.create_job("Job Docker 6")
 
 
 

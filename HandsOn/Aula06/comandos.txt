@@ -1,0 +1,4 @@
+docker run -tdi --name $CONTAINER ubuntu /bin/bash
+docker exec $CONTAINER apt-get clean
+docker exec $CONTAINER apt-get update
+docker exec $CONTAINER apt-get install nginx -y
