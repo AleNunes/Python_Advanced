@@ -1,4 +1,9 @@
 docker run -tdi --name $CONTAINER ubuntu /bin/bash
 docker exec $CONTAINER apt-get clean
 docker exec $CONTAINER apt-get update
-docker exec $CONTAINER apt-get install nginx -y
+docker exec $CONTAINER apt-get install apache2 php git -y
+docker exec $CONTAINER bash -c 'rm -rf /var/www/html'
+docker exec $CONTAINER bash -c 'git clone https://github.com/WordPress/WordPress.git /var/www/html/'
+docker exec $CONTAINER bash -c 'service apache2 restart'
+
+

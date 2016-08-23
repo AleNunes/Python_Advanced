@@ -42,12 +42,19 @@ class Jenkins:
 
         return etree.tostring(root)
 
+    def run_job(self, name, var, value):
+        try:
+            self.server.build_job(name, {var:value})
+            print "Job Executado"
+        except Exception as e:
+            print "Falhou ao executar job", e
+
 
         
 if __name__=="__main__":
     j = Jenkins()
-    j.create_job("Job Docker 6")
-
+    j.create_job("JobWordPress2")
+    j.run_job("JobWordPress2", "CONTAINER","wordpress")
 
 
 
