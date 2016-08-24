@@ -1,0 +1,12 @@
+
+
+application: Terminus
+repo: https://github.com/AlissonMMenezes/Terminus.git
+deploy-sequence:
+  - apt-get clean
+  - apt-get update
+  - apt-get install -y python python-setuptools python-dev sqlite3 git
+  - git clone https://github.com/AlissonMMenezes/Terminus /srv/Terminus
+  - easy_install pyramid_mailer
+  - bash -c 'cd /srv/Terminus; python setup.py install'
+  - bash -c 'cd /srv/Terminus; pserve development.ini --reload & >> /dev/null 2>&1'
