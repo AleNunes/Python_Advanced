@@ -1,0 +1,12 @@
+# deploy.yml
+# arquivo de deploy da ferramenta Terminus
+#
+
+application: Terminus123
+developers:
+  - alex@dexter.com.br
+  - joao@dexter.com.br
+
+job:
+  name: TerminusDeploy
+  deploy: comandos.txt
