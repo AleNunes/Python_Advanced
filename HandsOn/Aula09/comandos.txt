@@ -2,5 +2,5 @@ docker exec Terminus123 apt-get clean
 docker exec Terminus123 apt-get update
 docker exec Terminus123 apt-get install -y git apache2
 docker exec Terminus123 bash -c 'rm -f /var/www/html/*'
-docker exec Terminus123 bash -c 'git clone git@192.168.0.3:devops/Terminus123 /var/www/html'
+docker exec Terminus123 bash -c 'git clone git@192.168.0.3:devops/terminus123 /var/www/html'
 docker exec Terminus123 bash -c  'service apache2 restart'
